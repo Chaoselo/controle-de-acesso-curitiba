@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+@import "@fontsource/dm-sans/400.css";
+@import "@fontsource/dm-sans/500.css";
+@import "@fontsource/dm-sans/700.css";
+
+@layer base {
+  :root {
+    --font-display: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: #1e293b;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+/* Custom utility colors matching visual requirements */
+.bg-petroleum {
+  background-color: #0B1F2A;
+}
+
+.text-petroleum {
+  color: #0B1F2A;
+}
+
+.border-petroleum {
+  border-color: #0B1F2A;
+}
+
+.bg-whatsapp {
+  background-color: #25D366;
+}
+
+.hover\:bg-whatsapp-dark:hover {
+  background-color: #1eb857;
+}
+
+.text-whatsapp {
+  color: #25D366;
+}
