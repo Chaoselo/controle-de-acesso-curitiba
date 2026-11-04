@@ -53,7 +53,7 @@ const terms: Term[] = [
   {
     term: 'Controladora de Acesso',
     definition: 'Hardware central dedicado (placa de processamento) responsável por armazenar as regras de acesso, tabelas de permissões e horários, validar os dados enviados pelos leitores e acionar relés de fechaduras ou cancelas.',
-    link: { text: 'Ver software de gestão e controladores', href: '/solucoes/software-de-gestao/' }
+    link: { text: 'Ver instalação e projetos', href: '/servicos/instalacao-e-projeto/' }
   },
   {
     term: 'Eletroímã (Fechadura Eletromagnética)',
@@ -108,7 +108,7 @@ const terms: Term[] = [
   {
     term: 'QR Code de Acesso',
     definition: 'Código bidimensional dinâmico ou estático gerado por aplicativo que permite aos visitantes liberar catracas e portas apontando a tela do smartphone para um leitor óptico com tempo e tentativas predeterminados.',
-    link: { text: 'Ver softwares de gestão', href: '/solucoes/software-de-gestao/' }
+    link: { text: 'Ver soluções de catracas', href: '/solucoes/catracas/' }
   },
   {
     term: 'Mola Aérea Hidráulica',

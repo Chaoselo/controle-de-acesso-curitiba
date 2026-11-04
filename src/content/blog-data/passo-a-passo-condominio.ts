@@ -8,10 +8,10 @@ export const passoAPassoCondominioContent: BlogPostContent = {
   author: 'Equipe Controle de Acesso Curitiba',
   publishedDate: '[[PREENCHER: data de publicação]]',
   readTime: '8 min de leitura',
-  summary: 'A modernização da portaria de um condomínio residencial exige planejamento estruturado que concilie aprovação coletiva em assembleia, obras de adequação civil e engenharia eletrônica precisa. Este roteiro passo a passo orienta síndicos e administradoras em Curitiba desde o diagnóstico inicial de vulnerabilidades até o cadastramento assistido dos moradores e o suporte pós-instalação.',
+  summary: 'A implantação de controle de acesso na portaria de um condomínio residencial exige planejamento estruturado que concilie aprovação coletiva em assembleia, obras de adequação civil e engenharia eletrônica precisa. Este roteiro passo a passo orienta síndicos e administradoras em Curitiba desde o diagnóstico inicial de vulnerabilidades até o cadastramento assistido dos moradores e o suporte pós-instalação.',
   sections: [
     {
-      heading: 'Por Onde Começar a Modernização da Portaria Condominial?',
+      heading: 'Por Onde Começar o Projeto da Portaria Condominial?',
       paragraphs: [
         'A portaria é o principal escudo de proteção física de um condomínio residencial. Contudo, em muitos edifícios tradicionais de Curitiba, a rotina de segurança ainda depende de chaves mecânicas fáceis de copiar, portões com fechaduras manuais que batem ou ficam entreabertos e controles remotos de garagem clonáveis que facilitam abordagens criminosas na via pública.',
         'Migrar para um sistema de controle de acesso moderno — com clausura de pedestres (eclusa com duas portas intertravadas), reconhecimento facial touchless e cancelas com leitura de tag veicular UHF — é uma das decisões mais transformadoras para a valorização patrimonial e paz de espírito dos moradores.',
@@ -55,10 +55,10 @@ export const passoAPassoCondominioContent: BlogPostContent = {
           ]
         },
         {
-          heading: 'Passo 5: Fixação de Equipamentos e Parametrização do Software',
+          heading: 'Passo 5: Fixação de Equipamentos e Parametrização do Sistema',
           paragraphs: [
             'Com a infraestrutura civil pronta, instalam-se os terminais de reconhecimento facial com prova de vida (liveness), leitoras de tag veicular UHF para o para-brisa dos automóveis, botoeiras sem toque (touchless) e botoeiras de emergência interligadas ao alarme de incêndio.',
-            'O software de gestão é configurado com as regras do condomínio: permissões de horários para diaristas e prestadores de serviço, controle de vagas de garagem e módulos de relatórios auditáveis de passagem.'
+            'O sistema é configurado com as regras do condomínio: permissões de horários para diaristas e prestadores de serviço, controle de vagas de garagem e módulos de relatórios auditáveis de passagem.'
           ]
         }
       ]
@@ -79,7 +79,7 @@ export const passoAPassoCondominioContent: BlogPostContent = {
         {
           heading: 'Passo 7: Treinamento de Funcionários e Contrato de Manutenção',
           paragraphs: [
-            'Capacite os porteiros e o zelador para operarem o software de cadastro de visitantes, emitirem QR Codes provisórios e reconhecerem os alertas do sistema. Por fim, firme um contrato de manutenção preventiva com a empresa instaladora para revisões periódicas de molas, baterias e cancelas veiculares, preservando o investimento do condomínio por muitos anos.'
+            'Capacite os porteiros e o zelador para operarem o sistema de cadastro de visitantes, emitirem QR Codes provisórios e reconhecerem os alertas do sistema. Por fim, firme um contrato de manutenção preventiva com a empresa instaladora para revisões periódicas de molas, baterias e cancelas veiculares, preservando o investimento do condomínio por muitos anos.'
           ]
         }
       ]

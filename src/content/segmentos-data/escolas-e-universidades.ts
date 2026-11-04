@@ -7,12 +7,11 @@ export const escolasEUniversidadesSegment: SegmentContent = {
   metaDescription: 'Segurança estudantil com catracas e controle de acesso escolar em Curitiba. Notificação de entrada e saída e bloqueio de estranhos. Peça orçamento!',
   keyword: 'controle de acesso para escolas e universidades em Curitiba',
   directAnswer: 'O controle de acesso para colégios, escolas infantis e campi universitários em Curitiba organiza o fluxo intenso de estudantes, docentes, funcionários e pais nos horários de entrada e saída de aulas. Combinando catracas com mecanismo de braço antipânico certificado, reconhecimento facial ou cartões escolares e totens de triagem de visitantes, a solução impede a evasão de alunos sem autorização e protege a comunidade escolar com absoluto respeito à LGPD para menores.',
-  // TODO: foto real
   image: {
-    src: '/images/segmento-escolas-universidades.webp',
-    alt: 'Bateria de catracas escolares com braço antipânico e leitor de acesso em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-segmento-escolas-e-faculdades.webp',
+    alt: 'Fileira de catracas com terminais faciais em um hall de entrada',
+    width: 1200,
+    height: 675
   },
   typicalProblems: [
     'Congestionamento e empurrões no portão escolar nos intervalos críticos de entrada e saída de turnos (manhã, tarde e noite), sobrecarregando inspetores escolares e recepcionistas do colégio.',
@@ -44,16 +43,16 @@ export const escolasEUniversidadesSegment: SegmentContent = {
       reason: 'Garantem que os portões externos permaneçam firmemente travados contra tentativas de empurrão mecânico ou arrombamento, sendo destravados somente após a identificação prévia e visual do visitante pela equipe da secretaria escolar.'
     },
     {
-      solutionSlug: 'software-de-gestao',
-      title: 'Software Escolar com Notificação de Presença para Pais',
-      reason: 'Permite o envio automático de mensagens ou notificações via aplicativo aos pais assim que a catraca confirma a passagem do estudante no início e no término da jornada de aulas.'
+      solutionSlug: 'biometria',
+      title: 'Leitores Biométricos em Laboratórios e Salas de Professores',
+      reason: 'Garantem controle rigoroso em setores restritos como almoxarifado de provas, salas de tecnologia e departamentos pedagógicos, liberando o acesso apenas para docentes e técnicos autorizados.'
     }
   ],
   projectArchitecture: [
     'Portaria Escolar e Bateria de Catracas: Dimensionamento de bateria de catracas com braços tipo pedestal em aço inox escovado, equipadas com eletroímã antipânico que desarma os braços quando a energia cai ou o alarme soa, mais um portão lateral acessível conforme a NBR 9050.',
     'Secretaria e Balcão de Visitantes: Espaço com vidros de segurança e guichê de atendimento, dotado de scanner de documentos, câmera de alta resolução para fotografia de pais e autorizados a buscar alunos e impressora térmica de etiquetas adesivas provisórias.',
     'Controle de Salas de Professores, TI e Laboratórios: Instalação de fechaduras eletromagnéticas em laboratórios de informática, sala dos professores, almoxarifado de provas e diretoria, com leitores biométricos restritos ao corpo docente.',
-    'Integração com Sistema Acadêmico da Instituição: Configuração de rotina de sincronização entre o banco de dados do software escolar e as controladoras de acesso para atualização automática de matrículas, transferências e trancamentos.',
+    'Integração com Sistema Acadêmico da Instituição: Configuração de rotina de sincronização entre o banco de dados do sistema acadêmico e as controladoras de acesso para atualização automática de matrículas, transferências e trancamentos.',
     'Alimentação Elétrica Ininterrupta e Rota de Fuga: No-breaks inteligentes conectados à rede de alarme de incêndio que desarmam instantaneamente todos os bloqueios mecânicos caso seja acionada a botoeira de pânico de emergência da escola.'
   ],
   faqs: [
@@ -67,18 +66,18 @@ export const escolasEUniversidadesSegment: SegmentContent = {
     },
     {
       question: 'Como a portaria gerencia a liberação de alunos por terceiros ou parentes eventuais?',
-      answer: 'O software de gestão escolar permite cadastrar uma lista restrita de adultos autorizados pelos pais (como avós, tios ou motoristas de van escolar) com suas respectivas fotos e documentos. O porteiro visualiza na tela a foto cadastrada antes de destravar o portão para a saída da criança.'
+      answer: 'O sistema escolar permite cadastrar uma lista restrita de adultos autorizados pelos pais (como avós, tios ou motoristas de van escolar) com suas respectivas fotos e documentos. O porteiro visualiza na tela a foto cadastrada antes de destravar o portão para a saída da criança.'
     },
     {
       question: 'E se o aluno esquecer o crachá ou a carteirinha em casa no dia de aula?',
-      answer: 'A instituição pode adotar o reconhecimento facial complementar, onde a própria face do estudante valida a passagem, ou autorizar a recepção a fazer uma liberação manual assistida no software, registrando o evento no histórico acadêmico sem reter o aluno do lado de fora do colégio.'
+      answer: 'A instituição pode adotar o reconhecimento facial complementar, onde a própria face do estudante valida a passagem, ou autorizar a recepção a fazer uma liberação manual assistida no sistema, registrando o evento no histórico acadêmico sem reter o aluno do lado de fora do colégio.'
     },
     {
       question: 'É viável utilizar o mesmo sistema em uma grande universidade com múltiplos blocos em Curitiba?',
       answer: 'Sim. Em universidades com milhares de acadêmicos e vários blocos de salas, utilizamos controladoras IP interligadas por rede óptica que sincronizam centenas de catracas simultâneas, permitindo inclusive o controle de acesso diferenciado a cursos noturnos, laboratórios e bibliotecas.'
     }
   ],
-  relatedSolutions: ['catracas', 'reconhecimento-facial', 'fechaduras-eletromagneticas', 'software-de-gestao'],
+  relatedSolutions: ['catracas', 'reconhecimento-facial', 'fechaduras-eletromagneticas', 'biometria'],
   relatedSegments: ['academias', 'condominios-comerciais'],
   whatsappContext: 'controle de acesso para escolas e universidades em Curitiba'
 };

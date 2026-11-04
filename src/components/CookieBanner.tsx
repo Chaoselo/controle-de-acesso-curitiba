@@ -14,11 +14,17 @@ export function CookieBanner() {
 
   const handleAccept = () => {
     setCookieConsent('granted');
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
     setShow(false);
   };
 
   const handleDecline = () => {
     setCookieConsent('denied');
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', { analytics_storage: 'denied' });
+    }
     setShow(false);
   };
 
@@ -28,7 +34,7 @@ export function CookieBanner() {
     <aside aria-label="Aviso de Privacidade e Cookies" className="fixed bottom-16 sm:bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:max-w-md z-50 bg-white border border-slate-200 rounded-lg p-4 shadow-2xl animate-in slide-in-from-bottom duration-300">
       <div className="flex flex-col gap-3">
         <p className="text-xs text-slate-600 leading-relaxed">
-          Utilizamos cookies para análise de navegação e aprimoramento de nossos serviços, em conformidade com a LGPD. Consulte nossa{' '}
+          Utilizamos cookies e o Google Analytics para medir visitas e aprimorar nosso atendimento, em conformidade com a LGPD. Os dados estatísticos só são coletados com a sua autorização e você pode recusar a qualquer momento. Consulte nossa{' '}
           <Link to="/politica-de-privacidade/" className="text-sky-600 underline font-medium">
             Política de Privacidade
           </Link>.

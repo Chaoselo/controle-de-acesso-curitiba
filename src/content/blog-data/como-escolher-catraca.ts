@@ -71,7 +71,7 @@ export const comoEscolherCatracaContent: BlogPostContent = {
         {
           heading: 'Acessibilidade Universal e Portinholas Laterais (NBR 9050)',
           paragraphs: [
-            'Catracas convencionais de três braços não permitem a passagem de cadeiras de rodas, carrinhos de bebê ou pedestres com muletas. Em observância à norma ABNT NBR 9050, todo layout de controle de portaria deve incluir uma passagem lateral acessível de no mínimo oitenta centímetros de vão livre, geralmente automatizada por uma portinhola motorizada em aço inox integrada ao mesmo software de controle de acesso.'
+            'Catracas convencionais de três braços não permitem a passagem de cadeiras de rodas, carrinhos de bebê ou pedestres com muletas. Em observância à norma ABNT NBR 9050, todo layout de controle de portaria deve incluir uma passagem lateral acessível de no mínimo oitenta centímetros de vão livre, geralmente automatizada por uma portinhola motorizada em aço inox integrada ao mesmo sistema de controle de acesso.'
           ]
         }
       ]

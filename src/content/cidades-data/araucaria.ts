@@ -21,7 +21,7 @@ export const araucariaContent: CityContent = {
     'Cancelas veiculares industriais automáticas de alta resistência mecânica para controle de entrada, expedição e pesagem de caminhões-tanque e carretas bitrem.',
     'Terminais de reconhecimento facial com proteção IP65 contra poeira e intempéries para portarias externas de fábricas e relógios de ponto eletrônico homologados.',
     'Sistemas de intertravamento de portões com fechaduras eletromagnéticas de 300 kgf e sinalização luminosa para clausuras de pedestres em condomínios residenciais.',
-    'Software de controle de acesso corporativo com bloqueio automático de crachás por vencimento de exames admissionais, normas de segurança NR ou integrações obrigatórias.'
+    'Sistema de controle de acesso corporativo com bloqueio automático de credenciais por vencimento de exames admissionais, normas de segurança NR ou integrações obrigatórias.'
   ],
   serviceLogistics: 'Com conexão viária direta a Curitiba pela Rodovia do Xisto (BR-476) e Contorno Sul, nossa equipe técnica realiza vistorias presenciais em plantas fabris e condomínios de Araucária, garantindo manutenção programada, calibração mecânica e chamados técnicos de emergência para sistemas de portaria.',
   faqs: [

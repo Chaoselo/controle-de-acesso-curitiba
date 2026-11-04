@@ -6,13 +6,12 @@ export const cancelasEAcessoVeicularSolution: SolutionContent = {
   seoTitle: 'Cancelas Automáticas em Curitiba | Acesso Veicular e Tags',
   metaDescription: 'Instalação de cancelas automáticas, tags UHF e controle veicular em Curitiba e RMC. Elimine filas e invasões na garagem. Peça seu orçamento no WhatsApp!',
   keyword: 'controle de acesso veicular Curitiba',
-  directAnswer: 'O controle de acesso veicular por cancelas automáticas gerencia a entrada e saída de automóveis em garagens condominiais, pátios industriais e estacionamentos. Em Curitiba e Região Metropolitana, a automação com tags adesivas no para-brisa ou controles de código rolante agiliza o fluxo e minimiza a vulnerabilidade de motoristas na via pública. O sistema opera com sensores anti-esmagamento e integração a softwares de portaria para registro auditável de acessos.',
-  // TODO: foto real
+  directAnswer: 'O controle de acesso veicular por cancelas automáticas gerencia a entrada e saída de automóveis em garagens condominiais, pátios industriais e estacionamentos. Em Curitiba e Região Metropolitana, a automação com tags adesivas no para-brisa ou controles de código rolante agiliza o fluxo e minimiza a vulnerabilidade de motoristas na via pública. O sistema opera com sensores anti-esmagamento e integração a sistemas de portaria para registro auditável de acessos.',
   image: {
-    src: '/images/cancelas-acesso-veicular.webp',
-    alt: 'Cancela automática e antena de tag veicular instaladas em entrada de condomínio em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/cancela-automatica.webp',
+    alt: 'Cancela automática com braço horizontal na entrada de uma área com controle de veículos',
+    width: 1200,
+    height: 675
   },
   howItWorks: [
     'Controles de código rolante versus código fixo: Controles antigos de código fixo possuem frequências estáticas facilmente capturáveis por clonadores. Projetos modernos exigem código rolante (rolling code), em que a chave criptográfica muda a cada acionamento, dificultando a interceptação e cópia.',
@@ -103,7 +102,7 @@ export const cancelasEAcessoVeicularSolution: SolutionContent = {
       answer: 'O morador utiliza o aplicativo do condomínio para cadastrar o nome e a placa do visitante, gerando um código QR Code temporário ou autorização de placa por período delimitado. Ao chegar, a cancela valida a permissão diretamente no sistema e libera a entrada somente dentro da janela de horário estipulada.'
     }
   ],
-  relatedSolutions: ['cartao-e-tag-rfid', 'software-de-gestao', 'reconhecimento-facial', 'fechaduras-eletromagneticas'],
+  relatedSolutions: ['cartao-e-tag-rfid', 'catracas', 'reconhecimento-facial', 'fechaduras-eletromagneticas'],
   relatedSegments: ['condominios-residenciais', 'industrias', 'condominios-comerciais', 'empresas-e-escritorios'],
   relatedCities: ['curitiba', 'pinhais', 'araucaria', 'sao-jose-dos-pinhais'],
   whatsappContext: 'cancela automática e controle de acesso veicular'

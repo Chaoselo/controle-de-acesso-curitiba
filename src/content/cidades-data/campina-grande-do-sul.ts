@@ -21,7 +21,7 @@ export const campinaGrandeDoSulContent: CityContent = {
     'Catracas eletrônicas pedestal em aço inoxidável 304 com braço antipânico que desarma automaticamente em situações de emergência ou evacuação predial.',
     'Cancelas veiculares automáticas com sistema de leitor de tag UHF para pistas exclusivas de ambulâncias, estacionamentos de condomínios e galpões industriais.',
     'Fechaduras eletromagnéticas de 150 kgf a 300 kgf em portas corta-fogo e eclusas de pedestres intertravadas com suporte de no-break contínuo para dias de chuva.',
-    'Software de gestão de acessos com níveis de autorização por horário, escala de plantão médico, cadastro de fornecedores e relatórios detalhados de trânsito.'
+    'Sistema de controle de acesso com níveis de autorização por horário, escala de plantão médico, cadastro de fornecedores e relatórios detalhados de trânsito.'
   ],
   serviceLogistics: 'Com deslocamento ágil pela rodovia BR-116 a partir de Curitiba, atendemos clínicas médicas, hospitais, indústrias e condomínios residenciais em Campina Grande do Sul com consultoria presencial, implantação técnica de cabeamento estruturado e contratos contínuos de manutenção preventiva e corretiva com estoque de peças.',
   faqs: [
@@ -39,7 +39,7 @@ export const campinaGrandeDoSulContent: CityContent = {
     },
     {
       question: 'É possível atender condomínios residenciais na região central e bairros afastados da cidade?',
-      answer: 'Sim, atendemos qualquer ponto de Campina Grande do Sul para elaboração de projeto técnico, instalação de clausuras de segurança e modernização completa de portarias manuais ou antigas.'
+      answer: 'Sim, atendemos qualquer ponto de Campina Grande do Sul para elaboração de projeto técnico, instalação de clausuras de segurança e adequação completa de portarias manuais ou antigas.'
     }
   ],
   whatsappContext: 'controle de acesso em Campina Grande do Sul'

@@ -15,15 +15,15 @@ export const generalFaqList: FAQItem[] = [
   },
   {
     question: 'Como funciona a solicitação de orçamento e a vistoria técnica?',
-    answer: 'Você pode solicitar um orçamento diretamente pelo nosso WhatsApp (41) 99844-8409 ou através do formulário na página de orçamento. Realizamos uma triagem inicial das necessidades e enviamos um consultor técnico ao local sem compromisso para avaliar vãos de porta, tipo de caixilharia, tubulação existente e fluxo de pessoas.'
+    answer: 'Você pode pedir orçamento pelo WhatsApp (41) 99844-8409 ou pelo formulário. Fazemos uma triagem inicial e, quando necessário, agendamos uma visita técnica para avaliar o local.'
   },
   {
     question: 'Os sistemas continuam funcionando durante quedas de energia elétrica em Curitiba?',
-    answer: 'Sim. Em todos os nossos projetos dimensionamos fontes de alimentação ininterrupta no-break com baterias seladas de 12V. Esse conjunto garante autonomia de várias horas para fechaduras eletromagnéticas, leitoras biométricas e controladoras durante tempestades ou oscilações na rede da concessionária de energia.'
+    answer: 'Em projetos de controle de acesso, o ideal é prever nobreak ou baterias para manter leitores, controladoras e fechaduras funcionando por algum tempo em quedas de energia. A autonomia depende do dimensionamento e do consumo dos equipamentos, e o comportamento das portas sem energia (travadas ou liberadas) depende do tipo de fechadura e das regras de saída de emergência.'
   },
   {
     question: 'Os equipamentos de biometria e reconhecimento facial estão em conformidade com a LGPD?',
-    answer: 'Sim. Trabalhamos exclusivamente com tecnologias que convertem impressões digitais e faces em vetores matemáticos (templates) criptografados e irreversíveis, sem armazenamento de fotos desprotegidas em banco de dados, em estrita conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018). Este texto é informativo e não substitui a orientação de um profissional jurídico.'
+    answer: 'Biometria e reconhecimento facial envolvem dado pessoal sensível, e a conformidade com a LGPD depende de como o condomínio ou a empresa trata esses dados: finalidade definida, informação aos titulares, acesso restrito aos cadastros e prazo de guarda. Em geral, os equipamentos convertem a digital ou o rosto em um modelo matemático (template) em vez de guardar a imagem, mas o tratamento exato varia conforme o fabricante. Este texto é informativo e não substitui a orientação de um profissional jurídico.'
   },
   {
     question: 'Qual a diferença entre fechadura eletroímã (fail-safe) e fecho elétrico (fail-secure)?',
@@ -31,11 +31,11 @@ export const generalFaqList: FAQItem[] = [
   },
   {
     question: 'Como os sistemas de controle de acesso atendem às normas do Corpo de Bombeiros?',
-    answer: 'Projetamos as portas de saída e clausuras com botoeiras de emergência tipo quebra-vidro ou botões cogumelo que cortam diretamente a alimentação das fechaduras eletroímã, além de integração com centrais de alarme de incêndio e catracas com braço antipânico que desarma automaticamente para desobstrução imediata de rotas de evacuação.'
+    answer: 'As portas em rotas de fuga devem permitir a saída em emergência, por exemplo com botão de emergência (quebra-vidro) ou liberação automática da fechadura em caso de comando de alarme. As exigências variam conforme o local e devem ser conferidas com o responsável técnico e com as normas de segurança contra incêndio aplicáveis.'
   },
   {
     question: 'Os equipamentos são compatíveis com empresas de portaria remota e virtual?',
-    answer: 'Sim. Nossas controladoras e terminais operam com protocolos abertos e padronizados de mercado (como Wiegand 26/34 bits, OSDP e comunicação IP), sendo totalmente integráveis aos principais softwares de gestão e centrais de portaria remota atuantes em Curitiba e Região Metropolitana.'
+    answer: 'Depende da compatibilidade. Muitos equipamentos usam protocolos comuns de mercado, como Wiegand, OSDP e comunicação IP, mas a integração com um software ou uma central de portaria remota específica deve ser verificada antes da compra.'
   },
   {
     question: 'Qual a diferença entre manutenção preventiva periódica e corretiva?',
@@ -43,18 +43,18 @@ export const generalFaqList: FAQItem[] = [
   },
   {
     question: 'Quais as vantagens da tag veicular adesiva UHF em relação ao controle remoto comum?',
-    answer: 'A tag veicular UHF é colada no para-brisa do carro e é lida automaticamente por uma antena a até 6 metros de distância, abrindo o portão ou cancela sem que o motorista precise parar ou abaixar o vidro. Ela não utiliza pilhas, não pode ser clonada como controles remotos simples e se autodestrói caso alguém tente arrancá-la para colar em outro veículo.'
+    answer: 'A tag veicular UHF é colada no para-brisa e lida por uma antena a alguns metros de distância, conforme o modelo e a antena, permitindo abrir a cancela sem o motorista parar. Não usa pilhas. Como qualquer credencial RFID, a proteção contra cópia depende da tecnologia, e a tag perdida pode ser bloqueada no sistema. Algumas tags têm lacre que se rompe ao serem removidas, mas isso varia conforme o modelo.'
   },
   {
     question: 'Quanto tempo leva a instalação de controle de acesso em um condomínio?',
-    answer: 'Instalações pontuais em uma porta individual levam geralmente 1 dia útil. Em projetos de condomínio que envolvem clausura de pedestres (eclusa de duas portas), interfonia e cancelas veiculares de garagem, o prazo médio varia de 3 a 7 dias úteis, sempre garantindo que os acessos dos moradores permaneçam liberados durante as etapas de obra.'
+    answer: 'O prazo depende do número de pontos, da infraestrutura existente (eletrodutos, cabos e energia) e da obra necessária. A visita técnica avalia o local e define o cronograma.'
   },
   {
     question: 'Quais as garantias fornecidas para os equipamentos e para a instalação?',
-    answer: 'Todos os equipamentos instalados contam com a garantia oficial de fábrica dos fabricantes homologados (geralmente de 12 meses contra defeitos de fabricação), complementada pela garantia de serviço de instalação e parametrização executada pela nossa equipe de engenharia e suporte técnico.'
+    answer: 'A garantia depende do fabricante de cada equipamento e das condições do serviço contratado. Essas condições constam na proposta.'
   },
   {
     question: 'O projeto contempla regras de acessibilidade da norma ABNT NBR 9050?',
-    answer: 'Sim. Em todos os projetos dimensionamos larguras mínimas de vão livre de passagem (mínimo de 80 cm), instalamos botoeiras e leitoras em alturas acessíveis a cadeirantes e pessoas com mobilidade reduzida, além de portinholas laterais motorizadas ao lado de baterias de catracas para garantir passagem confortável.'
+    answer: 'O projeto deve prever passagem acessível para cadeirantes e pessoas com mobilidade reduzida, seguindo a ABNT NBR 9050, incluindo a largura livre da passagem e a altura de leitores e botoeiras. As medidas são definidas no levantamento do local.'
   }
 ];

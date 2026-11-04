@@ -92,7 +92,7 @@ export function ServiceDetailPage() {
             width={servico.image.width}
             height={servico.image.height}
             loading="lazy"
-            className="w-full h-auto object-cover max-h-[460px]"
+            className="w-full h-auto object-cover object-center max-h-[460px]"
           />
         </div>
 

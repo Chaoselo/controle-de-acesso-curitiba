@@ -6,13 +6,12 @@ export const condominiosResidenciaisSegment: SegmentContent = {
   seoTitle: 'Controle de Acesso para Condomínio em Curitiba | Residencial',
   metaDescription: 'Controle de acesso para condomínios residenciais em Curitiba. Biometria, facial, catracas e cancelas para portarias seguras. Peça orçamento no WhatsApp!',
   keyword: 'controle de acesso para condominios residenciais em Curitiba',
-  directAnswer: 'O controle de acesso para condomínios residenciais em Curitiba automatiza a entrada e a saída de moradores, visitantes, prestadores de serviços e entregadores com segurança auditável. O sistema substitui chaves mecânicas e controles clonáveis por leitores faciais, biometria digital e tags veiculares invioláveis, operando de forma integrada à portaria presencial ou remota. Isso elimina vulnerabilidades perimetrais e assegura o registro fiel de cada evento nas portarias e garagens.',
-  // TODO: foto real
+  directAnswer: 'O controle de acesso para condomínios residenciais em Curitiba automatiza a entrada e a saída de moradores, visitantes, prestadores de serviços e entregadores com segurança auditável. O sistema substitui chaves mecânicas e controles convencionais por leitores faciais, biometria digital e tags veiculares no para-brisa, operando de forma integrada à portaria presencial ou remota. Isso reduz vulnerabilidades perimetrais e assegura o registro fiel de cada evento nas portarias e garagens.',
   image: {
-    src: '/images/segmento-condominios-residenciais.webp',
-    alt: 'Portaria de condomínio residencial com terminal de acesso e fechadura eletroímã em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-segmento-condominio-residencial.webp',
+    alt: 'Leitor com teclado numérico e aproximação de tag na entrada de um condomínio de prédios',
+    width: 1200,
+    height: 675
   },
   typicalProblems: [
     'Entrada recorrente de entregadores de delivery e encomendas direto aos blocos sem retenção na portaria, gerando circulação desnecessária de pessoas desconhecidas nas áreas íntimas dos edifícios.',
@@ -39,9 +38,9 @@ export const condominiosResidenciaisSegment: SegmentContent = {
       reason: 'Assegura que a segunda porta de pedestres permaneça mecanicamente travada até que o primeiro portão esteja devidamente fechado e trancado, impedindo invasões por empurrão ou carona forçada no acesso social do edifício.'
     },
     {
-      solutionSlug: 'software-de-gestao',
-      title: 'Software de Portaria com Envio de Convites por QR Code',
-      reason: 'Possibilita que cada morador emita convites temporários com data e horário restritos pelo aplicativo do condomínio para recepção de visitantes em churrasqueiras, salões de festas e visitas familiares de fim de semana.'
+      solutionSlug: 'cartao-e-tag-rfid',
+      title: 'Tags e Chaveiros RFID para Moradores e Serviços',
+      reason: 'Oferecem uma alternativa prática e econômica para abertura de portões e portas de pedestres por simples aproximação, com fácil cancelamento em caso de perda ou extravio.'
     },
     {
       solutionSlug: 'interfone-e-video-porteiro',
@@ -53,7 +52,7 @@ export const condominiosResidenciaisSegment: SegmentContent = {
     'Infraestrutura e Eletrodutos: Lançamento de cabeamento estruturado Cat6 em eletrodutos galvanizados e blindados, interligando a portaria social, o portão de serviço, a lixeira e os acessos veiculares à guarita central ou ao rack de rede.',
     'Clausura de Pedestres (Gaiola): Instalação de duas portas sequenciais com fechaduras eletromagnéticas de 280kgf, suportes de fixação reforçados, molas aéreas de alto tráfego, leitores faciais na entrada externa e botoeiras no-touch de saída com intertravamento elétrico físico.',
     'Controle de Acesso Veicular na Garagem: Posicionamento de antenas receptoras UHF na rampa de entrada e saída, laços indutivos embutidos no piso para detecção de massa metálica, fotocélulas antiesmagamento e cancelas automáticas de ciclo contínuo.',
-    'Central de Processamento e Software: Servidor ou controladora local autônoma com capacidade de processamento offline para armazenamento de templates biométricos e banco de dados criptografado, operando com sincronização para portaria presencial ou remota.',
+    'Central de Processamento e Controladoras IP: Servidor ou controladora local autônoma com capacidade de processamento offline para armazenamento de templates biométricos e banco de dados criptografado, operando com sincronização para portaria presencial ou remota.',
     'Sistema de Contingência Energética e Governança: Banco de baterias estacionárias com no-break senoidal de longa autonomia para suportar quedas de energia na rede da Copel, aliado ao treinamento presencial da equipe de portaria e entrega do termo de conformidade com a LGPD aprovado em assembleia.'
   ],
   faqs: [
@@ -63,7 +62,7 @@ export const condominiosResidenciaisSegment: SegmentContent = {
     },
     {
       question: 'Como é administrado o acesso de prestadores de serviços, empregados domésticos e diaristas?',
-      answer: 'A administração ou o próprio morador cadastra o prestador no software com delimitação restrita de dias da semana e faixas de horários permitidas (por exemplo, terças e quintas-feiras das 08h00 às 17h00). Fora dessa janela temporal programada, o leitor facial ou biométrico recusa a liberação automaticamente, registrando a tentativa no histórico de eventos.'
+      answer: 'A administração ou o próprio morador cadastra o prestador no sistema com delimitação restrita de dias da semana e faixas de horários permitidas (por exemplo, terças e quintas-feiras das 08h00 às 17h00). Fora dessa janela temporal programada, o leitor facial ou biométrico recusa a liberação automaticamente, registrando a tentativa no histórico de eventos.'
     },
     {
       question: 'É necessário aprovação prévia em assembleia para implantar biometria e reconhecimento facial?',
@@ -78,7 +77,7 @@ export const condominiosResidenciaisSegment: SegmentContent = {
       answer: 'Tratamos a biometria e a imagem facial como dados pessoais sensíveis. Os leitores convertem os traços do usuário em um template numérico hash criptografado e não guardam fotos abertas na memória. A base de cadastros fica restrita aos operadores autorizados e os relatórios de passagens são descartados periodicamente conforme a política interna aprovada pelo condomínio. Este texto é informativo e não substitui a orientação de um profissional jurídico.'
     }
   ],
-  relatedSolutions: ['reconhecimento-facial', 'cancelas-e-acesso-veicular', 'fechaduras-eletromagneticas', 'software-de-gestao'],
+  relatedSolutions: ['reconhecimento-facial', 'cancelas-e-acesso-veicular', 'fechaduras-eletromagneticas', 'interfone-e-video-porteiro'],
   relatedSegments: ['condominios-comerciais', 'residencias'],
   whatsappContext: 'controle de acesso para condomínio residencial em Curitiba'
 };

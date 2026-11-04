@@ -21,7 +21,7 @@ export const quatroBarrasContent: CityContent = {
     'Torniquetes de altura total em aço carbono galvanizado a quente para portarias perimetrais de galpões logísticos e indústrias farmacêuticas na rodovia BR-116.',
     'Baterias de catracas eletrônicas pedestal em aço inoxidável 304 com validação facial para colaboradores de linhas de montagem, estoques e escritórios administrativos.',
     'Sistemas de tag veicular UHF para automação de portões em condomínios residenciais de alto padrão e pátios corporativos com abertura em menos de 1 segundo.',
-    'Software de controle de acesso corporativo com módulo de expedição e registro auditável de placa de veículo, motorista, doca de carregamento e horário de permanência.'
+    'Sistema de controle de acesso corporativo com módulo de expedição e registro auditável de placa de veículo, motorista, doca de carregamento e horário de permanência.'
   ],
   serviceLogistics: 'Com acesso rápido pela rodovia BR-116 e Contorno Leste a partir de Curitiba, nossas equipes técnicas realizam vistorias de orçamento, implantação completa de infraestrutura cabeada e serviços contínuos de manutenção preventiva e corretiva com estoque de componentes e pronto atendimento em Quatro Barras.',
   faqs: [

@@ -7,12 +7,11 @@ export const academiasSegment: SegmentContent = {
   metaDescription: 'Catracas e controle biométrico para academias em Curitiba. Bloqueio automático de inadimplentes e gestão integrada. Peça orçamento via WhatsApp!',
   keyword: 'controle de acesso para academias em Curitiba',
   directAnswer: 'O controle de acesso para academias, boxes de crossfit, centros de lutas e estúdios em Curitiba automatiza a catraca de entrada e sincroniza a liberação com o status financeiro de cada aluno. Ao validar planos ativos, mensalidades em dia e atestados médicos através de biometria digital ou reconhecimento facial ultra-rápido, o sistema impede a entrada de inadimplentes sem constrangimentos na recepção e assegura fluxo contínuo nos horários de pico.',
-  // TODO: foto real
   image: {
-    src: '/images/segmento-academias.webp',
-    alt: 'Catracas em aço inox com leitor facial instaladas em academia em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-segmento-academias.webp',
+    alt: 'Catracas com terminais de leitura na entrada de uma academia',
+    width: 1200,
+    height: 675
   },
   typicalProblems: [
     'Entrada recorrente de alunos com mensalidades vencidas ou planos expirados que frequentam o espaço de musculação gerando prejuízos financeiros contínuos e inadimplência à administração da academia.',
@@ -44,9 +43,9 @@ export const academiasSegment: SegmentContent = {
       reason: 'Ideais para alunos de natação, hidroginástica ou áreas úmidas de saunas, permitindo acesso à catraca e travamento de armários nos vestiários sem preocupação com chaves mecânicas que enferrujam com facilidade.'
     },
     {
-      solutionSlug: 'software-de-gestao',
-      title: 'Software de Acesso Integrado a Plataformas Fitness',
-      reason: 'Conecta a catraca em tempo real ao sistema financeiro da academia, bloqueando automaticamente o giro mecânico se a fatura estiver vencida após a tolerância em dias configurada pela gerência da unidade.'
+      solutionSlug: 'fechaduras-eletromagneticas',
+      title: 'Fechaduras Eletromagnéticas em Salas Exclusivas e Vestiários',
+      reason: 'Garantem travamento e acesso controlado a estúdios de pilates, áreas de avaliação física ou dependências restritas da academia, integradas às credenciais dos alunos.'
     }
   ],
   projectArchitecture: [
@@ -78,7 +77,7 @@ export const academiasSegment: SegmentContent = {
       answer: 'Sim. O sistema permite configurar dias de carência para pagamento, quantidade de créditos liberados e geração de passes temporários ou QR Codes descartáveis válidos para um único dia de treino (day-use) ou aula teste para novos interessados.'
     }
   ],
-  relatedSolutions: ['catracas', 'reconhecimento-facial', 'biometria', 'software-de-gestao'],
+  relatedSolutions: ['catracas', 'reconhecimento-facial', 'biometria', 'fechaduras-eletromagneticas'],
   relatedSegments: ['escolas-e-universidades', 'condominios-comerciais'],
   whatsappContext: 'catraca e controle de acesso para academia em Curitiba'
 };

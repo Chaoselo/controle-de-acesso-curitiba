@@ -65,14 +65,14 @@ export const lgpdContent: BlogPostContent = {
       paragraphs: [
         'Para assegurar tranquilidade jurídica ao empreendimento, recomenda-se a adoção de um protocolo formal de governança de dados:',
         'Defina prazos de retenção de dados: registros de entrada e saída de moradores e visitantes não devem ser guardados indefinidamente. Estabeleça uma política de descarte automático após o período necessário para fins de segurança (geralmente entre 30 e 90 dias, salvo determinação judicial).',
-        'Controle o acesso administrativo ao software: apenas funcionários treinados e autorizados da portaria ou administração devem possuir senhas nominais de acesso ao sistema de cadastro, com registro de log de quem visualizou ou alterou os dados.',
+        'Controle o acesso administrativo ao sistema: apenas funcionários treinados e autorizados da portaria ou administração devem possuir senhas nominais de acesso ao sistema de cadastro, com registro de log de quem visualizou ou alterou os dados.',
         'Formalize termos com terceirizadas: ao contratar empresas de portaria remota ou manutenção técnica, exija cláusulas de confidencialidade e responsabilidade solidária com a LGPD nos contratos de prestação de serviços.'
       ]
     }
   ],
   internalLinks: [
     { text: 'política de privacidade e LGPD', url: '/politica-de-privacidade/', context: 'Consulte nossa' },
-    { text: 'software de gestão de acesso', url: '/solucoes/software-de-gestao/', context: 'Conheça os recursos de auditoria do' },
+    { text: 'leitores biométricos digitais', url: '/solucoes/biometria/', context: 'Entenda a segurança dos' },
     { text: 'condomínios residenciais', url: '/segmentos/condominios-residenciais/', context: 'Veja a implantação em' },
     { text: 'planejar uma instalação adequada às normas', url: '/orcamento/', context: 'Acesse nossa página de orçamento para' }
   ],

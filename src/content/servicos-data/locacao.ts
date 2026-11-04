@@ -18,7 +18,7 @@ export const locacaoService: ServiceContent = {
     'Fornecimento de catracas pedestal, balcão, torniquetes industriais de corpo inteiro e terminais faciais em perfeito estado de conservação estética e operacional.',
     'Implantação temporária ou contínua para eventos corporativos, feiras, congressos, canteiros de obras da construção civil e feiras agropecuárias em Curitiba e RMC.',
     'Montagem ágil com plataformas móveis em aço carbono ou rampas de piso que não exigem furação ou danos estruturais ao pavimento nobre do imóvel.',
-    'Software de controle de acesso configurado com regras de credenciais por QR Code descartável, cartões de proximidade ou biometria digital conforme a operação.',
+    'Sistema de controle de acesso configurado com regras de credenciais por QR Code descartável, cartões de proximidade ou biometria digital conforme a operação.',
     'Cobertura integral de assistência técnica corretiva com reposição de peças mecânicas, baterias e placas eletrônicas inclusa durante todo o período contratual.',
     'Opção de atualização tecnológica preventiva contínua de hardware para evitar obsolescência de equipamentos em contratos corporativos de longa permanência.',
     'Plantão técnico e fornecimento de equipamentos sobressalentes de backup no local para eventos de grande porte com tolerância zero a paradas de catracas.'
@@ -65,14 +65,14 @@ export const locacaoService: ServiceContent = {
     },
     {
       question: 'Como funciona o controle de operários e terceirizados em canteiros de obras civis?',
-      answer: 'Disponibilizamos torniquetes industriais de corpo inteiro extremamente robustos, projetados para suportar intempéries e poeira do canteiro. O sistema opera interligado a software que valida a documentação trabalhista de cada operário, impedindo fisicamente a entrada de trabalhadores sem registro formal, sem termo de entrega de EPI ou com exames médicos admissionais e periódicos vencidos, mitigando passivos trabalhistas.'
+      answer: 'Disponibilizamos torniquetes industriais de corpo inteiro extremamente robustos, projetados para suportar intempéries e poeira do canteiro. O sistema opera com regras que validam a documentação trabalhista de cada operário, impedindo fisicamente a entrada de trabalhadores sem registro formal, sem termo de entrega de EPI ou com exames médicos admissionais e periódicos vencidos, mitigando passivos trabalhistas.'
     },
     {
       question: 'A locação pode ser convertida em compra definitiva caso o condomínio decida manter o sistema?',
       answer: 'Sim. Desenvolvemos modelos contratuais flexíveis que contemplam a opção de compra residual com abatimento proporcional dos valores já pagos ou a renovação contínua com atualização tecnológica programada do maquinário. Isso permite que condomínios residenciais e edifícios corporativos comprovem na prática a melhora da segurança e comprem o parque instalado de forma segura, planejada e financeiramente previsível.'
     }
   ],
-  relatedSolutions: ['catracas', 'reconhecimento-facial', 'cancelas-e-acesso-veicular', 'software-de-gestao'],
-  relatedServices: ['instalacao-e-projeto', 'manutencao', 'modernizacao'],
+  relatedSolutions: ['catracas', 'reconhecimento-facial', 'cancelas-e-acesso-veicular', 'biometria'],
+  relatedServices: ['instalacao-e-projeto', 'manutencao'],
   whatsappContext: 'locação e aluguel de controle de acesso em Curitiba'
 };

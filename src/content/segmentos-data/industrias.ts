@@ -7,12 +7,11 @@ export const industriasSegment: SegmentContent = {
   metaDescription: 'Controle de acesso para indústrias e galpões logísticos na Grande Curitiba. Torniquetes pesados, cancelas e integração com RH. Solicite proposta!',
   keyword: 'controle de acesso para industrias em Curitiba',
   directAnswer: 'O controle de acesso para indústrias e galpões logísticos em Curitiba, na Cidade Industrial (CIC), em São José dos Pinhais e em Araucária atende a demandas severas de operação contínua e alto fluxo. O sistema integra torniquetes de altura total em aço inox, cancelas de alta velocidade para carretas, leitura de placas e barreiras com grau de proteção IP elevado contra poeira e umidade, garantindo segurança na troca de turnos e conformidade com normas de segurança do trabalho.',
-  // TODO: foto real
   image: {
-    src: '/images/segmento-industrias.webp',
-    alt: 'Torniquetes industriais de altura total e cancelas para caminhões em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-segmento-industrias.webp',
+    alt: 'Trabalhador de capacete diante de terminal facial ao lado de catraca de corpo inteiro em área industrial',
+    width: 1200,
+    height: 675
   },
   typicalProblems: [
     'Sobrecarga e congestionamento nas portarias de pedestres durante as trocas de turno com centenas de operadores entrando e saindo simultaneamente em janelas de poucos minutos.',
@@ -44,9 +43,9 @@ export const industriasSegment: SegmentContent = {
       reason: 'Atendem colaboradores, frotistas e prestadores com cartões de proximidade resistentes ao ambiente fabril agressivo ou tags UHF adesivas coladas no para-brisa de empilhadeiras e caminhões de transporte de carga pesada.'
     },
     {
-      solutionSlug: 'software-de-gestao',
-      title: 'Software de Acesso Integrado a Bloqueios por Normas Regulamentadoras',
-      reason: 'Permite bloquear automaticamente o acesso de funcionários e terceirizados a áreas de risco caso os seus exames médicos periódicos ou certificados de normas regulamentadoras estejam com prazo de validade expirado.'
+      solutionSlug: 'fechaduras-eletromagneticas',
+      title: 'Fechaduras Eletromagnéticas em Almoxarifados e Áreas Críticas',
+      reason: 'Garantem travamento de alta resistência em depósitos de ferramentas, subestações e setores de matérias-primas com controle de abertura integrado às normas industriais.'
     }
   ],
   projectArchitecture: [
@@ -67,7 +66,7 @@ export const industriasSegment: SegmentContent = {
     },
     {
       question: 'O sistema de controle de acesso pode bloquear terceirizados com documentação de segurança vencida?',
-      answer: 'Sim. O software de gestão de acesso permite vincular o cadastro do colaborador terceiro às datas de validade da integração de segurança, do Atestado de Saúde Ocupacional (ASO) e de treinamentos de NR. Se algum desses documentos vencer, a catraca nega a passagem automaticamente até a devida regularização junto ao SESMT.'
+      answer: 'Sim. O sistema de controle de acesso permite vincular o cadastro do colaborador terceiro às datas de validade da integração de segurança, do Atestado de Saúde Ocupacional (ASO) e de treinamentos de NR. Se algum desses documentos vencer, a catraca nega a passagem automaticamente até a devida regularização junto ao SESMT.'
     },
     {
       question: 'Como funciona a integração do controle de acesso industrial com o sistema de incêndio?',
@@ -78,7 +77,7 @@ export const industriasSegment: SegmentContent = {
       answer: 'Essa segregação é indispensável para evitar atropelamentos e acidentes com empilhadeiras. Instalamos gradis de proteção física com cancelas automáticas exclusivas para caminhões e direcionamos todo o fluxo de motoristas e ajudantes para catracas de pedestres adjacentes com faixa de pedestres delimitada.'
     }
   ],
-  relatedSolutions: ['catracas', 'reconhecimento-facial', 'cancelas-e-acesso-veicular', 'software-de-gestao'],
+  relatedSolutions: ['catracas', 'reconhecimento-facial', 'cancelas-e-acesso-veicular', 'fechaduras-eletromagneticas'],
   relatedSegments: ['empresas-e-escritorios', 'condominios-comerciais'],
   whatsappContext: 'controle de acesso industrial em Curitiba e Região'
 };

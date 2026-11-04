@@ -67,7 +67,19 @@ export function PrivacidadePage() {
 
           <section className="space-y-3">
             <h2 className="text-base sm:text-lg font-bold text-slate-900">
-              3. Bases Legais do Tratamento (Art. 7º e Art. 11 da LGPD)
+              3. Cookies e Análise de Acesso
+            </h2>
+            <p>
+              O site utiliza o <strong>Google Analytics 4 (GA4)</strong> para medir visitas, volume de navegação e cliques de contato (WhatsApp e telefone). Os cookies de análise só são ativados depois do consentimento expresso do visitante no aviso inicial de cookies.
+            </p>
+            <p>
+              O visitante tem total liberdade para recusar a coleta no aviso de cookies ou apagar os cookies a qualquer momento nas configurações do seu navegador de internet. Os dados estatísticos são processados pelo Google sob padrões de segurança e confidencialidade. Este texto é informativo e não substitui a orientação de um profissional jurídico.
+            </p>
+          </section>
+
+          <section className="space-y-3">
+            <h2 className="text-base sm:text-lg font-bold text-slate-900">
+              4. Bases Legais do Tratamento (Art. 7º e Art. 11 da LGPD)
             </h2>
             <p>
               Todo tratamento de dados realizado pela Controle de Acesso Curitiba fundamenta-se nas hipóteses legais taxativas previstas na LGPD:
@@ -82,7 +94,7 @@ export function PrivacidadePage() {
 
           <section className="space-y-3">
             <h2 className="text-base sm:text-lg font-bold text-slate-900">
-              4. Dados Pessoais Sensíveis e Tratamento de Biometria
+              5. Dados Pessoais Sensíveis e Tratamento de Biometria
             </h2>
             <p>
               Conforme o Artigo 5º, inciso II da LGPD, o dado biométrico (impressão digital ou geometria facial) constitui <strong>dado pessoal sensível</strong>. Em todas as nossas instalações técnicas em Curitiba e RMC:
@@ -105,7 +117,7 @@ export function PrivacidadePage() {
 
           <section className="space-y-3">
             <h2 className="text-base sm:text-lg font-bold text-slate-900">
-              5. Direitos do Titular de Dados Pessoais
+              6. Direitos do Titular de Dados Pessoais
             </h2>
             <p>
               O titular dos dados pessoais tem o direito de obter da empresa, a qualquer momento e mediante requisição formal:
@@ -121,7 +133,7 @@ export function PrivacidadePage() {
 
           <section className="space-y-3">
             <h2 className="text-base sm:text-lg font-bold text-slate-900">
-              6. Encarregado de Proteção de Dados (DPO) e Contato
+              7. Encarregado de Proteção de Dados (DPO) e Contato
             </h2>
             <p>
               Para esclarecer dúvidas sobre esta Política de Privacidade, solicitar a exclusão de dados de contato ou exercer qualquer um dos seus direitos como titular, entre em contato através dos nossos canais de atendimento:

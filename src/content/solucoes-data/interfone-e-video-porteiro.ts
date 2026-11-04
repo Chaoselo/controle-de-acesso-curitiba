@@ -6,13 +6,12 @@ export const interfoneEVideoPorteiroSolution: SolutionContent = {
   seoTitle: 'Vídeo Porteiro e Interfone Curitiba | Instalação IP',
   metaDescription: 'Instalação de vídeo porteiro IP e interfones em Curitiba e região. Atendimento no celular e abertura remota de portas. Solicite seu orçamento técnico!',
   keyword: 'video porteiro e interfone Curitiba',
-  directAnswer: 'Os sistemas de interfonia e vídeo porteiros IP combinam comunicação de áudio e visualização de imagens para identificação e liberação remota de visitantes na entrada. Em Curitiba e Região Metropolitana, substituem interfones analógicos antigos por terminais modernos com atendimento no monitor interno ou diretamente no celular. A solução conta com saídas de relé independentes para portões e fechaduras, integrando-se a portarias remotas e rotinas residenciais seguras.',
-  // TODO: foto real
+  directAnswer: 'Os sistemas de interfonia e vídeo porteiros IP combinam comunicação de áudio e visualização de imagens para identificação e liberação remota de visitantes na entrada. Terminais modernos substituem interfones analógicos antigos, oferecendo comunicação nítida com atendimento no monitor interno ou diretamente no celular. A solução conta com saídas de relé independentes para portões e fechaduras, integrando-se a portarias remotas e rotinas residenciais seguras.',
   image: {
-    src: '/images/interfone-video-porteiro.webp',
-    alt: 'Painel externo de vídeo porteiro IP com câmera e leitor biométrico instalado em portaria em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/interfone-e-videoporteiro.webp',
+    alt: 'Monitor de vídeo porteiro interno ao lado de módulo externo com botão de chamada',
+    width: 1200,
+    height: 675
   },
   howItWorks: [
     'Interfone convencional versus vídeo porteiro: O interfone convencional transmite apenas áudio, impedindo confirmar visualmente quem solicita a entrada. O vídeo porteiro agrega câmera de alta resolução com ângulo aberto e visão noturna, permitindo visualizar quem está no portão antes de atender.',
@@ -103,7 +102,7 @@ export const interfoneEVideoPorteiroSolution: SolutionContent = {
       answer: 'A câmera deve ser ajustada para registrar estritamente a área frontal de aproximação do portão da edificação. O enquadramento excessivo da calçada pública ou a captação de portas e janelas de residências vizinhas deve ser evitado, respeitando a privacidade dos transeuntes e a conformidade com as regras da LGPD.'
     }
   ],
-  relatedSolutions: ['fechaduras-eletromagneticas', 'reconhecimento-facial', 'senha-e-teclado', 'software-de-gestao', 'biometria'],
+  relatedSolutions: ['fechaduras-eletromagneticas', 'reconhecimento-facial', 'senha-e-teclado', 'biometria'],
   relatedSegments: ['condominios-residenciais', 'residencias', 'condominios-comerciais', 'empresas-e-escritorios'],
   relatedCities: ['curitiba', 'campo-largo', 'pinhais', 'sao-jose-dos-pinhais'],
   whatsappContext: 'instalação de interfone e vídeo porteiro'

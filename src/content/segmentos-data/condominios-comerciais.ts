@@ -6,13 +6,12 @@ export const condominiosComerciaisSegment: SegmentContent = {
   seoTitle: 'Controle de Acesso para Condomínio Comercial Curitiba',
   metaDescription: 'Controle de acesso para edifícios corporativos e condomínios comerciais em Curitiba. Catracas, crachás e recepção ágil. Peça orçamento via WhatsApp!',
   keyword: 'controle de acesso para condominios comerciais em Curitiba',
-  directAnswer: 'O controle de acesso para edifícios comerciais e centros corporativos em Curitiba organiza o fluxo diário de condôminos, funcionários de empresas, clientes e prestadores de serviços temporários. Composto por catracas balcão de alto padrão, leitura facial ultrarrápida, totens de autoatendimento e chamada inteligente de elevadores quando compatível, o sistema reduz filas no saguão e preserva a confidencialidade de cada conjunto comercial.',
-  // TODO: foto real
+  directAnswer: 'O controle de acesso para edifícios comerciais e centros corporativos em Curitiba organiza o fluxo diário de condôminos, funcionários de empresas, clientes e prestadores de serviços temporários. Composto por catracas balcão em aço inox, leitura facial ágil, terminais de recepção e chamada inteligente de elevadores quando compatível, o sistema reduz filas no saguão e preserva a confidencialidade de cada conjunto comercial.',
   image: {
-    src: '/images/segmento-condominios-comerciais.webp',
-    alt: 'Catracas balcão de vidro em condomínio comercial corporativo em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-segmento-condominio-comercial.webp',
+    alt: 'Leitor biométrico com teclado instalado em porta de vidro de área comercial',
+    width: 1200,
+    height: 675
   },
   typicalProblems: [
     'Congestionamento severo e filas extensas de visitantes no saguão de entrada nos horários de início de expediente matutino, gerando atrasos recorrentes para reuniões e insatisfação geral.',
@@ -41,12 +40,12 @@ export const condominiosComerciaisSegment: SegmentContent = {
     {
       solutionSlug: 'cancelas-e-acesso-veicular',
       title: 'Cancelas Rápidas com Segregação Mensalista e Rotativo',
-      reason: 'Diferenciam com precisão automóveis cadastrados de proprietários por tag UHF de veículos de visitantes rotativos, integrando-se com total fluidez operacional a softwares de bilhetagem e automação de estacionamento tarifado em Curitiba.'
+      reason: 'Diferenciam com precisão automóveis cadastrados de proprietários por tag UHF de veículos de visitantes rotativos, integrando-se com total fluidez operacional a sistemas de bilhetagem e automação de estacionamento tarifado em Curitiba.'
     },
     {
-      solutionSlug: 'software-de-gestao',
-      title: 'Software de Gestão Multiempresas com Gestão de Andares',
-      reason: 'Segmenta permissões por conjunto comercial e andar, garantindo que o visitante de determinado escritório só tenha autorização expressa para liberar a catraca que dá acesso exclusivo àquele piso corporativo correspondente.'
+      solutionSlug: 'fechaduras-eletromagneticas',
+      title: 'Fechaduras Eletromagnéticas em Portas Estratégicas',
+      reason: 'Garantem travamento seguro e silencioso em portas de acesso aos pavimentos e áreas técnicas, integradas ao sistema de controle predial com liberação rápida e segura.'
     }
   ],
   projectArchitecture: [
@@ -59,11 +58,11 @@ export const condominiosComerciaisSegment: SegmentContent = {
   faqs: [
     {
       question: 'Como o sistema de controle de acesso lida com horários comerciais estendidos e finais de semana?',
-      answer: 'O software permite estabelecer matrizes horárias personalizadas por empresa ou perfil de usuário. Assim, funcionários comuns podem ter acesso liberado apenas de segunda a sexta das 07h00 às 20h00, enquanto diretores ou equipes de plantão têm permissão ininterrupta 24 horas por dia, com registro de qualquer tentativa fora do padrão.'
+      answer: 'O sistema permite estabelecer matrizes horárias personalizadas por empresa ou perfil de usuário. Assim, funcionários comuns podem ter acesso liberado apenas de segunda a sexta das 07h00 às 20h00, enquanto diretores ou equipes de plantão têm permissão ininterrupta 24 horas por dia, com registro de qualquer tentativa fora do padrão.'
     },
     {
       question: 'É possível pré-cadastrar visitantes para reuniões corporativas importantes em Curitiba?',
-      answer: 'Sim. Os gestores de cada conjunto comercial podem acessar uma interface web ou aplicativo móvel do software de acesso e cadastrar o nome e documento do visitante previamente. O convidado recebe um QR Code criptografado no e-mail ou WhatsApp para apresentar direto no leitor da catraca, sem enfrentar a fila do balcão de recepção.'
+      answer: 'Sim. Os gestores de cada conjunto comercial podem acessar a interface web ou aplicativo do sistema de acesso e cadastrar o nome e documento do visitante previamente. O convidado recebe um QR Code criptografado no e-mail ou WhatsApp para apresentar direto no leitor da catraca, sem enfrentar a fila do balcão de recepção.'
     },
     {
       question: 'O que acontece quando o visitante precisa sair do condomínio comercial?',
@@ -78,7 +77,7 @@ export const condominiosComerciaisSegment: SegmentContent = {
       answer: 'A administração predial obtém relatórios completos de contagem instantânea de pessoas presentes no edifício (fundamental para evacuação em incêndios), histórico de horários de entrada e saída por colaborador, registro fotográfico de visitantes e tentativas de acesso negadas com motivo detalhado.'
     }
   ],
-  relatedSolutions: ['catracas', 'reconhecimento-facial', 'cartao-e-tag-rfid', 'software-de-gestao'],
+  relatedSolutions: ['catracas', 'reconhecimento-facial', 'cartao-e-tag-rfid', 'fechaduras-eletromagneticas'],
   relatedSegments: ['empresas-e-escritorios', 'condominios-residenciais'],
   whatsappContext: 'controle de acesso para condomínio comercial em Curitiba'
 };

@@ -6,17 +6,16 @@ export const senhaETecladoSolution: SolutionContent = {
   seoTitle: 'Controle de Acesso por Senha Curitiba | Teclados Digitais',
   metaDescription: 'Instalação de teclados de controle de acesso e senhas digitais em Curitiba e região. Agilidade para portas e áreas restritas. Peça seu orçamento técnico!',
   keyword: 'controle de acesso por senha',
-  directAnswer: 'O controle de acesso por teclado numérico permite a liberação de portas e portões através da digitação de senhas eletrônicas personalizadas. Em Curitiba e Região Metropolitana, é uma alternativa prática e de baixo investimento para portas de consultórios, depósitos e áreas técnicas, dispensando o porte constante de chaves físicas. O sistema pode operar de maneira autônoma ou conectado a controladoras em rede, gerando históricos de passagens conforme a configuração adotada.',
-  // TODO: foto real
+  directAnswer: 'O controle de acesso por teclado numérico permite a liberação de portas e portões através da digitação de senhas eletrônicas personalizadas. Trata-se de uma alternativa funcional e acessível para portas de consultórios, depósitos e áreas técnicas, dispensando o porte constante de chaves físicas. O sistema pode operar de maneira autônoma ou conectado a controladoras em rede, gerando históricos de passagens conforme a configuração adotada.',
   image: {
-    src: '/images/senha-teclado-acesso.webp',
-    alt: 'Teclado de controle de acesso digital por senha com iluminação embutida instalado em porta em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-senha-e-teclado.webp',
+    alt: 'Dedo digitando senha em teclado touch instalado em porta de madeira',
+    width: 1200,
+    height: 675
   },
   howItWorks: [
     'Digitação na matriz numérica e leitura dos dígitos: O usuário pressiona as teclas de silicone, botões metálicos antivandalismo ou superfície capacitiva de vidro. A cada acionamento, a placa processa o dígito inserido e emite um retorno sonoro ou luminoso confirmando a recepção.',
-    'Diferenciação entre senha individual e senha única coletiva: Com senhas individuais, cada usuário possui seu próprio código no software, permitindo saber quem exatamente destravou a porta. Com senha única compartilhada por todos, o sistema apenas registra a abertura, perdendo a rastreabilidade sobre a identidade de quem acessou.',
+    'Diferenciação entre senha individual e senha única coletiva: Com senhas individuais, cada usuário possui seu próprio código no sistema, permitindo saber quem exatamente destravou a porta. Com senha única compartilhada por todos, o sistema apenas registra a abertura, perdendo a rastreabilidade sobre a identidade de quem acessou.',
     'Temporização de segurança e bloqueio por tentativas sucessivas: Para conter adivinhações por força bruta, a controladora monitora erros sequenciais de digitação. Ao atingir um limite pré-definido (geralmente de 3 a 5 erros seguidos), o teclado bloqueia novas entradas temporariamente por alguns minutos.',
     'Recurso de senha de coação para emergências veladas: Em modelos que contam com essa função, é possível cadastrar um código para situações de perigo iminente. Ao digitar essa combinação sob coação, o equipamento abre a fechadura normalmente, mas envia silenciosamente um alerta à portaria ou à empresa de monitoramento.',
     'Acionamento de relé e integração multifatorial: Validada a combinação digitada, o microprocessador comuta seu relé para desenergizar a fechadura eletroímã ou emitir pulso para um fecho elétrico. Em setores críticos, o sistema pode exigir autenticação combinada de senha mais cartão RFID para liberar o vão.'
@@ -29,7 +28,7 @@ export const senhaETecladoSolution: SolutionContent = {
   ],
   advantages: [
     'Dispensa o porte de credenciais físicas: Os usuários autorizados não precisam carregar chaveiros, crachás plásticos ou chaves de latão que podem ser esquecidas ou perdidas fora do prédio.',
-    'Alteração simples e rápida de combinações: Caso um funcionário seja desligado ou ocorra suspeita de vazamento de código, a senha pode ser redefinida rapidamente na própria placa ou pelo software.',
+    'Alteração simples e rápida de combinações: Caso um funcionário seja desligado ou ocorra suspeita de vazamento de código, a senha pode ser redefinida rapidamente na própria placa ou pelo sistema.',
     'Baixo investimento em equipamentos: Teclados numéricos autônomos e escravos representam uma das opções de menor custo de hardware no segmento de segurança física.',
     'Dimensões compactas para esquadrias estreitas: Modelos de perfil estreito (slim) podem ser fixados diretamente sobre montantes de alumínio e batentes com espaço lateral limitado.',
     'Possibilidade de dupla autenticação: Teclados que integram leitor de cartão permitem elevar o padrão de proteção em áreas críticas, exigindo senha e crachá simultaneamente.'
@@ -102,7 +101,7 @@ export const senhaETecladoSolution: SolutionContent = {
       answer: 'Sim, desde que seja especificado um equipamento com índice de proteção apropriado, como certificação IP65 ou IP66, dotado de carcaça metálica selada e resina sobre os circuitos eletrônicos. Modelos sem proteção contra água devem ser restritos estritamente a ambientes internos protegidos de umidade.'
     }
   ],
-  relatedSolutions: ['fechaduras-eletromagneticas', 'biometria', 'cartao-e-tag-rfid', 'software-de-gestao'],
+  relatedSolutions: ['fechaduras-eletromagneticas', 'biometria', 'cartao-e-tag-rfid', 'reconhecimento-facial'],
   relatedSegments: ['empresas-e-escritorios', 'condominios-residenciais', 'clinicas-e-hospitais', 'residencias'],
   relatedCities: ['curitiba', 'pinhais', 'sao-jose-dos-pinhais', 'colombo'],
   whatsappContext: 'controle de acesso por senha e teclado'

@@ -13,7 +13,7 @@ export const quantoCustaContent: BlogPostContent = {
     {
       heading: 'Por Que o Custo de Controle de Acesso Não é Padronizado?',
       paragraphs: [
-        'Ao pesquisar sobre a contratação de controle de acesso para um condomínio residencial, torre comercial ou indústria na Grande Curitiba, a primeira dúvida dos gestores costuma ser o valor do investimento. No entanto, diferentemente da compra de um eletrodoméstico ou produto de consumo direto, a engenharia de acesso físico envolve um conjunto integrado de hardware, software, infraestrutura elétrica e adequações mecânicas.',
+        'Ao pesquisar sobre a contratação de controle de acesso para um condomínio residencial, torre comercial ou indústria na Grande Curitiba, a primeira dúvida dos gestores costuma ser o valor do investimento. No entanto, diferentemente da compra de um eletrodoméstico ou produto de consumo direto, a engenharia de acesso físico envolve um conjunto integrado de equipamentos, controladoras, infraestrutura elétrica e adequações mecânicas.',
         'Cada edificação apresenta particularidades de caixilharia, distância entre a guarita e os portões de acesso, fluxo de pedestres nos horários de pico e requisitos normativos de rota de fuga. Portanto, para compreender a formação do custo de um projeto, é essencial analisar os pilares técnicos que compõem o dimensionamento orçamentário.',
         'A seguir, detalhamos os principais fatores que influenciam o investimento, permitindo que síndicos e administradores comparem propostas com clareza técnica e transparência.'
       ],
@@ -52,11 +52,11 @@ export const quantoCustaContent: BlogPostContent = {
       ]
     },
     {
-      heading: 'Softwares de Gestão, Licenciamento e Integração',
+      heading: 'Plataformas de Controle, Licenciamento e Integração',
       paragraphs: [
-        'Outro fator que compõe o investimento é a plataforma de software encarregada de processar as permissões, emitir relatórios de auditoria e gerenciar o cadastro de moradores, funcionários e visitantes.',
-        'Existem sistemas autônomos que operam localmente na própria controladora sem necessidade de mensalidades, ideais para pequenos escritórios com poucas portas. Em contrapartida, condomínios com portaria remota ou grandes empresas exigem plataformas cliente-servidor ou sistemas em nuvem com aplicativos dedicados para emissão de convites por QR Code, o que pode envolver licenças de uso por ponto de acesso ou taxas de manutenção de software.',
-        'A necessidade de integração com sistemas preexistentes — como elevadores inteligentes, cancelas veiculares de alta velocidade ou sistemas de alarme de incêndio — também requer parametrização de engenharia de software especializada.'
+        'Outro fator que compõe o investimento é a plataforma encarregada de processar as permissões, emitir relatórios de auditoria e gerenciar o cadastro de moradores, funcionários e visitantes.',
+        'Existem sistemas autônomos que operam localmente na própria controladora sem necessidade de mensalidades, ideais para pequenos escritórios com poucas portas. Em contrapartida, condomínios com portaria remota ou grandes empresas utilizam plataformas cliente-servidor ou sistemas em nuvem com aplicativos dedicados para emissão de convites por QR Code, o que pode envolver licenças operacionais por ponto de acesso.',
+        'A necessidade de integração com sistemas preexistentes — como elevadores inteligentes, cancelas veiculares de alta velocidade ou sistemas de alarme de incêndio — também requer parametrização de engenharia especializada.'
       ],
       subsections: [
         {

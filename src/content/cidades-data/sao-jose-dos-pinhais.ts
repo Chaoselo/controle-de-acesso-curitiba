@@ -7,7 +7,7 @@ export const saoJoseDosPinhaisContent: CityContent = {
   seoTitle: 'Controle de Acesso em São José dos Pinhais | Catracas',
   metaDescription: 'Soluções de controle de acesso em São José dos Pinhais. Biometria, reconhecimento facial e cancelas para empresas e condomínios. Solicite orçamento!',
   keyword: 'controle de acesso em São José dos Pinhais',
-  directAnswer: 'Controle de acesso em São José dos Pinhais com projetos especializados para o polo automotivo, galpões logísticos do entorno aeroportuário, centros comerciais e condomínios residenciais fechados. Fornecemos catracas para alto fluxo com braço antipânico, cancelas automáticas industriais para veículos leves e pesados, fechaduras eletromagnéticas e controle biométrico facial integrado a softwares de gestão corporativa com registro auditável.',
+  directAnswer: 'Controle de acesso em São José dos Pinhais com projetos especializados para o polo automotivo, galpões logísticos do entorno aeroportuário, centros comerciais e condomínios residenciais fechados. Fornecemos catracas para alto fluxo com braço antipânico, cancelas automáticas industriais para veículos leves e pesados, fechaduras eletromagnéticas e controle biométrico facial integrado ao sistema com registro auditável.',
   // TODO: foto real
   image: {
     src: '/images/cidade-sao-jose-dos-pinhais.webp',
@@ -21,7 +21,7 @@ export const saoJoseDosPinhaisContent: CityContent = {
     'Baterias de catracas eletrônicas tipo pedestal em aço inoxidável 304 com leitores biométricos faciais para portarias fabris e montadoras automotivas em São José dos Pinhais.',
     'Sistemas de tag veicular UHF para condomínios horizontais e frotas de empresas, permitindo liberação de portões sem necessidade de parada ou acionamento de controle remoto manual.',
     'Fechaduras eletroímã com força de retenção de até 300 kgf para eclusas de pedestres em recepções corporativas, salas técnicas de telecomunicações e portarias residenciais.',
-    'Software de gestão de acessos com módulo de visitantes para cadastro ágil de motoristas e prestadores de serviço com emissão de crachás provisórios ou QR Codes de acesso temporário.'
+    'Sistema de controle de acesso com módulo de visitantes para cadastro ágil de motoristas e prestadores de serviço com emissão de crachás provisórios ou QR Codes de acesso temporário.'
   ],
   serviceLogistics: 'Com deslocamento direto pelas principais rodovias de ligação com Curitiba (Avenida das Torres, BR-277 e BR-376), nossas equipes técnicas atendem empresas, indústrias e condomínios em São José dos Pinhais para visitas de orçamento, instalações completas de cabeamento e chamados de manutenção preventiva e corretiva com peças de reposição em estoque.',
   faqs: [

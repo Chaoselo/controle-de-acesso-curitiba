@@ -3,6 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-051KZQQR0T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      // Não enviar dados de desenvolvimento nem de prévias de deploy
+      var h = location.hostname;
+      if (h === 'localhost' || h === '127.0.0.1' || /--.+\.netlify\.app$/.test(h)) {
+        window['ga-disable-G-051KZQQR0T'] = true;
+      }
+
+      // Consent Mode: tudo negado até o visitante aceitar os cookies
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+
+      // Se o visitante já aceitou em uma visita anterior, libera a análise de imediato
+      try {
+        if (localStorage.getItem('cac_cookie_consent') === 'granted') {
+          gtag('consent', 'update', { analytics_storage: 'granted' });
+        }
+      } catch (e) {}
+
+      gtag('js', new Date());
+      gtag('config', 'G-051KZQQR0T');
+    </script>
     <title>Controle de Acesso em Curitiba | Instalação e Manutenção</title>
     <meta name="description" content="Especialistas em instalação e manutenção de controle de acesso em Curitiba e Região Metropolitana. Biometria, reconhecimento facial, catracas e cancelas. Peça seu orçamento!" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />

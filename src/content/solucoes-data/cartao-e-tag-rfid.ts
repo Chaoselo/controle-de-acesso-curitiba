@@ -6,13 +6,12 @@ export const cartaoETagRfidSolution: SolutionContent = {
   seoTitle: 'Controle de Acesso por Cartão e RFID Curitiba | Crachás',
   metaDescription: 'Instalação de controle de acesso por cartão de proximidade e tags RFID em Curitiba e região. Segurança e controle de crachás. Solicite seu orçamento agora!',
   keyword: 'controle de acesso por cartao de proximidade',
-  directAnswer: 'O controle de acesso por cartões inteligentes e tags de radiofrequência (RFID) permite a liberação ágil de passagens por aproximação sem contato mecânico. Em Curitiba e Região Metropolitana, a tecnologia é amplamente utilizada em crachás corporativos e condomínios que demandam credenciais econômicas para colaboradores e prestadores. O sistema possibilita o bloqueio imediato de itens extraviados e auditoria de eventos conforme as regras configuradas na controladora predial.',
-  // TODO: foto real
+  directAnswer: 'O controle de acesso por cartões inteligentes e tags de radiofrequência (RFID) permite a liberação ágil de passagens por aproximação sem contato mecânico. O modelo é amplamente utilizado em crachás corporativos e condomínios que demandam credenciais práticas e econômicas para colaboradores e prestadores. O sistema possibilita o bloqueio imediato de itens extraviados e auditoria de eventos conforme as regras configuradas na controladora predial.',
   image: {
-    src: '/images/cartao-tag-rfid.webp',
-    alt: 'Cartões inteligentes e chaveiros de proximidade RFID para controle de acesso corporativo e condominial em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-tag.webp',
+    alt: 'Mão aproximando uma tag de proximidade de um leitor com teclado numérico',
+    width: 1200,
+    height: 675
   },
   howItWorks: [
     'Acoplamento eletromagnético por indução passiva: A antena do leitor gera um campo constante. Ao aproximar o cartão ou chaveiro a poucos centímetros, a bobina interna da credencial capta essa energia por indução magnética, alimentando o microchip sem necessidade de baterias.',
@@ -91,7 +90,7 @@ export const cartaoETagRfidSolution: SolutionContent = {
     },
     {
       question: 'O que deve ser feito imediatamente caso um morador perca o seu crachá?',
-      answer: 'A administração ou o porteiro deve acessar o software de controle e inativar o número específico daquela credencial no banco de dados. A partir da exclusão ou bloqueio na controladora, o cartão torna-se inoperante em todos os leitores do condomínio, mesmo que alguém tente utilizá-lo na entrada principal.'
+      answer: 'A administração ou o porteiro deve acessar o painel do sistema de controle e inativar o número específico daquela credencial no banco de dados. A partir da exclusão ou bloqueio na controladora, o cartão torna-se inoperante em todos os leitores do condomínio, mesmo que alguém tente utilizá-lo na entrada principal.'
     },
     {
       question: 'Qual a diferença entre as comunicações Wiegand e OSDP entre leitor e controladora?',

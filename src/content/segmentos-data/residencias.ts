@@ -7,12 +7,11 @@ export const residenciasSegment: SegmentContent = {
   metaDescription: 'Fechaduras digitais, vídeo porteiros e controle de acesso residencial em Curitiba. Praticidade e segurança para sua família. Solicite orçamento!',
   keyword: 'controle de acesso para residencias em Curitiba',
   directAnswer: 'O controle de acesso residencial para casas térreas, sobrados e condomínios fechados horizontais em Curitiba combina fechaduras digitais biométricas, vídeo porteiros IP conectados a smartphone e automação de portões. O sistema permite que a família dispense totalmente o uso de molhos de chaves físicas pesadas, atenda encomendas e entregas remotamente à distância pelo celular e libere prestadores de serviço com senhas temporárias seguras.',
-  // TODO: foto real
   image: {
-    src: '/images/segmento-residencias.webp',
-    alt: 'Fechadura digital biométrica e vídeo porteiro instalados em residência em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-de-acesso-residencial.webp',
+    alt: 'Painel externo de interfone com botões de chamada instalado em muro de pedra ao lado de um portão',
+    width: 1200,
+    height: 675
   },
   typicalProblems: [
     'Esquecimento recorrente ou perda de chaves de metal convencionais na rua ou no trabalho, exigindo serviços caros de chaveiro de plantão e substituição contínua de miolos de fechaduras.',

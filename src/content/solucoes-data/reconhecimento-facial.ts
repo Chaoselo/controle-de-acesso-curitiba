@@ -6,13 +6,12 @@ export const reconhecimentoFacialSolution: SolutionContent = {
   seoTitle: 'Controle de Acesso Facial em Curitiba | Terminal Touchless',
   metaDescription: 'Instalação de reconhecimento facial para condomínios e empresas em Curitiba e RMC. Terminais touchless com suporte local. Solicite seu orçamento técnico!',
   keyword: 'controle de acesso facial Curitiba',
-  directAnswer: 'O controle de acesso por reconhecimento facial identifica a geometria do rosto de pedestres para autorizar a passagem sem contato mecânico com o equipamento. Em Curitiba e Região Metropolitana, é uma solução muito procurada por condomínios e edifícios comerciais que buscam agilidade na portaria social e redução do manuseio de crachás ou chaves físicas. O sistema compara a leitura atual com modelos matemáticos previamente cadastrados, mantendo registros de auditoria em conformidade com as rotinas de segurança local.',
-  // TODO: foto real
+  directAnswer: 'O controle de acesso por reconhecimento facial identifica a geometria do rosto de pedestres para autorizar a passagem sem contato mecânico com o equipamento. Essa tecnologia é bastante procurada por condomínios e edifícios comerciais que buscam agilidade na portaria social e redução do manuseio de crachás ou chaves físicas. O sistema compara a leitura atual com modelos matemáticos previamente cadastrados, mantendo registros de auditoria em conformidade com as rotinas de segurança local.',
   image: {
-    src: '/images/reconhecimento-facial.webp',
-    alt: 'Terminal de controle de acesso por reconhecimento facial instalado em entrada de condomínio em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-facial.webp',
+    alt: 'Terminal de reconhecimento facial instalado em porta de vidro, com pessoa diante da câmera',
+    width: 1200,
+    height: 675
   },
   howItWorks: [
     'Detecção e captura por sensores ópticos duplos: Ao se aproximar, o usuário entra no campo de visão das lentes. A maioria dos modelos corporativos conta com câmera visível e sensor infravermelho, capturando traços faciais mesmo no escuro.',
@@ -103,7 +102,7 @@ export const reconhecimentoFacialSolution: SolutionContent = {
       answer: 'Em geral, alterações cosméticas rotineiras como uso de óculos transparentes de grau, maquiagem habitual ou mudanças na barba não impedem o reconhecimento. Apenas adereços que ocultem áreas essenciais da face, como óculos escuros com lentes espelhadas ou bonés muito rebaixados, podem exigir remoção pontual para liberação.'
     }
   ],
-  relatedSolutions: ['biometria', 'catracas', 'fechaduras-eletromagneticas', 'software-de-gestao'],
+  relatedSolutions: ['biometria', 'catracas', 'fechaduras-eletromagneticas', 'cartao-e-tag-rfid'],
   relatedSegments: ['condominios-residenciais', 'condominios-comerciais', 'clinicas-e-hospitais', 'academias'],
   relatedCities: ['curitiba', 'pinhais', 'sao-jose-dos-pinhais', 'araucaria'],
   whatsappContext: 'controle de acesso por reconhecimento facial'

@@ -6,13 +6,12 @@ export const fechadurasEletromagneticasSolution: SolutionContent = {
   seoTitle: 'Fechaduras Eletromagnéticas Curitiba | Eletroímã para Portas',
   metaDescription: 'Instalação de fechaduras eletromagnéticas e eletroímãs em Curitiba e região. Travamento silencioso para vidro, madeira e metal. Peça seu orçamento técnico!',
   keyword: 'fechadura eletromagnetica Curitiba',
-  directAnswer: 'A fechadura eletromagnética utiliza atração eletromagnética contínua entre uma bobina energizada e uma placa de atraque metálica para manter portas firmemente travadas. Em Curitiba e Região Metropolitana, é uma solução muito aplicada em portas de vidro temperado, caixilhos de alumínio e madeira em condomínios e consultórios. Por não possuir engrenagens mecânicas móveis que sofram desgaste, oferece alta durabilidade, exigindo correta especificação de nobreak e suportes adequados.',
-  // TODO: foto real
+  directAnswer: 'A fechadura eletromagnética utiliza atração eletromagnética contínua entre uma bobina energizada e uma placa de atraque metálica para manter portas firmemente travadas. O sistema tem grande aplicação em portas de vidro temperado, caixilhos de alumínio e madeira em condomínios e consultórios. Por não possuir engrenagens mecânicas móveis que sofram desgaste, oferece alta durabilidade, exigindo correta especificação de nobreak e suportes adequados.',
   image: {
-    src: '/images/fechaduras-eletromagneticas.webp',
-    alt: 'Fechadura eletromagnética eletroímã com suporte instalada em porta de vidro em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/fechadura-eletromagnetica.webp',
+    alt: 'Fechadura eletromagnética com suporte instalada em porta de vidro',
+    width: 1200,
+    height: 675
   },
   howItWorks: [
     'Conceito fail-safe versus fechaduras mecânicas fail-secure: O eletroímã opera sob o princípio fail-safe, necessitando de corrente contínua para permanecer travado; se a energia for cortada, ele libera imediatamente a passagem. Fechaduras elétricas com lingueta operam em geral como fail-secure, permanecendo trancadas sem eletricidade, o que exige chave física para saída em emergências.',

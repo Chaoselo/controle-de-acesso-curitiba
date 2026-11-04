@@ -7,12 +7,11 @@ export const clinicasEHospitaisSegment: SegmentContent = {
   metaDescription: 'Acesso seguro e touchless para ambientes de saúde em Curitiba. Fechaduras de emergência, leitores faciais e proteção de farmácias. Orçamento!',
   keyword: 'controle de acesso para clinicas e hospitais em Curitiba',
   directAnswer: 'O controle de acesso para clínicas médicas, laboratórios e hospitais em Curitiba estabelece barreiras sanitárias e de segurança física para proteger pacientes e equipes de saúde. Com tecnologia de autenticação totalmente sem contato físico (touchless), botoeiras infravermelhas e intertravamento de portas em farmácias, centros cirúrgicos e UTIs, o sistema garante conformidade rigorosa com normas da Anvisa e regras da LGPD sobre dados de saúde.',
-  // TODO: foto real
   image: {
-    src: '/images/segmento-clinicas-hospitais.webp',
-    alt: 'Porta hospitalar com fechadura eletromagnética e acionamento touchless sem toque em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-segmento-clinicas-e-hospitais.webp',
+    alt: 'Leitor de acesso com digital e teclado na parede de um corredor hospitalar',
+    width: 1200,
+    height: 675
   },
   typicalProblems: [
     'Risco contínuo de contaminação cruzada biológica pelo toque constante de médicos, enfermeiros e pacientes em maçanetas tradicionais, teclados numéricos e sensores de impressão digital não higienizados periodicamente.',
@@ -44,9 +43,9 @@ export const clinicasEHospitaisSegment: SegmentContent = {
       reason: 'Permitem controle elegante de fluxo na recepção principal e corredores de acesso a enfermarias, abrindo portões com vão de noventa centímetros para passagem suave de cadeirantes e macas hospitalares com comodidade.'
     },
     {
-      solutionSlug: 'software-de-gestao',
-      title: 'Software de Acesso com Níveis Hospitalares e Gestão de Alas',
-      reason: 'Segmenta permissões por perfil assistencial e turno, registrando cada abertura na farmácia central ou almoxarifado em trilhas de auditoria criptografadas em conformidade com as diretrizes da Anvisa e comitês de segurança.'
+      solutionSlug: 'biometria',
+      title: 'Leitores Biométricos em Farmácias e Áreas Críticas',
+      reason: 'Garantem autenticação intransferível em ambientes restritos como almoxarifados de medicamentos e farmácia hospitalar, assegurando registro cronológico e auditoria rigorosa de cada abertura.'
     }
   ],
   projectArchitecture: [
@@ -75,10 +74,10 @@ export const clinicasEHospitaisSegment: SegmentContent = {
     },
     {
       question: 'Como é controlado o acesso de acompanhantes de pacientes internados?',
-      answer: 'Na recepção de internação, o acompanhante recebe uma pulseira RFID descartável ou cartão de aproximação temporário vinculado estritamente ao leito do paciente e ao horário estabelecido para visitas médicas. Ao término do período ou na alta hospitalar, a credencial é invalidada no software.'
+      answer: 'Na recepção de internação, o acompanhante recebe uma pulseira RFID descartável ou cartão de aproximação temporário vinculado estritamente ao leito do paciente e ao horário estabelecido para visitas médicas. Ao término do período ou na alta hospitalar, a credencial é invalidada no sistema.'
     }
   ],
-  relatedSolutions: ['reconhecimento-facial', 'fechaduras-eletromagneticas', 'catracas', 'software-de-gestao'],
+  relatedSolutions: ['reconhecimento-facial', 'fechaduras-eletromagneticas', 'catracas', 'biometria'],
   relatedSegments: ['empresas-e-escritorios', 'condominios-comerciais'],
   whatsappContext: 'controle de acesso para clínica ou hospital em Curitiba'
 };

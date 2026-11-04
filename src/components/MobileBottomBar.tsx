@@ -2,6 +2,7 @@ import { Phone, MessageSquare } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { siteConfig } from '../config/site';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
+import { trackPhoneClick } from '../lib/analytics';
 
 interface MobileBottomBarProps {
   context?: string;
@@ -30,6 +31,7 @@ export function MobileBottomBar({ context = 'barra fixa mobile' }: MobileBottomB
 
         <a
           href={`tel:${siteConfig.phoneRaw}`}
+          onClick={() => trackPhoneClick(location.pathname)}
           className="flex items-center justify-center gap-1.5 px-2 py-2 bg-petroleum hover:bg-slate-900 text-white rounded font-semibold text-xs transition-colors shadow-sm whitespace-nowrap"
         >
           <Phone className="w-4 h-4 text-sky-400" aria-hidden="true" />

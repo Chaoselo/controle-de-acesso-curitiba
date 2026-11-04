@@ -1,45 +1,59 @@
 /**
- * Gerenciamento opcional de GA4 com consentimento de cookies
+ * Gerenciamento de eventos do Google Analytics 4 (GA4) com Consent Mode
+ * O script principal do GA4 (ID G-051KZQQR0T) é carregado exclusivamente pelo index.html.
  */
 
-const GA_ID = typeof import.meta !== 'undefined' ? (import.meta.env?.VITE_GA_ID as string | undefined) : undefined;
-const CONSENT_KEY = 'cac_cookie_consent';
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
+    [key: string]: unknown;
+  }
+}
+
+export const CONSENT_KEY = 'cac_cookie_consent';
 
 export function getCookieConsent(): 'granted' | 'denied' | null {
   if (typeof window === 'undefined') return null;
-  return localStorage.getItem(CONSENT_KEY) as 'granted' | 'denied' | null;
+  try {
+    return localStorage.getItem(CONSENT_KEY) as 'granted' | 'denied' | null;
+  } catch (e) {
+    return null;
+  }
 }
 
 export function setCookieConsent(status: 'granted' | 'denied'): void {
   if (typeof window === 'undefined') return;
-  localStorage.setItem(CONSENT_KEY, status);
-  if (status === 'granted') {
-    initGA4();
+  try {
+    localStorage.setItem(CONSENT_KEY, status);
+  } catch (e) {}
+
+  if (typeof window.gtag === 'function') {
+    window.gtag('consent', 'update', {
+      analytics_storage: status
+    });
   }
 }
 
-export function initGA4(): void {
-  if (typeof window === 'undefined' || !GA_ID) return;
-  if (getCookieConsent() !== 'granted') return;
-
-  // Evita injeção duplicada
-  if (document.getElementById('ga-script')) return;
-
-  const script = document.createElement('script');
-  script.id = 'ga-script';
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  document.head.appendChild(script);
-
-  const win = window as unknown as { dataLayer: unknown[]; gtag: (...args: unknown[]) => void };
-  win.dataLayer = win.dataLayer || [];
-  function gtag(...args: unknown[]) {
-    win.dataLayer.push(args);
+/**
+ * Dispara evento de analytics GA4 ao clicar em botões e links de WhatsApp
+ */
+export function trackWhatsAppClick(contexto: string, pagePath?: string): void {
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', 'whatsapp_click', {
+      page_path: pagePath || window.location.pathname,
+      link_context: contexto
+    });
   }
-  win.gtag = gtag;
+}
 
-  gtag('js', new Date());
-  gtag('config', GA_ID, {
-    anonymize_ip: true,
-  });
+/**
+ * Dispara evento de analytics GA4 ao clicar em links de telefone (tel:)
+ */
+export function trackPhoneClick(pagePath?: string): void {
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', 'phone_click', {
+      page_path: pagePath || window.location.pathname
+    });
+  }
 }

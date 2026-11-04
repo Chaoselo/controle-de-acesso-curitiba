@@ -21,7 +21,7 @@ export const colomboContent: CityContent = {
     'Cancelas veiculares automáticas com tags adesivas UHF no para-brisa para garagens de condomínios residenciais de médio e grande porte em Colombo.',
     'Fechaduras eletromagnéticas de 150 kgf a 300 kgf em portas de vidro ou madeira, integradas a botoeiras sem toque e no-breaks senoidais para dias chuvosos.',
     'Terminais de reconhecimento facial touchless com inteligência artificial para liberação rápida de moradores e colaboradores sem risco de perda de chaves.',
-    'Software de gestão de controle de acesso para emissão de relatórios de entrada e saída, controle de visitantes e restrição de horários de prestadores.'
+    'Sistema de controle de acesso para emissão de relatórios de entrada e saída, controle de visitantes e restrição de horários de prestadores.'
   ],
   serviceLogistics: 'Com rotas técnicas contínuas conectando Curitiba a Colombo pela Estrada da Ribeira, Rodovia da Uva e Contorno Norte, nossos técnicos realizam visitas de avaliação sem custo e prestam suporte corretivo ágil em todo o território municipal, com reposição de peças de desgaste frequente.',
   faqs: [

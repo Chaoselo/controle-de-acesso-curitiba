@@ -49,6 +49,14 @@ O projeto está configurado via `netlify.toml` para build automático a partir d
 
 ---
 
+## Google Analytics 4 (GA4)
+
+- O ID do Google Analytics (G-051KZQQR0T) está no index.html.
+- Opera integrado com Consent Mode (`analytics_storage`), ativado após concordância do visitante no aviso de cookies (`CookieBanner.tsx`).
+- Nenhuma variável de ambiente `VITE_GA_ID` é necessária.
+
+---
+
 ## Onde Editar o Conteúdo
 
 Todo o conteúdo textual e estrutural está isolado em arquivos de dados para permitir edições sem alterar o layout dos componentes:
@@ -60,7 +68,7 @@ Todo o conteúdo textual e estrutural está isolado em arquivos de dados para pe
 - **Segmentos de Mercado:**
   `src/content/segmentos.ts` (condomínios, indústrias, empresas, clínicas, etc.).
 - **Serviços Oferecidos:**
-  `src/content/servicos.ts` (instalação, manutenção, locação, modernização).
+  `src/content/servicos.ts` (instalação e projeto, manutenção, locação).
 - **Cidades da Região Metropolitana:**
   `src/content/cidades.ts` (Curitiba e os 10 municípios da RMC).
 - **Perguntas Frequentes (FAQ):**

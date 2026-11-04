@@ -5,6 +5,7 @@ import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { siteConfig, isFieldFilled } from '../config/site';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
+import { trackPhoneClick } from '../lib/analytics';
 
 export function ContatoPage() {
   return (
@@ -81,6 +82,7 @@ export function ContatoPage() {
             <div>
               <a
                 href={`tel:${siteConfig.phoneRaw}`}
+                onClick={() => trackPhoneClick('/contato/')}
                 className="w-full flex items-center justify-center gap-2 py-3 bg-petroleum hover:bg-slate-900 text-white rounded font-bold text-xs transition-colors shadow-sm"
               >
                 <Phone className="w-4 h-4 text-sky-400" />

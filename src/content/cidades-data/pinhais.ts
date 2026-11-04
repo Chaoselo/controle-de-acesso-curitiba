@@ -21,7 +21,7 @@ export const pinhaisContent: CityContent = {
     'Cancelas veiculares automáticas com tags adesivas UHF no para-brisa para entrada de moradores em condomínios horizontais fechados, eliminando filas na via de acesso.',
     'Torniquetes industriais de altura total para pátios logísticos e indústrias, impedindo entrada não autorizada por cima ou sob o bloqueio perimetral com fechamento mecânico seguro.',
     'Fechaduras eletromagnéticas de 150 a 300 kgf com suportes ajustáveis e botoeiras de emergência para portas de acesso social, guaritas e eclusas de pedestres.',
-    'Terminais de reconhecimento facial com tela touchless integrados a software de gestão para registro de horários e liberação automática de prestadores de serviço e visitantes.'
+    'Terminais de reconhecimento facial com tela touchless integrados ao sistema para registro de horários e liberação automática de prestadores de serviço e visitantes.'
   ],
   serviceLogistics: 'Devido à proximidade direta com Curitiba e fácil acesso pelas vias de ligação metropolitana (como a Rodovia João Leopoldo Jacomel e a Linha Verde), nossa equipe técnica presta atendimento ágil em Pinhais para visitas de avaliação, implantação de novos projetos de cabeamento e manutenção corretiva emergencial de cancelas ou catracas com estoque de peças a pronta entrega.',
   faqs: [

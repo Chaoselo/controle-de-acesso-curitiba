@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageSquare, Phone } from 'lucide-react';
 import { siteConfig } from '../config/site';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
+import { trackPhoneClick } from '../lib/analytics';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -56,7 +57,7 @@ export function Header() {
         {/* Zone 3: 1 primary action */}
         <div className="hidden sm:flex items-center gap-3 shrink-0">
           <a
-            href={whatsappLink('orçamento pelo menu')}
+            href={whatsappLink('controle de acesso (ainda não sei qual solução escolher)')}
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleWhatsAppAction}
@@ -110,7 +111,7 @@ export function Header() {
           
           <div className="mt-4 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
             <a
-              href={whatsappLink('orçamento pelo menu mobile')}
+              href={whatsappLink('controle de acesso (ainda não sei qual solução escolher)')}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {
@@ -124,6 +125,7 @@ export function Header() {
             </a>
             <a
               href={`tel:${siteConfig.phoneRaw}`}
+              onClick={() => trackPhoneClick(location.pathname)}
               className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-md"
             >
               <Phone className="w-4 h-4" aria-hidden="true" />

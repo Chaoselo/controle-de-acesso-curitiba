@@ -39,7 +39,7 @@ export const fazendaRioGrandeContent: CityContent = {
     },
     {
       question: 'É possível cadastrar visitantes e entregadores de forma temporária no sistema?',
-      answer: 'Sim, o software de gestão permite emitir convites digitais com QR Code ou senhas numéricas temporárias com validade programada para um dia ou horário específico, aumentando o controle e a segurança perimetral do condomínio.'
+      answer: 'Sim, o sistema de controle de acesso permite emitir convites digitais com QR Code ou senhas numéricas temporárias com validade programada para um dia ou horário específico, aumentando o controle e a segurança perimetral do condomínio.'
     }
   ],
   whatsappContext: 'controle de acesso em Fazenda Rio Grande'

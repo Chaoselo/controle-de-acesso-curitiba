@@ -6,13 +6,12 @@ export const empresasEEscritoriosSegment: SegmentContent = {
   seoTitle: 'Controle de Acesso para Empresas em Curitiba | Escritórios',
   metaDescription: 'Segurança e controle de acesso para empresas e escritórios em Curitiba. Restrição de setores, TI, financeiro e portas protegidas. Orçamento no WhatsApp!',
   keyword: 'controle de acesso para empresas e escritorios em Curitiba',
-  directAnswer: 'O controle de acesso para empresas e escritórios em Curitiba protege ativos estratégicos, dados corporativos e áreas restritas como CPD, financeiro e almoxarifado. Através de leitores biométricos digitais, reconhecimento facial, fechaduras eletromagnéticas e controle de níveis de permissão em software, a empresa restringe a circulação interna de pessoas não autorizadas e obtém trilhas de auditoria completas para conformidade e segurança.',
-  // TODO: foto real
+  directAnswer: 'O controle de acesso para empresas e escritórios em Curitiba protege ativos estratégicos, dados corporativos e áreas restritas como CPD, financeiro e almoxarifado. Através de leitores biométricos digitais, reconhecimento facial, fechaduras eletromagnéticas e controle de níveis de permissão no sistema, a empresa restringe a circulação interna de pessoas não autorizadas e obtém trilhas de auditoria completas para conformidade e segurança.',
   image: {
-    src: '/images/segmento-empresas-escritorios.webp',
-    alt: 'Porta de CPD corporativo com fechadura eletroímã e leitor de acesso em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-segmento-escritorio.webp',
+    alt: 'Leitor de acesso instalado na divisória de vidro de um escritório',
+    width: 1200,
+    height: 675
   },
   typicalProblems: [
     'Circulação irrestrita de funcionários de áreas operacionais em departamentos críticos e sigilosos como tesouraria, sala de servidores de TI e diretoria sem qualquer tipo de barreira física.',
@@ -44,9 +43,9 @@ export const empresasEEscritoriosSegment: SegmentContent = {
       reason: 'Atuam como solução prática ou segundo fator de autenticação para estoques, almoxarifados e salas de arquivo, permitindo alteração instantânea de senhas pelo gestor sem necessidade de despesas com novos crachás físicos.'
     },
     {
-      solutionSlug: 'software-de-gestao',
-      title: 'Software Centralizado com Trilhas de Auditoria',
-      reason: 'Centraliza a gestão de permissões por departamento, possibilita exclusão de acessos com um único clique no desligamento de funcionários e exporta relatórios detalhados em formatos PDF e planilhas eletrônicas para auditoria.'
+      solutionSlug: 'cartao-e-tag-rfid',
+      title: 'Cartões e Crachás RFID de Proximidade',
+      reason: 'Permitem identificação prática de colaboradores e visitantes, com integração direta a catracas e fechaduras eletromagnéticas, garantindo circulação controlada em cada setor corporativo.'
     }
   ],
   projectArchitecture: [
@@ -59,7 +58,7 @@ export const empresasEEscritoriosSegment: SegmentContent = {
   faqs: [
     {
       question: 'O que a empresa deve fazer imediatamente quando um colaborador é desligado?',
-      answer: 'Basta que o administrador do sistema acesse o software de controle de acesso no computador ou navegador e marque o cadastro do funcionário como inativo. Automaticamente, o comando de bloqueio é propagado para todas as controladoras e terminais biométricos da empresa em tempo real, cancelando imediatamente a autorização de abertura em todas as portas.'
+      answer: 'Basta que o administrador do sistema acesse o painel do sistema de controle de acesso no computador ou navegador e marque o cadastro do funcionário como inativo. Automaticamente, o comando de bloqueio é propagado para todas as controladoras e terminais biométricos da empresa em tempo real, cancelando imediatamente a autorização de abertura em todas as portas.'
     },
     {
       question: 'Como proteger a sala de servidores e CPD atendendo a normas de auditoria e compliance?',
@@ -67,7 +66,7 @@ export const empresasEEscritoriosSegment: SegmentContent = {
     },
     {
       question: 'O sistema de controle de acesso substitui o relógio de ponto eletrônico (REP)?',
-      answer: 'Não. O controle de acesso físico tem a finalidade primordial de segurança patrimonial e restrição de áreas. O relógio de ponto eletrônico obedece a normas trabalhistas específicas do Ministério do Trabalho (Portaria 671). Entretanto, os softwares modernos de acesso permitem exportar relatórios de passagens para cruzar dados com a apuração de horas do RH.'
+      answer: 'Não. O controle de acesso físico tem a finalidade primordial de segurança patrimonial e restrição de áreas. O relógio de ponto eletrônico obedece a normas trabalhistas específicas do Ministério do Trabalho (Portaria 671). Entretanto, os sistemas modernos de controle de acesso permitem exportar relatórios de passagens para cruzar dados com a apuração de horas do RH.'
     },
     {
       question: 'É possível restringir horários para que equipes terceirizadas não entrem fora do combinado?',
@@ -78,7 +77,7 @@ export const empresasEEscritoriosSegment: SegmentContent = {
       answer: 'A diretoria pode gerar relatórios de ocupação em tempo real, registros cronológicos de acessos por colaborador ou porta específica, relatórios de tentativas de acessos negados por falta de permissão, além de logs de auditoria detalhados que mostram quem cadastrou ou alterou permissões no sistema.'
     }
   ],
-  relatedSolutions: ['biometria', 'reconhecimento-facial', 'fechaduras-eletromagneticas', 'software-de-gestao'],
+  relatedSolutions: ['biometria', 'reconhecimento-facial', 'fechaduras-eletromagneticas', 'cartao-e-tag-rfid'],
   relatedSegments: ['condominios-comerciais', 'industrias'],
   whatsappContext: 'controle de acesso para empresas e escritórios em Curitiba'
 };

@@ -7,12 +7,11 @@ export const manutencaoService: ServiceContent = {
   metaDescription: 'Manutenção preventiva e corretiva de controle de acesso em Curitiba. Reparo de catracas, fechaduras eletroímã, leitores e cancelas. Peça atendimento!',
   keyword: 'manutencao de controle de acesso Curitiba',
   directAnswer: 'A assistência técnica e manutenção preventiva e corretiva de controle de acesso em Curitiba mantém condomínios, centros comerciais e indústrias operando de forma contínua e segura. Nossa equipe realiza diagnósticos elétricos, ajustes mecânicos de alinhamento, testes de retenção em eletroímãs, calibração de sensores ópticos em catracas e substituição de baterias de no-break desgastadas, evitando que portarias fiquem abertas ou bloqueadas indevidamente.',
-  // TODO: foto real
   image: {
-    src: '/images/servico-manutencao.webp',
-    alt: 'Técnico realizando manutenção preventiva em catraca e fechadura eletroímã em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/manutencao-de-acesso.webp',
+    alt: 'Técnico de capacete e luvas realizando manutenção em equipamento instalado na parede',
+    width: 1200,
+    height: 675
   },
   scope: [
     'Contratos mensais de manutenção preventiva com rotina de visitas programadas e relatórios de conformidade técnica.',
@@ -79,7 +78,7 @@ export const manutencaoService: ServiceContent = {
       fix: 'Substituição do teclado por modelo blindado antivandalismo com classificação IP66, vedação perimetral com silicone neutro e reprogramação das matrizes de senhas.'
     },
     {
-      symptom: 'Software de gestão perde comunicação com as controladoras de portas e catracas',
+      symptom: 'Painel do sistema perde comunicação com as controladoras de portas e catracas',
       cause: 'Conflito de endereço IP na rede local, cabo de rede Cat6 danificado por roedores em tubulações ou travamento de porta TCP na placa de rede da controladora.',
       fix: 'Atribuição de IP fixo fora da faixa de DHCP do roteador, crimpagem de novos conectores RJ45 blindados e reinicialização a frio das placas controladoras de portas.'
     }
@@ -134,6 +133,6 @@ export const manutencaoService: ServiceContent = {
     }
   ],
   relatedSolutions: ['catracas', 'fechaduras-eletromagneticas', 'reconhecimento-facial', 'cancelas-e-acesso-veicular'],
-  relatedServices: ['instalacao-e-projeto', 'modernizacao', 'locacao'],
+  relatedServices: ['instalacao-e-projeto', 'locacao'],
   whatsappContext: 'manutenção de controle de acesso em Curitiba'
 };

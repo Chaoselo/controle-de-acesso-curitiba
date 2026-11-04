@@ -26,8 +26,8 @@ export const campoLargoContent: CityContent = {
   serviceLogistics: 'Com deslocamento direto a partir de Curitiba pela rodovia BR-277, nossas equipes prestam atendimento técnico presencial em Campo Largo para vistorias orçamentárias, instalações de engenharia de acesso e manutenção preventiva ou corretiva de equipamentos, mantendo pronto atendimento para situações de portas travadas.',
   faqs: [
     {
-      question: 'Vocês realizam retrofit de cancelas antigas em empresas de Campo Largo?',
-      answer: 'Sim. Avaliamos a mecânica existente e podemos substituir apenas a central de comando eletrônica, o motoredutor ou instalar novos braços de alumínio com iluminação LED e sensores de segurança sem a necessidade de descartar o gabinete estrutural do equipamento.'
+      question: 'Vocês realizam a troca ou reparo de cancelas antigas em empresas de Campo Largo?',
+      answer: 'Sim. Avaliamos a mecânica existente e podemos substituir a central de comando eletrônica, o motoredutor ou instalar novos braços de alumínio com iluminação LED e sensores de segurança sem a necessidade de descartar o gabinete estrutural do equipamento.'
     },
     {
       question: 'Como os equipamentos se comportam diante da poeira gerada em cerâmicas?',

@@ -6,13 +6,12 @@ export const catracasSolution: SolutionContent = {
   seoTitle: 'Catracas de Acesso em Curitiba | Pedestal, Balcão e Flap',
   metaDescription: 'Instalação e manutenção de catracas de acesso em Curitiba e região. Pedestal, flap, balcão e torniquete para fluxo seguro. Peça seu orçamento técnico!',
   keyword: 'catraca de acesso Curitiba',
-  directAnswer: 'As catracas de controle de acesso efetuam o bloqueio físico mecânico em portarias e recepções, garantindo que apenas uma pessoa transite a cada validação autorizada. Em Curitiba e Região Metropolitana, são amplamente adotadas por edifícios comerciais, academias, indústrias e colégios para eliminar a carona não autorizada em horários de pico. A barreira pode integrar leitores faciais, biometria digital ou crachás RFID, com mecanismo antipânico para rotas de fuga.',
-  // TODO: foto real
+  directAnswer: 'As catracas de controle de acesso efetuam o bloqueio físico mecânico em portarias e recepções, garantindo que apenas uma pessoa transite a cada validação autorizada. Esses bloqueios são adotados por edifícios comerciais, academias, indústrias e colégios para organizar a entrada e evitar passagens simultâneas sem validação. A barreira pode integrar leitores faciais, biometria digital ou crachás RFID, com mecanismo antipânico para rotas de fuga.',
   image: {
-    src: '/images/catracas-acesso.webp',
-    alt: 'Bateria de catracas de acesso em aço inoxidável instaladas em recepção corporativa em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/catraca-de-acesso.webp',
+    alt: 'Catracas de braços instaladas em recepção, com leitores de acesso no topo',
+    width: 1200,
+    height: 675
   },
   howItWorks: [
     'Bloqueio mecânico inicial por solenoide de retenção: Em repouso, o cabeçote com braços tripé ou barreiras retráteis é mantido travado por solenoides eletromecânicos. Isso impede que o pedestre force a passagem para a frente ou tente retornar no sentido contrário sem ordem válida da controladora.',
@@ -43,7 +42,7 @@ export const catracasSolution: SolutionContent = {
   integrations: [
     'Portinholas e portões pivotantes PNE em aço inox e vidro acionados por eletroímã para acessibilidade.',
     'Terminais de reconhecimento facial touchless montados sobre pedestais tubulares articulados.',
-    'Softwares de gestão para academias e sistemas corporativos de recursos humanos para auditoria de horários.',
+    'Sistemas de gestão para academias e plataformas corporativas de recursos humanos para auditoria de horários.',
     'Centrais de alarme de incêndio prediais para disparo automático do mecanismo de queda do braço antipânico.',
     'Cofres coletores e urnas motorizadas embutidas na estrutura da catraca para devolução de crachás.'
   ],
@@ -102,7 +101,7 @@ export const catracasSolution: SolutionContent = {
       answer: 'Sim, a maioria das controladoras de catraca trabalha com protocolos padronizados de comunicação, permitindo conexão direta com os principais softwares de gestão de academias e clubes. A validação do plano financeiro e o bloqueio de acessos com pendências ocorrem em frações de segundo diretamente na barreira.'
     }
   ],
-  relatedSolutions: ['reconhecimento-facial', 'biometria', 'cartao-e-tag-rfid', 'software-de-gestao'],
+  relatedSolutions: ['reconhecimento-facial', 'biometria', 'cartao-e-tag-rfid', 'cancelas-e-acesso-veicular'],
   relatedSegments: ['condominios-comerciais', 'academias', 'escolas-e-universidades', 'industrias'],
   relatedCities: ['curitiba', 'sao-jose-dos-pinhais', 'pinhais', 'araucaria'],
   whatsappContext: 'catracas de acesso para condomínio, academia ou empresa'

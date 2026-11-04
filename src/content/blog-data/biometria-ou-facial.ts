@@ -8,7 +8,7 @@ export const biometriaOuFacialContent: BlogPostContent = {
   author: 'Equipe Controle de Acesso Curitiba',
   publishedDate: '[[PREENCHER: data de publicação]]',
   readTime: '7 min de leitura',
-  summary: 'A decisão entre leitor de impressão digital e terminal de reconhecimento facial é um dos dilemas mais comuns na modernização de portarias de condomínios e empresas em Curitiba. Enquanto a biometria digital oferece excelente relação de custo para ambientes internos e restritos, o reconhecimento facial touchless desponta como o padrão superior para áreas externas de alto fluxo, proporcionando validação em menos de meio segundo e eliminando o desgaste por contato físico.',
+  summary: 'A decisão entre leitor de impressão digital e terminal de reconhecimento facial é um dos dilemas mais comuns na atualização tecnológica de portarias de condomínios e empresas em Curitiba. Enquanto a biometria digital oferece excelente relação de custo para ambientes internos e restritos, o reconhecimento facial touchless desponta como o padrão superior para áreas externas de alto fluxo, proporcionando validação em menos de meio segundo e eliminando o desgaste por contato físico.',
   sections: [
     {
       heading: 'O Dilema da Autenticação Biométrica Moderna',

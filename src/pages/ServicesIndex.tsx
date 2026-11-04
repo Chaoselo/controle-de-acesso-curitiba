@@ -17,7 +17,7 @@ export default function ServicesIndex() {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Serviços Especializados em Controle de Acesso em Curitiba',
-    description: 'Serviços técnicos de controle de acesso físico em Curitiba e Região Metropolitana: projetos e instalação, manutenção preventiva e corretiva, locação de catracas e modernização de portarias.',
+    description: 'Serviços técnicos de controle de acesso físico em Curitiba e Região Metropolitana: projetos e instalação, manutenção preventiva e corretiva e locação de equipamentos.',
     numberOfItems: servicosList.length,
     itemListElement: servicosList.map((servico, index) => ({
       '@type': 'ListItem',
@@ -35,7 +35,7 @@ export default function ServicesIndex() {
     <Layout whatsappContext="serviços de controle de acesso">
       <SEOHead
         title="Serviços de Controle de Acesso em Curitiba | Manutenção"
-        description="Conheça nossos serviços de controle de acesso em Curitiba e Região Metropolitana. Instalação, manutenção preventiva, locação e modernização de portarias."
+        description="Conheça nossos serviços de controle de acesso em Curitiba e Região Metropolitana: projetos e instalação, manutenção preventiva e locação de equipamentos."
         canonicalPath="/servicos/"
         schemaData={[itemListSchema]}
       />
@@ -62,10 +62,10 @@ export default function ServicesIndex() {
 
             <div className="mt-6 text-base sm:text-lg text-slate-700 space-y-4">
               <p>
-                A segurança física e a confiabilidade de uma portaria ou recepção dependem diretamente da qualidade da engenharia de implantação e da regularidade da assistência técnica. Desde a elaboração de projetos elétricos e lançamento de cabeamento estruturado até contratos mensais de manutenção preventiva, nossa divisão técnica assegura que fechaduras, catracas, cancelas e softwares operem com máxima disponibilidade.
+                A segurança física e a confiabilidade de uma portaria ou recepção dependem diretamente da qualidade da engenharia de implantação e da regularidade da assistência técnica. Desde a elaboração de projetos elétricos e lançamento de cabeamento estruturado até contratos mensais de manutenção preventiva, nossa divisão técnica assegura que fechaduras, catracas, cancelas e controladores operem com máxima disponibilidade.
               </p>
               <p>
-                Atendemos condomínios residenciais e comerciais, empresas corporativas, indústrias e instituições de ensino em Curitiba e em todos os municípios da Região Metropolitana. Conheça abaixo as quatro modalidades de serviços especializados e descubra como otimizar a segurança do seu patrimônio com suporte local ágil.
+                Atendemos condomínios residenciais e comerciais, empresas corporativas, indústrias e instituições de ensino em Curitiba e em todos os municípios da Região Metropolitana. Conheça abaixo as três modalidades de serviços especializados e descubra como otimizar a segurança do seu patrimônio com suporte local ágil.
               </p>
             </div>
 
@@ -104,7 +104,7 @@ export default function ServicesIndex() {
                       width={servico.image.width}
                       height={servico.image.height}
                       loading="lazy"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
                   <div className="p-6 flex-1 flex flex-col justify-between">
@@ -172,10 +172,10 @@ export default function ServicesIndex() {
               <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
                 <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
                   <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>Transição sem Paradas</span>
+                  <span>Implantação sem Paradas</span>
                 </div>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  Metodologia de modernização e retrofit por etapas que mantém a portaria do condomínio ou empresa plenamente protegida durante as obras.
+                  Metodologia de implantação por etapas que mantém a portaria do condomínio ou empresa plenamente protegida durante as obras.
                 </p>
               </div>
             </div>

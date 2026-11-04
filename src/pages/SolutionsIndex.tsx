@@ -68,7 +68,7 @@ export default function SolutionsIndex() {
     <Layout whatsappContext="soluções de controle de acesso">
       <SEOHead
         title="Soluções de Controle de Acesso em Curitiba e Região"
-        description="Conheça as soluções de controle de acesso em Curitiba e Região Metropolitana. Biometria, facial, catracas, tags e cancelas para condomínios e empresas."
+        description="Conheça as soluções de controle de acesso em Curitiba: biometria, facial, cartão, senha, catracas, cancelas, fechaduras e interfone. Peça orçamento!"
         canonicalPath="/solucoes/"
         schemaData={[itemListSchema]}
       />
@@ -137,7 +137,7 @@ export default function SolutionsIndex() {
                       width={solucao.image.width}
                       height={solucao.image.height}
                       loading="lazy"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
                   <div className="p-6 flex-1 flex flex-col justify-between">

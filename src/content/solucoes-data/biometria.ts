@@ -8,17 +8,17 @@ export const biometriaSolution: SolutionContent = {
   keyword: 'controle de acesso biometrico Curitiba',
   directAnswer: 'O controle de acesso biométrico utiliza a impressão digital única de cada indivíduo para autenticar e liberar a passagem por portas, catracas ou portões em frações de segundo. Em Curitiba e Região Metropolitana, é uma das tecnologias mais consolidadas para condomínios residenciais e empresas que buscam eliminar chaves físicas e cartões emprestados. A solução assegura registro auditável de horários de entrada e saída com alto custo-benefício de implantação.',
   image: {
-    src: '/images/solucao-biometria-curitiba.webp',
-    alt: 'Terminal leitor de controle de acesso biométrico por impressão digital instalado em porta de vidro em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/controle-acesso-biometria.webp',
+    alt: 'Dedo sendo posicionado em leitor biométrico de impressão digital instalado na parede',
+    width: 1200,
+    height: 675
   },
   howItWorks: [
     'Captura óptica ou capacitiva de alta resolução: Quando o usuário encosta a ponta do dedo na área de leitura, o sensor captura a geometria das cristas e vales da impressão digital. Em leitores ópticos, feixes de LED iluminam a superfície do prisma de vidro; em leitores capacitivos, uma matriz de microcapacitores mede variações diminutas de carga elétrica causadas pelo contato da pele humana, o que dificulta o uso de moldes artificiais.',
     'Conversão algorítmica em vetor matemático criptografado: Na maioria dos equipamentos, a imagem da impressão digital não é guardada: ela é convertida em um modelo matemático (template biométrico), que costuma ser protegido por criptografia. O tratamento exato depende do fabricante.',
     'Comparação e validação em banco de dados: O leitor compara o template gerado no momento da leitura com a biblioteca de usuários previamente cadastrada. No modo 1:N (identificação direta), o sistema varre a memória em geral em menos de 0,5 segundo; no modo 1:1 (autenticação com digitação de ID ou aproximação de crachá), o tempo de resposta cai para frações imperceptíveis de segundo.',
     'Comando elétrico de abertura da barreira física: Confirmada a autorização de passagem, o relé da controladora comuta seu contato de normalmente fechado (NF) para aberto, ou envia um pulso de comando via protocolo Wiegand ou OSDP para uma placa remota. Isso interrompe temporariamente a energia de uma fechadura eletroímã ou aciona o solenoide mecânico de uma catraca.',
-    'Auditoria, sincronização e armazenamento de eventos em buffer: Simultaneamente à liberação física, a controladora grava internamente um evento contendo o número identificador do usuário, data e hora exatas, tipo de autenticação e status do evento. Esses dados são transmitidos em tempo real ao software de portaria via rede TCP/IP ou armazenados em memória não volátil caso a conexão esteja offline.'
+    'Auditoria, sincronização e armazenamento de eventos em buffer: Simultaneamente à liberação física, a controladora grava internamente um evento contendo o número identificador do usuário, data e hora exatas, tipo de autenticação e status do evento. Esses dados são transmitidos em tempo real ao sistema de controle via rede TCP/IP ou armazenados em memória não volátil caso a conexão esteja offline.'
   ],
   whenToChoose: [
     'Condomínios residenciais verticais e horizontais em Curitiba que buscam eliminar de vez o risco de cópia clandestina de chaves de portarias sociais, salões de festas, academias e áreas de lazer.',
@@ -45,7 +45,7 @@ export const biometriaSolution: SolutionContent = {
     'Fechaduras Eletromagnéticas (Eletroímãs de 150kgf a 300kgf com suportes ajustáveis LZ)',
     'Fechaduras Solenoide com pino em aço inoxidável e fechos elétricos de embutir',
     'Catracas Pedestais, Balcões e Torniquetes industriais com braço mecânico de retenção',
-    'Softwares de Gestão em Nuvem e Servidores Locais com banco de dados em rede',
+    'Controladoras TCP/IP e Servidores Locais com banco de dados em rede',
     'Botoeiras de Saída No-Touch infravermelhas e molas aéreas hidráulicas de fechamento suave',
     'Centrais de Alarme de Intrusão e No-breaks senoidais com baterias seladas de ciclo profundo'
   ],
@@ -105,7 +105,7 @@ export const biometriaSolution: SolutionContent = {
       answer: 'O sensor óptico funciona através de uma microcâmera acoplada a um prisma iluminado por LEDs, sendo extremamente resistente mecanicamente contra riscos e atos de vandalismo em locais com fluxo intenso. O sensor capacitivo, por sua vez, opera com uma matriz de circuitos que medem a capacitância elétrica natural da pele, conferindo maior precisão na leitura de digitais levemente ressecadas e dimensões físicas mais delgadas, embora com custo ligeiramente superior.'
     }
   ],
-  relatedSolutions: ['reconhecimento-facial', 'catracas', 'fechaduras-eletromagneticas', 'software-de-gestao'],
+  relatedSolutions: ['reconhecimento-facial', 'catracas', 'fechaduras-eletromagneticas', 'cartao-e-tag-rfid'],
   relatedSegments: ['condominios-residenciais', 'empresas-e-escritorios', 'academias'],
   relatedCities: ['curitiba', 'pinhais', 'sao-jose-dos-pinhais'],
   whatsappContext: 'controle de acesso biométrico para empresa ou condomínio'

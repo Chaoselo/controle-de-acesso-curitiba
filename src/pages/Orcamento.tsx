@@ -110,7 +110,7 @@ export function OrcamentoPage() {
                 <option value="Biometria Digital e Cartões RFID">Biometria Digital e Cartões de Proximidade RFID</option>
                 <option value="Interfonia e Vídeo Porteiro IP">Interfonia Predial e Vídeo Porteiro IP</option>
                 <option value="Manutenção em Sistema Existente">Manutenção Corretiva ou Preventiva em Sistema Atual</option>
-                <option value="Projeto Completo de Portaria Integrada">Projeto Completo de Modernização de Portaria</option>
+                <option value="Projeto Completo de Portaria Integrada">Projeto Completo de Instalação de Portaria</option>
               </select>
             </div>
 

@@ -38,7 +38,7 @@ export const almiranteTamandareContent: CityContent = {
       answer: 'Sim. Em todos os nossos projetos em Almirante Tamandaré incluímos fontes no-break de 12V com baterias seladas de ciclo profundo e filtros de linha contra surtos elétricos, mantendo as travas magnéticas e os interfones operando normalmente mesmo sem energia pública.'
     },
     {
-      question: 'A empresa fornece suporte para modernização de portões manuais antigos?',
+      question: 'A empresa fornece suporte para automação e adequação de portões manuais antigos?',
       answer: 'Sim. Adaptamos portões de pedestres e veículos existentes com batentes magnéticos, molas aéreas hidráulicas de fechamento suave e sensores anti-esmagamento, transformando passagens vulneráveis em portarias seguras e automatizadas.'
     }
   ],

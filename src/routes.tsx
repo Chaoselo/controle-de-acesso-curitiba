@@ -41,7 +41,7 @@ export interface StaticRouteItem {
  * Manifesto central de todas as rotas estáticas do site
  */
 export function getAllStaticRoutes(): StaticRouteItem[] {
-  const defaultImage = '/images/hero-controle-acesso-curitiba.webp';
+  const defaultImage = '/images/og-image-default.webp';
 
   const routes: StaticRouteItem[] = [
     {
@@ -51,17 +51,17 @@ export function getAllStaticRoutes(): StaticRouteItem[] {
       element: <HomePage />,
       priority: '1.0',
       changefreq: 'weekly',
-      image: defaultImage,
+      image: '/images/controle-de-acesso-curitiba-homepage.webp',
       ogType: 'website'
     },
     {
       path: '/solucoes/',
       title: 'Soluções de Controle de Acesso em Curitiba e Região',
-      description: 'Conheça as soluções de controle de acesso em Curitiba e Região Metropolitana. Biometria, facial, catracas, tags e cancelas para condomínios e empresas.',
+      description: 'Conheça as soluções de controle de acesso em Curitiba: biometria, facial, cartão, senha, catracas, cancelas, fechaduras e interfone. Peça orçamento!',
       element: <SolutionsIndex />,
       priority: '0.9',
       changefreq: 'weekly',
-      image: '/images/solucao-biometria-curitiba.webp',
+      image: '/images/controle-acesso-biometria.webp',
       ogType: 'website'
     },
     {
@@ -71,17 +71,17 @@ export function getAllStaticRoutes(): StaticRouteItem[] {
       element: <SegmentsIndex />,
       priority: '0.9',
       changefreq: 'weekly',
-      image: '/images/segmento-condominios-residenciais.webp',
+      image: '/images/controle-acesso-segmento-condominio-residencial.webp',
       ogType: 'website'
     },
     {
       path: '/servicos/',
       title: 'Serviços de Controle de Acesso em Curitiba | Manutenção',
-      description: 'Conheça nossos serviços de controle de acesso em Curitiba e Região Metropolitana. Instalação, manutenção preventiva, locação e modernização de portarias.',
+      description: 'Conheça nossos serviços de controle de acesso em Curitiba e Região Metropolitana: projetos e instalação, manutenção preventiva e locação de equipamentos.',
       element: <ServicesIndex />,
       priority: '0.9',
       changefreq: 'weekly',
-      image: '/images/servico-instalacao-projeto.webp',
+      image: '/images/instalacao-e-projeto-controle-de-acesso.webp',
       ogType: 'website'
     },
     {

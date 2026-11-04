@@ -10,15 +10,4 @@ export function whatsappLink(contexto: string): string {
   return `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(mensagem)}`;
 }
 
-/**
- * Dispara evento de analytics GA4 ao clicar no WhatsApp
- */
-export function trackWhatsAppClick(contexto: string, pagePath?: string): void {
-  if (typeof window !== 'undefined' && (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
-    (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'whatsapp_click', {
-      page_location: pagePath || window.location.pathname,
-      lead_context: contexto,
-      send_to_number: siteConfig.whatsapp
-    });
-  }
-}
+export { trackWhatsAppClick } from './analytics';

@@ -6,7 +6,6 @@ import { senhaETecladoSolution } from './solucoes-data/senha-e-teclado';
 import { catracasSolution } from './solucoes-data/catracas';
 import { cancelasEAcessoVeicularSolution } from './solucoes-data/cancelas-e-acesso-veicular';
 import { fechadurasEletromagneticasSolution } from './solucoes-data/fechaduras-eletromagneticas';
-import { softwareDeGestaoSolution } from './solucoes-data/software-de-gestao';
 import { interfoneEVideoPorteiroSolution } from './solucoes-data/interfone-e-video-porteiro';
 
 export const solucoesList: SolutionContent[] = [
@@ -17,7 +16,6 @@ export const solucoesList: SolutionContent[] = [
   catracasSolution,
   cancelasEAcessoVeicularSolution,
   fechadurasEletromagneticasSolution,
-  softwareDeGestaoSolution,
   interfoneEVideoPorteiroSolution
 ];
 

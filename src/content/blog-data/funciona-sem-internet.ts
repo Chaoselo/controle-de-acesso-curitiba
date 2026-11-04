@@ -44,7 +44,7 @@ export const funcionaSemInternetContent: BlogPostContent = {
         {
           heading: 'Ressincronização Automática com o Servidor',
           paragraphs: [
-            'Assim que o sinal de internet da operadora retorna, o software de gerenciamento detecta o restabelecimento da conectividade e inicia uma sincronização silenciosa em segundo plano.',
+            'Assim que o sinal de internet da operadora retorna, o sistema de gerenciamento detecta o restabelecimento da conectividade e inicia uma sincronização silenciosa em segundo plano.',
             'Todos os milhares de eventos acumulados na memória interna da controladora são descarregados para o banco de dados central sem qualquer perda de informação, permitindo a emissão de relatórios completos de auditoria para o síndico ou gestor de segurança.'
           ]
         },
@@ -68,7 +68,7 @@ export const funcionaSemInternetContent: BlogPostContent = {
     }
   ],
   internalLinks: [
-    { text: 'software de gestão de controle de acesso', url: '/solucoes/software-de-gestao/', context: 'Entenda os recursos do' },
+    { text: 'terminais de reconhecimento facial', url: '/solucoes/reconhecimento-facial/', context: 'Veja a autonomia dos' },
     { text: 'fechaduras eletromagnéticas fail-safe', url: '/solucoes/fechaduras-eletromagneticas/', context: 'Conheça o princípio das' },
     { text: 'serviços de manutenção preventiva periódica', url: '/servicos/manutencao/', context: 'Veja a importância dos' },
     { text: 'consultar nossos especialistas em engenharia de acesso', url: '/orcamento/', context: 'Acesse nossa página de orçamento para' }

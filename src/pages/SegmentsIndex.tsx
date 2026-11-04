@@ -65,7 +65,7 @@ export default function SegmentsIndex() {
                 Cada tipo de empreendimento possui dinâmicas operacionais, volumes de fluxo e requisitos regulatórios únicos. Condomínios residenciais demandam agilidade nas garagens e clausuras seguras para entregadores; edifícios comerciais necessitam de triagem rápida de visitantes em catracas; indústrias exigem torniquetes pesados para trocas de turno; clínicas e escolas requerem absoluto rigor sanitário e conformidade estrita com a LGPD.
               </p>
               <p>
-                A Controle de Acesso Curitiba desenvolve projetos personalizados de segurança física e eletrônica, adaptando fechaduras, catracas, cancelas e softwares de gestão à realidade estrutural e orçamentária do seu imóvel. Explore abaixo os segmentos atendidos e conheça a arquitetura de projeto recomendada para o seu setor.
+                A Controle de Acesso Curitiba desenvolve projetos personalizados de segurança física e eletrônica, adaptando fechaduras, catracas, cancelas e sistemas integrados à realidade estrutural e orçamentária do seu imóvel. Explore abaixo os segmentos atendidos e conheça a arquitetura de projeto recomendada para o seu setor.
               </p>
             </div>
 
@@ -104,7 +104,7 @@ export default function SegmentsIndex() {
                       width={segmento.image.width}
                       height={segmento.image.height}
                       loading="lazy"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
                   <div className="p-6 flex-1 flex flex-col justify-between">

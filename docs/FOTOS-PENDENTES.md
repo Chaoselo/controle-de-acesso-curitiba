@@ -1,32 +1,78 @@
-# Fotos Pendentes para Substituição
+# Status das Fotografias do Projeto
 
-Tabela de mapeamento dos arquivos de imagem provisórios (`/public/images/*.webp`) que devem ser substituídos por fotografias reais de instalações da equipe da **Controle de Acesso Curitiba / Intelsecsul**.
+Mapeamento do status visual das imagens do site **Controle de Acesso Curitiba / Intelsecsul Segurança Eletrônica** (`https://controledeacessocuritiba.com.br`).
 
-| Arquivo WebP | Onde Aparece | Foto Real Sugerida |
-| :--- | :--- | :--- |
-| `hero-controle-acesso-curitiba.webp` | Dobra principal da Página Inicial (`/`) | Foto horizontal de alta resolução da equipe técnica instalando ou vistoriando uma portaria moderna em Curitiba (catracas ou clausura com eletroímã). |
-| `solucao-biometria-curitiba.webp` | Página da Solução de Biometria (`/solucoes/biometria/`) | Foto em close de um leitor biométrico por impressão digital instalado em batente de porta de vidro ou madeira, com dedo em posição de leitura. |
-| `reconhecimento-facial.webp` | Página de Reconhecimento Facial (`/solucoes/reconhecimento-facial/`) | Foto de terminal facial com tela e câmera dupla instalado em pedestal tubular de inox na entrada social de um condomínio ou edifício comercial. |
-| `cartao-tag-rfid.webp` | Página de Cartão e Tag RFID (`/solucoes/cartao-e-tag-rfid/`) | Foto de leitor de proximidade fixado na parede com crachá personalizado da empresa ou chaveiro RFID sendo aproximado. |
-| `senha-teclado-acesso.webp` | Página de Senha e Teclado (`/solucoes/senha-e-teclado/`) | Foto de teclado numérico digital (metal antivandalismo ou vidro touch) com iluminação ativada ao lado de porta protegida. |
-| `catracas-acesso.webp` | Página de Catracas (`/solucoes/catracas/`) | Foto de bateria de catracas em aço inox escovado instaladas no hall de recepção de um edifício corporativo ou academia em Curitiba. |
-| `cancelas-acesso-veicular.webp` | Página de Acesso Veicular (`/solucoes/cancelas-e-acesso-veicular/`) | Foto de cancela automática com braço linear ou articulado e antena UHF na pista de entrada de garagem condominial. |
-| `fechaduras-eletromagneticas.webp` | Página de Fechaduras Eletromagnéticas (`/solucoes/fechaduras-eletromagneticas/`) | Foto de detalhe de fechadura eletroímã e bloco de atraque com suporte LZ fixados no topo de uma porta de vidro ou alumínio com mola aérea. |
-| `software-gestao-acesso.webp` | Página de Software de Gestão (`/solucoes/software-de-gestao/`) | Captura de tela nítida do painel do software de portaria exibindo monitoramento de eventos em tempo real, sem expor dados pessoais reais. |
-| `interfone-video-porteiro.webp` | Página de Interfone e Vídeo Porteiro (`/solucoes/interfone-e-video-porteiro/`) | Foto de painel externo de vídeo porteiro IP com câmera e leitor de acesso em portaria de pedestres. |
-| `segmento-condominios-residenciais.webp` | Página do Segmento Condomínios Residenciais (`/segmentos/condominios-residenciais/`) | Foto da portaria social e eclusa de pedestres de condomínio residencial em Curitiba com portão duplo intertravado. |
-| `segmento-condominios-comerciais.webp` | Página do Segmento Condomínios Comerciais (`/segmentos/condominios-comerciais/`) | Foto do hall de entrada de edifício corporativo com catracas balcão de vidro e recepcionista atendendo visitantes. |
-| `segmento-empresas-escritorios.webp` | Página do Segmento Empresas e Escritórios (`/segmentos/empresas-e-escritorios/`) | Foto de porta de sala de reuniões ou CPD corporativo com fechadura eletroímã e leitor biométrico/facial. |
-| `segmento-industrias.webp` | Página do Segmento Indústrias (`/segmentos/industrias/`) | Foto da portaria de fábrica com torniquetes industriais de altura total em aço inox e cancelas para caminhões. |
-| `segmento-clinicas-hospitais.webp` | Página do Segmento Clínicas e Hospitais (`/segmentos/clinicas-e-hospitais/`) | Foto de entrada de ambulatório ou centro médico com leitor facial sem toque e porta automática hospitalar. |
-| `segmento-escolas-universidades.webp` | Página do Segmento Escolas e Faculdades (`/segmentos/escolas-e-universidades/`) | Foto de bateria de catracas com braço antipânico instaladas na entrada de colégio ou campus universitário. |
-| `segmento-academias.webp` | Página do Segmento Academias (`/segmentos/academias/`) | Foto de recepção de academia moderna com catracas pedestal integradas a terminal biométrico ou facial. |
-| `segmento-residencias.webp` | Página do Segmento Residências (`/segmentos/residencias/`) | Foto de porta social de residência com fechadura digital biométrica e painel de vídeo porteiro no muro frontal. |
-| `servico-instalacao-projeto.webp` | Página do Serviço Instalação e Projeto (`/servicos/instalacao-e-projeto/`) | Foto de técnico instalando rack organizador de controle de acesso ou fixando suporte LZ de fechadura eletroímã. |
-| `servico-manutencao.webp` | Página do Serviço Manutenção (`/servicos/manutencao/`) | Foto de manutenção preventiva com multímetro medindo fonte de alimentação e regulagem de mola aérea de portaria. |
-| `servico-locacao.webp` | Página do Serviço Locação (`/servicos/locacao/`) | Foto de catracas ou torniquetes temporários configurados para locação em evento ou portaria corporativa. |
-| `servico-modernizacao.webp` | Página do Serviço Modernização (`/servicos/modernizacao/`) | Foto de retrofit substituindo cabeamento antigo e botoeiras obsoletas por nova controladora e leitores faciais. |
-| `cidade-curitiba-acesso.webp` | Página de Atendimento em Curitiba (`/cidades/curitiba/`) | Foto da viatura ou equipe técnica uniformizada com ferramentas em atendimento externo em Curitiba. |
-| `og-image-default.webp` | Compartilhamento social (OpenGraph / Twitter) em todas as páginas | Card gráfico horizontal (1200x630 px) da marca Controle de Acesso Curitiba com selo da Intelsecsul Segurança Eletrônica e telefone de contato. |
+---
 
-*Observação técnica: Salvar as imagens finais no formato `.webp` otimizado (qualidade ~85-90%) preservando as mesmas dimensões em pixels (800x600 ou 1200x800/1200x630) para evitar alterações de layout.*
+## 1. Fotos Aplicadas (19 páginas de conteúdo + imagem padrão de compartilhamento OG)
+
+As páginas e recursos abaixo já contam com imagens reais WebP em alta definição (1200x675 px para páginas de conteúdo e 1200x630 px para o card de compartilhamento OpenGraph/Twitter):
+
+| Arquivo WebP | Local de Uso | Status | Descrição do Conteúdo da Imagem |
+| :--- | :--- | :--- | :--- |
+| `controle-de-acesso-curitiba-homepage.webp` | Página Inicial (`/`) | **Foto Aplicada** | Mão aproximando cartão de um leitor de controle de acesso com ícones de cadeado aberto e fechado. |
+| `controle-acesso-biometria.webp` | Solução: Biometria (`/solucoes/biometria/`) | **Foto Aplicada** | Dedo sendo posicionado em leitor biométrico de impressão digital instalado na parede. |
+| `controle-acesso-facial.webp` | Solução: Reconhecimento Facial (`/solucoes/reconhecimento-facial/`) | **Foto Aplicada** | Terminal de reconhecimento facial instalado em porta de vidro, com pessoa diante da câmera. |
+| `controle-acesso-tag.webp` | Solução: Cartão e Tag RFID (`/solucoes/cartao-e-tag-rfid/`) | **Foto Aplicada** | Mão aproximando uma tag de proximidade de um leitor com teclado numérico. |
+| `controle-senha-e-teclado.webp` | Solução: Senha e Teclado (`/solucoes/senha-e-teclado/`) | **Foto Aplicada** | Dedo digitando senha em teclado touch instalado em porta de madeira. |
+| `catraca-de-acesso.webp` | Solução: Catracas (`/solucoes/catracas/`) | **Foto Aplicada** | Catracas de braços instaladas em recepção, com leitores de acesso no topo. |
+| `cancela-automatica.webp` | Solução: Cancelas e Acesso Veicular (`/solucoes/cancelas-e-acesso-veicular/`) | **Foto Aplicada** | Cancela automática com braço horizontal na entrada de uma área com controle de veículos. |
+| `fechadura-eletromagnetica.webp` | Solução: Fechaduras Eletromagnéticas (`/solucoes/fechaduras-eletromagneticas/`) | **Foto Aplicada** | Fechadura eletromagnética com suporte instalada em porta de vidro. |
+| `interfone-e-videoporteiro.webp` | Solução: Interfone e Vídeo Porteiro (`/solucoes/interfone-e-video-porteiro/`) | **Foto Aplicada** | Monitor de vídeo porteiro interno ao lado de módulo externo com botão de chamada. |
+| `instalacao-e-projeto-controle-de-acesso.webp` | Serviço: Instalação e Projeto (`/servicos/instalacao-e-projeto/`) | **Foto Aplicada** | Profissional analisando planta de ambiente com câmeras de segurança sobre a mesa. |
+| `manutencao-de-acesso.webp` | Serviço: Manutenção (`/servicos/manutencao/`) | **Foto Aplicada** | Técnico de capacete e luvas realizando manutenção em equipamento instalado na parede. |
+| `controle-acesso-segmento-condominio-residencial.webp` | Segmento: Condomínios Residenciais (`/segmentos/condominios-residenciais/`) | **Foto Aplicada** | Leitor com teclado numérico e aproximação de tag na entrada de um condomínio de prédios. |
+| `controle-acesso-segmento-condominio-comercial.webp` | Segmento: Condomínios Comerciais (`/segmentos/condominios-comerciais/`) | **Foto Aplicada** | Leitor biométrico com teclado instalado em porta de vidro de área comercial. |
+| `controle-acesso-segmento-escritorio.webp` | Segmento: Empresas e Escritórios (`/segmentos/empresas-e-escritorios/`) | **Foto Aplicada** | Leitor de acesso instalado na divisória de vidro de um escritório. |
+| `controle-acesso-segmento-industrias.webp` | Segmento: Indústrias (`/segmentos/industrias/`) | **Foto Aplicada** | Trabalhador de capacete diante de terminal facial ao lado de catraca de corpo inteiro em área industrial. |
+| `controle-acesso-segmento-clinicas-e-hospitais.webp` | Segmento: Clínicas e Hospitais (`/segmentos/clinicas-e-hospitais/`) | **Foto Aplicada** | Leitor de acesso com digital e teclado na parede de um corredor hospitalar. |
+| `controle-acesso-segmento-escolas-e-faculdades.webp` | Segmento: Escolas e Universidades (`/segmentos/escolas-e-universidades/`) | **Foto Aplicada** | Fileira de catracas com terminais faciais em um hall de entrada. |
+| `controle-acesso-segmento-academias.webp` | Segmento: Academias (`/segmentos/academias/`) | **Foto Aplicada** | Catracas com terminais de leitura na entrada de uma academia. |
+| `controle-de-acesso-residencial.webp` | Segmento: Residências (`/segmentos/residencias/`) | **Foto Aplicada** | Painel externo de interfone com botões de chamada instalado em muro de pedra ao lado de um portão. |
+| `og-image-default.webp` | Metatags de Compartilhamento Social (OpenGraph e Twitter) | **Foto Aplicada** | Card gráfico institucional padronizado (1200x630 px) da marca Controle de Acesso Curitiba. |
+
+---
+
+## 2. Fotos Pendentes para Futura Substituição
+
+As páginas e categorias listadas a seguir utilizam atualmente imagens placeholders geradas via script e devem ser substituídas por fotos reais autorizadas à medida que forem disponibilizadas:
+
+### Serviços (1 página pendente)
+- `servico-locacao.webp` (`/servicos/locacao/`): Foto de equipamentos e catracas disponibilizados sob regime de locação corporativa ou para eventos.
+
+### Cidades Atendidas (11 páginas pendentes)
+- `cidade-curitiba.webp` (`/cidades/curitiba/`)
+- `cidade-pinhais.webp` (`/cidades/pinhais/`)
+- `cidade-sao-jose-dos-pinhais.webp` (`/cidades/sao-jose-dos-pinhais/`)
+- `cidade-araucaria.webp` (`/cidades/araucaria/`)
+- `cidade-almirante-tamandare.webp` (`/cidades/almirante-tamandare/`)
+- `cidade-colombo.webp` (`/cidades/colombo/`)
+- `cidade-campo-largo.webp` (`/cidades/campo-largo/`)
+- `cidade-fazenda-rio-grande.webp` (`/cidades/fazenda-rio-grande/`)
+- `cidade-campo-magro.webp` (`/cidades/campo-magro/`)
+- `cidade-quatro-barras.webp` (`/cidades/quatro-barras/`)
+- `cidade-campina-grande-do-sul.webp` (`/cidades/campina-grande-do-sul/`)
+
+*Observação para cidades: Fotos externas dos polos industriais, centros comerciais ou viatura de atendimento técnico em serviço local.*
+
+### Blog Técnico (6 posts pendentes)
+- `/blog/quanto-custa-controle-de-acesso/`
+- `/blog/biometria-ou-reconhecimento-facial/`
+- `/blog/controle-de-acesso-e-lgpd/`
+- `/blog/como-escolher-uma-catraca/`
+- `/blog/controle-de-acesso-para-condominio-passo-a-passo/`
+- `/blog/controle-de-acesso-funciona-sem-internet/`
+
+---
+
+## 3. Observações Importantes
+
+1. **Direitos de Uso e Marcas Fabricantes:**
+   É necessário confirmar formalmente os direitos de uso e veiculação publicitária de todas as fotos aplicadas, bem como a conformidade do uso de imagem de equipamentos em que logomarcas de fabricantes (ex.: Intelbras, Control iD, Master) aparecem visíveis nas carcaças dos dispositivos.
+
+2. **Substituição por Projetos Reais da Empresa:**
+   Sempre que houver disponibilidade de fotografias registradas durante obras e manutenções executadas pela própria equipe técnica da Controle de Acesso Curitiba / Intelsecsul, recomenda-se a substituição gradual das fotos ilustrativas por imagens de cases e instalações reais em clientes locais de Curitiba e RMC.
+
+3. **Particularidades das Fotos Aplicadas:**
+   - **Instalação e Projeto (`/servicos/instalacao-e-projeto/`):** A foto atual (`instalacao-e-projeto-controle-de-acesso.webp`) exibe profissional analisando planta acompanhada de câmeras de segurança (CFTV), em vez de hardware exclusivo de controle de acesso físico. Deve ser substituída por foto de instalação de rack, cabeamento estruturado ou fixação de fechaduras e controladoras assim que disponível.
+   - **Residências (`/segmentos/residencias/`):** A foto atual (`controle-de-acesso-residencial.webp`) retrata um painel externo coletivo com múltiplos botões (típico de condomínio ou edifício multifamiliar) em vez de uma residência unifamiliar térrea ou sobrado. Deve ser substituída por foto de fechadura digital ou vídeo porteiro residencial individual assim que disponível.

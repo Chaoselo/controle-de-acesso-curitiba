@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Phone, MessageSquare, ShieldCheck, MapPin, ExternalLink } from 'lucide-react';
 import { siteConfig, isFieldFilled } from '../config/site';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
+import { trackPhoneClick } from '../lib/analytics';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -30,7 +31,7 @@ export function Footer() {
 
             <div className="pt-2 flex flex-col gap-2">
               <a
-                href={whatsappLink('rodapé')}
+                href={whatsappLink('controle de acesso (ainda não sei qual solução escolher)')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackWhatsAppClick('rodape')}
@@ -42,6 +43,7 @@ export function Footer() {
 
               <a
                 href={`tel:${siteConfig.phoneRaw}`}
+                onClick={() => trackPhoneClick(typeof window !== 'undefined' ? window.location.pathname : undefined)}
                 className="inline-flex items-center gap-2 text-xs text-slate-300 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4 text-sky-400" aria-hidden="true" />
@@ -126,11 +128,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/solucoes/software-de-gestao/" className="hover:text-white transition-colors">
-                  Software de Gestão
-                </Link>
-              </li>
-              <li>
                 <Link to="/solucoes/interfone-e-video-porteiro/" className="hover:text-white transition-colors">
                   Interfone e Vídeo Porteiro
                 </Link>
@@ -138,7 +135,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Coluna 3: Segmentos e Serviços */}
+          {/* Coluna 3: Segmentos (8 segmentos) */}
           <div className="space-y-3">
             <h3 className="text-xs font-semibold text-white tracking-wider uppercase">
               <Link to="/segmentos/" className="hover:text-sky-400 transition-colors">
@@ -171,55 +168,72 @@ export function Footer() {
                   Clínicas e Hospitais
                 </Link>
               </li>
-              <li className="pt-2 border-t border-slate-800">
-                <Link to="/servicos/" className="text-sky-400 hover:text-white transition-colors font-semibold uppercase tracking-wider block">
-                  Serviços Especializados
+              <li>
+                <Link to="/segmentos/escolas-e-universidades/" className="hover:text-white transition-colors">
+                  Escolas e Universidades
                 </Link>
               </li>
               <li>
-                <Link to="/servicos/instalacao-e-projeto/" className="text-slate-300 hover:text-white transition-colors font-medium">
+                <Link to="/segmentos/academias/" className="hover:text-white transition-colors">
+                  Academias
+                </Link>
+              </li>
+              <li>
+                <Link to="/segmentos/residencias/" className="hover:text-white transition-colors">
+                  Residências
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Coluna 4: Serviços Especializados (4 serviços) */}
+          <div className="space-y-3">
+            <h3 className="text-xs font-semibold text-white tracking-wider uppercase">
+              <Link to="/servicos/" className="hover:text-sky-400 transition-colors">
+                Serviços Especializados
+              </Link>
+            </h3>
+            <ul className="space-y-2 text-xs text-slate-400">
+              <li>
+                <Link to="/servicos/instalacao-e-projeto/" className="hover:text-white transition-colors">
                   Instalação e Projeto
                 </Link>
               </li>
               <li>
-                <Link to="/servicos/manutencao/" className="text-slate-300 hover:text-white transition-colors font-medium">
+                <Link to="/servicos/manutencao/" className="hover:text-white transition-colors">
                   Manutenção de Acesso
                 </Link>
               </li>
               <li>
-                <Link to="/servicos/locacao/" className="text-slate-300 hover:text-white transition-colors font-medium">
+                <Link to="/servicos/locacao/" className="hover:text-white transition-colors">
                   Locação de Equipamentos
                 </Link>
               </li>
-              <li>
-                <Link to="/servicos/modernizacao/" className="text-slate-300 hover:text-white transition-colors font-medium">
-                  Modernização (Retrofit)
-                </Link>
-              </li>
             </ul>
           </div>
 
-          {/* Coluna 4: Cidades Atendidas na RMC */}
-          <div className="space-y-3">
-            <h3 className="text-xs font-semibold text-white tracking-wider uppercase">
+        </div>
+
+        {/* Linha de Cidades Atendidas na RMC */}
+        <div className="mt-12 pt-8 border-t border-slate-800">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <span className="text-xs font-semibold text-white tracking-wider uppercase shrink-0">
               <Link to="/cidades/" className="hover:text-sky-400 transition-colors">
-                Cidades Atendidas
+                Cidades Atendidas na RMC:
               </Link>
-            </h3>
-            <ul className="space-y-1.5 text-xs text-slate-400">
+            </span>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-slate-400">
               {siteConfig.citiesServed.map(city => (
-                <li key={city.slug}>
-                  <Link
-                    to={`/cidades/${city.slug}/`}
-                    className="hover:text-sky-400 transition-colors"
-                  >
-                    Controle de Acesso em {city.name}
-                  </Link>
-                </li>
+                <Link
+                  key={city.slug}
+                  to={`/cidades/${city.slug}/`}
+                  className="hover:text-sky-400 transition-colors"
+                >
+                  {city.name}
+                </Link>
               ))}
-            </ul>
+            </div>
           </div>
-
         </div>
 
         {/* Linha divisória e rodapé institucional */}

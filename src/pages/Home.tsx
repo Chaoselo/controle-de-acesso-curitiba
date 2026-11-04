@@ -1,18 +1,8 @@
 import { Link } from 'react-router-dom';
 import { 
-  Fingerprint, 
-  ScanFace, 
-  CreditCard, 
-  ShieldAlert, 
-  DoorClosed, 
-  Building2, 
-  Building, 
-  Factory, 
   CheckCircle2, 
   ArrowRight, 
   MessageSquare, 
-  Phone, 
-  HelpCircle,
   MapPin,
   ChevronRight
 } from 'lucide-react';
@@ -42,88 +32,62 @@ export function HomePage() {
         title="Controle de Acesso em Curitiba | Instalação e Manutenção"
         description="Especialistas em controle de acesso em Curitiba e RMC. Instalação e manutenção de catracas, biometria, facial e cancelas para condomínios. Peça orçamento!"
         canonicalPath="/"
-        ogImage="/images/hero-controle-acesso-curitiba.webp"
+        ogImage="/images/controle-de-acesso-curitiba-homepage.webp"
         schemaData={generateFAQSchema(generalFaqList)}
       />
 
       {/* Hero Section */}
       <section className="relative bg-petroleum text-white pt-12 pb-16 lg:py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            
-            {/* Texto do Hero */}
-            <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 text-xs font-medium text-sky-300">
-                <span>{siteConfig.brandSignature}</span>
-                <span aria-hidden="true">·</span>
-                <span>Curitiba e Região Metropolitana</span>
-              </div>
-
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                Controle de Acesso em Curitiba: Segurança e Gestão de Portarias
-              </h1>
-
-              {/* Resposta direta para snippet */}
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
-                Fornecemos projetos, instalação e manutenção especializada de controle de acesso para condomínios residenciais, centros empresariais e indústrias em Curitiba e RMC. Substitua chaves e crachás manuais por tecnologias modernas como biometria digital, reconhecimento facial, catracas de pedestres e cancelas veiculares com suporte técnico local.
-              </p>
-
-              {/* Ações principais */}
-              <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-                <a
-                  href={whatsappLink(whatsappContext)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={handleWhatsAppHero}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white rounded-md font-semibold text-sm transition-all shadow-md"
-                >
-                  <MessageSquare className="w-5 h-5 fill-white text-transparent" aria-hidden="true" />
-                  <span>Pedir Orçamento no WhatsApp</span>
-                </a>
-
-                <Link
-                  to="/solucoes/biometria/"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-md font-medium text-sm transition-colors"
-                >
-                  <span>Conhecer Soluções</span>
-                  <ArrowRight className="w-4 h-4 text-sky-400" aria-hidden="true" />
-                </Link>
-              </div>
-
-              {/* Diferenciais técnicos objetivos (sem inventar superlativos ou fake stats) */}
-              <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 border-t border-slate-800 text-xs text-slate-300">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" aria-hidden="true" />
-                  <span>Visita técnica em Curitiba e RMC</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" aria-hidden="true" />
-                  <span>Equipamentos homologados</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" aria-hidden="true" />
-                  <span>Suporte e manutenção ágil</span>
-                </div>
-              </div>
-
+          <div className="max-w-4xl space-y-6">
+            <div className="inline-flex items-center gap-2 text-xs font-medium text-sky-300">
+              <span>{siteConfig.brandSignature}</span>
             </div>
 
-            {/* Imagem da Dobra com fetchpriority="high" */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-lg overflow-hidden border border-slate-700/80 shadow-2xl bg-slate-900">
-                <img
-                  src="/images/hero-controle-acesso-curitiba.webp"
-                  alt="Instalação de controle de acesso biométrico e portaria eletrônica em Curitiba"
-                  width={1200}
-                  height={800}
-                  fetchPriority="high"
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-5">
-                  <span className="text-xs text-slate-200 font-medium">
-                    Infraestrutura de controle de acesso e segurança eletrônica integrada
-                  </span>
-                </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+              Projetos sob medida, instalação e manutenção com suporte integral
+            </h1>
+
+            {/* Resposta direta para snippet */}
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
+              Substitua chaves e crachás manuais por tecnologias modernas como biometria digital, reconhecimento facial, catracas de pedestres e cancelas veiculares com suporte técnico local.
+            </p>
+
+            {/* Ações principais */}
+            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+              <a
+                href={whatsappLink(whatsappContext)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleWhatsAppHero}
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white rounded-md font-semibold text-sm transition-all shadow-md"
+              >
+                <MessageSquare className="w-5 h-5 fill-white text-transparent" aria-hidden="true" />
+                <span>Pedir Orçamento no WhatsApp</span>
+              </a>
+
+              <Link
+                to="/solucoes/"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-md font-medium text-sm transition-colors"
+              >
+                <span>Conhecer Soluções</span>
+                <ArrowRight className="w-4 h-4 text-sky-400" aria-hidden="true" />
+              </Link>
+            </div>
+
+            {/* Diferenciais técnicos objetivos (sem inventar superlativos ou fake stats) */}
+            <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 border-t border-slate-800 text-xs text-slate-300">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" aria-hidden="true" />
+                <span>Visita técnica em Curitiba e RMC</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" aria-hidden="true" />
+                <span>Projeto sob medida</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" aria-hidden="true" />
+                <span>Suporte e manutenção ágil</span>
               </div>
             </div>
 
@@ -146,62 +110,62 @@ export function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {solucoesList.slice(0, 6).map((solucao) => (
+          {solucoesList.map((solucao) => (
             <article 
               key={solucao.slug}
-              className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-300 hover:shadow-md transition-all flex flex-col justify-between"
+              className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:border-slate-300 hover:shadow-md transition-all flex flex-col justify-between"
             >
-              <div>
-                <div className="w-10 h-10 rounded-md bg-sky-50 text-sky-700 flex items-center justify-center mb-4">
-                  {solucao.slug === 'biometria' && <Fingerprint className="w-5 h-5" />}
-                  {solucao.slug === 'reconhecimento-facial' && <ScanFace className="w-5 h-5" />}
-                  {solucao.slug === 'cartao-e-tag-rfid' && <CreditCard className="w-5 h-5" />}
-                  {solucao.slug === 'catracas' && <DoorClosed className="w-5 h-5" />}
-                  {solucao.slug === 'cancelas-e-acesso-veicular' && <ShieldAlert className="w-5 h-5" />}
-                  {solucao.slug === 'fechaduras-eletromagneticas' && <DoorClosed className="w-5 h-5" />}
-                </div>
+              <div className="aspect-video w-full bg-slate-100 overflow-hidden">
+                <Link to={`/solucoes/${solucao.slug}/`} tabIndex={-1} aria-hidden="true">
+                  <img
+                    src={solucao.image.src}
+                    alt={solucao.image.alt}
+                    width={solucao.image.width}
+                    height={solucao.image.height}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+                  />
+                </Link>
+              </div>
 
-                <h3 className="text-base font-bold text-slate-900 mb-2">
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <h3 className="text-base font-bold text-slate-900 mb-4">
                   <Link to={`/solucoes/${solucao.slug}/`} className="hover:text-sky-600 transition-colors">
                     {solucao.title}
                   </Link>
                 </h3>
 
-                <p className="text-xs text-slate-600 leading-relaxed line-clamp-3 mb-4">
-                  {solucao.directAnswer}
-                </p>
-              </div>
+                <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <Link
+                    to={`/solucoes/${solucao.slug}/`}
+                    className="text-xs font-semibold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1"
+                  >
+                    <span>Ver detalhes técnicos</span>
+                    <ChevronRight className="w-3.5 h-3.5" aria-hidden="true" />
+                  </Link>
 
-              <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                <Link
-                  to={`/solucoes/${solucao.slug}/`}
-                  className="text-xs font-semibold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1"
-                >
-                  <span>Ver detalhes técnicos</span>
-                  <ChevronRight className="w-3.5 h-3.5" aria-hidden="true" />
-                </Link>
-
-                <a
-                  href={whatsappLink(solucao.whatsappContext)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => trackWhatsAppClick(`card home ${solucao.slug}`, '/')}
-                  className="text-xs font-medium text-emerald-600 hover:text-emerald-700"
-                  title="Orçar esta solução no WhatsApp"
-                >
-                  Orçar
-                </a>
+                  <a
+                    href={whatsappLink(solucao.whatsappContext)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackWhatsAppClick(`card home ${solucao.slug}`, '/')}
+                    className="text-xs font-medium text-emerald-600 hover:text-emerald-700"
+                    title="Orçar esta solução no WhatsApp"
+                  >
+                    Orçar
+                  </a>
+                </div>
               </div>
             </article>
           ))}
         </div>
 
-        <div className="mt-8 text-center">
+        <div className="mt-10 text-center">
           <Link
-            to="/solucoes/biometria/"
-            className="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 hover:text-slate-950 bg-slate-100 px-4 py-2 rounded-md"
+            to="/solucoes/"
+            className="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 hover:text-slate-950 bg-slate-100 hover:bg-slate-200 px-5 py-2.5 rounded-md transition-colors"
           >
-            <span>Ver todas as soluções (senhas, software, interfonia, fechaduras)</span>
+            <span>Ver catálogo completo com comparativo técnico de soluções</span>
             <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
           </Link>
         </div>
@@ -265,7 +229,7 @@ export function HomePage() {
             </p>
           </div>
           <Link
-            to="/cidades/curitiba/"
+            to="/cidades/"
             className="text-xs font-semibold text-sky-600 hover:text-sky-700 whitespace-nowrap inline-flex items-center gap-1"
           >
             <span>Ver cidades atendidas</span>
@@ -333,7 +297,7 @@ export function HomePage() {
           </p>
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href={whatsappLink('orçamento geral na página inicial')}
+              href={whatsappLink('controle de acesso para empresa ou condomínio em Curitiba')}
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleWhatsAppCta}

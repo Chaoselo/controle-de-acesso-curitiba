@@ -6,13 +6,12 @@ export const instalacaoEProjetoService: ServiceContent = {
   seoTitle: 'Instalação de Controle de Acesso Curitiba | Projetos',
   metaDescription: 'Instalação profissional de controle de acesso em Curitiba. Projetos para condomínios e empresas com cabeamento estruturado e garantia. Orçamento!',
   keyword: 'instalacao de controle de acesso Curitiba',
-  directAnswer: 'Projetamos e executamos a instalação completa de sistemas de controle de acesso físico para condomínios, empresas e indústrias em Curitiba e Região Metropolitana. Nossa engenharia especializada abrange desde a vistoria técnica detalhada no local e cálculo de esforço de retenção em portas até o lançamento de cabeamento estruturado blindado, integração de clausuras de pedestres, parametrização de softwares e treinamento operacional assistido da equipe.',
-  // TODO: foto real
+  directAnswer: 'Projetamos e executamos a instalação completa de sistemas de controle de acesso físico para condomínios, empresas e indústrias em Curitiba e Região Metropolitana. Nossa engenharia especializada abrange desde a vistoria técnica detalhada no local e cálculo de esforço de retenção em portas até o lançamento de cabeamento estruturado blindado, integração de clausuras de pedestres, parametrização do sistema e treinamento operacional assistido da equipe.',
   image: {
-    src: '/images/servico-instalacao-projeto.webp',
-    alt: 'Técnico especialista instalando painel de controle de acesso e cabeamento em Curitiba',
-    width: 800,
-    height: 600
+    src: '/images/instalacao-e-projeto-controle-de-acesso.webp',
+    alt: 'Profissional analisando planta de ambiente com câmeras de segurança sobre a mesa',
+    width: 1200,
+    height: 675
   },
   scope: [
     'Vistoria técnica presencial no imóvel com levantamento de vãos, tipos de batentes, fluxo diário de pessoas e pontos de alimentação elétrica.',
@@ -20,7 +19,7 @@ export const instalacaoEProjetoService: ServiceContent = {
     'Lançamento de cabeamento estruturado de rede de alta categoria (Cat6) e fiação de energia em eletrodutos galvanizados aparentes ou embutidos.',
     'Montagem de rack organizador com identificação completa de circuitos por anilhas numeradas, barramento de aterramento e proteção contra surtos (DPS).',
     'Instalação de fontes de alimentação colmeia de 13,8V com bancos de baterias estacionárias e no-breaks senoidais para autonomia sem rede elétrica.',
-    'Parametrização avançada de regras de acesso em software de gestão, cadastro biométrico inicial assistido e treinamento formal da equipe de portaria.',
+    'Parametrização avançada de regras de acesso no sistema de controle, cadastro biométrico inicial assistido e treinamento formal da equipe de portaria.',
     'Testes de carga e estresse elétrico com simulação de corte de energia da rede pública para homologar a comutação instantânea das baterias de contingência sem travamento de relés.'
   ],
   processSteps: [
@@ -46,8 +45,8 @@ export const instalacaoEProjetoService: ServiceContent = {
     },
     {
       step: '05',
-      title: 'Configuração de Software e Testes de Homologação',
-      description: 'Instalamos o software de portaria, criamos matrizes de permissão por horários e realizamos testes de esforço mecânico contínuo, tempo de resposta dos relés de acionamento, funcionamento da rotina de emergência e comportamento na queda de energia.'
+      title: 'Configuração do Sistema e Testes de Homologação',
+      description: 'Configuramos as rotinas de portaria, criamos matrizes de permissão por horários e realizamos testes de esforço mecânico contínuo, tempo de resposta dos relés de acionamento, funcionamento da rotina de emergência e comportamento na queda de energia.'
     },
     {
       step: '06',
@@ -77,7 +76,7 @@ export const instalacaoEProjetoService: ServiceContent = {
       answer: 'Sim. Não utilizamos equipamentos de protocolo proprietário fechado que prendam o cliente a um único fornecedor. As controladoras e terminais instalados possuem saídas Wiegand, conexões seriais OSDP, relés de contato seco e portas TCP/IP padrão de mercado. Qualquer empresa de portaria remota ou monitoramento 24h que opere em Curitiba poderá integrar e gerenciar os equipamentos sem necessidade de retrabalho ou descarte de componentes.'
     }
   ],
-  relatedSolutions: ['reconhecimento-facial', 'catracas', 'fechaduras-eletromagneticas', 'software-de-gestao'],
-  relatedServices: ['manutencao', 'modernizacao', 'locacao'],
+  relatedSolutions: ['reconhecimento-facial', 'catracas', 'fechaduras-eletromagneticas', 'cartao-e-tag-rfid'],
+  relatedServices: ['manutencao', 'locacao'],
   whatsappContext: 'instalação e projeto de controle de acesso em Curitiba'
 };

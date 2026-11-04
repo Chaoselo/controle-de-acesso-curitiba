@@ -116,7 +116,7 @@ export function SolutionDetailPage() {
             width={solucao.image.width}
             height={solucao.image.height}
             loading="lazy"
-            className="w-full h-auto object-cover max-h-[460px]"
+            className="w-full h-auto object-cover object-center max-h-[460px]"
           />
         </div>
 
@@ -171,7 +171,7 @@ export function SolutionDetailPage() {
                 <div className="bg-white border border-slate-200 rounded-md p-5 space-y-3">
                   <h3 className="text-sm font-bold text-emerald-800 flex items-center gap-1.5 uppercase tracking-wider text-xs">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
-                    <span>Vantagens Comprovadas</span>
+                    <span>Vantagens</span>
                   </h3>
                   <ul className="space-y-2 text-sm text-slate-600">
                     {solucao.advantages.map((adv, idx) => (
