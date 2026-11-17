@@ -15,14 +15,13 @@ export function SEOHead({
   title,
   description,
   canonicalPath,
-  ogImage = siteConfig.defaultOgImage,
   ogType = 'website',
   schemaData
 }: SEOHeadProps) {
   // Garante barra final no canonical absoluto
   const normalizedPath = canonicalPath.endsWith('/') ? canonicalPath : `${canonicalPath}/`;
   const canonicalUrl = `${siteConfig.domain}${normalizedPath}`;
-  const fullOgImageUrl = ogImage.startsWith('http') ? ogImage : `${siteConfig.domain}${ogImage}`;
+  const fullOgImageUrl = `${siteConfig.domain}/og-default.jpg`;
 
   useEffect(() => {
     // 1. Title
@@ -70,6 +69,10 @@ export function SEOHead({
     setMetaProperty('og:description', description);
     setMetaProperty('og:url', canonicalUrl);
     setMetaProperty('og:image', fullOgImageUrl);
+    setMetaProperty('og:image:width', '1200');
+    setMetaProperty('og:image:height', '630');
+    setMetaProperty('og:image:type', 'image/jpeg');
+    setMetaProperty('og:image:alt', title);
     setMetaProperty('og:type', ogType);
     setMetaProperty('og:site_name', siteConfig.name);
     setMetaProperty('og:locale', 'pt_BR');

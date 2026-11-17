@@ -8,14 +8,14 @@ export const funcionaSemInternetContent: BlogPostContent = {
   author: 'Equipe Controle de Acesso Curitiba',
   publishedDate: '[[PREENCHER: data de publicação]]',
   readTime: '7 min de leitura',
-  summary: 'Sistemas profissionais de controle de acesso físico são projetados com inteligência distribuída e continuam operando normalmente mesmo durante interrupções completas de internet. Graças à memória local não volátil de controladoras e terminais faciais, as portas e cancelas validam moradores em milissegundos, armazenam os logs em buffer e sincronizam automaticamente os eventos assim que a conexão de rede é restabelecida.',
+  summary: 'Sistemas profissionais de controle de acesso físico são projetados com inteligência distribuída e continuam operando em modo local mesmo durante interrupções de internet. Graças à memória interna das controladoras e terminais, portas e cancelas validam cadastros ativos localmente, armazenam os registros em buffer e sincronizam os eventos quando a conexão de rede retorna.',
   sections: [
     {
       heading: 'O Que Acontece com a Portaria se a Conexão de Internet Cair?',
       paragraphs: [
-        'Com a popularização de serviços em nuvem, aplicativos de celular para moradores e portarias remotas virtuais, uma das dúvidas mais frequentes de síndicos, empresários e conselheiros em Curitiba é: "Se a operadora de internet tiver uma instabilidade ou o cabo de fibra óptica for rompido na rua, os moradores vão ficar trancados para fora do condomínio?".',
-        'A resposta técnica direta e categórica é: não, desde que o sistema tenha sido dimensionado e implantado por engenharia especializada com arquitetura distribuída e equipamentos profissionais homologados.',
-        'Ao contrário do que muitos imaginam, um controle de acesso predial seguro não depende de consultas contínuas à nuvem a cada segundo para decidir se destrava ou não uma porta. A seguir, explicamos em detalhes como funciona a operação em modo autônomo (offline) e por que ela garante segurança ininterrupta.'
+        'Com a popularização de serviços em nuvem, aplicativos para moradores e portarias remotas, uma das dúvidas mais frequentes de síndicos, empresários e conselheiros em Curitiba é: "Se a operadora de internet tiver uma instabilidade ou o cabo for rompido na rua, os usuários vão ficar trancados para fora?".',
+        'Em geral, não — desde que o sistema seja dimensionado e implantado com arquitetura distribuída e equipamentos profissionais adequados ao projeto.',
+        'Ao contrário do que muitos imaginam, um controle de acesso predial bem estruturado não depende de consultas contínuas à nuvem a cada passagem para decidir se destrava ou não uma porta. A seguir, explicamos como funciona a operação em modo autônomo (offline).'
       ],
       subsections: [
         {
@@ -28,8 +28,8 @@ export const funcionaSemInternetContent: BlogPostContent = {
         {
           heading: 'Memória Local Flash Não Volátil nas Controladoras',
           paragraphs: [
-            'Terminais de reconhecimento facial modernos e controladoras de acesso contam com chips de memória flash não volátil com capacidade para armazenar dezenas de milhares de templates biométricos matemáticos, tags veiculares e tabelas de horários de permissão.',
-            'Quando um morador ou colaborador posiciona a face ou aproxima o crachá do leitor, o algoritmo de comparação processa a validação localmente em menos de 0,3 segundo, sem enviar um único pacote de dados para fora da rede local. Se a internet cair por uma hora, um dia ou uma semana inteira, a rotina de quem possui cadastro ativo não sofre qualquer impacto.'
+            'Terminais de reconhecimento facial e controladoras de acesso contam, em geral, com memória flash não volátil com capacidade para armazenar templates biométricos matemáticos, tags veiculares e tabelas de horários conforme o modelo do equipamento.',
+            'Quando um morador ou colaborador posiciona a face ou aproxima o crachá do leitor, a comparação é processada localmente, sem depender da saída pela internet. Se a conexão cair temporariamente, a rotina de quem possui cadastro ativo continua operando.'
           ]
         }
       ]
@@ -37,22 +37,22 @@ export const funcionaSemInternetContent: BlogPostContent = {
     {
       heading: 'O Que Acontece com os Registros de Passagem (Logs de Evento)?',
       paragraphs: [
-        'Outra preocupação compreensível diz respeito à auditoria: o condomínio perde o histórico de quem entrou e saiu durante o período em que a internet esteve desconectada?',
-        'A resposta é não. Cada evento de acesso liberado, porta forçada ou tentativa de passagem não autorizada é gravado instantaneamente em uma fila de buffer local dentro da controladora, com data e hora exatas sincronizadas pelo relógio interno (RTC) do equipamento.'
+        'Outra preocupação compreensível diz respeito à auditoria: o condomínio ou empresa perde o histórico de quem entrou e saiu durante o período sem internet?',
+        'Em geral, não. Cada evento de acesso liberado, porta aberta por mais tempo ou tentativa de passagem sem permissão é gravado em uma fila de buffer local dentro da controladora, com data e hora mantidas pelo relógio interno (RTC) do equipamento.'
       ],
       subsections: [
         {
           heading: 'Ressincronização Automática com o Servidor',
           paragraphs: [
-            'Assim que o sinal de internet da operadora retorna, o sistema de gerenciamento detecta o restabelecimento da conectividade e inicia uma sincronização silenciosa em segundo plano.',
-            'Todos os milhares de eventos acumulados na memória interna da controladora são descarregados para o banco de dados central sem qualquer perda de informação, permitindo a emissão de relatórios completos de auditoria para o síndico ou gestor de segurança.'
+            'Assim que o sinal de internet da operadora retorna, o sistema detecta o restabelecimento da conectividade e inicia a sincronização em segundo plano.',
+            'Os eventos acumulados na memória interna da controladora são enviados para o histórico central de gerenciamento conforme a capacidade de memória do equipamento, permitindo a consulta de relatórios pelo síndico ou gestor.'
           ]
         },
         {
           heading: 'O Papel Indispensável do No-break e da Contingência Elétrica',
           paragraphs: [
-            'Enquanto a queda de internet não impede a validação local dos usuários, a falta de energia elétrica pode, sim, comprometer a operação caso o projeto não conte com contingência adequada. Como as fechaduras eletromagnéticas são do tipo fail-safe (destravam sem eletricidade para permitir fuga em incêndios), a presença de no-breaks senoidais com baterias seladas é o pilar que mantém todo o sistema energizado durante tempestades em Curitiba.',
-            'Dimensionamos bancos de baterias para manter os leitores faciais, as controladoras e os eletroímãs operando ininterruptamente por horas durante apagões da concessionária pública.'
+            'Enquanto a queda de internet não impede a validação local dos cadastros ativos, a falta de energia elétrica compromete a operação caso o projeto não conte com contingência adequada. Como as fechaduras eletromagnéticas costumam operar no modo fail-safe (destravam sem eletricidade para facilitar a saída em emergências), a presença de fontes carregadoras com no-break e baterias ajuda a manter leitores e travas alimentados durante oscilações de energia.',
+            'Dimensionamos o banco de baterias conforme a carga dos equipamentos e o tempo de reserva pretendido pelo cliente após o diagnóstico técnico.'
           ]
         }
       ]
@@ -79,12 +79,12 @@ export const funcionaSemInternetContent: BlogPostContent = {
       answer: 'Se o cadastro for feito localmente na própria rede interna do condomínio via computador conectado ao mesmo switch das controladoras, sim. Apenas comandos remotos enviados pela nuvem aguardam o retorno do link.'
     },
     {
-      question: 'O leitor facial perde a hora correta se a internet ficar fora do ar por dias?',
-      answer: 'Não. As controladoras profissionais possuem bateria interna tipo moeda (RTC) que mantém o relógio de hardware rodando com precisão por anos mesmo sem conexão externa.'
+      question: 'O leitor facial perde a hora correta se a internet ficar fora do ar por bastante tempo?',
+      answer: 'Em geral não, pois as controladoras profissionais contam com bateria interna para o relógio de tempo real (RTC), dependendo do modelo e do estado do componente.'
     },
     {
-      question: 'Cancelas veiculares de garagem continuam abrindo com tag UHF sem internet?',
-      answer: 'Sim, com total normalidade. A antena lê a tag colada no para-brisa, a controladora valida o código na memória local e comanda o motor da cancela em menos de um segundo.'
+      question: 'Cancelas veiculares de estacionamento continuam abrindo com tag UHF sem internet?',
+      answer: 'Em instalações configuradas com validação local na controladora, sim: a antena lê a tag no veículo, a controladora verifica o cadastro na memória local e aciona a cancela.'
     }
   ],
   whatsappContext: 'dúvidas sobre funcionamento do controle de acesso sem internet'

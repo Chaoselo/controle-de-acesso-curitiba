@@ -4,9 +4,9 @@ export const cartaoETagRfidSolution: SolutionContent = {
   slug: 'cartao-e-tag-rfid',
   title: 'Controle de Acesso por Cartão e Tag RFID em Curitiba',
   seoTitle: 'Controle de Acesso por Cartão e RFID Curitiba | Crachás',
-  metaDescription: 'Instalação de controle de acesso por cartão de proximidade e tags RFID em Curitiba e região. Segurança e controle de crachás. Solicite seu orçamento agora!',
+  metaDescription: 'Instalação de controle de acesso por cartão de proximidade e tags RFID em Curitiba e região. Credenciais para empresas, condomínios e estacionamentos.',
   keyword: 'controle de acesso por cartao de proximidade',
-  directAnswer: 'O controle de acesso por cartões inteligentes e tags de radiofrequência (RFID) permite a liberação ágil de passagens por aproximação sem contato mecânico. O modelo é amplamente utilizado em crachás corporativos e condomínios que demandam credenciais práticas e econômicas para colaboradores e prestadores. O sistema possibilita o bloqueio imediato de itens extraviados e auditoria de eventos conforme as regras configuradas na controladora predial.',
+  directAnswer: 'O controle de acesso por cartões de proximidade e tags de radiofrequência (RFID) permite liberar passagens por aproximação sem contato mecânico. Em Curitiba e Região Metropolitana, é muito utilizado em crachás corporativos, credenciais para prestadores e visitantes, além de tags veiculares para estacionamentos e garagens de condomínios, com bloqueio rápido no sistema em caso de perda.',
   image: {
     src: '/images/controle-acesso-tag.webp',
     alt: 'Mão aproximando uma tag de proximidade de um leitor com teclado numérico',
@@ -14,94 +14,94 @@ export const cartaoETagRfidSolution: SolutionContent = {
     height: 675
   },
   howItWorks: [
-    'Acoplamento eletromagnético por indução passiva: A antena do leitor gera um campo constante. Ao aproximar o cartão ou chaveiro a poucos centímetros, a bobina interna da credencial capta essa energia por indução magnética, alimentando o microchip sem necessidade de baterias.',
-    'Diferenciação técnica entre frequências e protocolos: Tecnologias antigas de 125 kHz transmitem números fixos sem criptografia, possibilitando clonagens com aparelhos simples. Padrões de 13,56 MHz como Mifare Classic reduzem a cópia trivial, embora possuam fragilidades conhecidas; já o MIFARE DESFire atende a projetos com requisitos mais rigorosos.',
-    'Compatibilidade técnica entre leitor e credencial: O leitor e as credenciais devem operar obrigatoriamente na mesma faixa de frequência e padrão de modulação. Antenas de 125 kHz não leem cartões de 13,56 MHz, exigindo especificação homogênea ou o uso de leitores híbridos com suporte a múltiplos protocolos.',
-    'Transmissão de dados via Wiegand, RS-485 ou OSDP: O leitor converte os dados e os envia para a controladora por cabeamento. As saídas Wiegand transmitem pulsos simples, enquanto barramentos seriais RS-485 e o protocolo supervisionado OSDP oferecem tráfego bidirecional com suporte a criptografia física.',
-    'Consulta e autorização na controladora de acesso: A placa central verifica se o cartão possui permissão para a porta solicitada e horário vigente. Havendo conformidade, o relé comuta por alguns segundos para liberar a fechadura ou catraca, gravando data, hora e usuário no histórico de eventos.'
+    'Indução eletromagnética passiva: O leitor gera um campo magnético de baixa potência. Ao aproximar o cartão ou chaveiro, o microchip interno capta energia do leitor e transmite seu identificador sem precisar de pilhas.',
+    'Diferenças entre frequências e tecnologias: Credenciais antigas de 125 kHz transmitem códigos simples sem criptografia, facilitando cópias. Padrões de 13,56 MHz como Mifare Classic oferecem recursos adicionais, embora também tenham limitações conhecidas; já tecnologias como MIFARE DESFire elevam o nível de proteção conforme o projeto.',
+    'Compatibilidade entre leitor e credencial: Leitores e cartões precisam operar na mesma frequência e padrão. Antenas de 125 kHz não leem cartões de 13,56 MHz, exigindo definição uniforme ou leitores compatíveis com múltiplos protocolos.',
+    'Comunicação com a controladora: O leitor envia a leitura para a placa controladora via padrões como Wiegand, RS-485 ou protocolo supervisionado OSDP.',
+    'Validação de regras e registro: A controladora verifica horários e permissões configuradas, aciona a fechadura ou catraca quando autorizado e armazena o registro do evento.'
   ],
   whenToChoose: [
-    'Empresas e centros corporativos em Curitiba que adotam crachás funcionais com fotografia impressa para identificação visual dos colaboradores.',
-    'Condomínios residenciais que buscam uma credencial acessível para prestadores de serviço frequentes, controlando dias e horários de entrada.',
-    'Portarias com catracas de visitantes que utilizam coletores mecânicos de cartão na saída para garantir a devolução da credencial.',
-    'Acessos veiculares em garagens que combinam tags veiculares passivas UHF de para-brisa com leitores de longo alcance a alguns metros de distância.'
+    'Empresas e escritórios em Curitiba que utilizam crachás funcionais impressos para identificação visual e controle de setores.',
+    'Condomínios e clubes que precisam de alternativa prática à biometria (em conformidade com boas práticas da LGPD) ou credencial para prestadores temporários.',
+    'Recepções com catracas e urna coletora de crachás na saída para controle organizado de visitantes.',
+    'Estacionamentos e garagens condominiais que utilizam tags veiculares passivas UHF no para-brisa para abertura ágil de cancelas.'
   ],
   advantages: [
-    'Bloqueio imediato de credenciais perdidas: Caso um morador ou funcionário perca seu cartão, o operador cancela o cadastro no sistema em poucos cliques, impedindo o destravamento das portas.',
-    'Baixo custo de reposição de itens de plástico: Chaveiros em ABS e cartões em PVC possuem valor unitário reduzido, tornando a substituição contínua economicamente viável para grandes equipes.',
-    'Possibilidade de personalização gráfica: A superfície de cartões ISO em PVC aceita impressão térmica direta com logomarca da empresa, dados funcionais, código de barras e foto colorida.',
-    'Integração facilitada com relógios de ponto: O mesmo cartão de aproximação utilizado para destravar catracas pode ser aproveitado em equipamentos de registro de ponto homologados.',
-    'Operação rápida com baixo atrito mecânico: A aproximação suave da credencial ocorre em frações de segundo, minimizando filas em horários de pico sem desgaste mecânico por inserção.'
+    'Bloqueio rápido de itens extraviados: Se um colaborador ou morador perder o cartão ou chaveiro, o código específico pode ser inativado rapidamente no sistema.',
+    'Reposição acessível: Cartões em PVC e chaveiros tag possuem custo unitário baixo em comparação a outros tipos de credencial física.',
+    'Personalização visual: Cartões corporativos podem receber impressão com foto, nome e identidade da empresa.',
+    'Compatibilidade prática: Podem ser integrados a catracas, fechaduras eletromagnéticas (inclusive em portas de vidro) e sistemas compatíveis do mercado.',
+    'Passagem ágil e sem atrito mecânico: A aproximação ocorre rapidamente, evitando desgaste por inserção física de chaves.'
   ],
   limitations: [
-    'Risco de empréstimo indevido entre pessoas: Por ser um objeto físico desvinculado de traços biológicos, um usuário pode entregar voluntariamente seu cartão a terceiros para passagens não autorizadas.',
-    'Suscetibilidade a clonagem em modelos desprotegidos: Tecnologias legadas de 125 kHz e padrões básicos sem criptografia forte podem ser duplicados com facilidade; nenhuma tecnologia RFID deve ser anunciada como imune a cópias.',
-    'Problemas decorrentes de esquecimento e perda: Usuários que esquecem o crachá em casa geram demandas manuais frequentes na portaria para conferência de identidade e liberações de contingência.',
-    'Desgaste estrutural de cartões e bolsas blindadas: Cartões guardados em carteiras com proteção contra radiofrequência exigem remoção manual do bolso, enquanto dobras excessivas podem romper a antena de cobre interna.'
+    'Possibilidade de empréstimo entre usuários: Por ser um objeto físico sem verificação biométrica, uma pessoa pode entregar seu cartão ou chaveiro a terceiros.',
+    'Risco de clonagem conforme a tecnologia: Cartões simples de 125 kHz podem ser copiados com facilidade; mesmo modelos avançados dependem de configuração adequada e nenhuma credencial física está livre do risco de cópia.',
+    'Esquecimento ou extravio: Usuários que esquecem o crachá demandam conferência e liberação assistida na recepção ou portaria.',
+    'Bloqueio de sinal por carteiras com proteção RFID: Carteiras metalizadas impedem a leitura até que o cartão seja retirado do compartimento.'
   ],
   integrations: [
-    'Catracas mecânicas tipo pedestal e balcão com cofres embutidos para retenção de crachás de visitantes.',
-    'Fechaduras eletromagnéticas eletroímã e fechos elétricos em portas de escritórios e áreas técnicas.',
-    'Cancelas automáticas veiculares acionadas por antenas UHF para leitura de tags veiculares no para-brisa.',
-    'Centrais de controle de acesso multiponto interligadas por barramentos Wiegand, RS-485 ou protocolo OSDP.',
-    'Softwares de portaria predial para controle simultâneo de colaboradores, moradores e visitantes temporários.'
+    'Catracas pedestal, balcão e flap com cofres coletores para visitantes.',
+    'Fechaduras eletromagnéticas (eletroímã) e fechos em portas de vidro, madeira ou metal.',
+    'Cancelas veiculares automáticas em estacionamentos e garagens com antenas UHF.',
+    'Controladoras em rede via protocolos Wiegand, RS-485 ou OSDP.',
+    'Terminais híbridos que combinam leitura facial ou biometria digital com cartão RFID.'
   ],
   installationSteps: [
     {
       step: '01',
-      title: 'Definição da frequência de trabalho em Curitiba',
-      description: 'Avaliação técnica do imóvel para escolha entre frequência de 125 kHz ou 13,56 MHz Mifare e DESFire, adequando o nível de integridade da credencial às exigências operacionais do cliente.'
+      title: 'Definição da Tecnologia e Vistoria em Curitiba',
+      description: 'Avaliamos no local o tipo de porta, catraca ou cancela de estacionamento e definimos a frequência mais indicada (125 kHz, 13,56 MHz Mifare ou UHF veicular) antes do orçamento.'
     },
     {
       step: '02',
-      title: 'Lançamento de cabeamento de dados blindado',
-      description: 'Instalação de cabos com malha de blindagem aterrada ligando cada leitor à controladora, prevenindo interferências eletromagnéticas e ruídos em barramentos de comunicação Wiegand ou OSDP.'
+      title: 'Passagem de Cabeamento Blindado',
+      description: 'Instalamos cabos adequados e protegidos entre os leitores, a controladora e a fonte carregadora para evitar interferências de sinal.'
     },
     {
       step: '03',
-      title: 'Fixação de leitores e montagem de fechaduras',
-      description: 'Instalação dos leitores de proximidade em caixas de embutir ou sobrepor ao lado das portas, fixando eletroímãs ou fechos com dimensionamento de força compatível com a esquadria.'
+      title: 'Fixação de Leitores e Travas',
+      description: 'Posicionamos os leitores junto às esquadrias (inclusive em montantes de portas de vidro) ou pedestais e alinhamos as fechaduras ou catracas.'
     },
     {
       step: '04',
-      title: 'Parametrização de regras e níveis de acesso',
-      description: 'Configuração dos grupos de horários, associação de permissões de portas na controladora central e cadastro das chaves de leitura de setores de memória nos cartões corporativos.'
+      title: 'Configuração de Permissões e Horários',
+      description: 'Parametrizamos níveis de acesso por setor, horários para prestadores e regras de leitura na controladora.'
     },
     {
       step: '05',
-      title: 'Entrega das credenciais e treinamento local',
-      description: 'Emissão dos cartões numerados e codificados, realização de testes operacionais de fluxo nas passagens e instrução detalhada da equipe sobre procedimentos para bloqueio rápido de cartões extraviados.'
+      title: 'Entrega Técnica e Orientação Operacional',
+      description: 'Testamos as credenciais em campo e orientamos a equipe responsável sobre cadastro e bloqueio rápido de cartões ou tags perdidas.'
     }
   ],
   maintenanceAndSupport: [
-    'Verificação semestral do alcance de leitura das antenas para constatar eventual perda de sensibilidade de captação de radiofrequência.',
-    'Revisão da integridade mecânica de catracas e verificação dos solenoides coletores de crachás instalados na saída de visitantes.',
-    'Auditoria periódica no banco de dados para identificação e bloqueio de credenciais inativas de ex-funcionários ou prestadores antigos.',
-    'Testes de retenção de carga da bateria do nobreak para garantir que os leitores continuem alimentados durante quedas de energia.'
+    'Verificação periódica do alcance e sensibilidade de leitura de antenas de pedestres e antenas veiculares UHF.',
+    'Inspeção dos coletores de cartões de visitantes e mecanismos das catracas.',
+    'Revisão dos cadastros junto ao administrador para bloqueio de credenciais inativas.',
+    'Teste das baterias auxiliares e fontes carregadoras contra quedas de energia.'
   ],
   faqs: [
     {
-      question: 'Os cartões de proximidade RFID podem ser clonados comercialmente?',
-      answer: 'Sim, a possibilidade de cópia depende diretamente da tecnologia da credencial. Cartões antigos de 125 kHz não possuem criptografia e podem ser duplicados facilmente com leitores portáteis simples. Modelos como Mifare Classic apresentam melhorias, mas possuem vulnerabilidades conhecidas, enquanto tecnologias mais recentes como MIFARE DESFire exigem processos muito mais complexos, embora nenhum cartão deva ser considerado totalmente imune a cópias.'
+      question: 'Cartões e tags RFID podem ser clonados?',
+      answer: 'A suscetibilidade à cópia depende do modelo e da frequência utilizada. Cartões legados de 125 kHz não têm criptografia e podem ser copiados com facilidade; tecnologias como Mifare Classic também apresentam vulnerabilidades conhecidas, enquanto padrões como MIFARE DESFire dificultam a duplicação, dependendo da configuração do sistema.'
     },
     {
-      question: 'A que distância o usuário precisa aproximar o cartão para abrir a porta?',
-      answer: 'Em leitores de pedestres convencionais, a leitura de cartões e chaveiros ocorre tipicamente entre 2 e 8 centímetros da antena. Já para veículos em portões de garagem, são empregadas antenas de longo alcance UHF, capazes de captar a tag adesiva fixada no para-brisa do carro a alguns metros de distância.'
+      question: 'A que distância o leitor reconhece o cartão ou a tag?',
+      answer: 'Depende do modelo do leitor e do tipo de tag. Leitores de pedestres geralmente exigem aproximação a poucos centímetros, enquanto antenas UHF para estacionamentos e garagens leem tags de para-brisa a alguns metros.'
     },
     {
-      question: 'O que deve ser feito imediatamente caso um morador perca o seu crachá?',
-      answer: 'A administração ou o porteiro deve acessar o painel do sistema de controle e inativar o número específico daquela credencial no banco de dados. A partir da exclusão ou bloqueio na controladora, o cartão torna-se inoperante em todos os leitores do condomínio, mesmo que alguém tente utilizá-lo na entrada principal.'
+      question: 'O que fazer se alguém perder o crachá ou chaveiro RFID?',
+      answer: 'Basta acessar o painel do equipamento ou sistema para inativar o número da credencial perdida, impedindo imediatamente que aquele item abra portas ou catracas.'
     },
     {
-      question: 'Qual a diferença entre as comunicações Wiegand e OSDP entre leitor e controladora?',
-      answer: 'O protocolo Wiegand é uma conexão unidirecional tradicional que envia os bits do cartão sem criptografia nos fios. Por sua vez, o protocolo OSDP opera sobre comunicação serial RS-485 supervisionada, permitindo transmissão bidirecional com suporte a criptografia de dados, detecção de cortes de cabo e monitoramento do estado do leitor.'
+      question: 'Qual a diferença entre comunicação Wiegand e OSDP?',
+      answer: 'O padrão Wiegand envia pulsos unidirecionais simples entre leitor e controladora, enquanto o OSDP utiliza barramento RS-485 bidirecional com suporte a supervisão de cabo e criptografia, conforme os equipamentos utilizados.'
     },
     {
-      question: 'O cartão de proximidade precisa de pilhas ou bateria interna para funcionar?',
-      answer: 'Não, os cartões e chaveiros de proximidade para pedestres são dispositivos puramente passivos. Toda a energia elétrica exigida pelo chip interno é transmitida por indução eletromagnética através da antena do próprio leitor no instante em que o cartão é aproximado da sua superfície externa.'
+      question: 'Cartões de proximidade precisam de bateria?',
+      answer: 'Não. Cartões, chaveiros e tags passivas recebem energia por indução diretamente do campo gerado pela antena do leitor no momento da aproximação.'
     }
   ],
-  relatedSolutions: ['biometria', 'reconhecimento-facial', 'catracas', 'cancelas-e-acesso-veicular'],
+  relatedSolutions: ['tag-veicular', 'fechadura-eletronica', 'biometria', 'catracas'],
   relatedSegments: ['condominios-residenciais', 'condominios-comerciais', 'empresas-e-escritorios', 'industrias'],
   relatedCities: ['curitiba', 'pinhais', 'sao-jose-dos-pinhais', 'colombo'],
   whatsappContext: 'controle de acesso por cartão e tag RFID'

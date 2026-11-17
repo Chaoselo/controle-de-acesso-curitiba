@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
-import { Building2, Factory, GraduationCap, Stethoscope, ShieldCheck, MessageSquare, ArrowRight } from 'lucide-react';
+import { Building2, Factory, Stethoscope, ArrowRight } from 'lucide-react';
 import { Layout } from '../components/Layout';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
+import { WhatsAppIcon } from '../components/ui/WhatsAppIcon';
+import { ComplianceNotices } from '../components/ui/ComplianceNotices';
 import { siteConfig, isFieldFilled } from '../config/site';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
 
 export function CasesPage() {
-  // Marcação obrigatória de dados reais: sem invenção de clientes fictícios
-  const realCasesData = "[[PREENCHER: cases reais com autorização de clientes]]";
+  const realCasesData = '[[PREENCHER: cases reais com autorização de clientes]]';
 
   return (
     <Layout whatsappContext="tipos de projetos e cases de controle de acesso">
@@ -18,148 +19,160 @@ export function CasesPage() {
         canonicalPath="/cases/"
       />
 
-      <Breadcrumbs
-        items={[
-          { name: 'Cases e Projetos', url: `${siteConfig.domain}/cases/` }
-        ]}
-      />
+      <section className="bg-hero-gradient border-b border-[var(--border)] pt-4 pb-10 sm:pb-14 px-4">
+        <div className="max-w-4xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { name: 'Cases e Projetos', url: `${siteConfig.domain}/cases/` },
+            ]}
+          />
+          <header className="space-y-3 mt-4">
+            <span className="inline-block text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              Arquiteturas Aplicadas
+            </span>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Tipos de Projetos e Estruturas Atendidas
+            </h1>
+            <p className="text-base text-[var(--text-muted)] max-w-2xl leading-relaxed">
+              Conheça os cenários típicos atendidos em Curitiba e Região Metropolitana, os desafios de segurança física mais frequentes e as combinações de equipamentos utilizadas.
+            </p>
+          </header>
+        </div>
+      </section>
 
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <header className="space-y-4 mb-10 text-center">
-          <span className="text-xs font-semibold text-sky-700 uppercase tracking-wider block">
-            Engenharia Aplicada
-          </span>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Tipos de Projetos e Estruturas Atendidas
-          </h1>
-          <p className="text-xs sm:text-sm text-slate-600 max-w-xl mx-auto leading-relaxed">
-            Conheça as tipologias de empreendimentos atendidas em Curitiba e Região Metropolitana, seus desafios típicos de segurança física e as arquiteturas de solução implantadas.
-          </p>
-        </header>
-
-        {/* Tipos genéricos de projetos atendidos */}
-        <div className="space-y-6">
-          
-          {/* Tipo 1: Condomínios Residenciais */}
-          <div className="bg-white p-6 sm:p-7 rounded-xl border border-slate-200 shadow-sm space-y-3">
-            <div className="flex items-center gap-2 text-xs font-semibold text-sky-700">
-              <Building2 className="w-4 h-4" />
+      <section className="bg-[var(--bg)] py-12 sm:py-16 px-4">
+        <div className="max-w-4xl mx-auto space-y-5">
+          {/* Tipo 1 */}
+          <div className="bg-[var(--surface)] p-6 sm:p-7 rounded-2xl border border-[var(--border)] space-y-3">
+            <div className="flex items-center gap-2 text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              <Building2 className="w-4 h-4 shrink-0" aria-hidden="true" />
               <span>Condomínios Residenciais Verticais e Horizontais</span>
             </div>
-            <h2 className="text-base sm:text-lg font-bold text-slate-900">
-              Clausuras de Pedestres com Intertravamento e Acesso Veicular com Tag UHF
+            <h2 className="text-xl font-bold text-white">
+              Clausuras de pedestres com intertravamento e acesso veicular com tag UHF
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong>Desafio Típico:</strong> Portões de pedestres batendo ou ficando entreabertos, vulnerabilidade durante a entrega de encomendas e filas de veículos na via pública causadas por controles manuais descalibrados.
+            <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+              <strong className="text-white">Desafio típico:</strong> Portões de pedestres ficando entreabertos, circulação durante entregas de encomendas e lentidão na garagem com controles tradicionais.
             </p>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong>Arquitetura Implantada:</strong> Eclusa de pedestres com duas fechaduras eletromagnéticas intertravadas (a porta interna só abre após a externa fechar), leitor biométrico facial touchless na portaria social e cancelas rápidas acionadas por antenas UHF para leitura automática da tag no para-brisa.
+            <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+              <strong className="text-white">Estrutura indicada:</strong> Eclusa de pedestres com fechaduras eletromagnéticas intertravadas, leitor de reconhecimento facial na portaria social e cancelas acionadas por tags veiculares UHF no para-brisa.
             </p>
             <div className="pt-2">
-              <Link to="/segmentos/condominios-residenciais/" className="text-xs font-semibold text-sky-600 hover:underline inline-flex items-center gap-1">
+              <Link
+                to="/segmentos/condominios-residenciais/"
+                className="text-sm font-semibold text-[var(--accent)] hover:underline inline-flex items-center gap-1.5"
+              >
                 <span>Conhecer arquitetura para condomínios residenciais</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </div>
           </div>
 
-          {/* Tipo 2: Indústrias e Centros Logísticos */}
-          <div className="bg-white p-6 sm:p-7 rounded-xl border border-slate-200 shadow-sm space-y-3">
-            <div className="flex items-center gap-2 text-xs font-semibold text-sky-700">
-              <Factory className="w-4 h-4" />
+          {/* Tipo 2 */}
+          <div className="bg-[var(--surface)] p-6 sm:p-7 rounded-2xl border border-[var(--border)] space-y-3">
+            <div className="flex items-center gap-2 text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              <Factory className="w-4 h-4 shrink-0" aria-hidden="true" />
               <span>Indústrias, Fábricas e Complexos Logísticos na RMC</span>
             </div>
-            <h2 className="text-base sm:text-lg font-bold text-slate-900">
-              Torniquetes de Altura Total para Troca de Turno e Cancelas Industriais para Frotas
+            <h2 className="text-xl font-bold text-white">
+              Torniquetes para troca de turno e cancelas para controle de frotas
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong>Desafio Típico:</strong> Grandes contingentes de colaboradores acessando a planta no mesmo horário, necessidade de impedir invasão perimetral e fluxo intenso de caminhões pesados em docas de expedição.
+            <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+              <strong className="text-white">Desafio típico:</strong> Grandes grupos de colaboradores entrando no mesmo horário, controle perimetral de áreas produtivas e organização de caminhões nos pátios.
             </p>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong>Arquitetura Implantada:</strong> Baterias de torniquetes de altura total em aço galvanizado integrados a biometria com liveness e bloqueio por vencimento de treinamentos de segurança (NRs), complementadas por cancelas industriais com laço indutivo duplo e totens de autoatendimento para motoristas.
+            <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+              <strong className="text-white">Estrutura indicada:</strong> Torniquetes de altura total em áreas externas ou catracas pedestal com biometria ou cartão RFID, somados a cancelas automáticas com laço indutivo magnético na guarita de carga.
             </p>
             <div className="pt-2">
-              <Link to="/segmentos/industrias/" className="text-xs font-semibold text-sky-600 hover:underline inline-flex items-center gap-1">
+              <Link
+                to="/segmentos/industrias/"
+                className="text-sm font-semibold text-[var(--accent)] hover:underline inline-flex items-center gap-1.5"
+              >
                 <span>Conhecer arquitetura para indústrias e galpões</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </div>
           </div>
 
-          {/* Tipo 3: Edifícios Corporativos e Escritórios */}
-          <div className="bg-white p-6 sm:p-7 rounded-xl border border-slate-200 shadow-sm space-y-3">
-            <div className="flex items-center gap-2 text-xs font-semibold text-sky-700">
-              <Building2 className="w-4 h-4" />
-              <span>Edifícios Comerciais e Sedes Corporativas</span>
+          {/* Tipo 3 */}
+          <div className="bg-[var(--surface)] p-6 sm:p-7 rounded-2xl border border-[var(--border)] space-y-3">
+            <div className="flex items-center gap-2 text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              <Building2 className="w-4 h-4 shrink-0" aria-hidden="true" />
+              <span>Edifícios Comerciais e Escritórios Corporativos</span>
             </div>
-            <h2 className="text-base sm:text-lg font-bold text-slate-900">
-              Catracas Balcão em Aço Inoxidável e Restrição Setorial de CPD e Finanças
+            <h2 className="text-xl font-bold text-white">
+              Catracas em aço inoxidável na recepção e restrição de salas internas
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong>Desafio Típico:</strong> Conciliar recepção ágil de clientes e visitantes com controle estrito de quem pode subir para os andares ou adentrar setores confidenciais (TI, servidores e tesouraria).
+            <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+              <strong className="text-white">Desafio típico:</strong> Conciliar recepção organizada de visitantes com controle de acesso a salas de TI, arquivos e setores administrativos.
             </p>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong>Arquitetura Implantada:</strong> Linha de catracas em aço inox 304 com braço antipânico e leitor de QR Code para visitantes pré-cadastrados, além de fechaduras eletromagnéticas embutidas com leitor biométrico Mifare criptografado nas salas restritas.
+            <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+              <strong className="text-white">Estrutura indicada:</strong> Catracas com braço antipânico na recepção combinadas a leitores biométricos ou RFID com fechaduras eletrônicas e eletromagnéticas em portas de vidro ou madeira nas salas restritas, além de controle de estacionamento por tag ou cancela.
             </p>
             <div className="pt-2">
-              <Link to="/segmentos/condominios-comerciais/" className="text-xs font-semibold text-sky-600 hover:underline inline-flex items-center gap-1">
+              <Link
+                to="/segmentos/condominios-comerciais/"
+                className="text-sm font-semibold text-[var(--accent)] hover:underline inline-flex items-center gap-1.5"
+              >
                 <span>Conhecer arquitetura para condomínios comerciais</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </div>
           </div>
 
-          {/* Tipo 4: Clínicas e Estabelecimentos de Saúde */}
-          <div className="bg-white p-6 sm:p-7 rounded-xl border border-slate-200 shadow-sm space-y-3">
-            <div className="flex items-center gap-2 text-xs font-semibold text-sky-700">
-              <Stethoscope className="w-4 h-4" />
-              <span>Clínicas Médicas, Laboratórios e Centros de Saúde</span>
+          {/* Tipo 4 */}
+          <div className="bg-[var(--surface)] p-6 sm:p-7 rounded-2xl border border-[var(--border)] space-y-3">
+            <div className="flex items-center gap-2 text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              <Stethoscope className="w-4 h-4 shrink-0" aria-hidden="true" />
+              <span>Clínicas Médicas e Estabelecimentos de Saúde</span>
             </div>
-            <h2 className="text-base sm:text-lg font-bold text-slate-900">
-              Acesso Totalmente Touchless em Alas Restritas e Farmácias Clínicas
+            <h2 className="text-xl font-bold text-white">
+              Acesso sem toque físico (touchless) para áreas restritas e farmácias clínicas
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong>Desafio Típico:</strong> Restringir o acesso a estoques de medicamentos e salas cirúrgicas sem exigir toque físico que possa causar contaminação cruzada.
+            <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+              <strong className="text-white">Desafio típico:</strong> Restringir o acesso a estoques de medicamentos e salas de procedimento sem exigir contato manual em teclados ou maçanetas.
             </p>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong>Arquitetura Implantada:</strong> Terminais de reconhecimento facial infravermelho de rápida resposta combinados a botoeiras ópticas no-touch e fechaduras eletroímã com acionamento silencioso e integração ao sistema de combate a incêndio.
+            <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+              <strong className="text-white">Estrutura indicada:</strong> Terminais de reconhecimento facial combinados a botoeiras de saída sem toque e fechaduras eletroímã silenciosas integradas às rotas de emergência.
             </p>
             <div className="pt-2">
-              <Link to="/segmentos/clinicas-e-hospitais/" className="text-xs font-semibold text-sky-600 hover:underline inline-flex items-center gap-1">
+              <Link
+                to="/segmentos/clinicas-e-hospitais/"
+                className="text-sm font-semibold text-[var(--accent)] hover:underline inline-flex items-center gap-1.5"
+              >
                 <span>Conhecer arquitetura para clínicas e saúde</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </div>
           </div>
 
-        </div>
+          {isFieldFilled(realCasesData) ? (
+            <div className="mt-8 bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] space-y-3">
+              <h3 className="text-lg font-bold text-white">Projetos em destaque</h3>
+              <p className="text-sm text-[var(--text-muted)]">{realCasesData}</p>
+            </div>
+          ) : null}
 
-        {/* Seção de Cases Reais Nomeados (Oculta se não preenchida, cumprindo a regra de não inventar clientes) */}
-        {isFieldFilled(realCasesData) ? (
-          <div className="mt-12 bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
-            <h3 className="text-lg font-bold text-slate-900">Depoimentos e Obras Concluídas</h3>
-            <p className="text-xs text-slate-600">{realCasesData}</p>
+          <div className="mt-10 text-center p-8 bg-hero-gradient rounded-2xl border border-[var(--border)] space-y-4">
+            <h3 className="text-xl font-bold text-white">
+              Deseja avaliar a estrutura de controle de acesso do seu imóvel?
+            </h3>
+            <p className="text-sm sm:text-base text-[var(--text-muted)] max-w-lg mx-auto leading-relaxed">
+              Realizamos vistoria presencial em Curitiba e Região Metropolitana para levantamento de vãos, infraestrutura e proposta sem custo.
+            </p>
+            <a
+              href={whatsappLink('avaliação técnica de projeto')}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('cases cta', '/cases/')}
+              className="inline-flex items-center justify-center gap-2.5 h-[52px] px-7 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white rounded-xl font-bold text-base transition-colors"
+            >
+              <WhatsAppIcon className="w-5 h-5 shrink-0" />
+              <span>Solicitar avaliação no WhatsApp</span>
+            </a>
           </div>
-        ) : null}
 
-        {/* Bloco de Chamada para Vistoria */}
-        <div className="mt-12 text-center p-8 bg-petroleum rounded-xl text-white space-y-4 shadow-sm">
-          <h3 className="text-lg sm:text-xl font-bold">
-            Deseja avaliar a arquitetura de acesso do seu imóvel?
-          </h3>
-          <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
-            Realizamos vistoria técnica presencial em Curitiba e Região Metropolitana para levantamento minucioso de vãos, tubulações e requisitos de segurança.
-          </p>
-          <a
-            href={whatsappLink('avaliação técnica de projeto')}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => trackWhatsAppClick('cases cta', '/cases/')}
-            className="inline-flex items-center gap-2 px-6 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white rounded-md font-bold text-xs shadow-md transition-all"
-          >
-            <MessageSquare className="w-4 h-4 fill-white text-transparent" />
-            <span>Solicitar Avaliação Técnica no WhatsApp</span>
-          </a>
+          <ComplianceNotices showLgpd />
         </div>
       </section>
     </Layout>

@@ -7,7 +7,7 @@ export const fazendaRioGrandeContent: CityContent = {
   seoTitle: 'Controle de Acesso em Fazenda Rio Grande | Condomínios',
   metaDescription: 'Controle de acesso em Fazenda Rio Grande. Segurança para loteamentos fechados, condomínios e indústrias. Peça seu orçamento técnico no WhatsApp!',
   keyword: 'controle de acesso em Fazenda Rio Grande',
-  directAnswer: 'Controle de acesso em Fazenda Rio Grande atendendo ao forte crescimento demográfico do município, condomínios residenciais horizontais, centros comerciais e indústrias do distrito fabril. Projetamos e instalamos cancelas veiculares com leitura de tag RFID no vidro, catracas eletrônicas para pedestres com braço antipânico, sistemas de clausura intertravada, fechaduras eletromagnéticas e terminais faciais com assistência técnica ágil e garantia de fábrica.',
+  directAnswer: 'Controle de acesso em Fazenda Rio Grande para condomínios, centros comerciais, clínicas, escolas, empresas, indústrias, estacionamentos e portas de vidro. Realizamos instalação de fechadura eletrônica, interfone/vídeo porteiro, cancelas, catracas e reconhecimento facial, além de conserto e manutenção de interfone, catraca e cancela.',
   // TODO: foto real
   image: {
     src: '/images/cidade-fazenda-rio-grande.webp',
@@ -15,31 +15,31 @@ export const fazendaRioGrandeContent: CityContent = {
     width: 800,
     height: 600
   },
-  localCharacteristics: 'Fazenda Rio Grande apresenta uma das maiores taxas de expansão demográfica e habitacional do Estado do Paraná, impulsionada pela conexão viária direta com a Zona Sul de Curitiba através da rodovia BR-116. A paisagem urbana do município é caracterizada pela contínua proliferação de novos loteamentos fechados, bairros planejados de sobrados e condomínios horizontais que buscam oferecer conforto e segurança às famílias. Paralelamente ao setor imobiliário residencial, os parques industriais locais vêm atraindo empresas de transformação, plástico, logística e metalurgia. Essa configuração demanda soluções de portaria eficientes: nos condomínios, a principal preocupação é evitar filas na rodovia de acesso por meio de cancelas de abertura rápida acionadas por tags adesivas; nas indústrias, a ênfase reside em catracas eletrônicas para registro de ponto e bloqueio de pessoas não autorizadas.',
+  localCharacteristics: 'Fazenda Rio Grande passa por forte crescimento na Região Metropolitana Sul de Curitiba, reunindo condomínios, loteamentos fechados, comércios, estacionamentos, empresas e indústrias. Nos condomínios e estacionamentos, o foco está em cancelas automatizadas, interfones e clausuras com fechaduras eletrônicas, inclusive em portas de vidro. Nas empresas e indústrias, catracas e leitores biométricos ou faciais organizam o fluxo observando a LGPD.',
   popularSolutions: [
-    'Cancelas veiculares de alta velocidade com tags adesivas UHF no para-brisa para condomínios horizontais e loteamentos fechados em Fazenda Rio Grande.',
-    'Sistemas de clausura de pedestres (eclusa) com fechaduras eletromagnéticas de 300 kgf e sinalizadores sonoros e visuais de porta aberta.',
-    'Catracas eletrônicas pedestal em aço carbono com pintura eletrostática e leitores biométricos para portarias industriais e comerciais.',
-    'Terminais de reconhecimento facial com inteligência artificial para cadastro e liberação ágil de condôminos, visitantes e prestadores de serviços.',
-    'Botoeiras sem toque (touchless) e botoeiras de emergência tipo quebra-vidro para rotas de fuga em áreas comuns, portarias e saídas de emergência.'
+    'Cancelas veiculares automáticas com tags UHF para condomínios, empresas e estacionamentos em Fazenda Rio Grande, incluindo conserto e manutenção.',
+    'Sistemas de clausura de pedestres (eclusa) com fechaduras eletromagnéticas em portas de vidro ou metálicas e sinalizadores.',
+    'Catracas eletrônicas pedestal com leitores biométricos ou faciais para portarias industriais, academias, escolas e comerciais.',
+    'Instalação, conserto e manutenção de interfone e vídeo porteiro para atendimento organizado na portaria.',
+    'Botoeiras sem toque e botoeiras de emergência para rotas de fuga em áreas comuns, empresas e condomínios.'
   ],
-  serviceLogistics: 'Com acesso facilitado pela rodovia BR-116 a partir de Curitiba, mantemos atendimento regular e contínuo em Fazenda Rio Grande para visitas técnicas, orçamentos sem compromisso e manutenção corretiva de sistemas de portaria e automação de acessos, com peças sobressalentes a pronta entrega.',
+  serviceLogistics: 'Com atendimento regular a partir de Curitiba, nossa equipe realiza visitas técnicas em Fazenda Rio Grande para levantamento no local, orçamento sem custo, instalação e manutenção preventiva e corretiva de portarias.',
   faqs: [
     {
       question: 'Qual a solução veicular mais recomendada para evitar filas na entrada de loteamentos fechados?',
-      answer: 'A combinação de cancelas automáticas de abertura rápida (1 a 1,5 segundo) com leitura de tags adesivas UHF no para-brisa do veículo. O leitor identifica o automóvel a até 6 metros de distância e abre a cancela sem necessidade de parar nem abaixar a janela.'
+      answer: 'A combinação de cancelas automáticas dimensionadas para o fluxo do condomínio com leitura de tags adesivas UHF no para-brisa permite a identificação do veículo à distância, agilizando a passagem sem exigir que o motorista pare ou abaixe o vidro.'
     },
     {
       question: 'Como proteger a cancela contra batidas acidentais na lataria dos carros?',
-      answer: 'Instalamos sensores de fotocélula de barreira infravermelha e laços indutivos embutidos no piso asfáltico. Esses sensores detectam a massa metálica do veículo e impedem que o braço da cancela desça enquanto o automóvel estiver posicionado sob a área de passagem.'
+      answer: 'Instalamos sensores de fotocélula e laços indutivos no piso que detectam a presença do veículo e evitam que o braço da cancela desça enquanto o automóvel estiver na área de passagem.'
     },
     {
       question: 'Vocês atendem novos condomínios que ainda estão em fase de entrega pela construtora?',
-      answer: 'Sim. Auxiliamos síndicos, comissões de moradores e administradoras na validação da tubulação elétrica, escolha dos melhores equipamentos homologados e ativação dos cadastros iniciais de condôminos de forma organizada.'
+      answer: 'Sim. Auxiliamos síndicos, comissões de moradores e administradoras na avaliação da infraestrutura disponível, especificação dos equipamentos e implantação do sistema na portaria.'
     },
     {
       question: 'É possível cadastrar visitantes e entregadores de forma temporária no sistema?',
-      answer: 'Sim, o sistema de controle de acesso permite emitir convites digitais com QR Code ou senhas numéricas temporárias com validade programada para um dia ou horário específico, aumentando o controle e a segurança perimetral do condomínio.'
+      answer: 'Sim, dependendo do modelo escolhido, o sistema permite gerar permissões temporárias com validade programada por data e horário, reforçando o controle da portaria.'
     }
   ],
   whatsappContext: 'controle de acesso em Fazenda Rio Grande'

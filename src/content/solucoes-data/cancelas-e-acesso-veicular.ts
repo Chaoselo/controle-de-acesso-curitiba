@@ -2,11 +2,11 @@ import { SolutionContent } from '../types';
 
 export const cancelasEAcessoVeicularSolution: SolutionContent = {
   slug: 'cancelas-e-acesso-veicular',
-  title: 'Cancelas Automáticas e Acesso Veicular em Curitiba',
-  seoTitle: 'Cancelas Automáticas em Curitiba | Acesso Veicular e Tags',
-  metaDescription: 'Instalação de cancelas automáticas, tags UHF e controle veicular em Curitiba e RMC. Elimine filas e invasões na garagem. Peça seu orçamento no WhatsApp!',
-  keyword: 'controle de acesso veicular Curitiba',
-  directAnswer: 'O controle de acesso veicular por cancelas automáticas gerencia a entrada e saída de automóveis em garagens condominiais, pátios industriais e estacionamentos. Em Curitiba e Região Metropolitana, a automação com tags adesivas no para-brisa ou controles de código rolante agiliza o fluxo e minimiza a vulnerabilidade de motoristas na via pública. O sistema opera com sensores anti-esmagamento e integração a sistemas de portaria para registro auditável de acessos.',
+  title: 'Cancela automática e controle de acesso veicular em Curitiba',
+  seoTitle: 'Cancela Automática em Curitiba | Acesso Veicular',
+  metaDescription: 'Cancela automática e controle de acesso veicular em Curitiba: tags, controle remoto e leitura de placa. Instalação e manutenção. Peça orçamento!',
+  keyword: 'cancela automática e controle de acesso veicular em Curitiba',
+  directAnswer: 'A cancela automática e o controle de acesso veicular organizam a entrada e a saída de veículos em estacionamentos, condomínios, empresas e indústrias. Em Curitiba e Região Metropolitana, realizamos a instalação, o conserto e a manutenção de cancelas, laços indutivos, fotocélulas e sistemas de tag veicular UHF, além de leitura de placa (LPR) quando aplicável, observando os cuidados da LGPD. Portão automático residencial fica no site da Intelsecsul.',
   image: {
     src: '/images/cancela-automatica.webp',
     alt: 'Cancela automática com braço horizontal na entrada de uma área com controle de veículos',
@@ -14,96 +14,96 @@ export const cancelasEAcessoVeicularSolution: SolutionContent = {
     height: 675
   },
   howItWorks: [
-    'Controles de código rolante versus código fixo: Controles antigos de código fixo possuem frequências estáticas facilmente capturáveis por clonadores. Projetos modernos exigem código rolante (rolling code), em que a chave criptográfica muda a cada acionamento, dificultando a interceptação e cópia.',
-    'Identificação por tag veicular passiva UHF: Antenas UHF na entrada emitem feixes para a pista. Ao aproximar o veículo, a antena lê a etiqueta no para-brisa a alguns metros de distância, transmitindo o código sem que o condutor precise abrir o vidro.',
-    'Reconhecimento de placas (LPR) e suas limitações: Câmeras OCR capturam imagens das placas para liberação. Essa tecnologia possui limitações físicas: placas com barro, amassadas, ângulos inclinados, chuvas torrenciais e reflexos de faróis desregulados podem degradar o índice de leitura.',
-    'Mecanismo de proteção com laço indutivo e fotocélulas: Sob o pavimento da pista instala-se um laço indutivo magnético que detecta a massa metálica do veículo, somado a fotocélulas ópticas. Esse arranjo impede que a haste desça enquanto houver automóvel ou pedestre no vão.',
-    'Diferença funcional entre cancela e portão automático: A cancela automática foi concebida para alta velocidade de abertura e retenção dinâmica de fluxo em ciclos rápidos, mas não veda o vão contra pedestres. Por isso, garagens seguras utilizam clausuras combinando a cancela ao portão de fechamento pleno.'
+    'Acionamento por tag veicular UHF ou controle criptografado: Antenas UHF leem a etiqueta adesiva fixada no para-brisa a alguns metros da entrada, variando conforme o modelo e a antena. Em controles remotos, recomenda-se tecnologia de código rolante (rolling code) para dificultar clonagens comuns em códigos fixos antigos.',
+    'Leitura automática de placas (LPR): Câmeras específicas analisam a imagem da placa do veículo para liberar ou registrar o acesso. Condições como chuva forte, neblina, placa suja ou amassada e faróis desalinhados podem reduzir a eficiência da leitura, dependendo do ambiente.',
+    'Proteção com laço indutivo e fotocélula: Sensores embutidos no piso (laço indutivo) detectam a presença metálica do veículo sob a haste e trabalham em conjunto com fotocélulas para evitar o fechamento acidental sobre carros.',
+    'Cancela automática e portão de garagem: A cancela agiliza o controle do fluxo dinâmico em estacionamentos e portarias, mas não bloqueia a passagem de pedestres por baixo da haste; por isso, muitos locais combinam cancela e portão ou guarita.',
+    'Atendimento a estacionamentos e frotas: Em estacionamentos comerciais, corporativos ou condomínios, o conjunto organiza pistas de entrada e saída com registro de passagens.'
   ],
   whenToChoose: [
-    'Condomínios residenciais com alto tráfego veicular no pico, evitando filas na via pública de bairros como Água Verde e Ecoville.',
-    'Centros empresariais que necessitam segregar vagas de condôminos fixos e gerenciar o acesso rotativo de visitantes com QR Code no celular.',
-    'Pátios industriais e fábricas na CIC ou em São José dos Pinhais para triagem de caminhões e controle de docas de carga.',
-    'Estacionamentos comerciais que demandam auditoria de permanência de veículos associada a catracas e cancelas de saída.'
+    'Estacionamentos comerciais, centros empresariais e hospitais em Curitiba com necessidade de controle ágil de entrada e saída de veículos.',
+    'Condomínios residenciais verticais e horizontais que desejam reduzir o tempo de espera na rua com tags UHF no para-brisa.',
+    'Pátios industriais, transportadoras e galpões logísticos na RMC para triagem de caminhões e veículos de frota.',
+    'Locais que precisam de conserto ou manutenção preventiva em cancelas, hastes, motores e sensores já instalados.'
   ],
   advantages: [
-    'Abertura rápida e redução de espera: Motores rápidos com inversor realizam o ciclo em poucos segundos, liberando a pista com agilidade.',
-    'Eliminação de clonagens por código fixo: A adoção de tags UHF com código único ou controles de código rolante impede o uso de clonadores.',
-    'Proteção mecânica com sensores: O intertravamento elétrico com laço indutivo e fotocélulas ativas protege o teto dos carros contra colisões.',
-    'Operação de contingência em cortes de luz: O sistema pode ser mantido por nobreaks com baterias ou liberado por destravamento manual.',
-    'Gestão flexível para visitantes com QR Code: Permite aos moradores gerar convites de acesso com validade pré-definida para convidados.'
+    'Agilidade na liberação da pista: Conforme o modelo da cancela, o ciclo de abertura costuma ser mais rápido do que o de portões pesados, reduzindo filas na entrada.',
+    'Redução de clonagem de controles antigos: O uso de tags UHF ou controles de código rolante oferece maior proteção em comparação a controles simples de código fixo.',
+    'Prevenção de batidas com sensores: A combinação de laço indutivo de piso e fotocélula auxilia a evitar a descida da haste enquanto houver veículo na área monitorada.',
+    'Contingência em quedas de luz: Modelos com destravamento manual ou banco de baterias compatível permitem manter a operação ou liberar a pista em apagões.',
+    'Organização do tráfego em estacionamentos: Facilita a separação de fluxos entre mensalistas, colaboradores, carga e visitantes.'
   ],
   limitations: [
-    'Vulnerabilidade ao fenômeno da carona veicular: Caso dois veículos trafeguem muito colados (tailgating), o segundo automóvel pode aproveitar a haste erguida para entrar sem validação se não houver clausura ou semáforo.',
-    'Ausência de barreira física contra invasão de pedestres: A haste tubular ou articulada impede apenas a passagem de veículos, exigindo portões perimetrais complementares para segurança patrimonial noturna.',
-    'Limitações climáticas e visuais em leitores de placa LPR: Como qualquer sistema óptico, câmeras de placa sofrem redução de leitura sob nevoeiro denso, chuvas intensas ou placas desgastadas pelo uso.',
-    'Demanda de espaço físico para desaceleração na pista: A instalação de cancelas requer pista com comprimento linear mínimo para posicionamento do laço indutivo antes e depois do ponto de bloqueio.'
+    'Risco de passagem em comboio (carona veicular): Dois veículos muito próximos podem passar na mesma abertura se não houver controle semafórico, clausura ou orientação na guarita.',
+    'Não substitui fechamento perimetral contra pedestres: A haste veicular controla veículos, mas não impede que pessoas passem por baixo ou ao lado sem bloqueio complementar.',
+    'Sensibilidade climática em leitura de placas (LPR): Neblina, chuva intensa de Curitiba, lama ou placas danificadas podem exigir leitura alternativa por tag ou liberação assistida.',
+    'Exigência de infraestrutura na pista: A instalação demanda espaço linear adequado, base firme nivelada e eventual corte no piso para passagem do laço indutivo.'
   ],
-  lgpdNote: 'A placa do veículo, quando associada a um condutor ou morador específico, constitui dado pessoal protegido pela Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). As imagens fotográficas capturadas por câmeras de leitura de placa (LPR) e os registros de horários de entrada e saída na garagem devem ser armazenados com controle restrito de acesso aos gestores prediais, com política definida de descarte e finalidade exclusiva de proteção patrimonial. Este texto é informativo e não substitui a orientação de um profissional jurídico.',
+  lgpdNote: 'A placa do veículo, quando vinculada a uma pessoa física identificada (como morador, colaborador ou cliente de estacionamento), configura dado pessoal sujeito à Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). Câmeras LPR e registros de entrada e saída devem ter finalidade definida, acesso restrito aos operadores autorizados e política clara de guarda e exclusão pelo controlador local. Este texto é informativo e não substitui a orientação de um profissional jurídico.',
   integrations: [
-    'Câmeras de reconhecimento de placa (LPR) com iluminação infravermelha integrada.',
-    'Antenas leitoras de tag veicular UHF com pedestais de pista e ajuste de ângulo focal.',
-    'Portões automáticos de garagem para formação de clausura veicular com intertravamento.',
-    'Laços indutivos magnéticos de piso e fotocélulas de reflexão para proteção anti-esmagamento.',
-    'Semáforos de sinalização viária verde e vermelho para orientação do fluxo de motoristas.'
+    'Antenas UHF para leitura de tag veicular adesiva de para-brisa.',
+    'Câmeras de leitura de placas (LPR) conforme o projeto.',
+    'Laços indutivos magnéticos e fotocélulas de segurança.',
+    'Portões automáticos de garagem para composição de clausura veicular.',
+    'Semáforos visuais e interfones ou vídeo porteiros na entrada da pista.'
   ],
   installationSteps: [
     {
       step: '01',
-      title: 'Estudo geométrico da pista e raio de giro',
-      description: 'Vistoria técnica presencial em Curitiba para medição da largura do vão, altura do teto para hastes articuladas e cálculo do posicionamento das bases das cancelas na pista.'
+      title: 'Vistoria Geométrica da Pista em Curitiba',
+      description: 'Avaliamos largura do vão, altura livre no caso de hastes articuladas, raio de giro dos veículos e condições elétricas e civis para elaborar o orçamento após o diagnóstico.'
     },
     {
       step: '02',
-      title: 'Corte de piso e instalação do laço indutivo',
-      description: 'Corte preciso no pavimento asfáltico ou piso de concreto para inserção dos cabos do sensor de laço magnético, selando as canaletas com resina de poliuretano impermeável.'
+      title: 'Preparação da Base e Laço Indutivo',
+      description: 'Executamos a base de ancoragem do gabinete e, quando previsto no projeto, o corte e selagem do piso para instalação dos cabos do laço indutivo.'
     },
     {
       step: '03',
-      title: 'Chumbamento da base mecânica da cancela',
-      description: 'Construção de base de concreto nivelada com ancoragem por parafusos chumbadores metálicos para sustentação rígida e duradoura do gabinete da cancela contra vibrações contínuas de parada mecânica.'
+      title: 'Montagem Mecânica e Balanceamento da Haste',
+      description: 'Fixamos a cancela, instalamos a haste linear ou articulada e calibramos as molas de balanceamento para suavizar o movimento do conjunto.'
     },
     {
       step: '04',
-      title: 'Ajuste de molas e balanceamento da haste',
-      description: 'Calibração mecânica precisa da tensão das molas helicoidais de balanceamento conforme o peso da haste, garantindo movimentação suave sem sobrecarregar o conjunto do motorredutor interno.'
+      title: 'Ligação de Sensores e Leitores',
+      description: 'Conectamos fotocélulas, laço indutivo, antenas UHF ou leitores e configuramos os comandos de abertura e fechamento na central.'
     },
     {
       step: '05',
-      title: 'Parametrização da controladora e testes de segurança',
-      description: 'Configuração da velocidade de subida e descida no inversor, testes práticos de não fechamento com veículos sobre o laço e treinamento para uso do destravamento manual.'
+      title: 'Testes de Segurança e Treinamento',
+      description: 'Testamos o bloqueio de descida sobre veículos, a abertura em emergência e orientamos porteiros e operadores de estacionamento sobre o destravamento manual.'
     }
   ],
   maintenanceAndSupport: [
-    'Aferição e reaperto das molas de balanceamento de peso da haste para preservar a vida útil do motorredutor mecânico.',
-    'Inspeção do alinhamento das fotocélulas ópticas e teste de sensibilidade do detector de massa metálica do laço indutivo.',
-    'Verificação do nível de lubrificação das engrenagens do redutor e reaperto das fixações estruturais da haste tubular.',
-    'Teste semestral do banco de baterias do nobreak sob corte simulado de energia e revisão da chave de destravamento manual.'
+    'Conserto de cancelas de estacionamento, troca de hastes danificadas, centrais eletrônicas e motores.',
+    'Aferição de molas de compensação, batentes de fim de curso e lubrificação do conjunto mecânico.',
+    'Revisão e limpeza de fotocélulas e testes de sensibilidade do detector de massa do laço indutivo.',
+    'Alinhamento de antenas UHF e conferência de baterias de contingência.'
   ],
   faqs: [
     {
-      question: 'A cancela automática pode descer por engano e atingir o teto de um automóvel?',
-      answer: 'Em instalações executadas segundo as boas normas de segurança, o risco é eliminado pelo laço indutivo magnético e pelas fotocélulas. Esses sensores monitoram a presença da massa metálica do automóvel sob a haste; enquanto o veículo estiver transitando sobre a área delimitada, o circuito elétrico bloqueia totalmente o comando de descida.'
+      question: 'Como funciona uma cancela automática?',
+      answer: 'Quando o motorista é identificado — por tag veicular UHF no para-brisa, controle remoto de código rolante, leitura de placa (LPR) ou acionamento na guarita — a central envia comando ao motor e ao sistema de molas para erguer a haste. Na passagem do veículo, laço indutivo e fotocélula monitoram a pista para impedir que o braço desça antes de o carro sair completamente da área de movimento.'
     },
     {
-      question: 'O que ocorre com a cancela veicular caso falte energia elétrica no condomínio?',
-      answer: 'Se o sistema possuir fonte ininterrupta com nobreak dimensionado, a cancela continua abrindo e fechando normalmente por diversos ciclos. Na eventualidade de descarregamento total das baterias, o operador pode utilizar uma chave mecânica de destravamento rápido para liberar a haste e deixá-la erguida na vertical.'
+      question: 'Vocês instalam cancela para estacionamento?',
+      answer: 'Sim. Projetamos, instalamos e prestamos manutenção corretiva e preventiva de cancelas para estacionamentos comerciais, condomínios, hospitais, faculdades e pátios empresariais em Curitiba e Região Metropolitana. Confira detalhes em nossa página dedicada ao segmento de Estacionamentos (/segmentos/estacionamentos/) e sobre Tag Veicular (/solucoes/tag-veicular/). Para portão automático residencial, veja no site da Intelsecsul (intelsecsul.com.br/servicos/portao-automatico/).'
     },
     {
-      question: 'Qual a diferença entre usar cancela automática ou manter apenas o portão da garagem?',
-      answer: 'O portão automático tradicional leva mais tempo para abrir e fechar, gerando riscos de assalto enquanto o morador aguarda na rua. A cancela abre em poucos segundos, dinamizando o fluxo; contudo, ela não fecha o vão contra pedestres, sendo recomendável usar a cancela durante o dia e o portão completo à noite.'
+      question: 'Quanto custa uma cancela automática instalada em Curitiba?',
+      answer: 'O valor depende de fatores técnicos específicos de cada pista: largura do vão, tipo de braço (reto ou articulado), velocidade/regime de ciclos do equipamento, tecnologia de leitura escolhida (tag veicular UHF, leitura de placa LPR ou controle remoto), sensores (laço indutivo e fotocélula), eventual obra civil/corte de piso e inclusão de nobreak. O orçamento completo é fechado após diagnóstico no local.'
     },
     {
-      question: 'O sistema de leitura de placas (LPR) pode substituir completamente a tag adesiva no para-brisa?',
-      answer: 'Embora o LPR ofereça excelente comodidade, a leitura óptica pode falhar em dias de tempestades severas, com placas muito amassadas, sujas de barro ou sob reflexo direto de faróis desregulados. Por esse motivo, muitos condomínios em Curitiba utilizam a leitura de placas como complemento à tag UHF, garantindo redundância.'
+      question: 'A cancela automática pode descer sobre o carro durante a passagem?',
+      answer: 'Quando corretamente instalada e mantida com laço indutivo de piso e fotocélulas em funcionamento, os sensores identificam o veículo na zona da haste e bloqueiam o comando de descida enquanto o carro permanecer sobre a área monitorada.'
     },
     {
-      question: 'Como funciona o envio de convites de acesso com validade para visitantes?',
-      answer: 'O morador utiliza o aplicativo do condomínio para cadastrar o nome e a placa do visitante, gerando um código QR Code temporário ou autorização de placa por período delimitado. Ao chegar, a cancela valida a permissão diretamente no sistema e libera a entrada somente dentro da janela de horário estipulada.'
+      question: 'O que acontece com a cancela se faltar energia elétrica?',
+      answer: 'Em sistemas equipados com nobreak compatível com a potência da cancela, o equipamento opera por um período conforme o dimensionamento das baterias. Sem bateria, a cancela possui destravamento mecânico manual para manter a haste aberta.'
     }
   ],
-  relatedSolutions: ['cartao-e-tag-rfid', 'catracas', 'reconhecimento-facial', 'fechaduras-eletromagneticas'],
-  relatedSegments: ['condominios-residenciais', 'industrias', 'condominios-comerciais', 'empresas-e-escritorios'],
+  relatedSolutions: ['tag-veicular', 'cartao-e-tag-rfid', 'catracas', 'reconhecimento-facial'],
+  relatedSegments: ['estacionamentos', 'condominios-residenciais', 'industrias', 'condominios-comerciais'],
   relatedCities: ['curitiba', 'pinhais', 'araucaria', 'sao-jose-dos-pinhais'],
-  whatsappContext: 'cancela automática e controle de acesso veicular'
+  whatsappContext: 'instalação ou conserto de cancela automática e controle de estacionamento'
 };

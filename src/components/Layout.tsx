@@ -15,10 +15,10 @@ interface LayoutProps {
 export function Layout({
   children,
   whatsappContext = 'controle de acesso em Curitiba',
-  hideOutrosServicos = false
+  hideOutrosServicos = false,
 }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 antialiased selection:bg-sky-500 selection:text-white pb-14 sm:pb-0">
+    <div className="min-h-screen flex flex-col bg-[var(--bg)] text-[var(--text)] antialiased selection:bg-[var(--accent)] selection:text-[#05060B] pb-16 sm:pb-0">
       <Header />
       <main className="flex-1">
         {children}

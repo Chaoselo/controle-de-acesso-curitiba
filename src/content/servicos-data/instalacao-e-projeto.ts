@@ -2,11 +2,11 @@ import { ServiceContent } from '../types';
 
 export const instalacaoEProjetoService: ServiceContent = {
   slug: 'instalacao-e-projeto',
-  title: 'Instalação e Projeto de Controle de Acesso em Curitiba',
-  seoTitle: 'Instalação de Controle de Acesso Curitiba | Projetos',
-  metaDescription: 'Instalação profissional de controle de acesso em Curitiba. Projetos para condomínios e empresas com cabeamento estruturado e garantia. Orçamento!',
-  keyword: 'instalacao de controle de acesso Curitiba',
-  directAnswer: 'Projetamos e executamos a instalação completa de sistemas de controle de acesso físico para condomínios, empresas e indústrias em Curitiba e Região Metropolitana. Nossa engenharia especializada abrange desde a vistoria técnica detalhada no local e cálculo de esforço de retenção em portas até o lançamento de cabeamento estruturado blindado, integração de clausuras de pedestres, parametrização do sistema e treinamento operacional assistido da equipe.',
+  title: 'Instalação e projeto de controle de acesso em Curitiba',
+  seoTitle: 'Instalação de Controle de Acesso em Curitiba | Projeto',
+  metaDescription: 'Instalação e projeto de controle de acesso em Curitiba para condomínios, empresas e indústrias. Visita técnica e suporte. Peça orçamento pelo WhatsApp!',
+  keyword: 'instalação e projeto de controle de acesso em Curitiba',
+  directAnswer: 'Executamos a instalação completa de controle de acesso, fechadura eletrônica e interfone ou vídeo porteiro para empresas, condomínios, indústrias, clínicas, escolas, academias, estacionamentos e portas de vidro em Curitiba e Região Metropolitana. Trabalhamos com diversos equipamentos do mercado — incluindo Intelbras, como empresa independente — e definimos a especificação e o orçamento após o diagnóstico técnico no imóvel.',
   image: {
     src: '/images/instalacao-e-projeto-controle-de-acesso.webp',
     alt: 'Profissional analisando planta de ambiente com câmeras de segurança sobre a mesa',
@@ -14,69 +14,105 @@ export const instalacaoEProjetoService: ServiceContent = {
     height: 675
   },
   scope: [
-    'Vistoria técnica presencial no imóvel com levantamento de vãos, tipos de batentes, fluxo diário de pessoas e pontos de alimentação elétrica.',
-    'Elaboração de memorial descritivo com especificação de controladoras IP, fechaduras eletroímã, leitores faciais e lógica de intertravamento de eclusas.',
-    'Lançamento de cabeamento estruturado de rede de alta categoria (Cat6) e fiação de energia em eletrodutos galvanizados aparentes ou embutidos.',
-    'Montagem de rack organizador com identificação completa de circuitos por anilhas numeradas, barramento de aterramento e proteção contra surtos (DPS).',
-    'Instalação de fontes de alimentação colmeia de 13,8V com bancos de baterias estacionárias e no-breaks senoidais para autonomia sem rede elétrica.',
-    'Parametrização avançada de regras de acesso no sistema de controle, cadastro biométrico inicial assistido e treinamento formal da equipe de portaria.',
-    'Testes de carga e estresse elétrico com simulação de corte de energia da rede pública para homologar a comutação instantânea das baterias de contingência sem travamento de relés.'
+    'Instalação de controle de acesso físico com leitores faciais, biometria digital, cartões RFID, teclados de senha, catracas e cancelas para estacionamentos.',
+    'Instalação de fechadura eletrônica, fechadura eletromagnética (eletroímã) e fechos em portas de vidro temperado, madeira, ferro e esquadrias de alumínio.',
+    'Instalação de interfone e vídeo porteiro IP em condomínios, empresas, clínicas e acessos de estacionamentos (demandas residenciais de casas e apartamentos ficam em intelsecsul.com.br).',
+    'Vistoria técnica no local para levantamento de vãos, batentes, infraestrutura elétrica e fluxo de pessoas e veículos antes da definição do orçamento.',
+    'Passagem de cabeamento estruturado, proteção de fiação em dutos ou canaletas, fontes carregadoras e baterias auxiliares para quedas de energia conforme o projeto.',
+    'Parametrização das regras de acesso, testes práticos de abertura e travamento, orientação sobre cuidados da LGPD e treinamento operacional da equipe.'
+  ],
+  productInstallations: [
+    {
+      label: 'Instalação de Catracas de Acesso',
+      to: '/solucoes/catracas/',
+      description: 'Catracas pedestal, balcão, flap e torniquetes integrados a leitores e passagem acessível NBR 9050.'
+    },
+    {
+      label: 'Instalação de Cancelas Automáticas',
+      to: '/solucoes/cancelas-e-acesso-veicular/',
+      description: 'Cancelas para estacionamentos, condomínios e empresas com laço indutivo e fotocélula de segurança.'
+    },
+    {
+      label: 'Instalação de Tag Veicular UHF',
+      to: '/solucoes/tag-veicular/',
+      description: 'Antenas leitoras UHF e tags adesivas de para-brisa para abertura ágil em garagens e estacionamentos.'
+    },
+    {
+      label: 'Instalação de Fechadura Eletrônica',
+      to: '/solucoes/fechadura-eletronica/',
+      description: 'Fechaduras digitais com senha, biometria, cartão RFID e eletroímãs para empresas, condomínios e portas de vidro.'
+    },
+    {
+      label: 'Instalação de Controle Biométrico',
+      to: '/solucoes/biometria/',
+      description: 'Leitores de impressão digital para salas técnicas, recepções, escritórios e portarias.'
+    },
+    {
+      label: 'Instalação de Reconhecimento Facial',
+      to: '/solucoes/reconhecimento-facial/',
+      description: 'Terminais sem contato físico para portarias condominiais, clínicas, academias e indústrias.'
+    },
+    {
+      label: 'Instalação de Interfone e Vídeo Porteiro',
+      to: '/solucoes/interfone-e-video-porteiro/',
+      description: 'Interfonia coletiva e vídeo porteiros IP para condomínios, prédios e empresas (casas/apartamentos via Intelsecsul).'
+    }
   ],
   processSteps: [
     {
       step: '01',
       title: 'Diagnóstico e Vistoria Técnica no Local',
-      description: 'Nossa equipe técnica visita o condomínio ou empresa em Curitiba para analisar a planta física, medir o peso e o alinhamento das portas existentes, verificar a estabilidade da rede elétrica e mapear as rotas de cabos necessárias para a execução limpa.'
+      description: 'Nossa equipe técnica própria visita o condomínio, empresa, estacionamento ou loja em Curitiba para avaliar as portas (inclusive portas de vidro), tubulações existentes, rede elétrica e fluxo diário de usuários.'
     },
     {
       step: '02',
-      title: 'Engenharia do Projeto e Especificação de Equipamentos',
-      description: 'Desenvolvemos o esquema elétrico de intertravamento e selecionamos os equipamentos mais adequados para a taxa de fluxo do cliente, definindo posições estratégicas para leitores faciais, botoeiras sem toque, fechaduras magnéticas e sensores de porta aberta.'
+      title: 'Definição de Equipamentos e Proposta Comercial',
+      description: 'Com base no diagnóstico presencial, especificamos fechaduras eletrônicas, leitores, catracas, cancelas ou interfones compatíveis com o ambiente — trabalhando com fabricantes como Intelbras e outras marcas do mercado — e apresentamos o orçamento.'
     },
     {
       step: '03',
-      title: 'Infraestrutura e Lançamento de Cabeamento Blindado',
-      description: 'Executamos a fixação de eletrodutos de aço ou canaletas de acabamento em alumínio de alta resistência, passando cabos blindados de dados e alimentação sem emendas intermediárias, garantindo estética impecável e imunidade contra ruídos e interferências eletromagnéticas.'
+      title: 'Infraestrutura e Lançamento de Cabeamento',
+      description: 'Executamos a passagem de cabos de dados e alimentação com bitola adequada à distância e ao consumo de cada ponto, utilizando tubulações existentes, eletrodutos ou canaletas protegidas.'
     },
     {
       step: '04',
-      title: 'Instalação de Fechaduras, Leitores e Controladoras',
-      description: 'Realizamos a fixação mecânica milimétrica de eletroímãs com suportes reguláveis, montagem dos terminais de reconhecimento facial em pedestais de inox e organização do quadro central de comando com bornes de conexão e fontes flutuantes protegidas.'
+      title: 'Instalação de Fechaduras, Interfones e Bloqueios',
+      description: 'Realizamos a fixação e o alinhamento de fechaduras eletrônicas e eletroímãs com suportes próprios para portas de vidro ou batentes convencionais, módulos de interfone/vídeo porteiro, terminais de acesso e cancelas de estacionamento.'
     },
     {
       step: '05',
-      title: 'Configuração do Sistema e Testes de Homologação',
-      description: 'Configuramos as rotinas de portaria, criamos matrizes de permissão por horários e realizamos testes de esforço mecânico contínuo, tempo de resposta dos relés de acionamento, funcionamento da rotina de emergência e comportamento na queda de energia.'
+      title: 'Configuração de Regras e Testes Operacionais',
+      description: 'Configuramos permissões por usuário e horário, testamos a resposta dos sensores e relés de acionamento, conferimos as rotas de emergência e validamos o comportamento em simulação de falta de energia.'
     },
     {
       step: '06',
-      title: 'Entrega Técnica e Treinamento Operacional Assistido',
-      description: 'Acompanhamos presencialmente a operação nos primeiros dias de funcionamento, realizamos o treinamento completo dos porteiros e administradores e entregamos o manual operacional com termos de garantia contratual e suporte pós-instalação em Curitiba.'
+      title: 'Entrega Técnica e Suporte Pós-Instalação',
+      description: 'Realizamos o treinamento da equipe de portaria ou administração e mantemos suporte após a instalação em Curitiba e Região Metropolitana.'
     }
   ],
   faqs: [
     {
+      question: 'Vocês instalam fechadura eletrônica e interfone além de catracas e cancelas?',
+      answer: 'Sim. Executamos a instalação e configuração de fechaduras eletrônicas (digitais, biométricas, por tag e eletromagnéticas, inclusive em portas de vidro), interfones e vídeo porteiros coletivos ou empresariais, além de catracas, cancelas e tag veicular. Para residências individuais (casas e apartamentos), o atendimento fica no site da Intelsecsul (intelsecsul.com.br).'
+    },
+    {
+      question: 'Quanto custa instalar controle de acesso em Curitiba?',
+      answer: 'O valor depende exclusivamente dos fatores levantados no diagnóstico técnico: quantidade de portas, catracas ou cancelas, tecnologia de identificação escolhida (facial, biometria, RFID, senha ou tag veicular), tipo de esquadria (como portas de vidro temperado), necessidade de infraestrutura com eletrodutos e cabeamento, fonte carregadora com baterias/nobreak e eventuais adequações civis. Por isso, o orçamento completo é definido após a visita técnica.'
+    },
+    {
       question: 'A instalação exige quebrar paredes, pisos ou alterar a fachada do imóvel?',
-      answer: 'Priorizamos métodos construtivos limpos e não destrutivos. Em grande parte dos condomínios e escritórios em Curitiba, utilizamos tubulações de segurança já existentes ou instalamos canaletas de sobrepor de alumínio escovado de excelente acabamento arquitetônico. Caso seja imprescindível passar cabos em calçadas para cancelas veiculares, realizamos corte fino com serra diamantada e acabamento com selante elástico especial, preservando o pavimento e a estética original da edificação.'
+      answer: 'Priorizamos métodos construtivos limpos e planejados. Em grande parte dos condomínios, empresas e lojas com portas de vidro em Curitiba, utilizamos tubulações existentes ou canaletas de acabamento adequado. Quando há necessidade de passagem em piso para cancelas de estacionamento, o corte e o acabamento são alinhados previamente no diagnóstico.'
     },
     {
-      question: 'Vocês emitem Anotação de Responsabilidade Técnica (ART) ou termo formal de garantia?',
-      answer: 'Sim. Todos os nossos projetos de implantação de controle de acesso podem ser acompanhados de ART registrada junto ao CREA-PR, atestando a conformidade da engenharia elétrica e de segurança física com as normas ABNT aplicáveis. Além disso, fornecemos termo contratual formal de garantia de peças e mão de obra, com suporte técnico presencial e atendimento ágil em Curitiba e Região Metropolitana.'
+      question: 'Vocês instalam equipamentos Intelbras?',
+      answer: 'Sim. Instalamos e configuramos equipamentos de controle de acesso, fechaduras eletrônicas e interfones ou vídeo porteiros Intelbras, além de outras marcas do mercado. A Intelsecsul atua de forma independente e não é revendedora autorizada da marca; as condições comerciais de assistência constam na proposta.'
     },
     {
-      question: 'Como funciona a eclusa de pedestres durante a fase de instalação?',
-      answer: 'Para não deixar o condomínio ou a empresa vulnerável durante os serviços, planejamos a execução por etapas sequenciais. Primeiro instalamos toda a infraestrutura de cabeamento e fontes de contingência; em seguida, ativamos a fechadura de uma porta mantendo a outra operacional, migrando para o intertravamento final sem desproteger o perímetro em nenhum instante de trabalho.'
-    },
-    {
-      question: 'Qual a importância de dimensionar corretamente a bitola dos cabos de alimentação das fechaduras?',
-      answer: 'Fechaduras eletromagnéticas consomem corrente contínua constante de 300mA a 500mA. Se o cabo de alimentação tiver bitola insuficiente ou a distância até a fonte for muito longa, ocorre queda de tensão severa na ponta da linha (chegando a menos de 10V em vez dos 12V necessários). Isso reduz drasticamente a força de atração magnética da porta, permitindo que ela seja aberta com um simples empurrão. Dimensionamos cabos de 1,5mm² a 2,5mm² de cobre puro conforme a distância.'
-    },
-    {
-      question: 'O sistema instalado pode ser integrado posteriormente a portarias remotas de terceiros?',
-      answer: 'Sim. Não utilizamos equipamentos de protocolo proprietário fechado que prendam o cliente a um único fornecedor. As controladoras e terminais instalados possuem saídas Wiegand, conexões seriais OSDP, relés de contato seco e portas TCP/IP padrão de mercado. Qualquer empresa de portaria remota ou monitoramento 24h que opere em Curitiba poderá integrar e gerenciar os equipamentos sem necessidade de retrabalho ou descarte de componentes.'
+      question: 'Como funciona a instalação em portas de vidro temperado?',
+      answer: 'Para portas de vidro temperado, utilizamos suportes especiais (como modelos em U com proteção) ajustados à espessura da folha e ao sentido de abertura, mantendo o travamento firme sem necessidade de furar ou danificar o vidro.'
     }
   ],
-  relatedSolutions: ['reconhecimento-facial', 'catracas', 'fechaduras-eletromagneticas', 'cartao-e-tag-rfid'],
+  relatedSolutions: ['fechadura-eletronica', 'tag-veicular', 'catracas', 'interfone-e-video-porteiro'],
   relatedServices: ['manutencao', 'locacao'],
-  whatsappContext: 'instalação e projeto de controle de acesso em Curitiba'
+  whatsappContext: 'instalação de controle de acesso, fechadura eletrônica ou interfone em Curitiba'
 };

@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import { BookOpen, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Layout } from '../components/Layout';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
+import { ComplianceNotices } from '../components/ui/ComplianceNotices';
 import { siteConfig } from '../config/site';
 
 interface Term {
@@ -14,110 +15,110 @@ interface Term {
 const terms: Term[] = [
   {
     term: 'Biometria',
-    definition: 'Método automatizado de identificação e validação de indivíduos baseado em características biológicas únicas e mensuráveis, tais como impressões digitais, geometria facial ou padrão vascular.',
+    definition: 'Método automatizado de identificação de indivíduos baseado em características físicas únicas e mensuráveis, como impressões digitais ou geometria facial.',
     link: { text: 'Ver soluções de biometria', href: '/solucoes/biometria/' }
   },
   {
     term: 'Template Biométrico',
-    definition: 'Representação matemática criptografada e irreversível gerada a partir dos pontos característicos (minúcias) de uma face ou impressão digital. Não armazena a imagem fotográfica real, garantindo conformidade com a LGPD.',
+    definition: 'Representação matemática criptografada gerada a partir dos pontos característicos de uma face ou impressão digital, evitando o armazenamento de imagem fotográfica aberta para identificação.',
     link: { text: 'Ver política de privacidade e LGPD', href: '/politica-de-privacidade/' }
   },
   {
-    term: 'Liveness (Prova de Vida)',
-    definition: 'Tecnologia óptica e algorítmica utilizada em leitores faciais para distinguir um rosto humano vivo real de tentativas de fraude com fotos impressas, vídeos em telas de celular ou máscaras de silicone.',
+    term: 'Liveness (Detecção de Vivacidade)',
+    definition: 'Recurso presente em leitores faciais para distinguir um rosto humano real diante da lente de tentativas com fotos impressas ou telas de celular.',
     link: { text: 'Ver reconhecimento facial', href: '/solucoes/reconhecimento-facial/' }
   },
   {
     term: 'RFID (Radio Frequency Identification)',
-    definition: 'Identificação por radiofrequência sem contato. Utiliza ondas eletromagnéticas para ler dados gravados em chips instalados em cartões de proximidade, chaveiros de tag ou etiquetas adesivas.',
+    definition: 'Identificação por radiofrequência sem contato que utiliza ondas eletromagnéticas para ler chips em cartões de proximidade, chaveiros tag ou adesivos.',
     link: { text: 'Ver cartões e tags RFID', href: '/solucoes/cartao-e-tag-rfid/' }
   },
   {
     term: 'Mifare (13,56 MHz)',
-    definition: 'Padrão internacional de cartão inteligente sem contato (smart card) de alta frequência que opera com setores de memória protegidos por chaves criptográficas (Crypto-1 ou AES), impedindo clonagens simples comuns em cartões antigos de 125 kHz.',
-    link: { text: 'Ver soluções de cartões inteligentes', href: '/solucoes/cartao-e-tag-rfid/' }
+    definition: 'Padrão de cartão inteligente sem contato de alta frequência com recursos de criptografia, reduzindo riscos de clonagem em comparação a cartões simples de 125 kHz.',
+    link: { text: 'Ver soluções de cartões RFID', href: '/solucoes/cartao-e-tag-rfid/' }
   },
   {
     term: 'UHF (Ultra High Frequency)',
-    definition: 'Faixa de radiofrequência (geralmente entre 902 e 928 MHz no Brasil) que permite leitura veicular de longo alcance (de 3 a 8 metros), amplamente empregada em tags coladas no para-brisa para automação de cancelas e portões.',
+    definition: 'Faixa de radiofrequência utilizada em leitores de longo alcance e tags coladas no para-brisa para automação da abertura de cancelas e portões veiculares.',
     link: { text: 'Ver cancelas e acesso veicular', href: '/solucoes/cancelas-e-acesso-veicular/' }
   },
   {
     term: 'Protocolo Wiegand',
-    definition: 'Padrão tradicional de comunicação unidirecional entre leitoras de acesso (biometria ou cartão) e controladoras, transmitindo dados através de dois condutores de pulso elétrico (Data 0 e Data 1).',
+    definition: 'Padrão tradicional de comunicação entre leitores de acesso e controladoras que transmite o código da credencial através de pulsos elétricos (Data 0 e Data 1).'
   },
   {
     term: 'Protocolo OSDP (Open Supervised Device Protocol)',
-    definition: 'Padrão moderno, bidirecional e supervisionado de comunicação entre leitores e controladoras. Conta com criptografia AES-128 e monitora constantemente se a fiação ou o leitor foi violado fisicamente.',
+    definition: 'Padrão bidirecional supervisionado de comunicação entre leitores e controladoras com suporte a criptografia e detecção de desconexão da fiação.'
   },
   {
     term: 'Controladora de Acesso',
-    definition: 'Hardware central dedicado (placa de processamento) responsável por armazenar as regras de acesso, tabelas de permissões e horários, validar os dados enviados pelos leitores e acionar relés de fechaduras ou cancelas.',
+    definition: 'Hardware dedicado responsável por armazenar regras e horários de permissão, validar as leituras recebidas dos terminais e acionar fechaduras, catracas ou cancelas.',
     link: { text: 'Ver instalação e projetos', href: '/servicos/instalacao-e-projeto/' }
   },
   {
     term: 'Eletroímã (Fechadura Eletromagnética)',
-    definition: 'Dispositivo composto por uma bobina eletromagnética e uma placa metálica (bloco de atrito). Mantém a porta travada através de força magnética contínua (ex: 150 kgf a 300 kgf) sem peças mecânicas móveis.',
+    definition: 'Dispositivo composto por bobina eletromagnética e placa metálica de atrito que mantém a porta travada por força magnética contínua sem desgaste mecânico.',
     link: { text: 'Ver fechaduras eletromagnéticas', href: '/solucoes/fechaduras-eletromagneticas/' }
   },
   {
     term: 'Fail-Safe',
-    definition: 'Modo de operação de segurança em que o dispositivo destrava automaticamente na ausência de energia elétrica. É a configuração padrão de fechaduras eletroímã para assegurar evacuação desimpedida em emergências.',
+    definition: 'Modo de operação em que a fechadura destrava na ausência de energia elétrica, característica comum em fechaduras eletroímã para liberar saídas em emergência.'
   },
   {
     term: 'Fail-Secure',
-    definition: 'Modo de operação em que o dispositivo permanece travado na ausência de eletricidade, exigindo acionamento por chave mecânica para abertura. Indicado para ambientes de alta retenção patrimonial restrita.',
+    definition: 'Modo de operação em que a trava mecânica permanece fechada mesmo sem energia elétrica, exigindo chave mecânica ou liberação manual quando aplicável.'
   },
   {
     term: 'Catraca Flap (Flap Barrier)',
-    definition: 'Equipamento sofisticado de controle de passagem com barreiras de acrílico ou vidro retráteis que se recolhem suavemente para dentro do gabinete após a autenticação, oferecendo alta velocidade e design nobre.',
+    definition: 'Modelo de catraca com barreiras retráteis de vidro ou acrílico que se recolhem lateralmente para dentro do gabinete após a validação do usuário.',
     link: { text: 'Ver catracas de acesso', href: '/solucoes/catracas/' }
   },
   {
     term: 'Torniquete de Altura Total',
-    definition: 'Barreira física mecânica de alta segurança que vai do chão ao teto (geralmente mais de 2 metros de altura) com braços giratórios que impedem totalmente que uma pessoa pule ou passe por baixo do bloqueio.',
+    definition: 'Barreira física de grande porte com estrutura do piso ao topo e braços giratórios para contenção perimetral reforçada em áreas industriais e galpões.',
     link: { text: 'Ver soluções para indústrias', href: '/segmentos/industrias/' }
   },
   {
     term: 'Cancela Automática',
-    definition: 'Dispositivo eletromecânico composto por gabinete motorizado e haste linear ou articulada, projetado para controlar a passagem seletiva de veículos em pistas de estacionamento, garagens e pátios.',
+    definition: 'Equipamento eletromecânico com gabinete motorizado e haste linear ou articulada para controle de entrada e saída de veículos em garagens e pátios.',
     link: { text: 'Ver cancelas veiculares', href: '/solucoes/cancelas-e-acesso-veicular/' }
   },
   {
-    term: 'Laço Indutivo (Sensor Magnético de Solo)',
-    definition: 'Circuito condutor de cabo embutido no asfalto que detecta a variação do campo magnético provocada pela massa metálica de um veículo, impedindo que a cancela feche sobre o carro e acionando aberturas automáticas.',
+    term: 'Laço Indutivo (Sensor de Massa Metálica)',
+    definition: 'Condutor embutido no piso que detecta a presença metálica do veículo, evitando que o braço da cancela desça sobre o automóvel.'
   },
   {
     term: 'LPR (License Plate Recognition)',
-    definition: 'Tecnologia que utiliza câmeras OCR de alta definição com iluminação infravermelha para capturar e ler instantaneamente os caracteres alfanuméricos das placas de veículos, liberando cancelas de forma automatizada.',
+    definition: 'Tecnologia de leitura automática de placas veiculares por câmera OCR para identificação e registro de veículos em portarias.',
     link: { text: 'Ver cancelas e acesso veicular', href: '/solucoes/cancelas-e-acesso-veicular/' }
   },
   {
     term: 'PoE (Power over Ethernet)',
-    definition: 'Tecnologia que permite transmitir energia elétrica e dados de rede simultaneamente através do mesmo cabo de par trançado (UTP Cat5e/Cat6), simplificando a instalação de leitoras faciais e interfones IP.',
+    definition: 'Tecnologia que transmite energia elétrica e dados pelo mesmo cabo de rede, simplificando a infraestrutura para leitores faciais e vídeo porteiros IP.'
   },
   {
-    term: 'Nobreak (UPS / Fonte Ininterrupta)',
-    definition: 'Equipamento composto por circuito retificador, inversor e baterias seladas (geralmente 12V estacionárias), responsável por manter a alimentação elétrica contínua dos sistemas de controle de acesso durante apagões na rede pública.',
+    term: 'Nobreak / Fonte Carregadora',
+    definition: 'Sistema com bateria auxiliar destinado a manter controladoras, leitores e fechaduras alimentados temporariamente durante quedas da rede elétrica.'
   },
   {
     term: 'Eclusa / Clausura de Segurança',
-    definition: 'Sistema composto por dois portões ou portas em sequência intertravados eletronicamente. A segunda porta só pode ser destravada após o fechamento e travamento completo da primeira, evitando acessos de carona (tailgating).',
+    definition: 'Conjunto de duas portas ou portões em sequência com intertravamento eletrônico, impedindo que ambas as passagens permaneçam abertas ao mesmo tempo.',
     link: { text: 'Ver controle para condomínios', href: '/segmentos/condominios-residenciais/' }
   },
   {
     term: 'QR Code de Acesso',
-    definition: 'Código bidimensional dinâmico ou estático gerado por aplicativo que permite aos visitantes liberar catracas e portas apontando a tela do smartphone para um leitor óptico com tempo e tentativas predeterminados.',
+    definition: 'Código bidimensional com validade programada gerado para visitantes acessarem catracas ou portas equipadas com leitor óptico compatível.',
     link: { text: 'Ver soluções de catracas', href: '/solucoes/catracas/' }
   },
   {
     term: 'Mola Aérea Hidráulica',
-    definition: 'Mecanismo mecânico-hidráulico ajustável instalado na parte superior da folha da porta para fechar a abertura de forma controlada e sem impacto brusco, garantindo o correto atraque do eletroímã.',
+    definition: 'Mecanismo instalado na parte superior da porta para fechar a folha de forma controlada e favorecer o alinhamento correto no atraque do eletroímã.',
     link: { text: 'Ver instalação e projetos', href: '/servicos/instalacao-e-projeto/' }
   },
   {
     term: 'Braço Antipânico',
-    definition: 'Mecanismo de segurança instalado em catracas tripé que desarma e cai imediatamente na posição vertical em situações de emergência, disparo de alarme de incêndio ou queda de energia, liberando a rota de evacuação.',
+    definition: 'Recurso de segurança em catracas tripé que destrava e abaixa o braço automaticamente em caso de emergência ou corte de energia.',
     link: { text: 'Ver soluções de catracas', href: '/solucoes/catracas/' }
   }
 ];
@@ -131,46 +132,58 @@ export function GlossarioPage() {
         canonicalPath="/glossario/"
       />
 
-      <Breadcrumbs
-        items={[
-          { name: 'Glossário Técnico', url: `${siteConfig.domain}/glossario/` }
-        ]}
-      />
+      <section className="bg-hero-gradient border-b border-[var(--border)] pt-4 pb-10 sm:pb-14 px-4">
+        <div className="max-w-5xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { name: 'Glossário Técnico', url: `${siteConfig.domain}/glossario/` },
+            ]}
+          />
+          <header className="space-y-3 mt-4">
+            <span className="inline-block text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              Dicionário Técnico
+            </span>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Glossário de Controle de Acesso Físico
+            </h1>
+            <p className="text-base text-[var(--text-muted)] max-w-2xl leading-relaxed">
+              Guia de termos técnicos para auxiliar síndicos, gestores prediais e empresas na compreensão dos equipamentos de portaria e segurança.
+            </p>
+          </header>
+        </div>
+      </section>
 
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <header className="space-y-4 mb-10 text-center">
-          <span className="text-xs font-semibold text-sky-700 uppercase tracking-wider block">
-            Dicionário Especializado
-          </span>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Glossário de Controle de Acesso Físico
-          </h1>
-          <p className="text-xs sm:text-sm text-slate-600 max-w-xl mx-auto leading-relaxed">
-            Guia completo de termos técnicos da engenharia de acesso físico e segurança eletrônica para síndicos, administradores prediais e gestores corporativos.
-          </p>
-        </header>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section className="bg-[var(--bg)] py-12 sm:py-16 px-4">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
           {terms.map((item, idx) => (
-            <article key={idx} className="bg-white p-5 rounded-lg border border-slate-200 shadow-sm space-y-2 flex flex-col justify-between">
+            <article
+              key={idx}
+              className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] space-y-3 flex flex-col justify-between"
+            >
               <div>
-                <h2 className="text-sm font-bold text-slate-900">
+                <h2 className="text-base font-bold text-white">
                   {item.term}
                 </h2>
-                <p className="text-xs text-slate-600 leading-relaxed mt-1">
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed mt-2">
                   {item.definition}
                 </p>
               </div>
               {item.link && (
-                <div className="pt-2 border-t border-slate-100">
-                  <Link to={item.link.href} className="text-xs font-semibold text-sky-600 hover:underline inline-flex items-center gap-1">
+                <div className="pt-3 border-t border-[var(--border)]">
+                  <Link
+                    to={item.link.href}
+                    className="text-sm font-semibold text-[var(--accent)] hover:underline inline-flex items-center gap-1.5"
+                  >
                     <span>{item.link.text}</span>
-                    <ArrowRight className="w-3 h-3" />
+                    <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
                   </Link>
                 </div>
               )}
             </article>
           ))}
+        </div>
+        <div className="max-w-5xl mx-auto mt-8">
+          <ComplianceNotices showLgpd />
         </div>
       </section>
     </Layout>

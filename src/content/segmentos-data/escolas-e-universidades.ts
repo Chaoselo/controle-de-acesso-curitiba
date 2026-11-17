@@ -4,9 +4,9 @@ export const escolasEUniversidadesSegment: SegmentContent = {
   slug: 'escolas-e-universidades',
   title: 'Controle de Acesso para Escolas e Faculdades em Curitiba',
   seoTitle: 'Controle de Acesso para Escolas e Faculdades Curitiba',
-  metaDescription: 'Segurança estudantil com catracas e controle de acesso escolar em Curitiba. Notificação de entrada e saída e bloqueio de estranhos. Peça orçamento!',
+  metaDescription: 'Catracas, fechaduras eletrônicas, interfonia e controle de acesso para escolas e faculdades em Curitiba. Segurança na portaria e cuidados com a LGPD.',
   keyword: 'controle de acesso para escolas e universidades em Curitiba',
-  directAnswer: 'O controle de acesso para colégios, escolas infantis e campi universitários em Curitiba organiza o fluxo intenso de estudantes, docentes, funcionários e pais nos horários de entrada e saída de aulas. Combinando catracas com mecanismo de braço antipânico certificado, reconhecimento facial ou cartões escolares e totens de triagem de visitantes, a solução impede a evasão de alunos sem autorização e protege a comunidade escolar com absoluto respeito à LGPD para menores.',
+  directAnswer: 'O controle de acesso para escolas, colégios e instituições de ensino em Curitiba organiza a entrada e saída de estudantes, professores, funcionários e visitantes nos horários de maior movimento. Combinando catracas com recurso antipânico, fechaduras eletromagnéticas em portões e portas de vidro, interfonia e leitores RFID ou faciais, o sistema apoia a triagem na portaria respeitando os cuidados especiais da LGPD para menores.',
   image: {
     src: '/images/controle-acesso-segmento-escolas-e-faculdades.webp',
     alt: 'Fileira de catracas com terminais faciais em um hall de entrada',
@@ -14,70 +14,69 @@ export const escolasEUniversidadesSegment: SegmentContent = {
     height: 675
   },
   typicalProblems: [
-    'Congestionamento e empurrões no portão escolar nos intervalos críticos de entrada e saída de turnos (manhã, tarde e noite), sobrecarregando inspetores escolares e recepcionistas do colégio.',
-    'Risco contínuo de evasão escolar não autorizada de estudantes menores de idade durante o período letivo ou saída acompanhada por adultos não autorizados formalmente pelos pais.',
-    'Acesso indevido de pessoas desconhecidas, prestadores informais e vendedores ambulantes aos pátios internos, salas de aula e quadras esportivas sem identificação prévia na guarita principal da escola.',
-    'Falta de comunicação rápida e automatizada com os pais ou responsáveis legais quando o aluno entra ou deixa as dependências do estabelecimento de ensino de Curitiba.',
-    'Bloqueio ou retenção inadequada de alunos em portas e corredores em caso de simulação ou emergência real de evacuação rápida provocada por princípio de incêndio.',
-    'Insegurança jurídica da instituição escolar no manuseio, coleta e tratamento de dados biométricos de menores de idade sem as devidas salvaguardas exigidas pela legislação da LGPD.'
+    'Acúmulo de pessoas na portaria escolar nos horários de entrada e saída dos turnos.',
+    'Necessidade de evitar a entrada de pessoas sem identificação prévia nos pátios e corredores internos.',
+    'Controle cuidadoso da saída de alunos e da identificação de responsáveis e visitantes na secretaria.',
+    'Adaptação de rotas de emergência para que catracas e portas não obstruam a saída em situações de evacuação.',
+    'Exigência de atenção rigorosa à LGPD no tratamento de dados de crianças e adolescentes.'
   ],
   idealSolutions: [
     {
       solutionSlug: 'catracas',
-      title: 'Catracas Pedestal com Mecanismo de Braço Antipânico',
-      reason: 'Asseguram contagem e validação individual de cada estudante no dia a dia e desarmam automaticamente os três braços metálicos para a posição vertical em caso de evacuação de emergência do colégio.'
-    },
-    {
-      solutionSlug: 'reconhecimento-facial',
-      title: 'Reconhecimento Facial de Alta Velocidade para Estudantes',
-      reason: 'Elimina a dependência de cartões escolares que crianças e jovens frequentemente perdem ou esquecem em casa, permitindo passagem rápida e fluida sem retenção mecânica na fila de entrada da escola.'
+      title: 'Catracas com Braço Antipânico e Passagem Acessível',
+      reason: 'Ajudam a organizar a passagem unitária nos horários de entrada e permitem o desarme do braço em emergências, acompanhadas de passagem lateral conforme a ABNT NBR 9050.'
     },
     {
       solutionSlug: 'cartao-e-tag-rfid',
-      title: 'Cartões RFID Personalizados para Carteirinha de Estudante',
-      reason: 'Atuam como solução híbrida física de excelente custo-benefício para identificação visual com foto impressa, controle de acesso às catracas e empréstimo automatizado de livros na biblioteca escolar ou universitária da instituição de ensino.'
+      title: 'Cartões RFID para Carteirinha Escolar e Crachás',
+      reason: 'Servem como identificação prática de alunos, colaboradores e visitantes, além de evitar a coleta de dados biométricos de menores quando a escola optar por não utilizá-los.'
+    },
+    {
+      solutionSlug: 'reconhecimento-facial',
+      title: 'Reconhecimento Facial (Quando Adotado pela Instituição)',
+      reason: 'Reduz transtornos com esquecimento ou perda de carteirinhas em campi maiores, exigindo cumprimento rigoroso do consentimento específico para menores conforme a LGPD.'
     },
     {
       solutionSlug: 'fechaduras-eletromagneticas',
-      title: 'Fechaduras Eletroímã em Portões Sociais e Eclusas de Pais',
-      reason: 'Garantem que os portões externos permaneçam firmemente travados contra tentativas de empurrão mecânico ou arrombamento, sendo destravados somente após a identificação prévia e visual do visitante pela equipe da secretaria escolar.'
+      title: 'Fechaduras Eletroímã em Portões, Salas de Professores e Portas de Vidro',
+      reason: 'Mantêm portões sociais e salas pedagógicas ou laboratórios fechados até a liberação pela secretaria ou usuário autorizado.'
     },
     {
-      solutionSlug: 'biometria',
-      title: 'Leitores Biométricos em Laboratórios e Salas de Professores',
-      reason: 'Garantem controle rigoroso em setores restritos como almoxarifado de provas, salas de tecnologia e departamentos pedagógicos, liberando o acesso apenas para docentes e técnicos autorizados.'
+      solutionSlug: 'interfone-e-video-porteiro',
+      title: 'Interfone e Vídeo Porteiro na Secretaria e Portaria',
+      reason: 'Facilita a comunicação visual com pais e visitantes no portão externo antes de destravar a entrada.'
     }
   ],
   projectArchitecture: [
-    'Portaria Escolar e Bateria de Catracas: Dimensionamento de bateria de catracas com braços tipo pedestal em aço inox escovado, equipadas com eletroímã antipânico que desarma os braços quando a energia cai ou o alarme soa, mais um portão lateral acessível conforme a NBR 9050.',
-    'Secretaria e Balcão de Visitantes: Espaço com vidros de segurança e guichê de atendimento, dotado de scanner de documentos, câmera de alta resolução para fotografia de pais e autorizados a buscar alunos e impressora térmica de etiquetas adesivas provisórias.',
-    'Controle de Salas de Professores, TI e Laboratórios: Instalação de fechaduras eletromagnéticas em laboratórios de informática, sala dos professores, almoxarifado de provas e diretoria, com leitores biométricos restritos ao corpo docente.',
-    'Integração com Sistema Acadêmico da Instituição: Configuração de rotina de sincronização entre o banco de dados do sistema acadêmico e as controladoras de acesso para atualização automática de matrículas, transferências e trancamentos.',
-    'Alimentação Elétrica Ininterrupta e Rota de Fuga: No-breaks inteligentes conectados à rede de alarme de incêndio que desarmam instantaneamente todos os bloqueios mecânicos caso seja acionada a botoeira de pânico de emergência da escola.'
+    'Portaria Principal: Bateria de catracas dimensionada para o fluxo dos turnos, com mecanismo antipânico quando especificado e portão acessível conforme a ABNT NBR 9050.',
+    'Secretaria e Recepção de Visitantes: Interfone ou vídeo porteiro, porta com fechadura eletromagnética e controle provisório de visitantes.',
+    'Salas Restritas e Laboratórios: Fechaduras eletrônicas ou eletroímãs em laboratórios, secretarias e arquivos.',
+    'Estacionamento Escolar: Cancelas automáticas e controle de acesso veicular quando a instituição possui pátio de embarque ou estacionamento interno.',
+    'Contingência Elétrica e LGPD para Menores: Nobreaks para continuidade em faltas de energia e orientações sobre consentimento dos responsáveis e uso de credenciais alternativas.'
   ],
   faqs: [
     {
-      question: 'Quais os cuidados específicos da LGPD com dados biométricos de crianças e adolescentes?',
-      answer: 'O artigo 14 da LGPD determina que o tratamento de dados pessoais de crianças e adolescentes deve ser realizado em seu melhor interesse. No caso de biometria ou reconhecimento facial de menores, é obrigatório colher o consentimento específico e em destaque dado por pelo menos um dos pais ou pelo responsável legal no contrato de matrícula. Nossos sistemas armazenam apenas templates criptografados e não fotos abertas. Este texto é informativo e não substitui a orientação de um profissional jurídico.'
+      question: 'Quais cuidados a LGPD exige para controle de acesso de crianças e adolescentes?',
+      answer: 'O artigo 14 da LGPD estabelece que o tratamento de dados de crianças e adolescentes deve observar seu melhor interesse, exigindo consentimento específico e em destaque de pelo menos um dos pais ou responsável legal para dados de crianças e cuidados proporcionais para menores, além de oferecer alternativa como cartão RFID. Este texto é informativo e não substitui a orientação de um profissional jurídico.'
     },
     {
-      question: 'O que é a catraca com braço antipânico e por que ela é obrigatória em escolas?',
-      answer: 'A catraca com braço antipânico possui um solenoide especial que, ao perder a alimentação elétrica ou receber sinal da central de alarme de incêndio, faz o braço superior cair automaticamente para a posição vertical. Isso libera completamente o vão de passagem para que centenas de alunos possam evacuar a escola sem qualquer obstáculo em rotas de fuga.'
+      question: 'Para que serve o braço antipânico em catracas escolares?',
+      answer: 'Em modelos equipados com esse mecanismo, o braço desarma e abaixa ao receber comando de emergência ou perder alimentação elétrica, liberando o vão de passagem em rotas de evacuação.'
     },
     {
-      question: 'Como a portaria gerencia a liberação de alunos por terceiros ou parentes eventuais?',
-      answer: 'O sistema escolar permite cadastrar uma lista restrita de adultos autorizados pelos pais (como avós, tios ou motoristas de van escolar) com suas respectivas fotos e documentos. O porteiro visualiza na tela a foto cadastrada antes de destravar o portão para a saída da criança.'
+      question: 'Como lidar quando o aluno esquece o crachá ou carteirinha?',
+      answer: 'A portaria ou secretaria pode realizar liberação assistida mediante conferência visual e registro no controle interno, sem barrar indevidamente o estudante.'
     },
     {
-      question: 'E se o aluno esquecer o crachá ou a carteirinha em casa no dia de aula?',
-      answer: 'A instituição pode adotar o reconhecimento facial complementar, onde a própria face do estudante valida a passagem, ou autorizar a recepção a fazer uma liberação manual assistida no sistema, registrando o evento no histórico acadêmico sem reter o aluno do lado de fora do colégio.'
+      question: 'Vocês também fazem manutenção de catracas e interfones já instalados em escolas?',
+      answer: 'Sim. Realizamos conserto e manutenção preventiva de catracas, fechaduras eletrônicas, interfones e cancelas em instituições de ensino de Curitiba e Região Metropolitana.'
     },
     {
-      question: 'É viável utilizar o mesmo sistema em uma grande universidade com múltiplos blocos em Curitiba?',
-      answer: 'Sim. Em universidades com milhares de acadêmicos e vários blocos de salas, utilizamos controladoras IP interligadas por rede óptica que sincronizam centenas de catracas simultâneas, permitindo inclusive o controle de acesso diferenciado a cursos noturnos, laboratórios e bibliotecas.'
+      question: 'O controle de acesso funciona em faculdades com vários blocos?',
+      answer: 'Sim, conforme o dimensionamento da rede e das controladoras no diagnóstico técnico, é possível organizar múltiplos acessos e perfis de usuários.'
     }
   ],
-  relatedSolutions: ['catracas', 'reconhecimento-facial', 'fechaduras-eletromagneticas', 'biometria'],
+  relatedSolutions: ['catracas', 'cartao-e-tag-rfid', 'fechaduras-eletromagneticas', 'interfone-e-video-porteiro'],
   relatedSegments: ['academias', 'condominios-comerciais'],
-  whatsappContext: 'controle de acesso para escolas e universidades em Curitiba'
+  whatsappContext: 'controle de acesso ou catraca para escola ou faculdade em Curitiba'
 };

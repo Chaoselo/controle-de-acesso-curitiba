@@ -7,7 +7,7 @@ export const colomboContent: CityContent = {
   seoTitle: 'Controle de Acesso em Colombo | Fechaduras e Catracas',
   metaDescription: 'Controle de acesso em Colombo. Biometria digital, cancelas de condomínio e catracas para comércios e escolas. Peça já seu orçamento pelo WhatsApp!',
   keyword: 'controle de acesso em Colombo',
-  directAnswer: 'Instalação e manutenção técnica especializada de controle de acesso em Colombo para condomínios residenciais, centros comerciais do Alto Maracanã, instituições de ensino e empresas de logística e distribuição. Projetamos e implantamos catracas de pedestres com braço antipânico, fechaduras eletromagnéticas, cancelas veiculares de garagem com abertura rápida, reconhecimento facial e leitores RFID com suporte presencial qualificado.',
+  directAnswer: 'Instalação e manutenção de controle de acesso em Colombo para condomínios, escolas, academias, clínicas, empresas, estacionamentos e portas de vidro. Realizamos instalação de fechadura eletrônica, interfone/vídeo porteiro, catracas, cancelas e leitores biométricos ou faciais, além de conserto e manutenção de interfone, catraca e cancela.',
   // TODO: foto real
   image: {
     src: '/images/cidade-colombo.webp',
@@ -15,27 +15,27 @@ export const colomboContent: CityContent = {
     width: 800,
     height: 600
   },
-  localCharacteristics: 'Colombo destaca-se como o município mais populoso da Região Metropolitana de Curitiba, apresentando um tecido urbano dinâmico dividido entre grandes polos comerciais — com destaque para o bairro Alto Maracanã e a Estrada da Ribeira —, núcleos industriais em expansão e extensos bairros residenciais. Na região central e ao longo da Rodovia da Uva, multiplicam-se condomínios fechados de sobrados, loteamentos horizontais e conjuntos residenciais multifamiliares. Essa densidade populacional e mercantil gera forte demanda por controle de circulação diária: centros comerciais e escolas necessitam de catracas mecânicas e eletrônicas para gerenciar fluxo de alunos e clientes sem formar gargalos, enquanto condomínios residenciais buscam modernizar portarias com fechaduras eletroímã silenciosas, eclusas intertravadas e cancelas veiculares com leitura de tag RFID para eliminar filas na entrada.',
+  localCharacteristics: 'Colombo reúne condomínios, escolas, clínicas, academias, estacionamentos e áreas empresariais na Região Metropolitana de Curitiba. Essa rotina demanda equipamentos confiáveis para reduzir acessos sem permissão: catracas para controle de fluxo em escolas e recepções, além de fechaduras em portas de vidro, clausuras, interfones e cancelas veiculares em condomínios e empresas.',
   popularSolutions: [
-    'Catracas eletrônicas tipo pedestal em aço carbono ou inox 304 para portarias escolares, academias e edifícios comerciais no Alto Maracanã.',
-    'Cancelas veiculares automáticas com tags adesivas UHF no para-brisa para garagens de condomínios residenciais de médio e grande porte em Colombo.',
-    'Fechaduras eletromagnéticas de 150 kgf a 300 kgf em portas de vidro ou madeira, integradas a botoeiras sem toque e no-breaks senoidais para dias chuvosos.',
-    'Terminais de reconhecimento facial touchless com inteligência artificial para liberação rápida de moradores e colaboradores sem risco de perda de chaves.',
-    'Sistema de controle de acesso para emissão de relatórios de entrada e saída, controle de visitantes e restrição de horários de prestadores.'
+    'Catracas eletrônicas pedestal para portarias escolares, academias e edifícios comerciais em Colombo, com serviço de conserto e manutenção.',
+    'Cancelas veiculares automáticas com tags UHF para estacionamentos e garagens de condomínios e empresas.',
+    'Fechaduras eletrônicas e eletromagnéticas em portas de vidro, alumínio ou madeira, integradas a botoeiras e fontes com nobreak.',
+    'Terminais de reconhecimento facial e biometria com cuidados da LGPD e opção alternativa em cartão RFID.',
+    'Instalação, conserto e manutenção de interfone e vídeo porteiro para portarias e recepções.'
   ],
-  serviceLogistics: 'Com rotas técnicas contínuas conectando Curitiba a Colombo pela Estrada da Ribeira, Rodovia da Uva e Contorno Norte, nossos técnicos realizam visitas de avaliação sem custo e prestam suporte corretivo ágil em todo o território municipal, com reposição de peças de desgaste frequente.',
+  serviceLogistics: 'Com deslocamento direto a partir de Curitiba, nossa equipe técnica própria realiza avaliação presencial em Colombo para orçamento sem custo, instalação organizada e manutenção preventiva e corretiva com suporte após a instalação.',
   faqs: [
     {
-      question: 'Atendem condomínios e escolas na região do Alto Maracanã e São Gabriel?',
-      answer: 'Sim, atendemos regularmente todos os bairros de Colombo, com cronogramas estruturados para vistorias presenciais, instalação de novos equipamentos de catracas e cancelas, além de chamados de manutenção preventiva e corretiva.'
+      question: 'Vocês atendem condomínios e escolas em toda a região de Colombo?',
+      answer: 'Sim, atendemos condomínios, escolas, comércios e empresas em toda a cidade de Colombo, desde o levantamento técnico inicial até a instalação e manutenção periódica.'
     },
     {
-      question: 'Qual a solução ideal para controlar a entrada de alunos e evitar estranhos na escola?',
-      answer: 'Indicamos catracas tipo pedestal com leitores biométricos faciais ou cartões RFID e braço antipânico que desarma em emergências. O sistema gera alertas para a direção pedagógica e bloqueia passagens de pessoas não cadastradas.'
+      question: 'Qual a solução ideal para controlar a entrada de alunos e visitantes na escola?',
+      answer: 'Indicamos catracas tipo pedestal com leitores biométricos faciais ou cartões RFID e braço antipânico que desarma em emergências, associadas à triagem de visitantes na recepção.'
     },
     {
       question: 'As fechaduras eletroímã continuam travadas se faltar energia elétrica no condomínio?',
-      answer: 'Sim, desde que instaladas com fonte no-break dotada de bateria selada. Dimensionamos a autonomia da bateria para suportar de 2 a 6 horas ininterruptas de queda na rede pública de energia elétrica em Curitiba e Colombo.'
+      answer: 'Sim, desde que instaladas com fonte carregadora e bateria ou nobreak dimensionado para o consumo do conjunto de portas e leitores, cuja autonomia varia conforme o projeto.'
     },
     {
       question: 'Como funciona o leitor de tag veicular para os moradores do condomínio?',

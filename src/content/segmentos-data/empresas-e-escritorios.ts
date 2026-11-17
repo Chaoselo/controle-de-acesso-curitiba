@@ -4,9 +4,9 @@ export const empresasEEscritoriosSegment: SegmentContent = {
   slug: 'empresas-e-escritorios',
   title: 'Controle de Acesso para Empresas e Escritórios em Curitiba',
   seoTitle: 'Controle de Acesso para Empresas em Curitiba | Escritórios',
-  metaDescription: 'Segurança e controle de acesso para empresas e escritórios em Curitiba. Restrição de setores, TI, financeiro e portas protegidas. Orçamento no WhatsApp!',
+  metaDescription: 'Controle de acesso para empresas, escritórios e portas de vidro em Curitiba. Biometria, facial, fechadura eletrônica e interfones. Peça orçamento!',
   keyword: 'controle de acesso para empresas e escritorios em Curitiba',
-  directAnswer: 'O controle de acesso para empresas e escritórios em Curitiba protege ativos estratégicos, dados corporativos e áreas restritas como CPD, financeiro e almoxarifado. Através de leitores biométricos digitais, reconhecimento facial, fechaduras eletromagnéticas e controle de níveis de permissão no sistema, a empresa restringe a circulação interna de pessoas não autorizadas e obtém trilhas de auditoria completas para conformidade e segurança.',
+  directAnswer: 'O controle de acesso para empresas e escritórios em Curitiba protege setores internos como TI/CPD, financeiro, almoxarifado e recepções, inclusive em divisórias e portas de vidro. Utilizando leitores biométricos, reconhecimento facial, cartões RFID, senhas e fechaduras eletrônicas ou eletromagnéticas, a organização restringe passagens conforme cada perfil e mantém histórico de acessos.',
   image: {
     src: '/images/controle-acesso-segmento-escritorio.webp',
     alt: 'Leitor de acesso instalado na divisória de vidro de um escritório',
@@ -14,70 +14,70 @@ export const empresasEEscritoriosSegment: SegmentContent = {
     height: 675
   },
   typicalProblems: [
-    'Circulação irrestrita de funcionários de áreas operacionais em departamentos críticos e sigilosos como tesouraria, sala de servidores de TI e diretoria sem qualquer tipo de barreira física.',
-    'Uso de chaves mecânicas tradicionais que são frequentemente esquecidas em mesas, extraviadas ou copiadas por funcionários sem o conhecimento ou a autorização prévia da gestão.',
-    'Dificuldade e demora para revogar de forma imediata o acesso físico de colaboradores recém-desligados da companhia, gerando riscos de acesso indevido às instalações ou cópia de arquivos confidenciais.',
-    'Falta de registros auditáveis de data e horário de entrada em salas de arquivo fiscal e servidores de tecnologia, dificultando a elucidação de incidentes de segurança da informação ou sumiço de equipamentos.',
-    'Portas internas de divisórias e painéis de gesso acartonado (drywall) danificadas por fechaduras inadequadas ou trincos instalados sem dimensionamento correto de alinhamento e esforço mecânico.',
-    'Falta de integração entre o sistema de controle de acesso físico e as rotinas de gestão de recursos humanos para apuração de ponto eletrônico e controle de jornada de trabalho.'
+    'Circulação irrestrita de visitantes ou equipes operacionais em setores sigilosos como servidores de TI, financeiro e arquivos.',
+    'Uso de chaves comuns sujeitas a cópias, perda ou dificuldade para recolhimento em desligamentos.',
+    'Demora para revogar permissões físicas de colaboradores ou prestadores quando encerram atividades na empresa.',
+    'Falta de histórico de quem acessou salas técnicas, estoques e recepções fora do horário comercial.',
+    'Portas de vidro temperado ou divisórias corporativas que necessitam de fechadura eletrônica compatível sem furar o vidro.',
+    'Necessidade de interfone ou vídeo porteiro na recepção para triagem antes de destravar a entrada.'
   ],
   idealSolutions: [
     {
+      solutionSlug: 'fechaduras-eletromagneticas',
+      title: 'Fechaduras Eletroímã e Eletrônicas em Portas de Vidro e Divisórias',
+      reason: 'Permitem travamento silencioso e seguro em portas de vidro temperado, madeira ou alumínio com suportes específicos e botoeiras de saída.'
+    },
+    {
       solutionSlug: 'biometria',
-      title: 'Leitores Biométricos Digitais em Áreas Críticas',
-      reason: 'Oferecem validação biométrica intransferível para salas com restrição máxima, como CPDs corporativos e cofres, garantindo que somente funcionários expressamente designados pela diretoria de departamento tenham a porta liberada com registro cronológico.'
+      title: 'Leitores Biométricos em Salas Restritas',
+      reason: 'Auxiliam a restringir salas de TI, cofres e estoques apenas aos colaboradores autorizados, mantendo registro de passagens.'
     },
     {
       solutionSlug: 'reconhecimento-facial',
-      title: 'Terminais Faciais na Entrada Principal da Empresa',
-      reason: 'Proporcionam entrada rápida e higiênica sem necessidade de qualquer contato físico para o time corporativo, operando com alta velocidade de leitura mesmo em dias de intenso movimento de colaboradores no início do expediente.'
-    },
-    {
-      solutionSlug: 'fechaduras-eletromagneticas',
-      title: 'Fechaduras Eletroímã de 150kgf a 280kgf com Mola Aérea',
-      reason: 'Asseguram travamento silencioso e altamente confiável em portas de vidro, madeira ou divisórias de alumínio, sem peças móveis sujeitas a desgaste mecânico rápido e com destravamento imediato por botoeira no-touch sem toque.'
+      title: 'Terminais Faciais na Entrada Principal',
+      reason: 'Oferecem liberação rápida e sem contato para equipes corporativas na chegada ao escritório.'
     },
     {
       solutionSlug: 'senha-e-teclado',
-      title: 'Teclados Numéricos com Senha Individual e Coação',
-      reason: 'Atuam como solução prática ou segundo fator de autenticação para estoques, almoxarifados e salas de arquivo, permitindo alteração instantânea de senhas pelo gestor sem necessidade de despesas com novos crachás físicos.'
+      title: 'Teclados Numéricos com Senha Individual ou Dupla Verificação',
+      reason: 'Solução prática para almoxarifados e salas técnicas, permitindo alterar códigos rapidamente quando necessário.'
     },
     {
       solutionSlug: 'cartao-e-tag-rfid',
-      title: 'Cartões e Crachás RFID de Proximidade',
-      reason: 'Permitem identificação prática de colaboradores e visitantes, com integração direta a catracas e fechaduras eletromagnéticas, garantindo circulação controlada em cada setor corporativo.'
+      title: 'Cartões e Crachás RFID Corporativos',
+      reason: 'Integram identificação visual e liberação de portas ou catracas, além de servir como opção não biométrica conforme boas práticas da LGPD.'
     }
   ],
   projectArchitecture: [
-    'Perímetro de Recepção e Entrada Principal: Instalação de terminal de reconhecimento facial touchless integrado a fechadura eletromagnética de 280kgf em porta social de vidro temperado, com mola aérea hidráulica de amortecimento regulada para fechamento suave.',
-    'Segregação Setorial Interna: Aplicação de leitores biométricos e teclados numéricos nos acessos ao data center (CPD), departamento financeiro, departamento de recursos humanos e estoque de alto valor agregado.',
-    'Infraestrutura de Cabeamento de Rede e Alimentação: Lançamento de cabeamento blindado Cat6 e eletrocalhas metálicas fechadas, mantendo a fiação protegida contra interferências eletromagnéticas e tentativas de sabotagem física.',
-    'Central de Processamento e Controladoras IP: Montagem de rack com painel de comando abrigando controladoras de portas modulares com comunicação TCP/IP nativa e backup de dados em memória não volátil contra falhas de conexão.',
-    'Sistema de Contingência e No-Break: Instalação de fontes de alimentação colmeia de 13,8V com flutuador de carga acopladas a baterias seladas para garantir autonomia ininterrupta às fechaduras durante quedas na rede da Copel em Curitiba.'
+    'Recepção e Porta Principal de Vidro: Instalação de fechadura eletromagnética ou eletrônica adequada à esquadria, mola aérea, leitor facial ou RFID e interfone/vídeo porteiro para atendimento.',
+    'Setores Internos Restritos: Aplicação de biometria, teclado de senha ou leitor RFID em salas de servidores, arquivos e financeiro.',
+    'Infraestrutura de Cabeamento: Lançamento organizado de cabos de dados e energia protegidos contra danos e interferências.',
+    'Controladoras e Regras de Acesso: Parametrização de horários por setor e cadastro de usuários com desativação rápida em desligamentos.',
+    'Contingência Elétrica: Fontes carregadoras com baterias auxiliares ou nobreak dimensionado para manter portas travadas durante quedas temporárias de energia.'
   ],
   faqs: [
     {
-      question: 'O que a empresa deve fazer imediatamente quando um colaborador é desligado?',
-      answer: 'Basta que o administrador do sistema acesse o painel do sistema de controle de acesso no computador ou navegador e marque o cadastro do funcionário como inativo. Automaticamente, o comando de bloqueio é propagado para todas as controladoras e terminais biométricos da empresa em tempo real, cancelando imediatamente a autorização de abertura em todas as portas.'
+      question: 'Como revogar o acesso quando um funcionário é desligado?',
+      answer: 'O administrador inativa o cadastro do colaborador no painel ou diretamente no equipamento, bloqueando imediatamente sua digital, face, cartão ou senha nos pontos de acesso conectados.'
     },
     {
-      question: 'Como proteger a sala de servidores e CPD atendendo a normas de auditoria e compliance?',
-      answer: 'Para ambientes de tecnologia e CPD, instalamos fechaduras eletromagnéticas robustas com sensores de porta aberta integrados, leitor biométrico de alta precisão e botão de saída de emergência tipo quebre o vidro. O sistema registra cada segundo de abertura e gera alertas sonoros na recepção caso a porta permaneça calçada ou entreaberta.'
+      question: 'Vocês instalam fechadura eletrônica e leitor de acesso em portas de vidro de escritórios?',
+      answer: 'Sim. Utilizamos suportes próprios para vidro temperado, mola aérea hidráulica e passagem organizada dos fios junto ao perfil ou batente, sem precisar furar a folha de vidro.'
     },
     {
-      question: 'O sistema de controle de acesso substitui o relógio de ponto eletrônico (REP)?',
-      answer: 'Não. O controle de acesso físico tem a finalidade primordial de segurança patrimonial e restrição de áreas. O relógio de ponto eletrônico obedece a normas trabalhistas específicas do Ministério do Trabalho (Portaria 671). Entretanto, os sistemas modernos de controle de acesso permitem exportar relatórios de passagens para cruzar dados com a apuração de horas do RH.'
+      question: 'O controle de acesso físico substitui o relógio de ponto eletrônico (REP)?',
+      answer: 'Não. O controle de acesso tem foco em segurança física e restrição de ambientes, enquanto o registro oficial de jornada de trabalho segue regras específicas da legislação trabalhista.'
     },
     {
-      question: 'É possível restringir horários para que equipes terceirizadas não entrem fora do combinado?',
-      answer: 'Sim. É comum criar perfis com restrição rígida para equipes de limpeza terceirizada, estagiários e fornecedores de suporte. O sistema pode autorizar a entrada unicamente em horários pré-estabelecidos (como de segunda a sexta das 18h30 às 22h00), recusando a abertura e notificando a segurança em qualquer outro período.'
+      question: 'É possível limitar os horários de acesso de equipes terceirizadas?',
+      answer: 'Sim. Conforme o equipamento adotado, podem ser criadas faixas horárias específicas para limpeza, manutenção ou prestadores, impedindo a abertura fora do período combinado.'
     },
     {
-      question: 'Quais tipos de relatórios gerenciais o sistema fornece para a diretoria?',
-      answer: 'A diretoria pode gerar relatórios de ocupação em tempo real, registros cronológicos de acessos por colaborador ou porta específica, relatórios de tentativas de acessos negados por falta de permissão, além de logs de auditoria detalhados que mostram quem cadastrou ou alterou permissões no sistema.'
+      question: 'Quais cuidados da LGPD a empresa deve observar com biometria ou reconhecimento facial de funcionários?',
+      answer: 'Dados biométricos são classificados como dados pessoais sensíveis pela LGPD. A empresa deve definir finalidade legítima, dar transparência aos titulares, limitar quem acessa os cadastros, disponibilizar meio alternativo como cartão RFID e excluir dados após o desligamento. Este texto é informativo e não substitui a orientação de um profissional jurídico.'
     }
   ],
-  relatedSolutions: ['biometria', 'reconhecimento-facial', 'fechaduras-eletromagneticas', 'cartao-e-tag-rfid'],
+  relatedSolutions: ['fechaduras-eletromagneticas', 'biometria', 'reconhecimento-facial', 'cartao-e-tag-rfid'],
   relatedSegments: ['condominios-comerciais', 'industrias'],
-  whatsappContext: 'controle de acesso para empresas e escritórios em Curitiba'
+  whatsappContext: 'controle de acesso ou fechadura em porta de vidro para empresa em Curitiba'
 };

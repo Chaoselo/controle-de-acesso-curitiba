@@ -7,7 +7,7 @@ export const campoLargoContent: CityContent = {
   seoTitle: 'Controle de Acesso em Campo Largo | Indústria e Condomínio',
   metaDescription: 'Controle de acesso em Campo Largo. Catracas para indústrias de cerâmica, cancelas e segurança para condomínios. Solicite seu orçamento no WhatsApp!',
   keyword: 'controle de acesso em Campo Largo',
-  directAnswer: 'Projetos e assistência técnica de controle de acesso em Campo Largo com soluções personalizadas para o polo ceramista e de louças, indústrias de autopeças, complexos logísticos ao longo da BR-277 e condomínios fechados. Fornecemos torniquetes e catracas industriais de aço inoxidável, cancelas automáticas para veículos pesados com laço indutivo, fechaduras eletromagnéticas e tecnologia biométrica facial com suporte técnico qualificado.',
+  directAnswer: 'Projetos, instalação e manutenção de controle de acesso em Campo Largo para indústrias, complexos logísticos, empresas, clínicas, escolas, estacionamentos e condomínios. Instalamos fechadura eletrônica (inclusive em portas de vidro), interfone, vídeo porteiro, reconhecimento facial e biometria, além de realizarmos conserto e manutenção de interfone, catraca e cancela com atendimento local.',
   // TODO: foto real
   image: {
     src: '/images/cidade-campo-largo.webp',
@@ -15,31 +15,31 @@ export const campoLargoContent: CityContent = {
     width: 800,
     height: 600
   },
-  localCharacteristics: 'Tradicionalmente reconhecida como a Capital da Louça, Campo Largo abriga um complexo produtivo notável com grandes fabricantes de porcelana, cerâmica, vidros automotivos, bebidas e metalurgia, distribuídos predominantemente ao longo do corredor estratégico da rodovia BR-277. Ao mesmo tempo, o município atrai novos moradores em busca de qualidade de vida, fomentando a criação de condomínios residenciais horizontais, loteamentos fechados e pequenos centros de comércio no perímetro urbano. No segmento industrial, o controle de acesso é fundamental para disciplinar o intenso vaivém de carretas nos pátios de carga e descarga e garantir que apenas colaboradores com treinamento de segurança adentrem as linhas de produção. Nos condomínios, a prioridade recai sobre o acesso veicular automatizado com tags sem toque e a segurança das clausuras sociais de pedestres.',
+  localCharacteristics: 'Campo Largo combina áreas industriais e logísticas consolidadas com condomínios, empresas, escolas, clínicas, estacionamentos e comércios. No segmento industrial e empresarial, o controle de acesso organiza o fluxo de veículos e restringe a entrada sem permissão às áreas operacionais. Nos condomínios e imóveis comerciais, o foco inclui cancelas, portas de vidro com fechadura eletrônica, interfonia e clausuras de pedestres.',
   popularSolutions: [
-    'Catracas eletrônicas tipo pedestal em aço inoxidável e torniquetes de altura total para organizar trocas de turnos em fábricas de louça e autopeças de Campo Largo.',
-    'Cancelas veiculares automáticas de ciclo contínuo com laço indutivo magnético duplo para portarias de expedição e transporte de carga na rodovia BR-277.',
-    'Sistemas de leitor de tag veicular UHF para automação de portões em condomínios residenciais horizontais e estacionamentos corporativos com identificação a distância.',
-    'Fechaduras eletromagnéticas de 150 kgf a 300 kgf em portas sociais, almoxarifados e salas de utilidades com abertura silenciosa, segura e sem desgaste mecânico.',
-    'Terminais de biometria facial com validação ultrarrápida touchless e função de bloqueio automático para crachás suspensos ou vencidos de prestadores terceirizados.'
+    'Catracas eletrônicas pedestal e torniquetes de altura total para organizar trocas de turnos em fábricas e galpões de Campo Largo, incluindo conserto e manutenção.',
+    'Cancelas veiculares automáticas com laço indutivo magnético para portarias de expedição e estacionamentos comerciais ou condominiais.',
+    'Instalação e manutenção de interfone, vídeo porteiro e leitores de tag veicular para automação de portões em condomínios e empresas.',
+    'Fechaduras eletrônicas e eletromagnéticas para portas de vidro, portas sociais, almoxarifados e salas restritas.',
+    'Terminais de reconhecimento facial e biometria digital com cuidados de LGPD e opção alternativa por cartão RFID.'
   ],
-  serviceLogistics: 'Com deslocamento direto a partir de Curitiba pela rodovia BR-277, nossas equipes prestam atendimento técnico presencial em Campo Largo para vistorias orçamentárias, instalações de engenharia de acesso e manutenção preventiva ou corretiva de equipamentos, mantendo pronto atendimento para situações de portas travadas.',
+  serviceLogistics: 'Com deslocamento direto a partir de Curitiba, nossas equipes prestam atendimento técnico presencial em Campo Largo para vistorias de orçamento, instalações e manutenção preventiva ou corretiva de equipamentos de controle de acesso.',
   faqs: [
     {
       question: 'Vocês realizam a troca ou reparo de cancelas antigas em empresas de Campo Largo?',
-      answer: 'Sim. Avaliamos a mecânica existente e podemos substituir a central de comando eletrônica, o motoredutor ou instalar novos braços de alumínio com iluminação LED e sensores de segurança sem a necessidade de descartar o gabinete estrutural do equipamento.'
+      answer: 'Sim. Avaliamos a estrutura existente e orientamos sobre o reparo de componentes, substituição de centrais de comando, braços ou troca completa do conjunto conforme a viabilidade técnica.'
     },
     {
-      question: 'Como os equipamentos se comportam diante da poeira gerada em cerâmicas?',
-      answer: 'Indicamos equipamentos industriais com vedação de borracha, grau de proteção IP65 e gabinetes em aço inox 304 com tampas travadas, além de manutenções preventivas periódicas com limpeza interna de fotocélulas e lubrificação de engrenagens.'
+      question: 'Como os equipamentos se comportam em ambientes industriais com poeira?',
+      answer: 'Indicamos equipamentos com vedação adequada ao ambiente de instalação, gabinetes resistentes e rotinas de manutenção preventiva periódica com limpeza de sensores e verificação mecânica.'
     },
     {
-      question: 'Qual o tempo necessário para instalar cancelas em condomínio residencial?',
-      answer: 'Em locais onde a tubulação de alvenaria e a base de concreto da ilha de tráfego já estão concluídas, a fixação física, passagem de cabos e parametrização das cancelas e laços indutivos costumam ser concluídos em 1 a 2 dias úteis.'
+      question: 'O que define o cronograma e o orçamento para instalar cancelas em Campo Largo?',
+      answer: 'Não adotamos datas nem valores pré-fixados: tanto o orçamento quanto o cronograma de execução são definidos apenas após o diagnóstico técnico presencial, conforme infraestrutura elétrica, base civil e número de pistas.'
     },
     {
-      question: 'A empresa fornece contratos mensais de manutenção preventiva?',
-      answer: 'Sim, oferecemos planos contratuais com visitas periódicas de revisão mecânica, lubrificação, testes de baterias de no-break e suporte corretivo prioritário em caso de falhas operacionais em Campo Largo.'
+      question: 'A empresa oferece atendimento para manutenção preventiva?',
+      answer: 'Sim, trabalhamos tanto com chamados avulsos quanto com planos de manutenção preventiva com visitas periódicas e revisão dos equipamentos em Campo Largo.'
     }
   ],
   whatsappContext: 'controle de acesso em Campo Largo'

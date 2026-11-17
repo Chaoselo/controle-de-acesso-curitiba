@@ -1,11 +1,15 @@
-import { Link } from 'react-router-dom';
 import { segmentosList } from '../content/segmentos';
 import { siteConfig } from '../config/site';
 import { Layout } from '../components/Layout';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
+import { PhotoCard } from '../components/ui/PhotoCard';
+import { SectionHeader } from '../components/ui/SectionHeader';
+import { getCatalogIcon } from '../components/ui/SolutionIcon';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
-import { ArrowRight, MessageSquare, Building2, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { WhatsAppIcon } from '../components/ui/WhatsAppIcon';
+import { ComplianceNotices } from '../components/ui/ComplianceNotices';
+import { Building2, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export default function SegmentsIndex() {
   const getFirstSentence = (text: string) => {
@@ -17,7 +21,7 @@ export default function SegmentsIndex() {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Segmentos Atendidos em Controle de Acesso em Curitiba',
-    description: 'Projetos e instalações de controle de acesso físico especializados para condomínios residenciais e comerciais, empresas, indústrias, clínicas, escolas, academias e residências em Curitiba e Região Metropolitana.',
+    description: 'Projetos e instalações de controle de acesso físico para condomínios, empresas, indústrias, clínicas, escolas, academias, estacionamentos e portas de vidro em Curitiba e Região Metropolitana.',
     numberOfItems: segmentosList.length,
     itemListElement: segmentosList.map((segmento, index) => ({
       '@type': 'ListItem',
@@ -35,169 +39,164 @@ export default function SegmentsIndex() {
     <Layout whatsappContext="segmentos de controle de acesso">
       <SEOHead
         title="Segmentos de Controle de Acesso em Curitiba e Região"
-        description="Conheça os segmentos atendidos em controle de acesso em Curitiba e RMC. Soluções para condomínios, empresas, indústrias, escolas, clínicas e academias."
+        description="Conheça os segmentos atendidos em controle de acesso em Curitiba e RMC: condomínios, empresas, indústrias, escolas, clínicas, academias e estacionamentos."
         canonicalPath="/segmentos/"
         schemaData={[itemListSchema]}
       />
 
-      <Breadcrumbs
-        items={[
-          { name: 'Segmentos', url: `${siteConfig.domain}/segmentos/` }
-        ]}
-      />
+      {/* Hero escuro */}
+      <section className="bg-hero-gradient border-b border-[var(--border)] pt-4 pb-12 sm:pb-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { name: 'Segmentos', url: `${siteConfig.domain}/segmentos/` }
+            ]}
+          />
 
-      <div className="bg-slate-50 min-h-screen py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header Section */}
-          <header className="mb-12 max-w-4xl">
-            <div className="inline-flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider mb-3">
-              <span>Projetos Setoriais Especializados</span>
-              <span aria-hidden="true">·</span>
-              <span>Curitiba e Região Metropolitana</span>
-            </div>
+          <div className="mt-4 max-w-4xl space-y-5">
+            <span className="inline-block text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              Aplicações por tipo de imóvel · Curitiba e RMC
+            </span>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Segmentos Atendidos em Controle de Acesso em Curitiba
             </h1>
 
-            <div className="mt-6 text-base sm:text-lg text-slate-700 space-y-4">
+            <div className="text-base text-[var(--text-muted)] space-y-3 leading-relaxed">
               <p>
-                Cada tipo de empreendimento possui dinâmicas operacionais, volumes de fluxo e requisitos regulatórios únicos. Condomínios residenciais demandam agilidade nas garagens e clausuras seguras para entregadores; edifícios comerciais necessitam de triagem rápida de visitantes em catracas; indústrias exigem torniquetes pesados para trocas de turno; clínicas e escolas requerem absoluto rigor sanitário e conformidade estrita com a LGPD.
+                Cada empreendimento possui dinâmicas operacionais e fluxos próprios. Empresas, condomínios, indústrias, clínicas, escolas, academias, estacionamentos e estabelecimentos com portas de vidro exigem especificações adequadas para fechaduras eletrônicas, interfone/vídeo porteiro, catracas, cancelas e leitores.
               </p>
               <p>
-                A Controle de Acesso Curitiba desenvolve projetos personalizados de segurança física e eletrônica, adaptando fechaduras, catracas, cancelas e sistemas integrados à realidade estrutural e orçamentária do seu imóvel. Explore abaixo os segmentos atendidos e conheça a arquitetura de projeto recomendada para o seu setor.
+                Para atendimento residencial de casas e apartamentos individuais, acesse o site principal da{' '}
+                <a
+                  href={siteConfig.parentCompany.site}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--accent)] font-semibold hover:underline"
+                >
+                  Intelsecsul (intelsecsul.com.br)
+                </a>
+                .
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="pt-2 flex flex-wrap items-center gap-4">
               <a
                 href={whatsappLink('orçamento pelo catálogo de segmentos')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold px-6 py-3.5 rounded-lg shadow-sm transition"
+                className="inline-flex items-center justify-center gap-2.5 h-[52px] px-6 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white font-semibold rounded-xl transition-colors"
               >
-                <MessageSquare className="w-5 h-5 fill-white text-transparent" />
-                <span>Solicitar Avaliação Técnica no WhatsApp</span>
+                <WhatsAppIcon className="w-5 h-5 shrink-0" />
+                <span>Solicitar avaliação no WhatsApp</span>
               </a>
-              <span className="text-xs text-slate-500">
-                Atendimento consultivo direto com equipe técnica em Curitiba
+              <span className="text-xs sm:text-sm text-[var(--text-soft)]">
+                Orçamento sem custo em Curitiba e Região Metropolitana
               </span>
             </div>
-          </header>
+          </div>
+        </div>
+      </section>
 
-          {/* Grid de Segmentos */}
-          <section aria-labelledby="segmentos-grid-heading" className="mb-16">
-            <h2 id="segmentos-grid-heading" className="sr-only">
-              Lista de Segmentos Especializados
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {segmentosList.map((segmento) => (
-                <article
-                  key={segmento.slug}
-                  className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col"
-                >
-                  <div className="aspect-video w-full bg-slate-100 overflow-hidden">
-                    <img
-                      src={segmento.image.src}
-                      alt={segmento.image.alt}
-                      width={segmento.image.width}
-                      height={segmento.image.height}
-                      loading="lazy"
-                      className="w-full h-full object-cover object-center"
-                    />
-                  </div>
-                  <div className="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                      <h2 className="text-xl font-bold text-slate-900 hover:text-sky-700 transition">
-                        <Link to={`/segmentos/${segmento.slug}/`}>
-                          {segmento.title}
-                        </Link>
-                      </h2>
-                      <p className="mt-3 text-sm text-slate-600 leading-relaxed">
-                        {getFirstSentence(segmento.directAnswer)}
-                      </p>
-                    </div>
-                    <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                      <Link
-                        to={`/segmentos/${segmento.slug}/`}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-sky-700 hover:text-sky-800 transition"
-                      >
-                        <span>Ver soluções para o segmento</span>
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
+      {/* Grid de Segmentos */}
+      <section aria-labelledby="segmentos-grid-heading" className="bg-[var(--bg)] py-14 sm:py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader
+            headingId="segmentos-grid-heading"
+            kicker={`${segmentosList.length} segmentos especializados`}
+            title="Soluções dimensionadas para cada local"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {segmentosList.map((segmento) => (
+              <PhotoCard
+                key={segmento.slug}
+                to={`/segmentos/${segmento.slug}/`}
+                title={segmento.title}
+                description={getFirstSentence(segmento.directAnswer)}
+                imageSrc={segmento.image.src}
+                imageAlt={segmento.image.alt}
+                icon={getCatalogIcon(segmento.slug)}
+                ctaLabel="Ver soluções do segmento"
+                compact
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
-          {/* Seção Informativa de Diferenciais por Segmento */}
-          <section
-            aria-labelledby="diferenciais-segmentos-heading"
-            className="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <Building2 className="w-7 h-7 text-sky-600 shrink-0" />
-              <h2 id="diferenciais-segmentos-heading" className="text-2xl sm:text-3xl font-bold text-slate-900">
-                Engenharia de Acesso Adaptada à Sua Atividade
+      {/* Diferenciais por Segmento */}
+      <section
+        aria-labelledby="diferenciais-segmentos-heading"
+        className="bg-[var(--bg-deep)] py-14 sm:py-16 px-4 border-t border-[var(--border)]"
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-6 sm:p-10">
+            <div className="flex items-center gap-3 mb-4">
+              <Building2 className="w-7 h-7 text-[var(--accent)] shrink-0" aria-hidden="true" />
+              <h2 id="diferenciais-segmentos-heading" className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                Projeto técnico adaptado à rotina do local
               </h2>
             </div>
-            <p className="text-slate-700 text-sm sm:text-base mb-8 max-w-3xl">
-              Não aplicamos pacotes genéricos. Nossos engenheiros e técnicos avaliam os horários de maior afluência, as rotas de emergência exigidas pelo Corpo de Bombeiros, o perfil de usuários e a necessidade de contingência energética contra quedas de luz em Curitiba.
+            <p className="text-[var(--text-muted)] text-base mb-8 max-w-3xl">
+              Avaliamos os horários de maior circulação, rotas de fuga exigidas em normas de segurança, perfil de usuários e contingência elétrica contra quedas de energia.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] space-y-2">
+                <div className="flex items-center gap-2 text-[var(--accent)] font-semibold text-sm">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" aria-hidden="true" />
                   <span>Portarias Físicas e Remotas</span>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Equipamentos com protocolos abertos (Wiegand, OSDP e IP) totalmente compatíveis com as principais empresas de portaria virtual de Curitiba.
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                  Equipamentos com interfaces padrão de mercado (Wiegand, OSDP e TCP/IP), facilitando a avaliação de compatibilidade com portarias remotas.
                 </p>
               </div>
 
-              <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>Conformidade com a LGPD</span>
+              <div className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] space-y-2">
+                <div className="flex items-center gap-2 text-[var(--accent)] font-semibold text-sm">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" aria-hidden="true" />
+                  <span>Boas Práticas de LGPD</span>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Armazenamento de biometria em templates matemáticos hash criptografados, sem armazenamento desprotegido de fotografias ou dados de saúde.
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                  Orientações sobre conversão em templates criptografados e disponibilização de credenciais alternativas como cartões ou tags.
                 </p>
               </div>
 
-              <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>Acessibilidade Universal</span>
+              <div className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] space-y-2">
+                <div className="flex items-center gap-2 text-[var(--accent)] font-semibold text-sm">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" aria-hidden="true" />
+                  <span>Acessibilidade (ABNT NBR 9050)</span>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Dimensionamento de portas, eclusas e passagens laterais de catracas em estrita observância à norma ABNT NBR 9050 para pessoas com deficiência.
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                  Previsão de passagens acessíveis para cadeirantes e pessoas com mobilidade reduzida, com alturas adequadas de leitores e botoeiras.
                 </p>
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div className="flex items-center gap-2 text-sm text-slate-600">
-                <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
-                <span>Atendimento presencial em Curitiba e todos os municípios vizinhos da Região Metropolitana.</span>
+            <div className="mt-8 pt-6 border-t border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-2 text-sm text-[var(--text-muted)]">
+                <ShieldCheck className="w-5 h-5 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Atendimento em toda a Região Metropolitana de Curitiba com equipe própria.</span>
               </div>
               <a
                 href={whatsappLink('dúvida sobre segmento específico')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="text-sm font-bold text-emerald-700 hover:text-emerald-800 transition"
+                className="text-sm font-bold text-[var(--whatsapp)] hover:underline transition"
               >
-                Falar com consultor técnico →
+                Conversar com a equipe técnica ›
               </a>
             </div>
-          </section>
+          </div>
+
+          <ComplianceNotices
+            text={JSON.stringify(segmentosList.map((s) => `${s.title} ${s.directAnswer}`))}
+            className="mt-8"
+          />
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }

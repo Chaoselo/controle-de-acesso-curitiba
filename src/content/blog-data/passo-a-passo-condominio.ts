@@ -22,14 +22,14 @@ export const passoAPassoCondominioContent: BlogPostContent = {
           heading: 'Passo 1: Diagnóstico de Riscos e Levantamento da Rotina Atual',
           paragraphs: [
             'Antes de solicitar cotações aleatórias no mercado, o síndico e os membros do conselho devem mapear as principais fragilidades do condomínio. Observe os horários de maior movimento pela manhã e no final da tarde, avalie como é feita a entrega de correspondências e encomendas de aplicativos de entrega e verifique se há histórico de veículos entrando de carona na garagem.',
-            'Identifique também o perfil dos moradores: há muitas crianças ou idosos? O condomínio possui portaria física presencial vinte e quatro horas ou estuda migrar para portaria remota virtual? Essas respostas delimitam a tecnologia necessária e evitam compras incompatíveis.'
+            'Identifique também o perfil dos moradores: há muitas crianças ou idosos? O condomínio possui portaria física em tempo integral ou estuda operar com portaria remota? Essas respostas delimitam a tecnologia necessária e evitam compras incompatíveis.'
           ]
         },
         {
           heading: 'Passo 2: Apresentação e Aprovação em Assembleia de Condôminos',
           paragraphs: [
             'Nenhuma obra de segurança tem sucesso sem o respaldo legal e o engajamento da comunidade de moradores. Convoque uma assembleia geral específica para debater a segurança do condomínio. Apresente o diagnóstico de riscos com fotos reais dos pontos vulneráveis e explique os ganhos práticos de valorização do imóvel e redução de falhas humanas.',
-            'Esclareça com transparência a necessidade de investimentos na infraestrutura civil e elétrica, detalhe a forma de rateio orçamentário aprovada pelo conselho e garanta o quórum necessário estipulado no Código Civil e na convenção condominial para benfeitorias úteis ou necessárias.'
+            'Esclareça com transparência a necessidade de adequações na infraestrutura civil e elétrica, apresente as variáveis orçamentárias levantadas após o diagnóstico e observe o quórum exigido pela convenção condominial e pela legislação aplicável.'
           ]
         }
       ]
@@ -43,22 +43,22 @@ export const passoAPassoCondominioContent: BlogPostContent = {
         {
           heading: 'Passo 3: Vistoria Técnica Presencial e Projeto Executivo',
           paragraphs: [
-            'Nossa equipe de engenharia realiza o levantamento minucioso no condomínio em Curitiba: medição dos vãos livres de portas, alinhamento de caixilharia existente, inspeção de caixas de passagem subterrâneas, testes de voltagem e dimensionamento de fontes carregadoras com no-breaks e baterias seladas para garantir autonomia durante tempestades ou apagões.',
-            'O projeto executivo detalha a rota de cabeamento blindado, a posição das câmeras de identificação facial e os esquemas de intertravamento de segurança.'
+            'Nossa equipe técnica realiza o levantamento minucioso no condomínio em Curitiba: medição dos vãos livres de portas (inclusive portas de vidro), alinhamento de caixilharia existente, inspeção de caixas de passagem, testes elétricos e dimensionamento de fontes carregadoras com no-breaks e baterias para apoio em quedas de energia.',
+            'O projeto executivo detalha a rota de cabeamento, a posição dos leitores e os esquemas de intertravamento de segurança.'
           ]
         },
         {
           heading: 'Passo 4: Adequação Civil e Instalação de Eclusas (Clausuras)',
           paragraphs: [
-            'Em condomínios sem clausura de pedestres, constrói-se ou adapta-se o segundo portão de segurança. O sistema de eclusa é crucial: a primeira porta só destrava se a segunda estiver completamente fechada e travada pelo eletroímã, garantindo que entregadores e visitantes permaneçam em um espaço confinado e seguro enquanto sua identificação é validada pela guarita.',
-            'Simultaneamente, realizam-se as passagens de dutos elétricos, fixação de suportes mecânicos de alta retenção (150 a 300 kgf) e instalação de molas hidráulicas aéreas ajustadas para fechamento suave sem bater folhas de porta.'
+            'Em condomínios sem clausura de pedestres, avalia-se a adaptação de um segundo portão de segurança. O sistema de eclusa permite que a primeira porta só destrave quando a segunda estiver fechada e travada pelo eletroímã, mantendo visitantes e entregadores em área controlada enquanto sua identificação é validada.',
+            'Simultaneamente, realizam-se as passagens de dutos elétricos, fixação de suportes mecânicos com retenção adequada ao peso de cada porta e instalação de molas hidráulicas aéreas ajustadas para fechamento suave.'
           ]
         },
         {
           heading: 'Passo 5: Fixação de Equipamentos e Parametrização do Sistema',
           paragraphs: [
-            'Com a infraestrutura civil pronta, instalam-se os terminais de reconhecimento facial com prova de vida (liveness), leitoras de tag veicular UHF para o para-brisa dos automóveis, botoeiras sem toque (touchless) e botoeiras de emergência interligadas ao alarme de incêndio.',
-            'O sistema é configurado com as regras do condomínio: permissões de horários para diaristas e prestadores de serviço, controle de vagas de garagem e módulos de relatórios auditáveis de passagem.'
+            'Com a infraestrutura civil pronta, instalam-se os terminais de reconhecimento facial ou leitores biométricos, leitoras de tag veicular para o estacionamento/garagem, botoeiras sem toque e botoeiras de emergência interligadas ao alarme de incêndio, além da revisão de interfones quando necessário.',
+            'O sistema é configurado com as regras do condomínio e cuidados da LGPD no tratamento de biometria e placas de veículos, disponibilizando sempre cartão ou senha alternativa para quem optar por não cadastrar dados biométricos.'
           ]
         }
       ]
@@ -73,7 +73,7 @@ export const passoAPassoCondominioContent: BlogPostContent = {
           heading: 'Passo 6: Cadastramento Assistido e Período de Transição',
           paragraphs: [
             'Organize um plantão de cadastramento assistido no condomínio, permitindo que os condôminos cadastrem suas faces e recebam as tags adesivas nos veículos em horários flexíveis (incluindo noites e fins de semana).',
-            'Durante as primeiras duas semanas, mantenha um período educativo de convivência: os portões operam com o novo sistema, mas com auxílio presencial para orientar moradores com menor afinidade com tecnologia, garantindo uma transição tranquila e positiva.'
+            'Durante a etapa inicial de transição, mantenha um período educativo de convivência: os portões operam com o novo sistema, mas com auxílio presencial para orientar moradores com menor afinidade tecnológica, favorecendo uma adaptação tranquila.'
           ]
         },
         {
@@ -94,15 +94,15 @@ export const passoAPassoCondominioContent: BlogPostContent = {
   faqs: [
     {
       question: 'Qual o quórum em assembleia para aprovar controle de acesso no condomínio?',
-      answer: 'Geralmente, por se tratar de benfeitoria necessária ou útil destinada a reforçar a segurança patrimonial e dos moradores, exige-se maioria simples dos presentes na assembleia convocada, salvo previsão mais restritiva na convenção.'
+      answer: 'A exigência de quórum depende do enquadramento da obra e do que dispõe a convenção condominial e a legislação vigente; recomenda-se consultar a administradora ou assessoria jurídica do condomínio antes da convocação.'
     },
     {
-      question: 'Os moradores ficam sem acesso aos portões durante o período de obras?',
-      answer: 'Não. Nossa metodologia de instalação prevê a manutenção de um acesso alternativo liberado ou a execução por etapas, de modo que a circulação de pedestres e veículos nunca seja interrompida.'
+      question: 'Os moradores ficam sem acesso aos portões durante a instalação?',
+      answer: 'Em geral, executamos o trabalho por etapas ou mantendo um acesso provisório operacional para reduzir impactos na circulação diária de pedestres e veículos.'
     },
     {
-      question: 'Quanto tempo dura todo o processo, da assembleia até a conclusão?',
-      answer: 'Entre a aprovação em assembleia, elaboração do projeto executivo, entrega dos materiais, execução civil e parametrização, o ciclo completo costuma levar entre 3 a 6 semanas.'
+      question: 'Como é definido o cronograma de implantação do projeto?',
+      answer: 'Não adotamos cronogramas pré-fixados genéricos: a programação de execução varia conforme o diagnóstico técnico presencial, as adequações civis necessárias e a disponibilidade dos equipamentos escolhidos.'
     }
   ],
   whatsappContext: 'passo a passo para controle de acesso em condomínio'

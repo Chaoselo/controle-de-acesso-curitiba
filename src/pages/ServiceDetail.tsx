@@ -1,16 +1,20 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { 
-  Wrench, 
-  CheckCircle2, 
-  AlertTriangle, 
-  HelpCircle, 
-  MessageSquare, 
+import {
+  Wrench,
+  CheckCircle2,
+  AlertTriangle,
+  HelpCircle,
   ArrowRight,
-  ShieldAlert
 } from 'lucide-react';
+import { WhatsAppIcon } from '../components/ui/WhatsAppIcon';
 import { Layout } from '../components/Layout';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
+import { FaqAccordion } from '../components/ui/FaqAccordion';
+import { PhotoCard } from '../components/ui/PhotoCard';
+import { SectionHeader } from '../components/ui/SectionHeader';
+import { getCatalogIcon } from '../components/ui/SolutionIcon';
+import { ComplianceNotices } from '../components/ui/ComplianceNotices';
 import { getServiceBySlug, servicosList } from '../content/servicos';
 import { siteConfig } from '../config/site';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
@@ -33,10 +37,12 @@ export function ServiceDetailPage() {
       name: servico.title,
       description: servico.metaDescription,
       url: `${siteConfig.domain}/servicos/${servico.slug}/`,
-      serviceType: 'Serviço de Segurança Eletrônica'
+      serviceType: 'Serviço de Segurança Eletrônica',
     }),
-    generateFAQSchema(servico.faqs)
+    generateFAQSchema(servico.faqs),
   ];
+
+  const otherServices = servicosList.filter((s) => s.slug !== servico.slug);
 
   return (
     <Layout whatsappContext={servico.whatsappContext}>
@@ -44,111 +50,151 @@ export function ServiceDetailPage() {
         title={servico.seoTitle}
         description={servico.metaDescription}
         canonicalPath={`/servicos/${servico.slug}/`}
-        ogImage={servico.image.src}
+        ogImage={siteConfig.defaultOgImage}
         schemaData={schemas}
       />
 
-      <Breadcrumbs
-        items={[
-          { name: 'Serviços', url: `${siteConfig.domain}/servicos/` },
-          { name: servico.title, url: `${siteConfig.domain}/servicos/${servico.slug}/` }
-        ]}
-      />
-
-      <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
-        <header className="max-w-4xl space-y-4 mb-10">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider">
-            <span>Serviço Técnico Especializado</span>
-            <span aria-hidden="true">·</span>
-            <span>Curitiba e Região</span>
-          </div>
-
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            {servico.title}
-          </h1>
-
-          <div className="p-5 bg-sky-50/70 border border-sky-100 rounded-lg text-slate-800 text-base leading-relaxed">
-            <p className="font-normal">{servico.directAnswer}</p>
-          </div>
-
-          <div className="pt-2 flex flex-wrap items-center gap-3">
-            <a
-              href={whatsappLink(servico.whatsappContext)}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleWhatsAppAction}
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white rounded-md font-semibold text-sm transition-all shadow-sm"
-            >
-              <MessageSquare className="w-4 h-4 fill-white text-transparent" aria-hidden="true" />
-              <span>Solicitar Atendimento para {servico.title}</span>
-            </a>
-          </div>
-        </header>
-
-        <div className="mb-12 rounded-lg overflow-hidden border border-slate-200 shadow-sm max-w-4xl">
-          <img
-            src={servico.image.src}
-            alt={servico.image.alt}
-            width={servico.image.width}
-            height={servico.image.height}
-            loading="lazy"
-            className="w-full h-auto object-cover object-center max-h-[460px]"
+      {/* Hero escuro */}
+      <section className="bg-hero-gradient border-b border-[var(--border)] pt-4 pb-12 sm:pb-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { name: 'Serviços', url: `${siteConfig.domain}/servicos/` },
+              { name: servico.title, url: `${siteConfig.domain}/servicos/${servico.slug}/` },
+            ]}
           />
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          
+          <div className="mt-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-5">
+              <span className="inline-block text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+                Serviço Técnico Especializado · Curitiba e Região
+              </span>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                {servico.title}
+              </h1>
+
+              <div className="p-5 bg-[var(--surface)]/90 border border-[var(--border)] rounded-2xl text-base text-[var(--text-muted)] leading-relaxed">
+                <p>{servico.directAnswer}</p>
+              </div>
+
+              <div className="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <a
+                  href={whatsappLink(servico.whatsappContext)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleWhatsAppAction}
+                  className="inline-flex items-center justify-center gap-2.5 h-[52px] px-6 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white rounded-xl font-semibold text-sm sm:text-base transition-colors shadow-lg"
+                >
+                  <WhatsAppIcon className="w-5 h-5 shrink-0" />
+                  <span>Solicitar atendimento no WhatsApp</span>
+                </a>
+
+                <Link
+                  to="/servicos/"
+                  className="inline-flex items-center justify-center gap-2 h-[52px] px-5 bg-[var(--surface)] hover:bg-[#172231] text-white border border-[var(--border)] hover:border-[var(--accent)]/50 rounded-xl font-semibold text-sm sm:text-base transition-colors"
+                >
+                  <span>Ver todos os serviços</span>
+                  <ArrowRight className="w-4 h-4 text-[var(--accent)]" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--bg-deep)] shadow-2xl">
+                <img
+                  src={servico.image.src}
+                  alt={servico.image.alt}
+                  width={1200}
+                  height={675}
+                  loading="eager"
+                  fetchPriority="high"
+                  className="w-full h-auto aspect-video object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article className="bg-[var(--bg)] py-12 sm:py-16 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-8 space-y-12">
-            
             {/* Escopo do Serviço */}
             <section aria-labelledby="escopo-heading" className="space-y-4">
-              <h2 id="escopo-heading" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600" aria-hidden="true" />
-                <span>O que Está Incluso no Serviço</span>
+              <h2 id="escopo-heading" className="text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                <CheckCircle2 className="w-6 h-6 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>O que está incluso no serviço</span>
               </h2>
-              <ul className="space-y-3 text-sm sm:text-base text-slate-700">
-                {servico.scope.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 shrink-0" aria-hidden="true" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6">
+                <ul className="space-y-3 text-base text-[var(--text-muted)]">
+                  {servico.scope.map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <span className="w-2 h-2 rounded-full bg-[var(--accent)] mt-2.5 shrink-0" aria-hidden="true" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </section>
 
-            {/* Seção Exclusiva de Sintomas Comuns */}
+            {/* Instalações por produto (com links) */}
+            {servico.productInstallations && servico.productInstallations.length > 0 && (
+              <section aria-labelledby="instalacoes-produto-heading" className="space-y-4">
+                <h2 id="instalacoes-produto-heading" className="text-2xl font-bold text-white tracking-tight">
+                  Instalações por tipo de equipamento e solução
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {servico.productInstallations.map((item) => (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      className="p-5 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent)]/60 rounded-2xl space-y-1.5 transition-colors block group"
+                    >
+                      <h3 className="text-base font-bold text-[var(--accent)] group-hover:underline flex items-center justify-between gap-2">
+                        <span>{item.label}</span>
+                        <ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" />
+                      </h3>
+                      <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                        {item.description}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Guia de Sintomas */}
             {servico.diagnosticCommonIssues && (
-              <section aria-labelledby="sintomas-heading" className="space-y-6">
+              <section aria-labelledby="sintomas-heading" className="space-y-5">
                 <div>
-                  <h2 id="sintomas-heading" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                    <AlertTriangle className="w-5 h-5 text-amber-600" aria-hidden="true" />
-                    <span>Guia de Sintomas Comuns: Causa Provável e Solução Técnica</span>
+                  <h2 id="sintomas-heading" className="text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0" aria-hidden="true" />
+                    <span>Guia de sintomas comuns e diagnóstico técnico</span>
                   </h2>
-                  <p className="text-sm text-slate-600 mt-1">
-                    Diagnósticos frequentes em portarias de Curitiba resolvidos com prontidão pela nossa equipe:
+                  <p className="text-base text-[var(--text-muted)] mt-2">
+                    Principais ocorrências analisadas pela nossa equipe em portarias e empresas de Curitiba:
                   </p>
                 </div>
 
                 <div className="space-y-4">
                   {servico.diagnosticCommonIssues.map((issue, idx) => (
-                    <div key={idx} className="bg-white border border-slate-200 rounded-lg p-5 space-y-3">
-                      <div className="flex items-start gap-2">
-                        <span className="text-xs font-mono font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded shrink-0">
+                    <div key={idx} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-5 sm:p-6 space-y-4">
+                      <div className="flex items-start gap-2.5">
+                        <span className="text-xs font-bold text-amber-300 bg-amber-500/10 border border-amber-500/30 px-2.5 py-1 rounded-lg shrink-0">
                           Sintoma
                         </span>
-                        <h3 className="text-base font-bold text-slate-900">
-                          {issue.symptom}
-                        </h3>
+                        <h3 className="text-base font-bold text-white">{issue.symptom}</h3>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm pl-0 sm:pl-16">
-                        <div className="p-3.5 bg-slate-50 rounded border border-slate-100">
-                          <span className="font-semibold text-slate-700 block mb-1">Causa provável:</span>
-                          <span className="text-slate-600">{issue.cause}</span>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm sm:text-base">
+                        <div className="p-4 bg-[var(--bg)] rounded-xl border border-[var(--border)]">
+                          <span className="font-semibold text-white block mb-1 text-xs uppercase tracking-wider">Causa provável</span>
+                          <span className="text-[var(--text-muted)]">{issue.cause}</span>
                         </div>
-                        <div className="p-3.5 bg-emerald-50/50 rounded border border-emerald-100">
-                          <span className="font-semibold text-emerald-800 block mb-1">Solução técnica:</span>
-                          <span className="text-slate-700">{issue.fix}</span>
+                        <div className="p-4 bg-[var(--bg)] rounded-xl border border-[var(--accent)]/30">
+                          <span className="font-semibold text-[var(--accent)] block mb-1 text-xs uppercase tracking-wider">Solução técnica</span>
+                          <span className="text-[var(--text-muted)]">{issue.fix}</span>
                         </div>
                       </div>
                     </div>
@@ -159,18 +205,20 @@ export function ServiceDetailPage() {
 
             {/* Etapas do Processo */}
             <section aria-labelledby="processo-heading" className="space-y-4">
-              <h2 id="processo-heading" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                <Wrench className="w-5 h-5 text-sky-600" aria-hidden="true" />
-                <span>Como Funciona o Atendimento Passo a Passo</span>
+              <h2 id="processo-heading" className="text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                <Wrench className="w-6 h-6 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Como funciona o atendimento passo a passo</span>
               </h2>
               <div className="space-y-3">
                 {servico.processSteps.map((step) => (
-                  <div key={step.step} className="p-5 bg-white border border-slate-200 rounded-md">
-                    <div className="flex items-center gap-2 mb-1.5">
-                      <span className="text-xs font-mono font-bold text-slate-500">Etapa {step.step}</span>
-                      <h3 className="text-base font-bold text-slate-900">{step.title}</h3>
+                  <div key={step.step} className="p-5 bg-[var(--surface)] border border-[var(--border)] rounded-2xl">
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="text-xs font-bold text-[var(--accent)] bg-[var(--bg)] border border-[var(--border)] px-2.5 py-1 rounded-lg">
+                        Etapa {step.step}
+                      </span>
+                      <h3 className="text-base font-bold text-white">{step.title}</h3>
                     </div>
-                    <p className="text-sm sm:text-base text-slate-600 leading-relaxed pl-0 sm:pl-16">
+                    <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -179,41 +227,32 @@ export function ServiceDetailPage() {
             </section>
 
             {/* FAQ */}
-            <section aria-labelledby="faq-servico-heading" className="space-y-4 pt-6 border-t border-slate-200">
-              <h2 id="faq-servico-heading" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                <HelpCircle className="w-5 h-5 text-sky-600" aria-hidden="true" />
-                <span>Dúvidas Frequentes sobre {servico.title}</span>
+            <section aria-labelledby="faq-servico-heading" className="space-y-5 pt-6 border-t border-[var(--border)]">
+              <h2 id="faq-servico-heading" className="text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                <HelpCircle className="w-6 h-6 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Dúvidas frequentes sobre {servico.title}</span>
               </h2>
-              <div className="space-y-3">
-                {servico.faqs.map((faq, idx) => (
-                  <details
-                    key={idx}
-                    className="group bg-white border border-slate-200 rounded-lg p-5 open:border-slate-300"
-                  >
-                    <summary className="font-semibold text-sm sm:text-base text-slate-900 cursor-pointer list-none flex items-center justify-between gap-3">
-                      <span>{faq.question}</span>
-                      <span className="text-slate-400 group-open:rotate-180 transition-transform text-xs shrink-0">▼</span>
-                    </summary>
-                    <p className="text-sm sm:text-base text-slate-600 mt-3 pt-3 border-t border-slate-100 leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </details>
-                ))}
-              </div>
+              <FaqAccordion items={servico.faqs} />
             </section>
 
+            <ComplianceNotices
+              text={JSON.stringify([
+                servico,
+                ...otherServices.map((s) => `${s.title} ${s.directAnswer}`),
+              ])}
+            />
           </div>
 
           <aside className="lg:col-span-4 space-y-6">
-            <div className="bg-petroleum text-white p-6 rounded-lg space-y-4 border border-slate-800 shadow-md sticky top-24">
-              <span className="text-xs text-sky-400 font-semibold tracking-wider uppercase block">
+            <div className="bg-[var(--surface)] text-white p-6 rounded-2xl space-y-4 border border-[var(--border)] sticky top-24">
+              <span className="text-xs text-[var(--accent)] font-bold tracking-[0.08em] uppercase block">
                 Atendimento Técnico
               </span>
-              <h3 className="text-lg font-bold text-white leading-snug">
-                Chame um especialista no WhatsApp
+              <h3 className="text-xl font-bold text-white leading-snug">
+                Converse com nossa equipe no WhatsApp
               </h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                Tire suas dúvidas ou agende atendimento técnico em Curitiba e Região Metropolitana.
+              <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                Tire dúvidas ou solicite atendimento presencial em Curitiba e Região Metropolitana.
               </p>
 
               <a
@@ -221,45 +260,45 @@ export function ServiceDetailPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="w-full flex items-center justify-center gap-2 py-3 bg-whatsapp hover:bg-whatsapp-dark text-white rounded font-semibold text-sm transition-colors shadow-sm"
+                className="w-full h-[52px] flex items-center justify-center gap-2 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white rounded-xl font-semibold text-sm transition-colors"
               >
-                <MessageSquare className="w-4 h-4 fill-white text-transparent" aria-hidden="true" />
+                <WhatsAppIcon className="w-4 h-4 shrink-0" />
                 <span>Conversar no WhatsApp</span>
               </a>
 
-              {/* Soluções Relacionadas */}
               {servico.relatedSolutions && servico.relatedSolutions.length > 0 && (
-                <div className="pt-4 border-t border-slate-800 space-y-2">
-                  <span className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
+                <div className="pt-4 border-t border-[var(--border)] space-y-2.5">
+                  <span className="text-xs font-bold text-white uppercase tracking-[0.08em] block">
                     Soluções Relacionadas
                   </span>
-                  {servico.relatedSolutions.map(solSlug => (
-                    <Link
-                      key={solSlug}
-                      to={`/solucoes/${solSlug}/`}
-                      className="text-xs text-sky-300 hover:text-white transition-colors block truncate"
-                    >
-                      → {solSlug.replace(/-/g, ' ')}
-                    </Link>
-                  ))}
+                  <div className="flex flex-col gap-2">
+                    {servico.relatedSolutions.map((solSlug) => (
+                      <Link
+                        key={solSlug}
+                        to={`/solucoes/${solSlug}/`}
+                        className="text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors block truncate"
+                      >
+                        › {solSlug.replace(/-/g, ' ')}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
 
-            {/* Outros Serviços Relacionados */}
             {servico.relatedServices && servico.relatedServices.length > 0 && (
-              <div className="bg-white border border-slate-200 rounded-lg p-5 space-y-3">
-                <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
+              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 space-y-3">
+                <h3 className="text-xs font-bold text-white uppercase tracking-[0.08em]">
                   Outros Serviços
                 </h3>
-                <ul className="space-y-2 text-sm">
-                  {servico.relatedServices.map(relSlug => {
+                <ul className="space-y-2.5 text-sm">
+                  {servico.relatedServices.map((relSlug) => {
                     const relServ = getServiceBySlug(relSlug);
                     return (
                       <li key={relSlug}>
                         <Link
                           to={`/servicos/${relSlug}/`}
-                          className="text-slate-600 hover:text-sky-600 font-medium block truncate"
+                          className="text-[var(--text-muted)] hover:text-[var(--accent)] font-medium block truncate transition-colors"
                         >
                           {relServ ? relServ.title : relSlug.replace(/-/g, ' ')}
                         </Link>
@@ -270,9 +309,34 @@ export function ServiceDetailPage() {
               </div>
             )}
           </aside>
-
         </div>
       </article>
+
+      {otherServices.length > 0 && (
+        <section aria-labelledby="outros-servicos-rel-heading" className="bg-[var(--bg-deep)] py-14 px-4 border-t border-[var(--border)]">
+          <div className="max-w-7xl mx-auto">
+            <SectionHeader
+              headingId="outros-servicos-rel-heading"
+              kicker="Continue navegando"
+              title="Outros serviços de controle de acesso"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {otherServices.map((srv) => (
+                <PhotoCard
+                  key={srv.slug}
+                  to={`/servicos/${srv.slug}/`}
+                  title={srv.title}
+                  description={srv.directAnswer}
+                  imageSrc={srv.image.src}
+                  imageAlt={srv.image.alt}
+                  icon={getCatalogIcon(srv.slug)}
+                  ctaLabel="Ver detalhes do serviço"
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </Layout>
   );
 }

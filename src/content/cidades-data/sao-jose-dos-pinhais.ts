@@ -7,23 +7,23 @@ export const saoJoseDosPinhaisContent: CityContent = {
   seoTitle: 'Controle de Acesso em São José dos Pinhais | Catracas',
   metaDescription: 'Soluções de controle de acesso em São José dos Pinhais. Biometria, reconhecimento facial e cancelas para empresas e condomínios. Solicite orçamento!',
   keyword: 'controle de acesso em São José dos Pinhais',
-  directAnswer: 'Controle de acesso em São José dos Pinhais com projetos especializados para o polo automotivo, galpões logísticos do entorno aeroportuário, centros comerciais e condomínios residenciais fechados. Fornecemos catracas para alto fluxo com braço antipânico, cancelas automáticas industriais para veículos leves e pesados, fechaduras eletromagnéticas e controle biométrico facial integrado ao sistema com registro auditável.',
+  directAnswer: 'Controle de acesso em São José dos Pinhais para empresas, galpões, condomínios, escolas, clínicas, estacionamentos e portas de vidro. Realizamos instalação de controle de acesso, fechadura eletrônica e interfone ou vídeo porteiro, além de conserto e manutenção de interfone, catraca e cancela.',
   // TODO: foto real
   image: {
     src: '/images/cidade-sao-jose-dos-pinhais.webp',
-    alt: 'Sistemas de controle de acesso em indústrias e galpões de São José dos Pinhais',
+    alt: 'Sistemas de controle de acesso em empresas e condomínios de São José dos Pinhais',
     width: 800,
     height: 600
   },
-  localCharacteristics: 'São José dos Pinhais é um dos maiores motores econômicos e industriais do Paraná, combinando um parque automotivo e fabril de relevância nacional, o Aeroporto Internacional Afonso Pena e um extenso cinturão logístico estruturado nas margens da BR-277, da BR-376 e do Contorno Leste. Essa intensa vocação industrial, aduaneira e de distribuição convive harmoniosamente com um centro urbano vibrante e bairros residenciais repletos de condomínios fechados horizontais e novas torres de apartamentos. A operação de segurança eletrônica no município precisa lidar com dois polos bem definidos: operações logísticas com circulação contínua de carretas, caminhões terceirizados e centenas de funcionários em escala contínua de turnos, e condomínios residenciais que buscam eliminar atrasos no acesso com tags veiculares de para-brisa e clausuras de pedestres automatizadas com reconhecimento facial de alta precisão e intertravamento.',
+  localCharacteristics: 'São José dos Pinhais combina áreas industriais e centros comerciais com condomínios e estacionamentos em expansão na Região Metropolitana de Curitiba. Em empresas e pátios operacionais, o controle de acesso organiza o fluxo de colaboradores, visitantes e veículos; nos condomínios e estabelecimentos com portas de vidro, prioriza clausuras com fechadura eletrônica, reconhecimento facial com cuidados da LGPD, interfonia e agilidade na entrada veicular.',
   popularSolutions: [
-    'Cancelas veiculares reforçadas com braços lineares de até 4 a 6 metros e laço indutivo duplo para acesso ordenado de carretas em centros de distribuição e pátios aduaneiros.',
-    'Baterias de catracas eletrônicas tipo pedestal em aço inoxidável 304 com leitores biométricos faciais para portarias fabris e montadoras automotivas em São José dos Pinhais.',
-    'Sistemas de tag veicular UHF para condomínios horizontais e frotas de empresas, permitindo liberação de portões sem necessidade de parada ou acionamento de controle remoto manual.',
-    'Fechaduras eletroímã com força de retenção de até 300 kgf para eclusas de pedestres em recepções corporativas, salas técnicas de telecomunicações e portarias residenciais.',
-    'Sistema de controle de acesso com módulo de visitantes para cadastro ágil de motoristas e prestadores de serviço com emissão de crachás provisórios ou QR Codes de acesso temporário.'
+    'Cancelas veiculares reforçadas com laço indutivo e fotocélula para acesso ordenado em empresas e estacionamentos, com serviço de conserto e manutenção.',
+    'Catracas eletrônicas pedestal e balcão com leitores biométricos ou faciais para portarias empresariais, academias e escolas.',
+    'Sistemas de tag veicular UHF para condomínios e frotas de empresas, facilitando a passagem na portaria.',
+    'Fechaduras eletrônicas e eletroímã para portas de vidro, recepções corporativas, salas técnicas e clausuras de pedestres.',
+    'Instalação, conserto e manutenção de interfone e vídeo porteiro integrados à portaria.'
   ],
-  serviceLogistics: 'Com deslocamento direto pelas principais rodovias de ligação com Curitiba (Avenida das Torres, BR-277 e BR-376), nossas equipes técnicas atendem empresas, indústrias e condomínios em São José dos Pinhais para visitas de orçamento, instalações completas de cabeamento e chamados de manutenção preventiva e corretiva com peças de reposição em estoque.',
+  serviceLogistics: 'Com deslocamento ágil a partir de Curitiba, nossa equipe técnica própria atende empresas e condomínios em São José dos Pinhais para orçamento sem custo, instalação completa e suporte após a instalação com manutenção preventiva e corretiva.',
   faqs: [
     {
       question: 'Vocês instalam cancelas automáticas compatíveis com a passagem de caminhões pesados?',
@@ -34,12 +34,12 @@ export const saoJoseDosPinhaisContent: CityContent = {
       answer: 'Instalamos totens de atendimento com interfonia IP na altura da janela do veículo, leitores de QR Code para convites gerados com antecedência e eclusas de pedestres que impedem a entrada no pátio antes da checagem documental e registro biométrico.'
     },
     {
-      question: 'Atendem condomínios residenciais na região central e bairros de São José dos Pinhais?',
-      answer: 'Sim, atendemos tanto condomínios verticais no centro urbano quanto loteamentos horizontais fechados em São José dos Pinhais com clausuras de pedestres intertravadas, biometria facial touchless e cancelas para garagens.'
+      question: 'Atendem condomínios e empresas na região central e bairros de São José dos Pinhais?',
+      answer: 'Sim, atendemos condomínios, empresas, estacionamentos e estabelecimentos comerciais em toda São José dos Pinhais com clausuras de pedestres, biometria facial com alternativa por cartão e cancelas. Casas e apartamentos individuais ficam em intelsecsul.com.br.'
     },
     {
       question: 'Qual a durabilidade dos equipamentos expostos a poeira e intempéries na região?',
-      answer: 'Utilizamos equipamentos com grau de proteção IP65 ou superior, gabinetes em aço inox 304 com vedação de borracha nas portas de inspeção e placas eletrônicas tratadas contra oxidação e condensação de umidade.'
+      answer: 'Utilizamos equipamentos com grau de proteção adequado à exposição de cada local e gabinetes tratados contra corrosão e umidade, conforme especificação técnica do modelo escolhido.'
     }
   ],
   whatsappContext: 'controle de acesso em São José dos Pinhais'

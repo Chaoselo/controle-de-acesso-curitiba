@@ -6,6 +6,7 @@ import { industriasSegment } from './segmentos-data/industrias';
 import { clinicasEHospitaisSegment } from './segmentos-data/clinicas-e-hospitais';
 import { escolasEUniversidadesSegment } from './segmentos-data/escolas-e-universidades';
 import { academiasSegment } from './segmentos-data/academias';
+import { estacionamentosSegment } from './segmentos-data/estacionamentos';
 import { residenciasSegment } from './segmentos-data/residencias';
 
 export const segmentosList: SegmentContent[] = [
@@ -16,6 +17,7 @@ export const segmentosList: SegmentContent[] = [
   clinicasEHospitaisSegment,
   escolasEUniversidadesSegment,
   academiasSegment,
+  estacionamentosSegment,
   residenciasSegment
 ];
 

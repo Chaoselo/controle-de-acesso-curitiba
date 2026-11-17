@@ -7,35 +7,35 @@ export const araucariaContent: CityContent = {
   seoTitle: 'Controle de Acesso em Araucária | Polo Industrial',
   metaDescription: 'Controle de acesso para indústrias e condomínios em Araucária. Torniquetes de segurança, cancelas e biometria. Peça seu orçamento no WhatsApp!',
   keyword: 'controle de acesso em Araucária',
-  directAnswer: 'Soluções avançadas de controle de acesso físico em Araucária com foco em plantas do polo petroquímico, indústrias de fertilizantes, metalurgia, bases logísticas de combustíveis e condomínios residenciais. Instalamos torniquetes industriais de alta segurança em aço galvanizado, cancelas de fluxo contínuo para frotas pesadas, catracas de pedestres, fechaduras eletromagnéticas e controle biométrico integrado a no-breaks senoidais.',
+  directAnswer: 'Projetos, instalação e manutenção de controle de acesso físico em Araucária para empresas, indústrias, condomínios, clínicas, escolas, estacionamentos e portas de vidro. Instalamos fechadura eletrônica, interfone/vídeo porteiro, catracas, cancelas e leitores biométricos ou faciais, além de conserto e manutenção de interfone, catraca e cancela.',
   // TODO: foto real
   image: {
     src: '/images/cidade-araucaria.webp',
-    alt: 'Controle de acesso industrial e torniquetes de segurança em Araucária',
+    alt: 'Controle de acesso para empresas e condomínios em Araucária',
     width: 800,
     height: 600
   },
-  localCharacteristics: 'Araucária abriga um dos mais expressivos e estratégicos polos industriais e petroquímicos da Região Sul do Brasil, sediando a Refinaria Presidente Getúlio Vargas (REPAR) e uma densa concentração de indústrias químicas, metalúrgicas, de fertilizantes agrícolas e bases de transporte de granéis líquidos e derivados de petróleo. Paralelamente a esse polo produtivo fabril de alto impacto econômico, o município possui núcleos residenciais urbanos em contínuo crescimento demográfico e novos condomínios horizontais que se estruturam nos arredores dos bairros Costeira, Iguaçu e Campina da Barra. Em instalações industriais pesadas, a segurança física exige controle rígido de trabalhadores próprios e terceirizados, com torniquetes de aço galvanizado, bloqueio automático por vencimento de integração e cancelas para pátios de tanques. Já nas áreas residenciais, o foco volta-se para a proteção perimetral, clausuras de portaria social e agilidade na entrada de moradores.',
+  localCharacteristics: 'Araucária possui expressiva atividade industrial, logística e comercial ao lado de condomínios e estacionamentos na Região Metropolitana de Curitiba. Em plantas operacionais e empresas, o controle de acesso organiza o ingresso de colaboradores, terceirizados e veículos; nos condomínios e estabelecimentos com portas de vidro, prioriza a proteção das portarias, interfonia e o controle prático de acessos, observando a LGPD.',
   popularSolutions: [
-    'Torniquetes de altura total em aço carbono galvanizado a fogo para portarias perimetrais de indústrias químicas e pátios operacionais pesados em Araucária.',
-    'Cancelas veiculares industriais automáticas de alta resistência mecânica para controle de entrada, expedição e pesagem de caminhões-tanque e carretas bitrem.',
-    'Terminais de reconhecimento facial com proteção IP65 contra poeira e intempéries para portarias externas de fábricas e relógios de ponto eletrônico homologados.',
-    'Sistemas de intertravamento de portões com fechaduras eletromagnéticas de 300 kgf e sinalização luminosa para clausuras de pedestres em condomínios residenciais.',
-    'Sistema de controle de acesso corporativo com bloqueio automático de credenciais por vencimento de exames admissionais, normas de segurança NR ou integrações obrigatórias.'
+    'Torniquetes e catracas reforçadas para portarias perimetrais de empresas em Araucária, com suporte de conserto e manutenção.',
+    'Cancelas veiculares automáticas com laço indutivo e fotocélula para portarias empresariais, condomínios e estacionamentos.',
+    'Terminais de reconhecimento facial e biometria digital com cuidados da LGPD e opção alternativa de cartão RFID.',
+    'Fechaduras eletrônicas e eletromagnéticas para portas de vidro temperado, portas metálicas e clausuras de pedestres.',
+    'Instalação, conserto e manutenção de interfone e vídeo porteiro integrados à portaria.'
   ],
-  serviceLogistics: 'Com conexão viária direta a Curitiba pela Rodovia do Xisto (BR-476) e Contorno Sul, nossa equipe técnica realiza vistorias presenciais em plantas fabris e condomínios de Araucária, garantindo manutenção programada, calibração mecânica e chamados técnicos de emergência para sistemas de portaria.',
+  serviceLogistics: 'Atendemos Araucária com equipe técnica própria a partir de Curitiba, realizando avaliação presencial para orçamento após diagnóstico técnico, instalação completa e suporte pós-instalação com manutenção preventiva e corretiva.',
   faqs: [
     {
-      question: 'Os equipamentos suportam ambientes industriais agressivos com poeira e vapores?',
-      answer: 'Sim. Empregamos torniquetes e catracas com estrutura em aço inoxidável ou galvanização especial a fogo resistente à corrosão, além de caixas de passagem herméticas e leitores biométricos com certificação de estanqueidade IP65 ou IP66.'
+      question: 'Os equipamentos suportam ambientes industriais com poeira e umidade?',
+      answer: 'Sim. Especificamos torniquetes, catracas e leitores com acabamento resistente à corrosão, caixas vedadas e grau de proteção adequado ao ambiente industrial, conforme especificação de cada modelo.'
     },
     {
-      question: 'É possível integrar o controle de acesso com os crachás funcionais já adotados pela fábrica?',
-      answer: 'Sim. Nossos leitores e controladoras comunicam-se pelos padrões abertos universais da indústria (como Wiegand e OSDP), suportando cartões RFID de 125 kHz e tecnologia Mifare de 13,56 MHz já em uso pelos colaboradores da empresa.'
+      question: 'É possível aproveitar os crachás funcionais já adotados pela empresa?',
+      answer: 'Na maioria dos casos, sim. Avaliamos durante o diagnóstico técnico o padrão dos cartões RFID ou Mifare já em uso para verificar a compatibilidade com os novos leitores e controladoras.'
     },
     {
-      question: 'Vocês realizam manutenção em cancelas antigas ou danificadas por colisões em Araucária?',
-      answer: 'Sim, realizamos revisão mecânica completa, substituição de braços amassados por impacto de veículos, troca de molas de compensação, motores e centrais eletrônicas de comando danificadas em pátios industriais e transportadoras.'
+      question: 'Vocês realizam conserto em cancelas e catracas danificadas ou antigas em Araucária?',
+      answer: 'Sim, realizamos revisão mecânica, troca de braços danificados por impacto, substituição de placas de comando, sensores e manutenção preventiva de cancelas, catracas e interfones.'
     },
     {
       question: 'Como funciona o controle de prestadores de serviço e terceirizados na portaria?',

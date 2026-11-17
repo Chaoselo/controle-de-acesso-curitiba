@@ -1,11 +1,15 @@
-import { Link } from 'react-router-dom';
 import { servicosList } from '../content/servicos';
 import { siteConfig } from '../config/site';
 import { Layout } from '../components/Layout';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
+import { PhotoCard } from '../components/ui/PhotoCard';
+import { SectionHeader } from '../components/ui/SectionHeader';
+import { getCatalogIcon } from '../components/ui/SolutionIcon';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
-import { ArrowRight, MessageSquare, Wrench, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { WhatsAppIcon } from '../components/ui/WhatsAppIcon';
+import { ComplianceNotices } from '../components/ui/ComplianceNotices';
+import { Wrench, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export default function ServicesIndex() {
   const getFirstSentence = (text: string) => {
@@ -35,169 +39,154 @@ export default function ServicesIndex() {
     <Layout whatsappContext="serviços de controle de acesso">
       <SEOHead
         title="Serviços de Controle de Acesso em Curitiba | Manutenção"
-        description="Conheça nossos serviços de controle de acesso em Curitiba e Região Metropolitana: projetos e instalação, manutenção preventiva e locação de equipamentos."
+        description="Conheça nossos serviços de controle de acesso em Curitiba e RMC: instalação, manutenção de sistemas e manutenção de catracas, além de locação."
         canonicalPath="/servicos/"
         schemaData={[itemListSchema]}
       />
 
-      <Breadcrumbs
-        items={[
-          { name: 'Serviços', url: `${siteConfig.domain}/servicos/` }
-        ]}
-      />
+      {/* Hero escuro */}
+      <section className="bg-hero-gradient border-b border-[var(--border)] pt-4 pb-12 sm:pb-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { name: 'Serviços', url: `${siteConfig.domain}/servicos/` }
+            ]}
+          />
 
-      <div className="bg-slate-50 min-h-screen py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header Section */}
-          <header className="mb-12 max-w-4xl">
-            <div className="inline-flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider mb-3">
-              <span>Engenharia e Assistência Técnica</span>
-              <span aria-hidden="true">·</span>
-              <span>Curitiba e Região Metropolitana</span>
-            </div>
+          <div className="mt-4 max-w-4xl space-y-5">
+            <span className="inline-block text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              Instalação, Manutenção e Locação · Curitiba e RMC
+            </span>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Serviços Especializados em Controle de Acesso em Curitiba
             </h1>
 
-            <div className="mt-6 text-base sm:text-lg text-slate-700 space-y-4">
+            <div className="text-base text-[var(--text-muted)] space-y-3 leading-relaxed">
               <p>
-                A segurança física e a confiabilidade de uma portaria ou recepção dependem diretamente da qualidade da engenharia de implantação e da regularidade da assistência técnica. Desde a elaboração de projetos elétricos e lançamento de cabeamento estruturado até contratos mensais de manutenção preventiva, nossa divisão técnica assegura que fechaduras, catracas, cancelas e controladores operem com máxima disponibilidade.
+                Realizamos instalação de controle de acesso, fechadura eletrônica (inclusive em portas de vidro) e interfone/vídeo porteiro, além de conserto e manutenção de interfone, catraca e cancela, com atendimento também a estacionamentos e locação sob consulta.
               </p>
               <p>
-                Atendemos condomínios residenciais e comerciais, empresas corporativas, indústrias e instituições de ensino em Curitiba e em todos os municípios da Região Metropolitana. Conheça abaixo as três modalidades de serviços especializados e descubra como otimizar a segurança do seu patrimônio com suporte local ágil.
+                Atendemos empresas, condomínios, indústrias, clínicas, escolas e academias em Curitiba e nos 10 municípios da Região Metropolitana.
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="pt-2 flex flex-wrap items-center gap-4">
               <a
                 href={whatsappLink('orçamento pelo catálogo de serviços')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold px-6 py-3.5 rounded-lg shadow-sm transition"
+                className="inline-flex items-center justify-center gap-2.5 h-[52px] px-6 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white font-semibold rounded-xl transition-colors"
               >
-                <MessageSquare className="w-5 h-5 fill-white text-transparent" />
-                <span>Solicitar Atendimento Técnico no WhatsApp</span>
+                <WhatsAppIcon className="w-5 h-5 shrink-0" />
+                <span>Solicitar atendimento no WhatsApp</span>
               </a>
-              <span className="text-xs text-slate-500">
-                Atendimento direto com especialistas técnicos em Curitiba
+              <span className="text-xs sm:text-sm text-[var(--text-soft)]">
+                Equipe técnica própria · Orçamento sem custo
               </span>
             </div>
-          </header>
+          </div>
+        </div>
+      </section>
 
-          {/* Grid de Serviços */}
-          <section aria-labelledby="servicos-grid-heading" className="mb-16">
-            <h2 id="servicos-grid-heading" className="sr-only">
-              Lista de Serviços Disponíveis
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {servicosList.map((servico) => (
-                <article
-                  key={servico.slug}
-                  className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col"
-                >
-                  <div className="aspect-video w-full bg-slate-100 overflow-hidden">
-                    <img
-                      src={servico.image.src}
-                      alt={servico.image.alt}
-                      width={servico.image.width}
-                      height={servico.image.height}
-                      loading="lazy"
-                      className="w-full h-full object-cover object-center"
-                    />
-                  </div>
-                  <div className="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                      <h2 className="text-xl font-bold text-slate-900 hover:text-sky-700 transition">
-                        <Link to={`/servicos/${servico.slug}/`}>
-                          {servico.title}
-                        </Link>
-                      </h2>
-                      <p className="mt-3 text-sm text-slate-600 leading-relaxed">
-                        {getFirstSentence(servico.directAnswer)}
-                      </p>
-                    </div>
-                    <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                      <Link
-                        to={`/servicos/${servico.slug}/`}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-sky-700 hover:text-sky-800 transition"
-                      >
-                        <span>Ver detalhes do serviço</span>
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
+      {/* Grid de Serviços */}
+      <section aria-labelledby="servicos-grid-heading" className="bg-[var(--bg)] py-14 sm:py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader
+            headingId="servicos-grid-heading"
+            kicker={`${servicosList.length} frentes de atendimento`}
+            title="Como podemos atender o seu projeto"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {servicosList.map((servico) => (
+              <PhotoCard
+                key={servico.slug}
+                to={`/servicos/${servico.slug}/`}
+                title={servico.title}
+                description={getFirstSentence(servico.directAnswer)}
+                imageSrc={servico.image.src}
+                imageAlt={servico.image.alt}
+                icon={getCatalogIcon(servico.slug)}
+                ctaLabel="Ver detalhes do serviço"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
-          {/* Seção Informativa de Garantia e Qualidade Técnica */}
-          <section
-            aria-labelledby="qualidade-tecnica-heading"
-            className="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <Wrench className="w-7 h-7 text-sky-600 shrink-0" />
-              <h2 id="qualidade-tecnica-heading" className="text-2xl sm:text-3xl font-bold text-slate-900">
-                Padrão de Qualidade em Cada Etapa do Atendimento
+      {/* Padrão técnico de atendimento */}
+      <section
+        aria-labelledby="qualidade-tecnica-heading"
+        className="bg-[var(--bg-deep)] py-14 sm:py-16 px-4 border-t border-[var(--border)]"
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-6 sm:p-10">
+            <div className="flex items-center gap-3 mb-4">
+              <Wrench className="w-7 h-7 text-[var(--accent)] shrink-0" aria-hidden="true" />
+              <h2 id="qualidade-tecnica-heading" className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                Padrão de atendimento em cada etapa
               </h2>
             </div>
-            <p className="text-slate-700 text-sm sm:text-base mb-8 max-w-3xl">
-              Nossa equipe técnica atua com procedimentos padronizados de segurança elétrica e mecânica, utilizando ferramental de precisão e componentes originais certificados para prolongar a vida útil de todo o sistema.
+            <p className="text-[var(--text-muted)] text-base mb-8 max-w-3xl">
+              Trabalhamos com procedimentos técnicos organizados de verificação elétrica e mecânica para assegurar o funcionamento adequado dos equipamentos.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>Diagnóstico Elétrico Preciso</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] space-y-2">
+                <div className="flex items-center gap-2 text-[var(--accent)] font-semibold text-sm">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" aria-hidden="true" />
+                  <span>Diagnóstico Elétrico e Mecânico</span>
                 </div>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  Medição de quedas de voltagem, corrente de retenção em eletroímãs e integridade de fontes com baterias flutuantes seladas.
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                  Medição de tensão na linha, força de retenção de eletroímãs e estado de fontes e baterias de contingência.
                 </p>
               </div>
 
-              <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>Peças Originais e Compatíveis</span>
+              <div className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] space-y-2">
+                <div className="flex items-center gap-2 text-[var(--accent)] font-semibold text-sm">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" aria-hidden="true" />
+                  <span>Componentes Compatíveis</span>
                 </div>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  Estoque local em Curitiba com reposição imediata de solenoides, molas, microchaves, placas controladoras e sensores ópticos.
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                  Verificação prévia de compatibilidade para substituição de solenoides, molas, microchaves, controladoras e sensores ópticos.
                 </p>
               </div>
 
-              <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>Implantação sem Paradas</span>
+              <div className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] space-y-2">
+                <div className="flex items-center gap-2 text-[var(--accent)] font-semibold text-sm">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" aria-hidden="true" />
+                  <span>Implantação Planejada por Etapas</span>
                 </div>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  Metodologia de implantação por etapas que mantém a portaria do condomínio ou empresa plenamente protegida durante as obras.
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                  Execução coordenada com a portaria ou administração para reduzir ao mínimo o impacto na rotina do local durante a obra.
                 </p>
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div className="flex items-center gap-2 text-sm text-slate-600">
-                <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
-                <span>Garantia formal de serviços e peças com atendimento presencial em Curitiba e RMC.</span>
+            <div className="mt-8 pt-6 border-t border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-2 text-sm text-[var(--text-muted)]">
+                <ShieldCheck className="w-5 h-5 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Suporte após a instalação e orçamento elaborado após diagnóstico técnico presencial.</span>
               </div>
               <a
                 href={whatsappLink('dúvida sobre serviços de controle de acesso')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="text-sm font-bold text-emerald-700 hover:text-emerald-800 transition"
+                className="text-sm font-bold text-[var(--whatsapp)] hover:underline transition"
               >
-                Conversar com técnico especializado →
+                Conversar com técnico especializado ›
               </a>
             </div>
-          </section>
+          </div>
+
+          <ComplianceNotices
+            text={JSON.stringify(servicosList.map((s) => `${s.title} ${s.directAnswer}`))}
+            className="mt-8"
+          />
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }

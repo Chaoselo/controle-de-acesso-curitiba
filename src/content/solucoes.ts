@@ -7,6 +7,8 @@ import { catracasSolution } from './solucoes-data/catracas';
 import { cancelasEAcessoVeicularSolution } from './solucoes-data/cancelas-e-acesso-veicular';
 import { fechadurasEletromagneticasSolution } from './solucoes-data/fechaduras-eletromagneticas';
 import { interfoneEVideoPorteiroSolution } from './solucoes-data/interfone-e-video-porteiro';
+import { fechaduraEletronicaSolution } from './solucoes-data/fechadura-eletronica';
+import { tagVeicularSolution } from './solucoes-data/tag-veicular';
 
 export const solucoesList: SolutionContent[] = [
   biometriaSolution,
@@ -16,7 +18,9 @@ export const solucoesList: SolutionContent[] = [
   catracasSolution,
   cancelasEAcessoVeicularSolution,
   fechadurasEletromagneticasSolution,
-  interfoneEVideoPorteiroSolution
+  interfoneEVideoPorteiroSolution,
+  fechaduraEletronicaSolution,
+  tagVeicularSolution
 ];
 
 export function getSolutionBySlug(slug: string): SolutionContent | undefined {

@@ -4,14 +4,14 @@
  * REGRA RIGOROSA DE FATOS:
  * Qualquer dado real não confirmado permanece como "[[PREENCHER: ...]]".
  * Se um dado contiver "[[PREENCHER", a interface omite automaticamente
- * a seção ou campo dependente para garantir veracidade absoluta.
+ * a seção ou campo dependente para manter precisão factual.
  */
 
 export const siteConfig = {
   name: "Controle de Acesso Curitiba",
-  brandSignature: "por Intelsecsul Segurança Eletrônica",
+  brandSignature: "Unidade especializada Intelsecsul Segurança Eletrônica",
   domain: "https://controledeacessocuritiba.com.br",
-  defaultOgImage: "/images/og-image-default.webp",
+  defaultOgImage: "/og-default.jpg",
 
   // Contato e atendimento
   phone: "(41) 99844-8409",
@@ -20,19 +20,21 @@ export const siteConfig = {
   whatsappFormatted: "(41) 99844-8409",
   email: "[[PREENCHER: Email comercial]]",
 
-  // Empresa mãe / parceira oficial
+  // Empresa mãe / sites do mesmo grupo
   parentCompany: {
     name: "Intelsecsul Segurança Eletrônica",
     site: "https://intelsecsul.com.br",
+    cftvSite: "https://cftvcuritiba.com.br",
+    googleReviewUrl: "https://share.google/dNAmcesFz6QV1vroW",
     services: [
-      { name: "Câmeras de Segurança (CFTV)", url: "https://intelsecsul.com.br" },
+      { name: "Câmeras de Segurança (CFTV)", url: "https://cftvcuritiba.com.br" },
       { name: "Alarmes Monitorados", url: "https://intelsecsul.com.br" },
       { name: "Cerca Elétrica e Concertina", url: "https://intelsecsul.com.br" },
     ]
   },
 
   // Dados cadastrais e endereço (sujeitos à regra de não-invenção)
-  cnpj: "[[PREENCHER: CNPJ da empresa]]",
+  cnpj: "52.535.434/0001-90",
   address: {
     street: "[[PREENCHER: Logradouro e número]]",
     neighborhood: "[[PREENCHER: Bairro]]",
@@ -41,11 +43,11 @@ export const siteConfig = {
     postalCode: "[[PREENCHER: CEP]]",
     country: "BR"
   },
-  openingHours: "[[PREENCHER: Horário de funcionamento, ex: Seg a Sex 08:00 às 18:00]]",
+  openingHours: "Segunda a Sexta: 08:00 às 18:00",
   experienceYears: "[[PREENCHER: Anos de mercado]]",
   clientsCount: "[[PREENCHER: Número de clientes atendidos]]",
   certifications: "[[PREENCHER: Certificações técnicas da equipe]]",
-  brandPartnerships: "[[PREENCHER: Marcas homologadas / parceiras (ex: Intelbras, Control iD, Linear-HCS, Hikvision)]]",
+  brandPartnerships: "[[PREENCHER: Marcas com as quais trabalha]]",
 
   // Região Metropolitana atendida
   citiesServed: [
@@ -62,13 +64,21 @@ export const siteConfig = {
     { name: "Campina Grande do Sul", slug: "campina-grande-do-sul" },
   ],
 
+  // Selos institucionais oficiais da empresa
+  trustBadges: [
+    "Equipe técnica própria",
+    "Orçamento sem custo",
+    "Atendimento em toda a Região Metropolitana",
+    "Suporte após a instalação",
+  ],
+
   // Menu de navegação principal
   mainNav: [
     { label: "Soluções", href: "/solucoes/" },
-    { label: "Segmentos", href: "/segmentos/" },
     { label: "Serviços", href: "/servicos/" },
+    { label: "Locais", href: "/segmentos/" },
     { label: "Cidades", href: "/cidades/" },
-    { label: "Sobre", href: "/sobre/" },
+    { label: "Blog", href: "/blog/" },
     { label: "Contato", href: "/contato/" },
   ]
 };

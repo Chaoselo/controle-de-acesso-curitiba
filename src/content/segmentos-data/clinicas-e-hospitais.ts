@@ -4,9 +4,9 @@ export const clinicasEHospitaisSegment: SegmentContent = {
   slug: 'clinicas-e-hospitais',
   title: 'Controle de Acesso para Clínicas e Hospitais em Curitiba',
   seoTitle: 'Controle de Acesso para Clínicas e Hospitais Curitiba',
-  metaDescription: 'Acesso seguro e touchless para ambientes de saúde em Curitiba. Fechaduras de emergência, leitores faciais e proteção de farmácias. Orçamento!',
+  metaDescription: 'Acesso sem toque e seguro para clínicas, consultórios e hospitais em Curitiba. Portas de vidro, fechaduras eletroímã, leitores faciais e interfonia.',
   keyword: 'controle de acesso para clinicas e hospitais em Curitiba',
-  directAnswer: 'O controle de acesso para clínicas médicas, laboratórios e hospitais em Curitiba estabelece barreiras sanitárias e de segurança física para proteger pacientes e equipes de saúde. Com tecnologia de autenticação totalmente sem contato físico (touchless), botoeiras infravermelhas e intertravamento de portas em farmácias, centros cirúrgicos e UTIs, o sistema garante conformidade rigorosa com normas da Anvisa e regras da LGPD sobre dados de saúde.',
+  directAnswer: 'O controle de acesso para clínicas médicas, laboratórios e hospitais em Curitiba organiza a circulação de pacientes, acompanhantes e equipes assistenciais, protegendo áreas restritas como farmácia, estoque de medicamentos e salas de procedimento. Com autenticação sem contato físico (touchless), botoeiras no-touch e fechaduras eletroímã silenciosas — inclusive em portas de vidro — o sistema apoia rotinas de higiene e cuidados da LGPD.',
   image: {
     src: '/images/controle-acesso-segmento-clinicas-e-hospitais.webp',
     alt: 'Leitor de acesso com digital e teclado na parede de um corredor hospitalar',
@@ -14,70 +14,70 @@ export const clinicasEHospitaisSegment: SegmentContent = {
     height: 675
   },
   typicalProblems: [
-    'Risco contínuo de contaminação cruzada biológica pelo toque constante de médicos, enfermeiros e pacientes em maçanetas tradicionais, teclados numéricos e sensores de impressão digital não higienizados periodicamente.',
-    'Acesso indevido de visitantes ou acompanhantes desavisados a áreas de assepsia estrita, como Unidades de Terapia Intensiva (UTI), alas de isolamento infeccioso e centros cirúrgicos.',
-    'Necessidade crítica de blindagem e auditoria rigorosa de acesso à farmácia hospitalar central e ao estoque de medicamentos controlados de alto custo e entorpecentes sujeitos a desvios.',
-    'Dificuldade para segregar com rapidez e clareza os fluxos de pacientes ambulatoriais comuns, equipes clínicas de plantão médico e prestadores de manutenção de equipamentos biomédicos.',
-    'Passagens estreitas com portas que desrespeitam as normas de acessibilidade universal (ABNT NBR 9050), dificultando a circulação ágil de macas, leitos móveis e cadeiras de rodas.',
-    'Preocupações jurídicas com a coleta e o armazenamento de dados biométricos de pacientes e visitantes em conformidade com as restrições da Lei Geral de Proteção de Dados (LGPD).'
+    'Contato frequente de colaboradores e visitantes com maçanetas, teclados e sensores comuns em áreas de atendimento de saúde.',
+    'Circulação indevida de acompanhantes ou visitantes em alas restritas, consultórios, centros de procedimento e áreas internas.',
+    'Necessidade de controlar e registrar o acesso a estoques de insumos, arquivos médicos e farmácias.',
+    'Portas de vidro ou divisórias de clínicas que exigem fechadura eletrônica silenciosa sem impacto que incomode pacientes.',
+    'Passagens que precisam respeitar as dimensões de acessibilidade para macas e cadeiras de rodas (ABNT NBR 9050).',
+    'Exigência de atenção redobrada ao tratamento de dados pessoais e biométricos conforme a LGPD.'
   ],
   idealSolutions: [
     {
       solutionSlug: 'reconhecimento-facial',
-      title: 'Terminais Faciais Touchless com Lente Dupla e Luz Visível',
-      reason: 'Permitem autenticação ultra-rápida sem exigir qualquer contato físico dos profissionais de saúde, realizando o reconhecimento facial com alta precisão mesmo se o médico ou enfermeiro estiver de máscara descartável ou touca cirúrgica.'
+      title: 'Terminais Faciais Sem Toque (Touchless)',
+      reason: 'Permitem que médicos, enfermeiros e equipe passem sem encostar as mãos em leitores ou teclados compartilhados.'
     },
     {
       solutionSlug: 'fechaduras-eletromagneticas',
-      title: 'Fechaduras Eletroímã com Botoeiras No-Touch por Infravermelho',
-      reason: 'Asseguram travamento magnético silencioso sem atrito mecânico, sendo acionadas pela simples aproximação da mão a centímetros do sensor sem contato físico, mantendo as condições ideais de desinfecção e assepsia hospitalar permanente.'
+      title: 'Fechaduras Eletroímã em Portas de Vidro com Botoeira No-Touch',
+      reason: 'Proporcionam travamento silencioso em portas de vidro temperado ou convencionais, com destravamento ao aproximar a mão do sensor sem toque.'
     },
     {
       solutionSlug: 'cartao-e-tag-rfid',
-      title: 'Crachás de Proximidade RFID Higienizáveis para Colaboradores',
-      reason: 'Atuam como credenciais laváveis e higienizáveis com álcool 70% para funcionários de enfermagem e prestadores temporários, podendo ser lidos a curta distância por aproximação sem encostar no leitor de parede.'
+      title: 'Crachás de Proximidade RFID Higienizáveis',
+      reason: 'Podem ser usados por aproximação sem encostar no leitor e funcionam como alternativa não biométrica quando necessário.'
+    },
+    {
+      solutionSlug: 'interfone-e-video-porteiro',
+      title: 'Interfone e Vídeo Porteiro na Recepção',
+      reason: 'Permite identificar pacientes e entregadores na entrada externa ou porta principal de clínicas antes de acionar a fechadura pela recepção.'
     },
     {
       solutionSlug: 'catracas',
-      title: 'Catracas Flap com Portas Deslizantes e Passagem Ampla para Macas',
-      reason: 'Permitem controle elegante de fluxo na recepção principal e corredores de acesso a enfermarias, abrindo portões com vão de noventa centímetros para passagem suave de cadeirantes e macas hospitalares com comodidade.'
-    },
-    {
-      solutionSlug: 'biometria',
-      title: 'Leitores Biométricos em Farmácias e Áreas Críticas',
-      reason: 'Garantem autenticação intransferível em ambientes restritos como almoxarifados de medicamentos e farmácia hospitalar, assegurando registro cronológico e auditoria rigorosa de cada abertura.'
+      title: 'Catracas com Passagem Ampla Acessível',
+      reason: 'Organizam a triagem na recepção principal de unidades maiores mantendo vão lateral acessível para cadeirantes e macas.'
     }
   ],
   projectArchitecture: [
-    'Recepção Principal e Triagem de Pacientes: Implantação de catracas tipo flap ou balcão com portas motorizadas de vidro retrátil e vão especial para acessibilidade, integradas a leitor facial e dispensador de crachás higienizáveis para acompanhantes.',
-    'Controle de Alas Críticas (UTI, Centro Cirúrgico e CME): Instalação de fechaduras eletromagnéticas estanques com suportes em inox, intertravamento de eclusas de paramentação e botoeiras no-touch com detecção por infravermelho de 5 a 15 cm de distância.',
-    'Segurança e Rastreabilidade da Farmácia Central: Portas blindadas com fechadura eletromagnética de alta retenção (300kgf), leitor de dupla autenticação (cartão + biometria facial) e sensor com aviso sonoro para porta que permaneça aberta além do limite programado.',
-    'Acessos Operacionais e Docas de Resíduos: Portões de circulação de resíduos infectantes e docas de suprimentos farmacêuticos protegidos por cancelas com acionamento por tag ou botoeira interna operada exclusivamente pela equipe de higienização.',
-    'Rede Dedicada e Nobreak Hospitalar de Alta Confiabilidade: Infraestrutura de cabos blindados Cat6 certificados conectada a no-break online de dupla conversão com redundância, garantindo pleno funcionamento contínuo mesmo durante transições para os geradores a diesel da clínica.'
+    'Recepção e Porta Principal: Fechadura eletromagnética em porta de vidro ou convencional acionada por interfone/vídeo porteiro, botoeira da recepção ou leitor RFID/facial.',
+    'Áreas Internas e Farmácia: Controle de acesso por reconhecimento facial, biometria ou senha em depósitos de materiais, almoxarifado e salas restritas, com registro de passagens.',
+    'Saída Sem Contato e Rotas de Fuga: Botoeiras no-touch por aproximação para saída cotidiana e botões de emergência para rotas de fuga conforme normas aplicáveis.',
+    'Estacionamento de Pacientes e Equipe: Cancelas automáticas e controle veicular quando a clínica ou hospital dispõe de estacionamento próprio.',
+    'Contingência Elétrica e Privacidade: Fontes carregadoras com baterias auxiliares e orientação sobre governança de dados sensíveis pela LGPD.'
   ],
   faqs: [
     {
-      question: 'Como fica a conformidade do hospital com a LGPD em relação aos dados de saúde?',
-      answer: 'Os dados de saúde e as características biométricas são classificados pela LGPD como dados pessoais sensíveis. Nossas soluções não armazenam imagens fotográficas brutas nem dados de prontuário no sistema de acesso físico. As informações biométricas são codificadas em templates matemáticos criptografados de mão única, exclusivamente para identificação do acesso às dependências. Este texto é informativo e não substitui a orientação de um profissional jurídico.'
+      question: 'Quais cuidados da LGPD se aplicam ao controle de acesso em clínicas e hospitais?',
+      answer: 'Dados biométricos são dados pessoais sensíveis pela LGPD (Lei nº 13.709/2018), e ambientes de saúde exigem atenção redobrada à separação entre controle físico de portas e informações de prontuário. É importante definir finalidade, restringir acessos aos cadastros e oferecer alternativa como cartão RFID. Este texto é informativo e não substitui a orientação de um profissional jurídico.'
     },
     {
-      question: 'O leitor facial funciona com médicos e enfermeiros utilizando máscara cirúrgica ou N95?',
-      answer: 'Sim. Os algoritmos de reconhecimento facial de alta precisão que especificamos para a área médica utilizam mapeamento tridimensional da região dos olhos, sobrancelhas e testa, conseguindo validar o profissional de saúde mesmo com máscara cirúrgica, gorro ou protetor facial tipo face shield.'
+      question: 'O leitor facial funciona quando profissionais usam máscara ou touca?',
+      answer: 'Depende do modelo e da configuração do algoritmo de reconhecimento facial. Na avaliação técnica, especificamos modelos compatíveis com o ambiente e as condições de uso da clínica.'
     },
     {
-      question: 'O que a Anvisa e o Corpo de Bombeiros exigem para portas de emergência em hospitais?',
-      answer: 'As portas ao longo de rotas de fuga hospitalares não podem impedir a evacuação de pacientes acamados ou da equipe. Por isso, utilizamos fechaduras eletromagnéticas fail-safe integradas à central de alarme de incêndio e botoeiras de emergência que destravam o circuito elétrico instantaneamente ao serem pressionadas.'
+      question: 'Como funcionam as fechaduras em portas de emergência de clínicas?',
+      answer: 'Em rotas de fuga, fechaduras eletromagnéticas fail-safe costumam ser integradas a botões de emergência e, quando aplicável, à central de incêndio para liberar a passagem em evacuações, observando sempre as exigências do responsável técnico e do Corpo de Bombeiros.'
     },
     {
-      question: 'Como garantir que o sistema não sirva como vetor de transmissão de bactérias e vírus?',
-      answer: 'Adotamos a diretriz touchless integral: leitores de reconhecimento facial para autenticação sem contato, botoeiras capacitivas ou ópticas acionadas por simples aproximação da mão a até 10 centímetros de distância e suportes laváveis com soluções hospitalares padronizadas.'
+      question: 'É possível abrir a porta de vidro sem encostar em botões?',
+      answer: 'Sim. Botoeiras infravermelhas sem toque (no-touch) liberam a fechadura pela aproximação da mão, sem contato físico com a superfície.'
     },
     {
-      question: 'Como é controlado o acesso de acompanhantes de pacientes internados?',
-      answer: 'Na recepção de internação, o acompanhante recebe uma pulseira RFID descartável ou cartão de aproximação temporário vinculado estritamente ao leito do paciente e ao horário estabelecido para visitas médicas. Ao término do período ou na alta hospitalar, a credencial é invalidada no sistema.'
+      question: 'Como organizar o acesso de acompanhantes ou visitantes?',
+      answer: 'Conduzindo o cadastro na recepção com crachás de proximidade temporários ou liberação assistida conforme as regras internas do estabelecimento.'
     }
   ],
-  relatedSolutions: ['reconhecimento-facial', 'fechaduras-eletromagneticas', 'catracas', 'biometria'],
+  relatedSolutions: ['reconhecimento-facial', 'fechaduras-eletromagneticas', 'interfone-e-video-porteiro', 'cartao-e-tag-rfid'],
   relatedSegments: ['empresas-e-escritorios', 'condominios-comerciais'],
-  whatsappContext: 'controle de acesso para clínica ou hospital em Curitiba'
+  whatsappContext: 'controle de acesso ou fechadura para clínica ou hospital em Curitiba'
 };

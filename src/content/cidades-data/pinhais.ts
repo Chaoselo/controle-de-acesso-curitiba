@@ -7,7 +7,7 @@ export const pinhaisContent: CityContent = {
   seoTitle: 'Controle de Acesso em Pinhais | Catracas e Portarias',
   metaDescription: 'Controle de acesso em Pinhais. Instalação e manutenção de catracas, cancelas e biometria para condomínios e indústrias. Peça orçamento no WhatsApp!',
   keyword: 'controle de acesso em Pinhais',
-  directAnswer: 'Atendimento técnico especializado em controle de acesso em Pinhais para indústrias, polos comerciais e condomínios residenciais horizontais. Projetamos e instalamos catracas eletrônicas para pedestres com braço antipânico, cancelas veiculares automáticas com leitor de tag, fechaduras eletromagnéticas em eclusas e terminais de reconhecimento facial, assegurando gestão de fluxo segura, relatórios auditáveis e assistência técnica com deslocamento ágil a partir de Curitiba.',
+  directAnswer: 'Atendimento técnico de controle de acesso em Pinhais para indústrias, polos comerciais, clínicas, escolas, academias, estacionamentos, portas de vidro e condomínios. Instalamos fechaduras eletrônicas, interfones/vídeo porteiros, catracas, cancelas e reconhecimento facial, além de conserto e manutenção de interfone, catraca e cancela.',
   // TODO: foto real
   image: {
     src: '/images/cidade-pinhais.webp',
@@ -15,27 +15,27 @@ export const pinhaisContent: CityContent = {
     width: 800,
     height: 600
   },
-  localCharacteristics: 'O município de Pinhais possui uma localização estratégica na divisa leste de Curitiba, destacando-se por um parque industrial vigoroso e corredores de comércio e serviços concentrados ao longo da Rodovia Deputado João Leopoldo Jacomel e da Avenida Ayrton Senna da Silva. Ao lado desse perfil produtivo e de centros de eventos e exposições, a cidade vivencia uma expansão contínua de loteamentos fechados e condomínios horizontais residenciais. Esse cenário demanda soluções de segurança eletrônica com perfis bem definidos: enquanto plantas fabris e galpões de armazenagem demandam catracas robustas de aço inox e torniquetes de altura total para organizar trocas de turnos com pontualidade, os condomínios fechados priorizam cancelas de abertura rápida com leitor de tag veicular e clausuras de pedestres com reconhecimento facial.',
+  localCharacteristics: 'O município de Pinhais integra diretamente a Região Metropolitana de Curitiba, reunindo áreas industriais, polos comerciais, estacionamentos e condomínios. Esse perfil variado demanda projetos sob medida: empresas e galpões precisam organizar a entrada de colaboradores e veículos com catracas e cancelas, enquanto condomínios e lojas priorizam portas de vidro com fechadura eletrônica, interfonia, clausuras e abertura veicular por tag, observando os cuidados da LGPD.',
   popularSolutions: [
-    'Catracas eletrônicas pedestal em aço inoxidável com leitores biométricos e cartões RFID para portarias industriais e comerciais ao longo dos eixos viários principais de Pinhais.',
-    'Cancelas veiculares automáticas com tags adesivas UHF no para-brisa para entrada de moradores em condomínios horizontais fechados, eliminando filas na via de acesso.',
-    'Torniquetes industriais de altura total para pátios logísticos e indústrias, impedindo entrada não autorizada por cima ou sob o bloqueio perimetral com fechamento mecânico seguro.',
-    'Fechaduras eletromagnéticas de 150 a 300 kgf com suportes ajustáveis e botoeiras de emergência para portas de acesso social, guaritas e eclusas de pedestres.',
-    'Terminais de reconhecimento facial com tela touchless integrados ao sistema para registro de horários e liberação automática de prestadores de serviço e visitantes.'
+    'Catracas eletrônicas pedestal com leitores biométricos, faciais ou cartões RFID para portarias industriais, academias e empresas em Pinhais, incluindo conserto e manutenção.',
+    'Cancelas veiculares automáticas com tags UHF para empresas, estacionamentos e condomínios.',
+    'Torniquetes industriais de altura total para controle perimetral de pedestres em empresas e pátios operacionais.',
+    'Fechaduras eletrônicas e eletromagnéticas com suportes para portas de vidro temperado, guaritas e eclusas.',
+    'Instalação, conserto e manutenção de interfone e vídeo porteiro integrados ao acesso.'
   ],
-  serviceLogistics: 'Devido à proximidade direta com Curitiba e fácil acesso pelas vias de ligação metropolitana (como a Rodovia João Leopoldo Jacomel e a Linha Verde), nossa equipe técnica presta atendimento ágil em Pinhais para visitas de avaliação, implantação de novos projetos de cabeamento e manutenção corretiva emergencial de cancelas ou catracas com estoque de peças a pronta entrega.',
+  serviceLogistics: 'Com deslocamento direto a partir de Curitiba, nossa equipe técnica própria atende empresas, comércios e condomínios em Pinhais para diagnóstico presencial e orçamento, instalação completa e suporte após a instalação com manutenção preventiva e corretiva.',
   faqs: [
     {
       question: 'Qual a solução mais indicada para a troca de turnos em fábricas de Pinhais?',
-      answer: 'Recomendamos baterias de catracas eletrônicas tipo pedestal em aço inox ou torniquetes de altura total combinados com biometria facial touchless. Essa combinação processa dezenas de passagens por minuto sem formação de filas e elimina fraudes de registro de ponto entre colaboradores.'
+      answer: 'Recomendamos conjuntos de catracas eletrônicas pedestal ou torniquetes de altura total combinados com reconhecimento facial ou cartão RFID. Essa configuração agiliza o fluxo nos horários de entrada e saída e reduz o risco de uso indevido de crachás emprestados.'
     },
     {
       question: 'Como funciona a visita técnica para orçamento de portaria em Pinhais?',
-      answer: 'Nosso técnico comparece presencialmente ao condomínio ou empresa em Pinhais, avalia o vão de passagem de pedestres e veículos, a tubulação subterrânea existente e o cabeamento elétrico, entregando um diagnóstico técnico completo e sem custo nem compromisso.'
+      answer: 'Nosso técnico comparece presencialmente ao condomínio ou empresa em Pinhais, avalia os vãos de passagem de pedestres (inclusive portas de vidro) e veículos, a tubulação e o cabeamento elétrico, elaborando o orçamento após o diagnóstico.'
     },
     {
-      question: 'Vocês atendem condomínios residenciais horizontais em Pinhais?',
-      answer: 'Sim. Instalamos sistemas completos de intertravamento de portões sociais (eclusas de pedestres), cancelas automáticas com laço indutivo para proteção contra colisões em veículos e leitores de tag veicular adesiva no vidro para abertura sem controles remotos manuais.'
+      question: 'Vocês atendem condomínios e estacionamentos em Pinhais?',
+      answer: 'Sim. Instalamos eclusas de pedestres, cancelas automáticas com laço indutivo para proteção contra fechamento sobre veículos, interfones e leitores de tag veicular. Casas e apartamentos individuais são atendidos pelo site principal (intelsecsul.com.br).'
     },
     {
       question: 'É possível aproveitar fechaduras ou cabeamento já existentes no local?',

@@ -10,6 +10,12 @@ export function CookieBanner() {
     if (!consent) {
       setShow(true);
     }
+
+    const handleReopen = () => setShow(true);
+    window.addEventListener('cac:reopen-cookie-banner', handleReopen);
+    return () => {
+      window.removeEventListener('cac:reopen-cookie-banner', handleReopen);
+    };
   }, []);
 
   const handleAccept = () => {
@@ -31,28 +37,31 @@ export function CookieBanner() {
   if (!show) return null;
 
   return (
-    <aside aria-label="Aviso de Privacidade e Cookies" className="fixed bottom-16 sm:bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:max-w-md z-50 bg-white border border-slate-200 rounded-lg p-4 shadow-2xl animate-in slide-in-from-bottom duration-300">
-      <div className="flex flex-col gap-3">
-        <p className="text-xs text-slate-600 leading-relaxed">
+    <aside
+      aria-label="Aviso de Privacidade e Cookies"
+      className="fixed bottom-20 sm:bottom-5 left-4 right-4 sm:left-auto sm:right-5 sm:max-w-md z-50 bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-5 shadow-2xl"
+    >
+      <div className="flex flex-col gap-3.5">
+        <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed">
           Utilizamos cookies e o Google Analytics para medir visitas e aprimorar nosso atendimento, em conformidade com a LGPD. Os dados estatísticos só são coletados com a sua autorização e você pode recusar a qualquer momento. Consulte nossa{' '}
-          <Link to="/politica-de-privacidade/" className="text-sky-600 underline font-medium">
+          <Link to="/politica-de-privacidade/" className="text-[var(--accent)] underline font-medium">
             Política de Privacidade
           </Link>.
         </p>
-        <div className="flex items-center justify-end gap-2">
+        <div className="flex items-center justify-end gap-2.5">
           <button
             type="button"
             onClick={handleDecline}
-            className="px-3 py-1.5 text-xs text-slate-600 hover:text-slate-900 font-medium transition-colors"
+            className="px-3.5 py-2 text-xs text-[var(--text-muted)] hover:text-white border border-[var(--border)] rounded-xl font-medium transition-colors cursor-pointer"
           >
-            Apenas essenciais
+            Recusar
           </button>
           <button
             type="button"
             onClick={handleAccept}
-            className="px-3.5 py-1.5 text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded transition-colors shadow-sm"
+            className="px-4 py-2 text-xs font-bold text-[#05060B] bg-[var(--accent)] hover:bg-[#38d0fc] rounded-xl transition-colors cursor-pointer"
           >
-            Concordar e fechar
+            Aceitar e continuar
           </button>
         </div>
       </div>

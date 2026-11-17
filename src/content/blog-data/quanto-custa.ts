@@ -8,7 +8,7 @@ export const quantoCustaContent: BlogPostContent = {
   author: 'Equipe Controle de Acesso Curitiba',
   publishedDate: '[[PREENCHER: data de publicação]]',
   readTime: '7 min de leitura',
-  summary: 'O investimento em um sistema de controle de acesso físico não possui um valor fixo de prateleira, pois depende diretamente da arquitetura do imóvel e dos requisitos de segurança de cada projeto. Fatores como a quantidade de vãos, a tecnologia de identificação escolhida, as condições da tubulação elétrica existente e a autonomia necessária para no-breaks determinam a composição do orçamento final em Curitiba.',
+  summary: 'O investimento em um sistema de controle de acesso físico não possui um valor fixo de prateleira, pois o orçamento depende diretamente da arquitetura do imóvel e é definido após o diagnóstico técnico. Fatores como a quantidade de vãos, portas de vidro, cancelas de estacionamento, tecnologia de identificação, tubulação elétrica e no-breaks determinam a composição da proposta em Curitiba.',
   sections: [
     {
       heading: 'Por Que o Custo de Controle de Acesso Não é Padronizado?',
@@ -28,8 +28,8 @@ export const quantoCustaContent: BlogPostContent = {
         {
           heading: 'Tecnologia de Identificação e Autenticação de Usuários',
           paragraphs: [
-            'A tecnologia escolhida para autenticar quem entra e sai tem peso significativo no custo de hardware. Sistemas baseados em cartões e chaveiros de proximidade RFID de 125 kHz ou tecnologia Mifare de 13,56 MHz costumam apresentar menor investimento inicial em leitores, embora exijam a aquisição e reposição constante de crachás físicos para todos os usuários cadastrados.',
-            'Por outro lado, terminais de reconhecimento facial touchless com inteligência artificial e detecção de prova de vida (liveness) representam um investimento inicial em equipamento mais robusto. Contudo, essa tecnologia elimina o custo recorrente de crachás perdidos, reduz filas de pedestres por operar em menos de meio segundo e assegura máxima higiene sanitária. A biometria digital por impressão digital se posiciona como uma alternativa intermediária para áreas internas de menor circulação.'
+            'A tecnologia escolhida para autenticar quem entra e sai tem peso significativo no custo de hardware. Sistemas baseados em cartões e chaveiros de proximidade RFID ou tecnologia Mifare costumam apresentar menor investimento inicial em leitores, embora exijam a aquisição e reposição constante de crachás físicos para todos os usuários cadastrados.',
+            'Por outro lado, terminais de reconhecimento facial sem toque com detecção de vivacidade (liveness) representam um investimento inicial em equipamento mais robusto. Contudo, essa tecnologia reduz o custo recorrente de crachás perdidos, agiliza o fluxo de pedestres e favorece a higiene no acesso. A biometria digital por impressão digital também segue como alternativa consolidada para diversas áreas, observando-se os cuidados da LGPD no tratamento desses dados.'
           ]
         }
       ]
@@ -45,8 +45,8 @@ export const quantoCustaContent: BlogPostContent = {
         {
           heading: 'Autonomia Energética com No-breaks e Baterias',
           paragraphs: [
-            'As fechaduras eletromagnéticas mais seguras operam no modo fail-safe: mantêm a porta travada pela força magnética contínua e destravam instantaneamente caso a energia seja cortada. Por essa razão, a presença de uma fonte de alimentação ininterrupta com no-break e baterias seladas estacionárias é obrigatória para evitar que o condomínio fique vulnerável durante tempestades ou apagões.',
-            'O dimensionamento desse sistema de contingência varia de acordo com a autonomia exigida pelo cliente. Sistemas projetados para sustentar duas horas de operação sem energia têm porte e custo de acumuladores inferiores a projetos industriais ou hospitalares que demandam oito ou doze horas de autonomia ininterrupta para todos os leitores e travas.'
+            'As fechaduras eletromagnéticas operam, em geral, no modo fail-safe: mantêm a porta travada pela força magnética e destravam caso a energia seja cortada. Por essa razão, o uso de fonte carregadora com no-break e baterias estacionárias ajuda a evitar que o imóvel fique desprotegido durante oscilações ou quedas de energia.',
+            'O dimensionamento desse sistema de contingência varia conforme o caso. Projetos que demandam apenas suporte básico durante quedas breves têm porte de acumuladores diferente de operações em indústrias, estacionamentos ou clínicas que exigem autonomia estendida para leitores e travas.'
           ]
         }
       ]
@@ -60,10 +60,10 @@ export const quantoCustaContent: BlogPostContent = {
       ],
       subsections: [
         {
-          heading: 'Mão de Obra Técnica Especializada e Garantia',
+          heading: 'Mão de Obra Técnica Especializada e Suporte Pós-Instalação',
           paragraphs: [
             'A qualificação técnica da equipe responsável pela instalação é um elemento decisivo para a longevidade do investimento. Instalações improvisadas frequentemente resultam em fechaduras descalibradas, queima prematura de placas por oscilações elétricas e travamentos intermitentes de portarias.',
-            'Optar por uma empresa de engenharia de acesso local em Curitiba assegura conformidade com as normas técnicas de aterramento e combate a incêndio, suporte pós-obra com garantia contratual e disponibilidade de peças sobressalentes para pronta substituição.'
+            'Optar por uma equipe técnica própria em Curitiba favorece a conformidade técnica na instalação de controle de acesso, fechaduras eletrônicas, interfones e no conserto de catracas e cancelas, além de suporte após a instalação.'
           ]
         }
       ]
@@ -71,8 +71,8 @@ export const quantoCustaContent: BlogPostContent = {
     {
       heading: 'Como Planejar o Orçamento Sem Desperdícios',
       paragraphs: [
-        'Para obter uma cotação precisa e alinhada à realidade do seu imóvel, o caminho mais seguro é solicitar uma vistoria técnica presencial. Um técnico experiente inspeciona os alinhamentos dos portões, mede as tensões elétricas, avalia a rota de pedestres e identifica potenciais gargalos antes da emissão da proposta.',
-        'Evite orçamentos baseados apenas em fotos de WhatsApp quando se tratar de projetos completos de portaria, pois vãos empenados ou tubulações comprometidas podem encarecer a execução caso não sejam previstos no levantamento inicial.'
+        'Para obter uma cotação precisa e alinhada à realidade do seu imóvel, o caminho mais seguro é solicitar o diagnóstico técnico presencial. Nossos técnicos inspecionam os alinhamentos dos portões e portas de vidro, avaliam as condições elétricas, o fluxo de pedestres ou veículos em estacionamentos e definem o escopo antes da emissão do orçamento.',
+        'Evite estimativas fechadas baseadas apenas em fotos quando se tratar de projetos completos de portaria, pois vãos empenados ou tubulações comprometidas alteram a composição do serviço caso não sejam previstos no levantamento inicial.'
       ]
     }
   ],
@@ -92,7 +92,7 @@ export const quantoCustaContent: BlogPostContent = {
       answer: 'Em imóveis sem tubulação pronta onde é preciso quebrar pisos ou instalar longas canaletas industriais, a infraestrutura civil e o cabeamento estruturado podem representar parcela tão significativa quanto os equipamentos.'
     },
     {
-      question: 'A manutenção preventiva reduz o custo total do sistema a longo prazo?',
+      question: 'A manutenção preventiva ajuda a reduzir gastos corretivos ao longo do tempo?',
       answer: 'Sim. A revisão periódica de molas hidráulicas, aperto de parafusos e calibração de eletroímãs evita quebras repentinas e a queima precoce de componentes de alto valor.'
     }
   ],

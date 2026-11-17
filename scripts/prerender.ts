@@ -74,7 +74,7 @@ async function runPrerender() {
   });
 
   let generatedCount = 0;
-  const defaultImageUrl = `${siteConfig.domain}${siteConfig.defaultOgImage}`;
+  const fixedOgImageUrl = `${siteConfig.domain}/og-default.jpg`;
 
   for (const route of routes) {
     // Normaliza rota com barra final
@@ -94,13 +94,6 @@ async function runPrerender() {
     const escapedTitle = escapeHtml(route.title);
     const escapedDesc = escapeHtml(route.description);
     const ogType = route.ogType || 'website';
-
-    let imageUrl = defaultImageUrl;
-    if (route.image) {
-      imageUrl = route.image.startsWith('http')
-        ? route.image
-        : `${siteConfig.domain}${route.image.startsWith('/') ? route.image : `/${route.image}`}`;
-    }
 
     // Substitui e injeta metadados no HTML do template usando SEMPRE funções de substituição
     let html = template;
@@ -125,12 +118,10 @@ async function runPrerender() {
 
     // 4. Atualiza Canonical URL e Robots para 404
     if (is404) {
-      // Remove canonical na página 404
       html = html.replace(
         /\s*<link rel="canonical" href=".*?" \/>/,
         () => ''
       );
-      // Troca robots para noindex, follow
       html = html.replace(
         /<meta name="robots" content=".*?" \/>/,
         () => '<meta name="robots" content="noindex, follow" />'
@@ -142,7 +133,7 @@ async function runPrerender() {
       );
     }
 
-    // 5. Atualiza OpenGraph
+    // 5. Atualiza OpenGraph (sempre og-default.jpg em todas as páginas)
     html = html.replace(
       /<meta property="og:type" content=".*?" \/>/,
       () => `<meta property="og:type" content="${ogType}" />`
@@ -161,10 +152,14 @@ async function runPrerender() {
     );
     html = html.replace(
       /<meta property="og:image" content=".*?" \/>/,
-      () => `<meta property="og:image" content="${imageUrl}" />`
+      () => `<meta property="og:image" content="${fixedOgImageUrl}" />`
+    );
+    html = html.replace(
+      /<meta property="og:image:alt" content=".*?" \/>/,
+      () => `<meta property="og:image:alt" content="${escapedTitle}" />`
     );
 
-    // 6. Atualiza Twitter
+    // 6. Atualiza Twitter (sempre og-default.jpg)
     html = html.replace(
       /<meta name="twitter:title" content=".*?" \/>/,
       () => `<meta name="twitter:title" content="${escapedTitle}" />`
@@ -175,7 +170,7 @@ async function runPrerender() {
     );
     html = html.replace(
       /<meta name="twitter:image" content=".*?" \/>/,
-      () => `<meta name="twitter:image" content="${imageUrl}" />`
+      () => `<meta name="twitter:image" content="${fixedOgImageUrl}" />`
     );
 
     // Grava o arquivo de destino
@@ -217,7 +212,7 @@ ${sitemapUrls}
   fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml, 'utf-8');
   console.log(`✅ [SITEMAP] sitemap.xml gerado com ${routes.length - 1} URLs (sem lastmod).`);
 
-  // Gerar robots.txt com a linha Sitemap
+  // Gerar robots.txt com a linha Sitemap (permite /favicon.* e /og-default.jpg)
   const robotsTxt = `# robots.txt para https://controledeacessocuritiba.com.br
 User-agent: *
 Allow: /

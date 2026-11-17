@@ -3,43 +3,43 @@ import { CityContent } from '../types';
 export const almiranteTamandareContent: CityContent = {
   slug: 'almirante-tamandare',
   name: 'Almirante Tamandaré',
-  title: 'Controle de Acesso em Almirante Tamandaré: Portarias e Fechaduras',
-  seoTitle: 'Controle de Acesso em Almirante Tamandaré | Portarias',
-  metaDescription: 'Instalação de controle de acesso em Almirante Tamandaré. Fechaduras eletroímã, interfones e portarias residenciais. Peça seu orçamento no WhatsApp!',
+  title: 'Controle de Acesso em Almirante Tamandaré: Condomínios, Empresas e Portarias',
+  seoTitle: 'Controle de Acesso em Almirante Tamandaré | Portarias e Empresas',
+  metaDescription: 'Instalação e manutenção de controle de acesso em Almirante Tamandaré para condomínios, empresas, portas de vidro e estacionamentos. Orçamento no WhatsApp!',
   keyword: 'controle de acesso em Almirante Tamandaré',
-  directAnswer: 'Controle de acesso em Almirante Tamandaré com projetos de engenharia dedicados a condomínios fechados horizontais, sobrados residenciais, empresas locais e propriedades em áreas verdes. Realizamos a instalação e manutenção de fechaduras eletromagnéticas, sistemas de clausura de pedestres com intertravamento, cancelas automáticas para controle veicular, interfonia predial e biometria facial para portarias autônomas ou remotas com máxima segurança e estabilidade elétrica.',
+  directAnswer: 'Controle de acesso em Almirante Tamandaré para condomínios fechados horizontais, empresas, comércios, escolas, clínicas, estacionamentos e portas de vidro. Realizamos a instalação de fechadura eletrônica, controle de acesso e interfone ou vídeo porteiro, além de conserto e manutenção de interfone, catraca e cancela. O atendimento para casas e apartamentos individuais fica em intelsecsul.com.br.',
   // TODO: foto real
   image: {
     src: '/images/cidade-almirante-tamandare.webp',
-    alt: 'Controle de acesso e fechaduras eletromagnéticas em condomínios de Almirante Tamandaré',
+    alt: 'Controle de acesso e fechaduras eletrônicas em condomínios e empresas de Almirante Tamandaré',
     width: 800,
     height: 600
   },
-  localCharacteristics: 'Almirante Tamandaré faz divisa direta com a Zona Norte de Curitiba e apresenta uma geografia marcada por relevo ondulado, áreas verdes preservadas e forte ocupação residencial. Além de sua histórica atividade mineral ligada ao beneficiamento de calcário e indústrias de materiais de construção, o município se consolidou como uma opção de moradia tranquila, abrigando condomínios residenciais horizontais, loteamentos fechados de sobrados e chácaras de lazer. Por estar integrada ao fluxo diário de trabalhadores da capital, as propriedades locais necessitam de sistemas de controle de acesso confiáveis contra invasões perimetrais: eclusas de portões sociais com fechaduras eletromagnéticas de alto poder de retenção, cancelas veiculares acionadas por tags RFID sem intervenção manual e interfonia conectada para recepção segura de entregas e visitas.',
+  localCharacteristics: 'Almirante Tamandaré faz divisa direta com a Zona Norte de Curitiba e reúne condomínios fechados, comércios, clínicas, escolas, indústrias de materiais de construção e áreas logísticas. Por estar integrada ao fluxo diário da Região Metropolitana, a região demanda sistemas confiáveis para portarias de condomínios, empresas e estacionamentos: eclusas com fechaduras eletrônicas, suportes para portas de vidro, cancelas veiculares com tags e interfonia predial com manutenção ágil.',
   popularSolutions: [
-    'Fechaduras eletromagnéticas de 150 kgf a 300 kgf instaladas com suportes específicos em portões de pedestres de ferro, alumínio ou vidro temperado.',
-    'Cancelas veiculares automáticas integradas a tags adesivas de para-brisa para entrada rápida de condôminos sem risco de abordagem na via pública.',
-    'Sistemas de eclusa com intertravamento eletrônico entre portão externo e portão interno para retenção segura de entregadores e visitantes em guaritas.',
-    'Terminais de reconhecimento facial com tela colorida touchless e iluminação infravermelha para portarias residenciais e comércios locais em Almirante Tamandaré.',
-    'Interfones e vídeo porteiros IP com câmera integrada e acionamento remoto de fechadura para condomínios, loteamentos e residências térreas.'
+    'Fechaduras eletrônicas e eletromagnéticas instaladas com suportes específicos para portas de vidro temperado e portões de pedestres em ferro ou alumínio.',
+    'Cancelas veiculares automáticas com tags para entrada organizada em condomínios, empresas e estacionamentos, incluindo serviço de conserto e manutenção.',
+    'Sistemas de eclusa com intertravamento eletrônico entre portão externo e portão interno para triagem segura de entregadores e visitantes.',
+    'Terminais de reconhecimento facial e leitores biométricos para portarias condominiais e empresariais, observando os cuidados da LGPD e mantendo alternativa por cartão RFID.',
+    'Instalação, conserto e manutenção de interfone e vídeo porteiro para condomínios, comércios e edifícios corporativos em Almirante Tamandaré.'
   ],
-  serviceLogistics: 'Com acesso direto pelos eixos norte de Curitiba (como a Rodovia dos Minérios e ligações rápidas por Santa Felicidade e Barreirinha), prestamos atendimento ágil em Almirante Tamandaré para vistorias orçamentárias presenciais, novas instalações de infraestrutura e chamados de suporte técnico em portarias residenciais e comerciais.',
+  serviceLogistics: 'Atendemos Almirante Tamandaré com equipe técnica própria a partir de Curitiba, realizando diagnóstico presencial para elaboração de orçamento, instalação completa e suporte após a instalação.',
   faqs: [
     {
       question: 'Como funciona o sistema de eclusa em portões de condomínio?',
-      answer: 'A eclusa mantém dois portões intertravados eletronicamente por meio de sensores magnéticos. O morador ou visitante só consegue abrir o segundo portão após o primeiro fechar completamente, impedindo que pessoas não autorizadas entrem de carona (efeito tailgating) no condomínio.'
+      answer: 'A eclusa mantém dois portões intertravados eletronicamente por sensores magnéticos. O segundo portão só libera abertura após o fechamento do primeiro, ajudando a evitar a entrada de carona sem permissão.'
     },
     {
-      question: 'O sistema de interfonia suporta abertura de fechadura eletroímã à distância?',
-      answer: 'Sim. Os módulos de interfonia analógica ou interfonia e vídeo porteiro IP contam com relé de contato seco de acionamento que comanda a abertura temporizada do eletroímã com total segurança a partir do interfone interno do morador ou aplicativo móvel.'
+      question: 'O sistema de interfonia suporta abertura de fechadura eletrônica à distância?',
+      answer: 'Sim. Os módulos de interfone ou vídeo porteiro contam com acionamento de fechadura que comanda a abertura temporizada do portão a partir do aparelho interno, guarita ou aplicativo compatível.'
     },
     {
-      question: 'Vocês atendem chácaras e condomínios em ruas com oscilação na rede elétrica?',
-      answer: 'Sim. Em todos os nossos projetos em Almirante Tamandaré incluímos fontes no-break de 12V com baterias seladas de ciclo profundo e filtros de linha contra surtos elétricos, mantendo as travas magnéticas e os interfones operando normalmente mesmo sem energia pública.'
+      question: 'Vocês atendem locais com oscilação na rede elétrica?',
+      answer: 'Sim. Nos projetos em Almirante Tamandaré incluímos fontes carregadoras com no-break e baterias dimensionadas para a carga do sistema, mantendo fechaduras e interfones ativos durante oscilações de energia.'
     },
     {
-      question: 'A empresa fornece suporte para automação e adequação de portões manuais antigos?',
-      answer: 'Sim. Adaptamos portões de pedestres e veículos existentes com batentes magnéticos, molas aéreas hidráulicas de fechamento suave e sensores anti-esmagamento, transformando passagens vulneráveis em portarias seguras e automatizadas.'
+      question: 'Vocês também fazem manutenção de interfones, catracas e cancelas em Almirante Tamandaré?',
+      answer: 'Sim. Além de novas instalações, realizamos conserto, revisão mecânica e manutenção preventiva e corretiva em interfones, cancelas veiculares, catracas e portões automatizados.'
     }
   ],
   whatsappContext: 'controle de acesso em Almirante Tamandaré'

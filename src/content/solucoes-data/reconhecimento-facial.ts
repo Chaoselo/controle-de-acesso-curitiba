@@ -2,11 +2,11 @@ import { SolutionContent } from '../types';
 
 export const reconhecimentoFacialSolution: SolutionContent = {
   slug: 'reconhecimento-facial',
-  title: 'Controle de Acesso Facial em Curitiba',
-  seoTitle: 'Controle de Acesso Facial em Curitiba | Terminal Touchless',
-  metaDescription: 'Instalação de reconhecimento facial para condomínios e empresas em Curitiba e RMC. Terminais touchless com suporte local. Solicite seu orçamento técnico!',
-  keyword: 'controle de acesso facial Curitiba',
-  directAnswer: 'O controle de acesso por reconhecimento facial identifica a geometria do rosto de pedestres para autorizar a passagem sem contato mecânico com o equipamento. Essa tecnologia é bastante procurada por condomínios e edifícios comerciais que buscam agilidade na portaria social e redução do manuseio de crachás ou chaves físicas. O sistema compara a leitura atual com modelos matemáticos previamente cadastrados, mantendo registros de auditoria em conformidade com as rotinas de segurança local.',
+  title: 'Reconhecimento facial para controle de acesso em Curitiba',
+  seoTitle: 'Reconhecimento Facial em Curitiba | Controle de Acesso',
+  metaDescription: 'Sistema de reconhecimento facial para controle de acesso em Curitiba: terminais para portas, catracas e cancelas. Instalação e suporte. Peça orçamento!',
+  keyword: 'sistema de reconhecimento facial em Curitiba',
+  directAnswer: 'Um sistema de reconhecimento facial para controle de acesso identifica traços geométricos do rosto para liberar portas, portões e catracas sem contato físico com o equipamento. Em Curitiba e Região Metropolitana, é adotado em condomínios, empresas, clínicas, escolas e academias que buscam agilidade, praticidade e redução do uso de chaves e crachás, observando os cuidados previstos na LGPD.',
   image: {
     src: '/images/controle-acesso-facial.webp',
     alt: 'Terminal de reconhecimento facial instalado em porta de vidro, com pessoa diante da câmera',
@@ -14,96 +14,96 @@ export const reconhecimentoFacialSolution: SolutionContent = {
     height: 675
   },
   howItWorks: [
-    'Detecção e captura por sensores ópticos duplos: Ao se aproximar, o usuário entra no campo de visão das lentes. A maioria dos modelos corporativos conta com câmera visível e sensor infravermelho, capturando traços faciais mesmo no escuro.',
-    'Verificação de autenticidade e prova de vida: Para evitar acessos com fotos ou vídeos, o terminal executa a rotina de liveness. Esse recurso varia conforme o fabricante, analisando reflexos da pupila, calor ou textura tridimensional.',
-    'Geração do template biométrico vetorial: O processador analisa as distâncias entre marcos anatômicos da face. Em vez de salvar a foto crua, o leitor transforma essas medidas em um vetor numérico criptografado, conforme a tecnologia do fabricante.',
-    'Comparação em memória local offline: O terminal compara o template gerado com o banco gravado em sua memória flash. Em geral, opera com autonomia offline, validando permissões sem depender de conexão permanente com servidores externos.',
-    'Comutação de contato seco e liberação física: Após a validação positiva, o relé aciona o destravamento da fechadura eletroímã ou libera a catraca. O evento contendo identificador, porta e horário é armazenado em buffer local.'
+    'Detecção por câmeras e sensores infravermelhos: Ao se aproximar do terminal, o usuário entra no campo de leitura. Em geral, os modelos comerciais combinam câmera de luz visível e sensor infravermelho para auxiliar na leitura em ambientes com pouca iluminação.',
+    'Verificação de detecção de vivacidade (liveness): Conforme o modelo e o fabricante, o terminal utiliza recursos para distinguir um rosto real de tentativas simples com fotografias impressas ou telas de celular.',
+    'Extração de características faciais em template: Na maioria dos equipamentos, o rosto é convertido em um modelo matemático (template) em vez de depender de fotos abertas para validação, variando conforme a tecnologia do fabricante.',
+    'Validação em memória local: Em geral, a comparação ocorre diretamente no banco armazenado na memória do próprio terminal, permitindo operação local mesmo quando há oscilação na internet externa.',
+    'Acionamento do bloqueio e registro: Confirmada a autorização, o equipamento aciona o relé da fechadura eletromagnética (inclusive em portas de vidro) ou libera a catraca, registrando o evento.'
   ],
   whenToChoose: [
-    'Portarias sociais de condomínios residenciais em Curitiba onde o fluxo de moradores com mãos ocupadas por sacolas exige liberação rápida sem contato físico.',
-    'Recepções corporativas e edifícios comerciais que demandam eliminação do custo recorrente de reposição de cartões plásticos e perda de chaveiros de proximidade.',
-    'Clínicas de saúde, laboratórios e consultórios odontológicos que priorizam protocolos de assepsia e evitam superfícies de toque compartilhado entre pacientes.',
-    'Empreendimentos que operam com portaria remota ou mista e necessitam de conferência fotográfica auxiliar e auditoria visual dos acessos de pedestres.'
+    'Portarias de condomínios residenciais e comerciais em Curitiba onde a passagem sem contato agiliza a entrada de moradores e condôminos.',
+    'Empresas, indústrias e escritórios que desejam reduzir custos recorrentes com emissão e reposição de crachás físicos extraviados.',
+    'Clínicas, laboratórios e estabelecimentos de saúde que priorizam circulação sem toque em teclados ou leitores biométricos.',
+    'Academias e escolas que buscam fluxo organizado em catracas nos horários de entrada e saída.'
   ],
   advantages: [
-    'Passagem totalmente sem contato físico: O pedestre não toca em teclados ou leitores, o que reduz o desgaste mecânico e assegura comodidade superior durante o acesso diário.',
-    'Operação autônoma mesmo com oscilações de conexão: Como o banco de templates reside na placa do leitor, o destravamento não é interrompido caso a internet predial sofra instabilidades.',
-    'Identificação que dispensa itens físicos: O usuário não corre o risco de esquecer crachás, perder chaveiros RFID ou sofrer com o desgaste de chaves convencionais.',
-    'Leitura eficaz em períodos noturnos: Graças à iluminação por feixes de infravermelho integrado, o equipamento mantém a capacidade de identificação precisa sem demandar holofotes fortes.',
-    'Rastreabilidade individual de passagens: Cada acionamento de abertura gera um registro nominativo em buffer, permitindo emissão de relatórios com data, hora e ponto de acesso.'
+    'Passagem sem contato físico: O usuário não precisa encostar o dedo nem digitar códigos em superfícies compartilhadas.',
+    'Operação local independente da nuvem: Na maioria dos equipamentos comerciais, os cadastros ficam salvos localmente, mantendo a abertura das portas em quedas momentâneas de internet.',
+    'Dispensa porte de chaves ou crachás: Reduz problemas cotidianos com esquecimento, perda ou empréstimo de cartões físicos.',
+    'Leitura em baixa luminosidade: Com o auxílio de iluminação infravermelha integrada nos modelos compatíveis, funciona também à noite ou em halls pouco iluminados.',
+    'Registro de acessos: Armazena histórico de liberações com data, hora e ponto de passagem para gestão do local.'
   ],
   limitations: [
-    'Sensibilidade crítica a fontes de contraluz: A incidência direta de luz solar intensa atrás do usuário atrapalha a leitura mais intensamente do que a escuridão, exigindo toldos ou correta orientação física.',
-    'Ocorrência de falsas rejeições ou aceitações: Nenhum sistema biométrico é infalível; índices de falsa rejeição (FRR) podem bloquear momentaneamente usuários com adereços pesados, exigindo calibração equilibrada.',
-    'Custo inicial de equipamento mais elevado: Por incorporar processamento embarcado, lentes especiais e algoritmos neurais, o valor de aquisição supera o de teclados e leitores de cartão.',
-    'Exigência de infraestrutura elétrica estabilizada: Oscilações bruscas de tensão podem reiniciar o sistema; por isso, a presença de fonte ininterrupta com nobreak dedicado é imprescindível.'
+    'Sensibilidade a contraluz solar intensa: Sol direto atrás da pessoa pode dificultar a captura pela câmera, exigindo escolha cuidadosa da posição ou uso de cobertura protetora.',
+    'Ocorrência eventual de falsa rejeição: Acessórios que cubram parte expressiva do rosto (como óculos escuros espelhados ou bonés baixos) podem exigir nova tentativa ou ajuste de posição.',
+    'Investimento inicial superior ao de teclados ou RFID: Por envolver câmeras, sensores e processamento embarcado, o custo do terminal costuma ser mais elevado.',
+    'Necessidade de alimentação elétrica estável: Em instalações com fechaduras eletroímã (fail-safe), requer fonte carregadora e nobreak dimensionados para evitar destravamentos em faltas de energia.'
   ],
-  lgpdNote: 'A geometria facial constitui dado biométrico pessoal sensível nos termos do Artigo 5º, inciso II da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). Em nossas implantações, orientamos a configuração dos terminais para armazenamento exclusivo de templates matemáticos criptografados em vez de fotos abertas no banco comum. O controlador do condomínio ou da empresa deve formalizar a base legal correspondente, garantir a transparência do tratamento e estabelecer procedimentos seguros de exclusão após o encerramento do vínculo do titular. Este texto é informativo e não substitui a orientação de um profissional jurídico.',
+  lgpdNote: 'O reconhecimento facial envolve tratamento de dado pessoal sensível nos termos do Artigo 5º, inciso II da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). A conformidade depende de como a empresa ou condomínio trata esses dados: finalidade clara, informação transparente aos titulares, acesso restrito aos cadastros, disponibilização de credencial alternativa (como cartão RFID) e descarte após o término do vínculo. Este texto é informativo e não substitui a orientação de um profissional jurídico.',
   integrations: [
-    'Fechaduras eletromagnéticas eletroímã com suportes especiais de ancoragem para portas de vidro ou madeira.',
-    'Catracas balcão, flap e pedestais com suportes articulados ou totens verticais em aço inoxidável.',
-    'Portarias remotas e sistemas de interfonia IP via protocolos de rede locais ou conexões dedicadas.',
-    'Botoeiras no-touch de saída infravermelha para garantir rota de saída igualmente livre de toque.',
-    'Softwares de controle de acesso para sincronização de cadastros e envio de permissões de visitantes.'
+    'Fechaduras eletromagnéticas (eletroímã) em portas de vidro temperado, madeira ou metal.',
+    'Catracas pedestal, balcão e flap em recepções comerciais, escolas e academias.',
+    'Sistemas de portaria remota ou interfonia IP compatíveis conforme o modelo.',
+    'Botoeiras de saída sem toque (no-touch) e botões de emergência para rota de fuga.',
+    'Fontes carregadoras com baterias auxiliares e nobreaks.'
   ],
   installationSteps: [
     {
       step: '01',
-      title: 'Vistoria de insolação e posicionamento em Curitiba',
-      description: 'Análise técnica presencial do ângulo solar ao longo do dia no vão da portaria, avaliando reflexos em fachadas de vidro para evitar contraluz direta nas lentes ópticas do equipamento.'
+      title: 'Vistoria de Posicionamento e Iluminação em Curitiba',
+      description: 'Avaliamos presencialmente a incidência solar no vão, os reflexos em portas de vidro, a altura ergonômica de leitura e as condições da infraestrutura elétrica antes do orçamento.'
     },
     {
       step: '02',
-      title: 'Infraestrutura de cabeamento e duto protegido',
-      description: 'Lançamento de cabeamento de rede trançado categoria 6 em cobre puro e linhas de alimentação dedicadas, protegendo a fiação contra intempéries e vandalismo por canaletas ou eletrodutos embutidos.'
+      title: 'Infraestrutura de Rede e Alimentação',
+      description: 'Lançamos o cabeamento de rede e energia em dutos ou canaletas protegidas, dimensionado conforme a distância entre o ponto de acesso e a central.'
     },
     {
       step: '03',
-      title: 'Fixação mecânica e alinhamento do eletroímã',
-      description: 'Instalação do suporte do terminal facial na altura ergonômica recomendada e fixação milimétrica do eletroímã na folha da porta, regulando molas hidráulicas para fechamento suave sem impactos.'
+      title: 'Fixação de Terminal, Fechadura e Mola Aérea',
+      description: 'Instalamos o terminal facial em parede, batente ou pedestal, alinhando o eletroímã com o suporte adequado (inclusive para portas de vidro) e regulando a mola aérea.'
     },
     {
       step: '04',
-      title: 'Parametrização de rede e calibração de vivacidade',
-      description: 'Configuração dos parâmetros de IP, ajuste dos limiares de tolerância biométrica do algoritmo liveness e teste das saídas de comando do relé para abertura segura da porta.'
+      title: 'Configuração de Regras e Testes',
+      description: 'Parametrizamos rede, regras de horários, tempo de abertura do relé e testes práticos de leitura e rota de emergência.'
     },
     {
       step: '05',
-      title: 'Cadastramento assistido e testes práticos',
-      description: 'Acompanhamento da captura dos primeiros templates de moradores ou colaboradores, prestando orientações sobre posicionamento natural, postura e procedimentos em casos de contingência operacional no condomínio.'
+      title: 'Cadastramento Inicial e Treinamento',
+      description: 'Apoiamos os primeiros cadastros e orientamos porteiros e gestores sobre boas práticas de uso, limpeza da lente e cuidados de privacidade conforme a LGPD.'
     }
   ],
   maintenanceAndSupport: [
-    'Limpeza periódica especializada dos vidros das câmeras e sensores infravermelhos com produtos neutros para preservar o índice de transparência óptica.',
-    'Revisão dos cabos de dados, reaperto de conexões em bornes e verificação da firmeza mecânica de pedestais sujeitos a trepidações.',
-    'Teste de capacidade e autonomia da bateria do nobreak para assegurar funcionamento contínuo durante quedas da rede elétrica pública.',
-    'Atualização de pacotes de firmware emitidos pelo fabricante para refinamento de algoritmos e aplicação de correções de segurança cibernética.'
+    'Limpeza cuidadosa das lentes ópticas e sensores infravermelhos com produto neutro adequado.',
+    'Conferência do aperto de suportes, pedestais e conexões de cabeamento.',
+    'Verificação periódica das baterias auxiliares do nobreak e da tensão de alimentação.',
+    'Atualização de firmware e suporte técnico presencial em Curitiba e Região Metropolitana.'
   ],
   faqs: [
     {
-      question: 'O leitor facial continua abrindo a porta se a internet predial cair em Curitiba?',
-      answer: 'Sim, na grande maioria dos modelos comerciais o acesso de usuários cadastrados continua ocorrendo com total normalidade. O banco de dados com os templates matemáticos fica armazenado na memória interna do próprio terminal, que toma a decisão de abertura de forma autônoma sem depender de servidores em nuvem.'
+      question: 'O que é um sistema de reconhecimento facial para controle de acesso?',
+      answer: 'É um sistema formado por terminal com câmera visível, sensor infravermelho e controladora embarcada que compara o rosto apresentado na entrada com os cadastros autorizados, acionando fechaduras, portões ou catracas sem necessidade de chaves ou toque.'
     },
     {
-      question: 'O terminal de reconhecimento facial pode ser enganado com uma foto no celular?',
-      answer: 'A eficiência contra fraudes depende do nível do algoritmo de liveness integrado ao modelo instalado. Equipamentos corporativos modernos contam com sensores infravermelhos e algoritmos que avaliam profundidade tridimensional e características da pele, o que dificulta expressivamente tentativas simples de burla com impressões em papel ou fotografias digitais.'
+      question: 'O sistema de reconhecimento facial é seguro contra fotos e vídeos?',
+      answer: 'O nível de segurança depende do modelo e da tecnologia embarcada. Terminais com câmera dupla e recurso de prova de vida (liveness) analisam profundidade e resposta infravermelha para dificultar tentativas com fotos impressas ou telas de celular, embora nenhum equipamento dispense a avaliação do risco e da instalação física do local.'
     },
     {
-      question: 'A incidência de sol ou escuridão prejudica a leitura do rosto do morador?',
-      answer: 'A falta de luz geralmente não é problema, pois os terminais contam com iluminação própria por infravermelho. No entanto, o excesso de claridade e a contraluz solar direta no fundo da pessoa afetam fortemente as câmeras, demandando a instalação em posições abrigadas ou o uso de coberturas protetoras.'
+      question: 'Posso usar reconhecimento facial em catraca e cancela?',
+      answer: 'Sim em catracas de recepção e portarias de pedestres, onde o usuário para ou se aproxima diretamente diante do terminal. Em cancelas veiculares também pode ser utilizado por meio de totens posicionados ao lado do motorista, dependendo da altura do veículo e das condições de chuva e iluminação — em muitas pistas veiculares, a tag veicular UHF costuma oferecer leitura mais fluida sem precisar alinhar a janela.'
     },
     {
-      question: 'A imagem fotográfica do meu rosto fica guardada na memória do equipamento?',
-      answer: 'Conforme a tecnologia do fabricante, a maioria dos sistemas corporativos extrai apenas coordenadas geométricas convertidas em vetores matemáticos criptografados, descartando a foto crua. Isso impede que a imagem visual do rosto seja reproduzida caso a memória seja indevidamente consultada por terceiros.'
+      question: 'O leitor facial continua funcionando se a internet cair?',
+      answer: 'Em geral, sim. Na maioria dos modelos comerciais, o banco de templates fica armazenado localmente no próprio terminal, permitindo validar usuários cadastrados mesmo sem conexão externa. Funções remotas pela nuvem, porém, ficam aguardando o restabelecimento da internet.'
     },
     {
-      question: 'O leitor facial funciona com óculos de grau, barba ou maquiagem do usuário?',
-      answer: 'Em geral, alterações cosméticas rotineiras como uso de óculos transparentes de grau, maquiagem habitual ou mudanças na barba não impedem o reconhecimento. Apenas adereços que ocultem áreas essenciais da face, como óculos escuros com lentes espelhadas ou bonés muito rebaixados, podem exigir remoção pontual para liberação.'
+      question: 'A foto do meu rosto fica armazenada e quais os cuidados da LGPD?',
+      answer: 'Depende do modelo e da configuração adotada. Em muitos equipamentos, o rosto é convertido em um modelo matemático (template), mas cabe ao administrador definir finalidade, limitar acesso, oferecer alternativa como cartão RFID e definir regra de descarte conforme a LGPD. Este texto é informativo e não substitui a orientação de um profissional jurídico.'
     }
   ],
-  relatedSolutions: ['biometria', 'catracas', 'fechaduras-eletromagneticas', 'cartao-e-tag-rfid'],
+  relatedSolutions: ['biometria', 'catracas', 'fechadura-eletronica', 'tag-veicular'],
   relatedSegments: ['condominios-residenciais', 'condominios-comerciais', 'clinicas-e-hospitais', 'academias'],
   relatedCities: ['curitiba', 'pinhais', 'sao-jose-dos-pinhais', 'araucaria'],
-  whatsappContext: 'controle de acesso por reconhecimento facial'
+  whatsappContext: 'controle de acesso por reconhecimento facial em Curitiba'
 };

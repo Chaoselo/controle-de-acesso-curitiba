@@ -7,7 +7,7 @@ export const quatroBarrasContent: CityContent = {
   seoTitle: 'Controle de Acesso em Quatro Barras | Galpões e Indústria',
   metaDescription: 'Controle de acesso para indústrias e galpões em Quatro Barras. Cancelas, torniquetes e crachás de proximidade. Peça seu orçamento pelo WhatsApp!',
   keyword: 'controle de acesso em Quatro Barras',
-  directAnswer: 'Sistemas de controle de acesso físico em Quatro Barras desenvolvidos sob medida para centros de distribuição logística, indústrias farmacêuticas e automotivas instaladas no eixo da BR-116 e condomínios residenciais fechados de alto padrão. Instalamos cancelas automáticas industriais de alto ciclo para carretas, torniquetes de altura total, catracas de pedestres em aço inoxidável, fechaduras eletromagnéticas e controle biométrico facial.',
+  directAnswer: 'Sistemas de controle de acesso físico em Quatro Barras para galpões logísticos, indústrias, empresas, estacionamentos, portas de vidro e condomínios. Instalamos cancelas automáticas, torniquetes, catracas, fechaduras eletrônicas, interfones e controle biométrico facial, além de conserto e manutenção de interfone, catraca e cancela.',
   // TODO: foto real
   image: {
     src: '/images/cidade-quatro-barras.webp',
@@ -15,31 +15,31 @@ export const quatroBarrasContent: CityContent = {
     width: 800,
     height: 600
   },
-  localCharacteristics: 'Quatro Barras desfruta de um posicionamento geográfico altamente estratégico na saída nordeste de Curitiba, com acesso imediato à rodovia Régis Bittencourt (BR-116) e ao Contorno Leste. Graças a essa conectividade logística com o estado de São Paulo e o Porto de Paranaguá, o município se converteu em um polo consolidado de centros de distribuição, armazéns alfandegados e indústrias dos ramos farmacêutico, alimentício e químico. Concomitantemente a esse vigor produtivo, a cidade acolhe condomínios residenciais fechados de alto padrão em meio à vegetação preservada. Nos galpões e indústrias, a exigência operacional impõe cancelas veiculares com controle de pesagem, torniquetes perimetrais para terceirizados e leitores de crachá de proximidade RFID. Nos condomínios horizontais, o foco converge para a automação de portões por tags UHF e reconhecimento facial nas clausuras.',
+  localCharacteristics: 'Quatro Barras abriga áreas industriais, centros logísticos, estacionamentos e condomínios fechados em região arborizada. Nos galpões e indústrias, o controle de acesso organiza o fluxo de veículos, terceirizados e colaboradores por meio de cancelas, torniquetes e crachás RFID. Nos condomínios e empresas, o foco inclui fechaduras em portas de vidro, interfonia, automação por tags e reconhecimento facial observando a LGPD.',
   popularSolutions: [
-    'Cancelas veiculares reforçadas com haste de alumínio de até 6 metros e laço indutivo magnético duplo para entrada e saída disciplinada de caminhões e carretas.',
-    'Torniquetes de altura total em aço carbono galvanizado a quente para portarias perimetrais de galpões logísticos e indústrias farmacêuticas na rodovia BR-116.',
-    'Baterias de catracas eletrônicas pedestal em aço inoxidável 304 com validação facial para colaboradores de linhas de montagem, estoques e escritórios administrativos.',
-    'Sistemas de tag veicular UHF para automação de portões em condomínios residenciais de alto padrão e pátios corporativos com abertura em menos de 1 segundo.',
-    'Sistema de controle de acesso corporativo com módulo de expedição e registro auditável de placa de veículo, motorista, doca de carregamento e horário de permanência.'
+    'Cancelas veiculares reforçadas com laço indutivo magnético para pátios industriais, empresas e estacionamentos, com manutenção corretiva e preventiva.',
+    'Torniquetes de altura total e catracas eletrônicas para portarias de galpões e indústrias, incluindo serviço de conserto e revisão mecânica.',
+    'Instalação, conserto e manutenção de interfone e vídeo porteiro integrados à portaria e eclusas de pedestres.',
+    'Fechaduras eletrônicas e eletromagnéticas para portas de vidro temperado, portas metálicas e condomínios.',
+    'Terminais de reconhecimento facial e biometria com opção alternativa em cartão RFID conforme a LGPD.'
   ],
-  serviceLogistics: 'Com acesso rápido pela rodovia BR-116 e Contorno Leste a partir de Curitiba, nossas equipes técnicas realizam vistorias de orçamento, implantação completa de infraestrutura cabeada e serviços contínuos de manutenção preventiva e corretiva com estoque de componentes e pronto atendimento em Quatro Barras.',
+  serviceLogistics: 'Com deslocamento direto a partir de Curitiba, nossa equipe técnica realiza vistorias de orçamento sem custo, implantação completa de infraestrutura e serviços de manutenção preventiva e corretiva em Quatro Barras.',
   faqs: [
     {
-      question: 'Vocês atendem centros logísticos que operam em regime ininterrupto 24 horas por dia?',
-      answer: 'Sim. Projetamos sistemas com no-breaks dimensionados para alta autonomia operacional, cancelas com motores industriais de ciclo contínuo sem aquecimento e prestamos suporte técnico programado com reposição imediata de peças em Quatro Barras.'
+      question: 'Vocês atendem empresas e centros logísticos que operam em vários turnos?',
+      answer: 'Sim. Dimensionamos equipamentos adequados para regime de alto fluxo e fontes com no-break para manter a operação protegida em caso de oscilações de energia.'
     },
     {
       question: 'Como funciona o controle de acesso de motoristas externos nos galpões de Quatro Barras?',
-      answer: 'Instalamos totens de autoatendimento com interfonia IP e câmeras posicionadas na altura da cabine do caminhão, integrados a eclusas de pedestres onde o motorista valida seus documentos e biometria antes de ingressar no pátio de manobras.'
+      answer: 'Podem ser instalados totens de interfonia IP na altura da cabine integrados a portarias ou eclusas de pedestres para validação antes da liberação no pátio.'
     },
     {
       question: 'Qual a vantagem dos torniquetes de altura total em relação às catracas convencionais?',
-      answer: 'Os torniquetes cobrem integralmente do piso ao teto com barras giratórias de aço reforçado, impedindo fisicamente que qualquer pessoa pule ou passe por baixo do equipamento, sendo indispensáveis para perímetros externos desguarnecidos.'
+      answer: 'Os torniquetes contam com estrutura vertical fechada com barras giratórias do piso ao topo, dificultando a passagem indevida por cima ou por baixo do bloqueio.'
     },
     {
-      question: 'É possível restringir áreas internas dos galpões farmacêuticos ou químicos?',
-      answer: 'Sim, instalamos fechaduras eletroímã e leitores de biometria facial ou cartão Mifare criptografado em portas internas de docas, almoxarifados restritos e laboratórios, registrando todos os acessos no sistema para auditoria regulatória.'
+      question: 'É possível restringir áreas internas de empresas e galpões?',
+      answer: 'Sim, instalamos fechaduras eletroímã e leitores biométricos, faciais ou de cartão RFID em portas internas de almoxarifados, escritórios e setores restritos, mantendo registro dos acessos no sistema.'
     }
   ],
   whatsappContext: 'controle de acesso em Quatro Barras'

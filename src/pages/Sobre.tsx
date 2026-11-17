@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
-import { ShieldCheck, Target, Award, Building, MessageSquare, ExternalLink } from 'lucide-react';
+import { ShieldCheck, Target, ExternalLink } from 'lucide-react';
 import { Layout } from '../components/Layout';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
+import { WhatsAppIcon } from '../components/ui/WhatsAppIcon';
+import { ComplianceNotices } from '../components/ui/ComplianceNotices';
 import { siteConfig, isFieldFilled } from '../config/site';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
 
@@ -15,94 +16,123 @@ export function SobrePage() {
         canonicalPath="/sobre/"
       />
 
-      <Breadcrumbs
-        items={[
-          { name: 'Sobre Nós', url: `${siteConfig.domain}/sobre/` }
-        ]}
-      />
+      <section className="bg-hero-gradient border-b border-[var(--border)] pt-4 pb-10 sm:pb-14 px-4">
+        <div className="max-w-4xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { name: 'Sobre Nós', url: `${siteConfig.domain}/sobre/` },
+            ]}
+          />
+          <header className="space-y-3 mt-4">
+            <span className="inline-block text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              Institucional
+            </span>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Controle de Acesso Curitiba
+            </h1>
+            <p className="text-base text-[var(--text-muted)] max-w-2xl">
+              {siteConfig.brandSignature} — Projetos sob medida, instalação e manutenção com equipe técnica própria.
+            </p>
+          </header>
+        </div>
+      </section>
 
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <header className="space-y-4 mb-10 text-center">
-          <span className="text-xs font-semibold text-sky-700 uppercase tracking-wider block">
-            Institucional
-          </span>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Controle de Acesso Curitiba
-          </h1>
-          <p className="text-sm text-slate-600 max-w-xl mx-auto">
-            {siteConfig.brandSignature} — Engenharia de acesso físico e segurança preventiva.
-          </p>
-        </header>
-
-        <div className="space-y-8 text-xs sm:text-sm text-slate-700 leading-relaxed">
-          <div className="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm space-y-4">
-            <h2 className="text-lg sm:text-xl font-bold text-slate-900">
-              Divisão Especializada em Acesso Físico
+      <section className="bg-[var(--bg)] py-12 sm:py-16 px-4">
+        <div className="max-w-4xl mx-auto space-y-6 text-base text-[var(--text-muted)] leading-relaxed">
+          <div className="bg-[var(--surface)] p-6 sm:p-8 rounded-2xl border border-[var(--border)] space-y-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-white">
+              Unidade especializada em acesso físico
             </h2>
             <p>
-              A <strong>Controle de Acesso Curitiba</strong> nasceu para atender com profundidade técnica e foco exclusivo as demandas crescentes de condomínios residenciais, centros empresariais e complexos industriais da Grande Curitiba por gestão segura de portarias e pessoas.
+              A <strong className="text-white">Controle de Acesso Curitiba</strong> atende empresas, condomínios, indústrias, clínicas, escolas, academias, estacionamentos e portas de vidro em Curitiba e Região Metropolitana. Demandas residenciais individuais (casas e apartamentos) são atendidas pelo site principal da{' '}
+              <a
+                href={siteConfig.parentCompany.site}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] font-semibold hover:underline"
+              >
+                Intelsecsul
+              </a>
+              .
             </p>
             <p>
-              Enquanto nossa empresa-mãe, a{' '}
-              <a 
-                href={siteConfig.parentCompany.site} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-sky-600 font-semibold underline inline-flex items-center gap-1"
+              Enquanto a{' '}
+              <a
+                href={siteConfig.parentCompany.site}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] font-semibold hover:underline inline-flex items-center gap-1"
               >
                 <span>{siteConfig.parentCompany.name}</span>
-                <ExternalLink className="w-3 h-3" />
-              </a>
-              , atua em todo o escopo de segurança eletrônica patrimonial (câmeras de monitoramento CFTV, alarmes monitorados e cercas elétricas), esta unidade concentra foco integral e exclusivo em tecnologias de identificação: <strong>biometria digital, reconhecimento facial, catracas de pedestres, cancelas veiculares e fechaduras eletromagnéticas</strong>.
+                <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
+              </a>{' '}
+              e a{' '}
+              <a
+                href={siteConfig.parentCompany.cftvSite}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] font-semibold hover:underline inline-flex items-center gap-1"
+              >
+                <span>CFTV Curitiba</span>
+                <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
+              </a>{' '}
+              também atendem câmeras, alarmes e cerca elétrica, esta unidade concentra foco em{' '}
+              <strong className="text-white">
+                instalação de controle de acesso, fechadura eletrônica e interfone/vídeo porteiro, além de conserto e manutenção de interfone, catraca e cancela
+              </strong>
+              , incluindo atendimento a estacionamentos e locação sob consulta.
+            </p>
+            <p>
+              Instalamos e prestamos manutenção em equipamentos de diversas marcas do mercado, incluindo equipamentos Intelbras, atuando de forma independente para especificar a opção mais adequada a cada imóvel.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-white p-6 rounded-lg border border-slate-200 space-y-2">
-              <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
-                <Target className="w-4 h-4 text-sky-600" />
-                <span>Nossa Missão Técnica</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] space-y-2.5">
+              <h3 className="text-lg font-bold text-white flex items-center gap-2">
+                <Target className="w-5 h-5 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Nossa abordagem técnica</span>
               </h3>
-              <p className="text-xs text-slate-600">
-                Garantir que cada porta, catraca e cancela opere com máxima agilidade para quem tem permissão e segurança intransponível contra acessos não autorizados, com suporte técnico ágil e próximo.
+              <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+                Dimensionar portas, catracas e cancelas de forma compatível com o fluxo real de usuários, priorizando praticidade para moradores e colaboradores e suporte técnico próximo após a instalação.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg border border-slate-200 space-y-2">
-              <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                <span>Compromisso com a Verdade</span>
+            <div className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] space-y-2.5">
+              <h3 className="text-lg font-bold text-white flex items-center gap-2">
+                <ShieldCheck className="w-5 h-5 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Transparência em cada projeto</span>
               </h3>
-              <p className="text-xs text-slate-600">
-                Projetos dimensionados com honestidade sobre limitações técnicas e vantagens de cada equipamento, cumprimento integral das normas da LGPD e garantia de fornecimento.
+              <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+                Especificações claras sobre vantagens e limitações de cada tecnologia, orientações sobre LGPD e orçamento detalhado apresentado após o diagnóstico técnico presencial.
               </p>
             </div>
           </div>
 
-          {/* Seção com dados corporativos validados pela regra de não inventar fatos */}
-          <div className="bg-slate-50 p-6 rounded-lg border border-slate-200 space-y-3">
-            <h3 className="text-sm font-bold text-slate-900">
-              Dados Institucionais
+          <div className="bg-[var(--surface)] p-6 sm:p-8 rounded-2xl border border-[var(--border)] space-y-3">
+            <h3 className="text-base font-bold text-white">
+              Dados institucionais
             </h3>
-            <div className="space-y-1.5 text-xs text-slate-600">
-              <p><strong>Marca:</strong> {siteConfig.name}</p>
-              <p><strong>Vinculação:</strong> {siteConfig.brandSignature}</p>
-              <p><strong>Telefone e WhatsApp:</strong> {siteConfig.phone}</p>
-              <p><strong>Região de Atuação:</strong> Curitiba e 10 municípios da Região Metropolitana</p>
+            <div className="space-y-2 text-sm text-[var(--text-muted)]">
+              <p><strong className="text-white">Unidade:</strong> {siteConfig.name}</p>
+              <p><strong className="text-white">Vinculação:</strong> {siteConfig.brandSignature}</p>
+              <p><strong className="text-white">Telefone e WhatsApp:</strong> {siteConfig.phone}</p>
+              <p><strong className="text-white">Atendimento:</strong> {siteConfig.openingHours}</p>
+              <p><strong className="text-white">Região de atuação:</strong> Curitiba e 10 municípios da Região Metropolitana</p>
               {isFieldFilled(siteConfig.cnpj) && (
-                <p><strong>CNPJ:</strong> {siteConfig.cnpj}</p>
+                <p><strong className="text-white">CNPJ:</strong> {siteConfig.cnpj}</p>
               )}
               {isFieldFilled(siteConfig.experienceYears) && (
-                <p><strong>Experiência de Mercado:</strong> {siteConfig.experienceYears}</p>
+                <p><strong className="text-white">Experiência de mercado:</strong> {siteConfig.experienceYears}</p>
               )}
               {isFieldFilled(siteConfig.clientsCount) && (
-                <p><strong>Clientes Atendidos:</strong> {siteConfig.clientsCount}</p>
+                <p><strong className="text-white">Clientes atendidos:</strong> {siteConfig.clientsCount}</p>
               )}
               {isFieldFilled(siteConfig.certifications) && (
-                <p><strong>Certificações Técnicas:</strong> {siteConfig.certifications}</p>
+                <p><strong className="text-white">Certificações técnicas:</strong> {siteConfig.certifications}</p>
               )}
               {isFieldFilled(siteConfig.brandPartnerships) && (
-                <p><strong>Marcas Homologadas:</strong> {siteConfig.brandPartnerships}</p>
+                <p><strong className="text-white">Marcas com as quais trabalha:</strong> {siteConfig.brandPartnerships}</p>
               )}
             </div>
           </div>
@@ -113,12 +143,14 @@ export function SobrePage() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackWhatsAppClick('sobre nós', '/sobre/')}
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white rounded-md font-semibold text-xs transition-all shadow-sm"
+              className="inline-flex items-center justify-center gap-2.5 h-[52px] px-7 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white rounded-xl font-semibold text-base transition-colors shadow-lg"
             >
-              <MessageSquare className="w-4 h-4 fill-white text-transparent" aria-hidden="true" />
-              <span>Falar com Nossa Equipe no WhatsApp</span>
+              <WhatsAppIcon className="w-5 h-5 shrink-0" />
+              <span>Falar com nossa equipe no WhatsApp</span>
             </a>
           </div>
+
+          <ComplianceNotices showIntelbras showLgpd />
         </div>
       </section>
     </Layout>

@@ -6,11 +6,10 @@ Mapeamento do status visual das imagens do site **Controle de Acesso Curitiba / 
 
 ## 1. Fotos Aplicadas (19 páginas de conteúdo + imagem padrão de compartilhamento OG)
 
-As páginas e recursos abaixo já contam com imagens reais WebP em alta definição (1200x675 px para páginas de conteúdo e 1200x630 px para o card de compartilhamento OpenGraph/Twitter):
+As páginas e recursos abaixo já contam com imagens WebP em alta definição (1200x675 px para páginas de conteúdo) e card OG em JPG (1200x630 px):
 
-| Arquivo WebP | Local de Uso | Status | Descrição do Conteúdo da Imagem |
+| Arquivo | Local de Uso | Status | Descrição do Conteúdo da Imagem |
 | :--- | :--- | :--- | :--- |
-| `controle-de-acesso-curitiba-homepage.webp` | Página Inicial (`/`) | **Foto Aplicada** | Mão aproximando cartão de um leitor de controle de acesso com ícones de cadeado aberto e fechado. |
 | `controle-acesso-biometria.webp` | Solução: Biometria (`/solucoes/biometria/`) | **Foto Aplicada** | Dedo sendo posicionado em leitor biométrico de impressão digital instalado na parede. |
 | `controle-acesso-facial.webp` | Solução: Reconhecimento Facial (`/solucoes/reconhecimento-facial/`) | **Foto Aplicada** | Terminal de reconhecimento facial instalado em porta de vidro, com pessoa diante da câmera. |
 | `controle-acesso-tag.webp` | Solução: Cartão e Tag RFID (`/solucoes/cartao-e-tag-rfid/`) | **Foto Aplicada** | Mão aproximando uma tag de proximidade de um leitor com teclado numérico. |
@@ -21,6 +20,7 @@ As páginas e recursos abaixo já contam com imagens reais WebP em alta definiç
 | `interfone-e-videoporteiro.webp` | Solução: Interfone e Vídeo Porteiro (`/solucoes/interfone-e-video-porteiro/`) | **Foto Aplicada** | Monitor de vídeo porteiro interno ao lado de módulo externo com botão de chamada. |
 | `instalacao-e-projeto-controle-de-acesso.webp` | Serviço: Instalação e Projeto (`/servicos/instalacao-e-projeto/`) | **Foto Aplicada** | Profissional analisando planta de ambiente com câmeras de segurança sobre a mesa. |
 | `manutencao-de-acesso.webp` | Serviço: Manutenção (`/servicos/manutencao/`) | **Foto Aplicada** | Técnico de capacete e luvas realizando manutenção em equipamento instalado na parede. |
+| `servico-locacao.webp` | Serviço: Locação (`/servicos/locacao/`) | **Foto Aplicada** | Fileira de catracas pedestal em aço inoxidável com leitor de acesso e braços triplos. |
 | `controle-acesso-segmento-condominio-residencial.webp` | Segmento: Condomínios Residenciais (`/segmentos/condominios-residenciais/`) | **Foto Aplicada** | Leitor com teclado numérico e aproximação de tag na entrada de um condomínio de prédios. |
 | `controle-acesso-segmento-condominio-comercial.webp` | Segmento: Condomínios Comerciais (`/segmentos/condominios-comerciais/`) | **Foto Aplicada** | Leitor biométrico com teclado instalado em porta de vidro de área comercial. |
 | `controle-acesso-segmento-escritorio.webp` | Segmento: Empresas e Escritórios (`/segmentos/empresas-e-escritorios/`) | **Foto Aplicada** | Leitor de acesso instalado na divisória de vidro de um escritório. |
@@ -29,16 +29,13 @@ As páginas e recursos abaixo já contam com imagens reais WebP em alta definiç
 | `controle-acesso-segmento-escolas-e-faculdades.webp` | Segmento: Escolas e Universidades (`/segmentos/escolas-e-universidades/`) | **Foto Aplicada** | Fileira de catracas com terminais faciais em um hall de entrada. |
 | `controle-acesso-segmento-academias.webp` | Segmento: Academias (`/segmentos/academias/`) | **Foto Aplicada** | Catracas com terminais de leitura na entrada de uma academia. |
 | `controle-de-acesso-residencial.webp` | Segmento: Residências (`/segmentos/residencias/`) | **Foto Aplicada** | Painel externo de interfone com botões de chamada instalado em muro de pedra ao lado de um portão. |
-| `og-image-default.webp` | Metatags de Compartilhamento Social (OpenGraph e Twitter) | **Foto Aplicada** | Card gráfico institucional padronizado (1200x630 px) da marca Controle de Acesso Curitiba. |
+| `/og-default.jpg` | Metatags de Compartilhamento Social (OpenGraph e Twitter) | **Imagem Aplicada** | Card gráfico institucional padronizado (1200x630 px) da marca Controle de Acesso Curitiba. |
 
 ---
 
 ## 2. Fotos Pendentes para Futura Substituição
 
 As páginas e categorias listadas a seguir utilizam atualmente imagens placeholders geradas via script e devem ser substituídas por fotos reais autorizadas à medida que forem disponibilizadas:
-
-### Serviços (1 página pendente)
-- `servico-locacao.webp` (`/servicos/locacao/`): Foto de equipamentos e catracas disponibilizados sob regime de locação corporativa ou para eventos.
 
 ### Cidades Atendidas (11 páginas pendentes)
 - `cidade-curitiba.webp` (`/cidades/curitiba/`)
@@ -67,8 +64,8 @@ As páginas e categorias listadas a seguir utilizam atualmente imagens placehold
 
 ## 3. Observações Importantes
 
-1. **Direitos de Uso e Marcas Fabricantes:**
-   É necessário confirmar formalmente os direitos de uso e veiculação publicitária de todas as fotos aplicadas, bem como a conformidade do uso de imagem de equipamentos em que logomarcas de fabricantes (ex.: Intelbras, Control iD, Master) aparecem visíveis nas carcaças dos dispositivos.
+1. **Direitos de Uso:**
+   É necessário confirmar formalmente os direitos de uso e veiculação publicitária de todas as fotos aplicadas nas páginas de soluções, serviços e segmentos.
 
 2. **Substituição por Projetos Reais da Empresa:**
    Sempre que houver disponibilidade de fotografias registradas durante obras e manutenções executadas pela própria equipe técnica da Controle de Acesso Curitiba / Intelsecsul, recomenda-se a substituição gradual das fotos ilustrativas por imagens de cases e instalações reais em clientes locais de Curitiba e RMC.

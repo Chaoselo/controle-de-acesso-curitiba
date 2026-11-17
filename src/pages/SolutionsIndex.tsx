@@ -4,8 +4,13 @@ import { siteConfig } from '../config/site';
 import { Layout } from '../components/Layout';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
+import { PhotoCard } from '../components/ui/PhotoCard';
+import { SectionHeader } from '../components/ui/SectionHeader';
+import { getCatalogIcon } from '../components/ui/SolutionIcon';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
-import { ArrowRight, MessageSquare, HelpCircle, ShieldCheck } from 'lucide-react';
+import { WhatsAppIcon } from '../components/ui/WhatsAppIcon';
+import { ComplianceNotices } from '../components/ui/ComplianceNotices';
+import { ArrowRight, HelpCircle, ShieldCheck } from 'lucide-react';
 
 export default function SolutionsIndex() {
   const getFirstSentence = (text: string) => {
@@ -16,33 +21,39 @@ export default function SolutionsIndex() {
   const decisionQuestions = [
     {
       question: 'Precisa de passagem rápida sem nenhum contato físico?',
-      recommendation: 'Reconhecimento Facial Touchless',
+      recommendation: 'Reconhecimento Facial',
       slug: 'reconhecimento-facial',
-      detail: 'Ideal para condomínios modernos, portarias remotas e clínicas com alto rigor sanitário.'
+      detail: 'Indicado para condomínios, portarias e clínicas com busca por higienização e fluidez na entrada.'
     },
     {
-      question: 'Busca eliminar cópia clandestina de chaves com o melhor custo-benefício?',
-      recommendation: 'Controle Biométrico Digital',
+      question: 'Busca eliminar cópia clandestina de chaves na portaria?',
+      recommendation: 'Controle Biométrico',
       slug: 'biometria',
-      detail: 'Tecnologia consolidada com identificação intransferível para moradores e equipes.'
+      detail: 'Tecnologia consolidada com identificação intransferível para moradores, colaboradores e áreas restritas.'
     },
     {
       question: 'Quer crachás funcionais para colaboradores e prestadores temporários?',
       recommendation: 'Cartão e Tag RFID',
       slug: 'cartao-e-tag-rfid',
-      detail: 'Credenciais de baixo custo unitário, fácil revogação e integração com ponto eletrônico.'
+      detail: 'Credenciais práticas com bloqueio rápido em caso de perda ou desligamento.'
     },
     {
-      question: 'Necessita controlar fluxo intenso de pedestres garantindo passagem individual?',
+      question: 'Necessita controlar fluxo intenso de pedestres com controle individual de passagem?',
       recommendation: 'Catracas de Acesso',
       slug: 'catracas',
-      detail: 'Retenção física mecânica em aço inox que impede a carona não autorizada na recepção.'
+      detail: 'Retenção física mecânica que organiza a entrada e saída em recepções corporativas, escolas, academias e empresas.'
     },
     {
-      question: 'Deseja agilizar a entrada e saída de veículos na garagem do condomínio?',
-      recommendation: 'Cancelas e Acesso Veicular',
-      slug: 'cancelas-e-acesso-veicular',
-      detail: 'Abertura rápida com tags veiculares de para-brisa e proteção com laço indutivo.'
+      question: 'Deseja eliminar chaves em portas comerciais, salas técnicas ou portas de vidro?',
+      recommendation: 'Fechadura Eletrônica',
+      slug: 'fechadura-eletronica',
+      detail: 'Fechaduras digitais com senha, biometria, cartão RFID ou eletroímã conforme o vão.'
+    },
+    {
+      question: 'Deseja agilizar a entrada e saída de veículos sem parada na guarita ou com tag de para-brisa?',
+      recommendation: 'Tag Veicular UHF',
+      slug: 'tag-veicular',
+      detail: 'Etiqueta veicular UHF integrada a cancelas automáticas e portões de garagem ou estacionamento.'
     }
   ];
 
@@ -68,164 +79,147 @@ export default function SolutionsIndex() {
     <Layout whatsappContext="soluções de controle de acesso">
       <SEOHead
         title="Soluções de Controle de Acesso em Curitiba e Região"
-        description="Conheça as soluções de controle de acesso em Curitiba: biometria, facial, cartão, senha, catracas, cancelas, fechaduras e interfone. Peça orçamento!"
+        description="Conheça as soluções de controle de acesso em Curitiba: biometria, facial, fechadura eletrônica, tag veicular, cartão, catracas, cancelas e interfone."
         canonicalPath="/solucoes/"
         schemaData={[itemListSchema]}
       />
 
-      <Breadcrumbs
-        items={[
-          { name: 'Soluções', url: `${siteConfig.domain}/solucoes/` }
-        ]}
-      />
+      {/* Hero escuro */}
+      <section className="bg-hero-gradient border-b border-[var(--border)] pt-4 pb-12 sm:pb-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { name: 'Soluções', url: `${siteConfig.domain}/solucoes/` }
+            ]}
+          />
 
-      <div className="bg-slate-50 min-h-screen py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header Section */}
-          <header className="mb-12 max-w-4xl">
-            <div className="inline-flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider mb-3">
-              <span>Catálogo Técnico Especializado</span>
-              <span aria-hidden="true">·</span>
-              <span>Curitiba e RMC</span>
-            </div>
-            
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <div className="mt-4 max-w-4xl space-y-5">
+            <span className="inline-block text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              Catálogo Técnico Especializado · Curitiba e RMC
+            </span>
+
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Soluções de Controle de Acesso em Curitiba
             </h1>
-            
-            <div className="mt-6 text-base sm:text-lg text-slate-700 space-y-4">
+
+            <div className="text-base text-[var(--text-muted)] space-y-3 leading-relaxed">
               <p>
-                A escolha da tecnologia de controle de acesso ideal para o seu imóvel depende do volume diário de circulação, do perfil de pedestres e veículos, das exigências de segurança de cada setor e da infraestrutura física do vão. Em Curitiba e nos municípios da Região Metropolitana, condomínios residenciais, centros empresariais, clínicas e indústrias necessitam de barreiras confiáveis que aliem rapidez na liberação com registros auditáveis de cada evento.
+                A escolha da tecnologia ideal para o seu imóvel depende do volume diário de circulação, do perfil de pedestres e veículos, das exigências de segurança de cada setor e da infraestrutura física do local.
               </p>
               <p>
-                A equipe da Controle de Acesso Curitiba oferece consultoria técnica no local, projeto personalizado de cabeamento estruturado, instalação profissional com componentes de retenção fail-safe e contratos de manutenção preventiva contínua. Explore abaixo cada uma das soluções especializadas e descubra o sistema mais adequado para as necessidades operacionais e orçamentárias do seu empreendimento.
+                Nossa equipe técnica oferece vistoria sem custo, projeto personalizado, instalação com equipe própria e suporte após a instalação em Curitiba e Região Metropolitana.
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="pt-2 flex flex-wrap items-center gap-4">
               <a
                 href={whatsappLink('orçamento pelo catálogo de soluções')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold px-6 py-3.5 rounded-lg shadow-sm transition"
+                className="inline-flex items-center justify-center gap-2.5 h-[52px] px-6 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white font-semibold rounded-xl transition-colors"
               >
-                <MessageSquare className="w-5 h-5 fill-white text-transparent" />
-                <span>Solicitar Consultoria no WhatsApp</span>
+                <WhatsAppIcon className="w-5 h-5 shrink-0" />
+                <span>Solicitar orçamento no WhatsApp</span>
               </a>
-              <span className="text-xs text-slate-500">
-                Atendimento direto com engenheiro ou técnico em Curitiba
+              <span className="text-xs sm:text-sm text-[var(--text-soft)]">
+                Atendimento direto com equipe técnica em Curitiba
               </span>
             </div>
-          </header>
+          </div>
+        </div>
+      </section>
 
-          {/* Grid de Soluções */}
-          <section aria-labelledby="solucoes-grid-heading" className="mb-16">
-            <h2 id="solucoes-grid-heading" className="sr-only">
-              Lista de Soluções Disponíveis
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {solucoesList.map((solucao) => (
-                <article
-                  key={solucao.slug}
-                  className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col"
-                >
-                  <div className="aspect-video w-full bg-slate-100 overflow-hidden">
-                    <img
-                      src={solucao.image.src}
-                      alt={solucao.image.alt}
-                      width={solucao.image.width}
-                      height={solucao.image.height}
-                      loading="lazy"
-                      className="w-full h-full object-cover object-center"
-                    />
-                  </div>
-                  <div className="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                      <h2 className="text-xl font-bold text-slate-900 hover:text-sky-700 transition">
-                        <Link to={`/solucoes/${solucao.slug}/`}>
-                          {solucao.title}
-                        </Link>
-                      </h2>
-                      <p className="mt-3 text-sm text-slate-600 leading-relaxed">
-                        {getFirstSentence(solucao.directAnswer)}
-                      </p>
-                    </div>
-                    <div className="mt-6 pt-4 border-t border-slate-100">
-                      <Link
-                        to={`/solucoes/${solucao.slug}/`}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-sky-700 hover:text-sky-800 transition"
-                      >
-                        <span>Ver como funciona</span>
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
+      {/* Grid de Soluções */}
+      <section aria-labelledby="solucoes-grid-heading" className="bg-[var(--bg)] py-14 sm:py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader
+            headingId="solucoes-grid-heading"
+            kicker={`${solucoesList.length} linhas de soluções`}
+            title="Tecnologias disponíveis para o seu imóvel"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {solucoesList.map((solucao) => (
+              <PhotoCard
+                key={solucao.slug}
+                to={`/solucoes/${solucao.slug}/`}
+                title={solucao.title}
+                description={getFirstSentence(solucao.directAnswer)}
+                imageSrc={solucao.image.src}
+                imageAlt={solucao.image.alt}
+                icon={getCatalogIcon(solucao.slug)}
+                ctaLabel="Ver como funciona"
+                compact
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
-          {/* Seção Como Escolher */}
-          <section
-            aria-labelledby="como-escolher-heading"
-            className="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <HelpCircle className="w-7 h-7 text-sky-600 shrink-0" />
-              <h2 id="como-escolher-heading" className="text-2xl sm:text-3xl font-bold text-slate-900">
+      {/* Seção Como Escolher */}
+      <section
+        aria-labelledby="como-escolher-heading"
+        className="bg-[var(--bg-deep)] py-14 sm:py-16 px-4 border-t border-[var(--border)]"
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-6 sm:p-10">
+            <div className="flex items-center gap-3 mb-4">
+              <HelpCircle className="w-7 h-7 text-[var(--accent)] shrink-0" aria-hidden="true" />
+              <h2 id="como-escolher-heading" className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
                 Como escolher a solução de controle de acesso
               </h2>
             </div>
-            <p className="text-slate-700 text-sm sm:text-base mb-8 max-w-3xl">
-              Cada tipo de empreendimento apresenta prioridades operacionais distintas. Utilize as perguntas abaixo como guia rápido para identificar a solução mais indicada para a sua necessidade:
+            <p className="text-[var(--text-muted)] text-base mb-8 max-w-3xl">
+              Cada imóvel possui necessidades operacionais distintas. Utilize os cenários abaixo como referência rápida:
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               {decisionQuestions.map((item, index) => (
                 <div
                   key={index}
-                  className="p-5 rounded-lg bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+                  className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-4"
                 >
                   <div className="space-y-1">
-                    <h3 className="text-base sm:text-lg font-semibold text-slate-900">
+                    <h3 className="text-base sm:text-lg font-semibold text-white">
                       {item.question}
                     </h3>
-                    <p className="text-sm text-slate-600">
+                    <p className="text-sm text-[var(--text-muted)]">
                       {item.detail}
                     </p>
                   </div>
                   <div className="shrink-0">
                     <Link
                       to={`/solucoes/${item.slug}/`}
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-white bg-petroleum hover:bg-slate-800 px-4 py-2 rounded-md transition"
+                      className="inline-flex items-center gap-2 text-sm font-bold text-[#05060B] bg-[var(--accent)] hover:bg-[#38d0fc] px-4 py-2.5 rounded-xl transition-colors"
                     >
                       <span>Conhecer {item.recommendation}</span>
-                      <ArrowRight className="w-4 h-4" />
+                      <ArrowRight className="w-4 h-4" aria-hidden="true" />
                     </Link>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div className="flex items-center gap-2 text-sm text-slate-600">
-                <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
-                <span>Todas as soluções contam com suporte e assistência técnica em Curitiba e Região Metropolitana.</span>
+            <div className="mt-8 pt-6 border-t border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-2 text-sm text-[var(--text-muted)]">
+                <ShieldCheck className="w-5 h-5 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Suporte após a instalação em Curitiba e Região Metropolitana.</span>
               </div>
               <a
                 href={whatsappLink('dúvida sobre escolha de solução')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="text-sm font-bold text-emerald-700 hover:text-emerald-800 transition"
+                className="text-sm font-bold text-[var(--whatsapp)] hover:underline transition"
               >
-                Falar com um especialista técnico →
+                Falar com a equipe técnica no WhatsApp ›
               </a>
             </div>
-          </section>
+          </div>
+
+          <ComplianceNotices showLgpd className="mt-8" />
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }

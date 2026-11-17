@@ -17,13 +17,6 @@ interface ImageSpec {
 
 const images: ImageSpec[] = [
   {
-    fileName: 'cidade-curitiba-acesso.webp',
-    width: 800,
-    height: 600,
-    title: 'Atendimento Técnico em Curitiba',
-    subtitle: 'Todos os bairros e Região Metropolitana'
-  },
-  {
     fileName: 'cidade-curitiba.webp',
     width: 800,
     height: 600,
@@ -70,7 +63,7 @@ const images: ImageSpec[] = [
     width: 800,
     height: 600,
     title: 'Controle de Acesso em Campo Largo',
-    subtitle: 'Indústrias de cerâmica, porcelana e condomínios BR-277'
+    subtitle: 'Indústrias, galpões e condomínios fechados'
   },
   {
     fileName: 'cidade-fazenda-rio-grande.webp',
@@ -91,7 +84,7 @@ const images: ImageSpec[] = [
     width: 800,
     height: 600,
     title: 'Controle de Acesso em Quatro Barras',
-    subtitle: 'Centros logísticos BR-116 e condomínios fechados'
+    subtitle: 'Centros logísticos, empresas e condomínios fechados'
   },
   {
     fileName: 'cidade-campina-grande-do-sul.webp',

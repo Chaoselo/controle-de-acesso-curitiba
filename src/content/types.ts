@@ -30,6 +30,7 @@ export interface SolutionContent {
   relatedSolutions: string[];
   relatedSegments: string[];
   relatedCities: string[];
+  relatedServices?: string[];
   whatsappContext: string;
 }
 
@@ -75,6 +76,7 @@ export interface ServiceContent {
   directAnswer: string;
   image: MediaAsset;
   scope: string[];
+  productInstallations?: { label: string; to: string; description: string }[];
   diagnosticCommonIssues?: { symptom: string; cause: string; fix: string }[];
   processSteps: { step: string; title: string; description: string }[];
   faqs: FAQItem[];

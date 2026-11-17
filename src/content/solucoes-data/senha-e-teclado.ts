@@ -4,9 +4,9 @@ export const senhaETecladoSolution: SolutionContent = {
   slug: 'senha-e-teclado',
   title: 'Controle de Acesso por Senha e Teclado em Curitiba',
   seoTitle: 'Controle de Acesso por Senha Curitiba | Teclados Digitais',
-  metaDescription: 'Instalação de teclados de controle de acesso e senhas digitais em Curitiba e região. Agilidade para portas e áreas restritas. Peça seu orçamento técnico!',
+  metaDescription: 'Instalação de teclados de controle de acesso e senhas digitais em Curitiba para empresas, clínicas, portas de vidro e condomínios. Peça orçamento!',
   keyword: 'controle de acesso por senha',
-  directAnswer: 'O controle de acesso por teclado numérico permite a liberação de portas e portões através da digitação de senhas eletrônicas personalizadas. Trata-se de uma alternativa funcional e acessível para portas de consultórios, depósitos e áreas técnicas, dispensando o porte constante de chaves físicas. O sistema pode operar de maneira autônoma ou conectado a controladoras em rede, gerando históricos de passagens conforme a configuração adotada.',
+  directAnswer: 'O controle de acesso por teclado numérico libera portas e passagens por meio da digitação de códigos eletrônicos individuais ou setoriais. Em Curitiba e Região Metropolitana, é uma alternativa prática e econômica para portas internas de clínicas, escritórios, estoques, áreas técnicas e portas de vidro, podendo operar de forma autônoma ou integrada a controladoras.',
   image: {
     src: '/images/controle-senha-e-teclado.webp',
     alt: 'Dedo digitando senha em teclado touch instalado em porta de madeira',
@@ -14,95 +14,95 @@ export const senhaETecladoSolution: SolutionContent = {
     height: 675
   },
   howItWorks: [
-    'Digitação na matriz numérica e leitura dos dígitos: O usuário pressiona as teclas de silicone, botões metálicos antivandalismo ou superfície capacitiva de vidro. A cada acionamento, a placa processa o dígito inserido e emite um retorno sonoro ou luminoso confirmando a recepção.',
-    'Diferenciação entre senha individual e senha única coletiva: Com senhas individuais, cada usuário possui seu próprio código no sistema, permitindo saber quem exatamente destravou a porta. Com senha única compartilhada por todos, o sistema apenas registra a abertura, perdendo a rastreabilidade sobre a identidade de quem acessou.',
-    'Temporização de segurança e bloqueio por tentativas sucessivas: Para conter adivinhações por força bruta, a controladora monitora erros sequenciais de digitação. Ao atingir um limite pré-definido (geralmente de 3 a 5 erros seguidos), o teclado bloqueia novas entradas temporariamente por alguns minutos.',
-    'Recurso de senha de coação para emergências veladas: Em modelos que contam com essa função, é possível cadastrar um código para situações de perigo iminente. Ao digitar essa combinação sob coação, o equipamento abre a fechadura normalmente, mas envia silenciosamente um alerta à portaria ou à empresa de monitoramento.',
-    'Acionamento de relé e integração multifatorial: Validada a combinação digitada, o microprocessador comuta seu relé para desenergizar a fechadura eletroímã ou emitir pulso para um fecho elétrico. Em setores críticos, o sistema pode exigir autenticação combinada de senha mais cartão RFID para liberar o vão.'
+    'Leitura na matriz numérica: O usuário digita sua combinação em teclado mecânico, antivandalismo ou superfície touch capacitiva, conforme o modelo escolhido.',
+    'Senha individual versus senha compartilhada: Quando cada usuário recebe um código próprio em equipamento com memória de eventos, o sistema identifica quem abriu a porta; já uma senha única coletiva dispensa cadastros individuais, mas não diferencia os acessos.',
+    'Bloqueio temporário após erros consecutivos: Conforme o modelo, o teclado interrompe novas tentativas por alguns minutos após sucessivos erros de digitação, dificultando adivinhações.',
+    'Senha de coação (quando disponível): Alguns modelos permitem configurar um código específico que libera a abertura em situações de emergência e envia alerta silencioso para uma central ou receptor compatível.',
+    'Acionamento de fechaduras e combinação de fatores: Ao confirmar a senha, o equipamento aciona a fechadura eletromagnética (inclusive em portas de vidro) ou fecho elétrico, podendo também exigir cartão RFID em dupla autenticação.'
   ],
   whenToChoose: [
-    'Salas confidenciais de infraestrutura de TI, racks de servidores e almoxarifados fabris onde colaboradores autorizados precisam entrar com agilidade sem carregar crachás.',
-    'Consultórios médicos, clínicas de psicologia e salas de reunião corporativas que exigem controle de fluxo em portas internas com baixo custo inicial de implantação.',
-    'Áreas comuns secundárias de condomínios residenciais em Curitiba, como salões de jogos, brinquedotecas e depósitos de materiais de limpeza.',
-    'Acessos de contingência em entradas sociais para permitir a abertura por digitação de código caso um morador esqueça seu chaveiro ou cartão RFID.'
+    'Salas de TI, arquivos, estoques e almoxarifados de empresas e indústrias em Curitiba.',
+    'Portas internas e consultórios em clínicas médicas e escritórios comerciais.',
+    'Áreas comuns de condomínios com acesso restrito a colaboradores ou condôminos autorizados.',
+    'Acesso de apoio em portarias como alternativa caso o usuário esteja sem cartão ou haja falha temporária em outro método.'
   ],
   advantages: [
-    'Dispensa o porte de credenciais físicas: Os usuários autorizados não precisam carregar chaveiros, crachás plásticos ou chaves de latão que podem ser esquecidas ou perdidas fora do prédio.',
-    'Alteração simples e rápida de combinações: Caso um funcionário seja desligado ou ocorra suspeita de vazamento de código, a senha pode ser redefinida rapidamente na própria placa ou pelo sistema.',
-    'Baixo investimento em equipamentos: Teclados numéricos autônomos e escravos representam uma das opções de menor custo de hardware no segmento de segurança física.',
-    'Dimensões compactas para esquadrias estreitas: Modelos de perfil estreito (slim) podem ser fixados diretamente sobre montantes de alumínio e batentes com espaço lateral limitado.',
-    'Possibilidade de dupla autenticação: Teclados que integram leitor de cartão permitem elevar o padrão de proteção em áreas críticas, exigindo senha e crachá simultaneamente.'
+    'Dispensa chaves ou crachás físicos: Reduz problemas com perda ou esquecimento de objetos para acesso diário.',
+    'Alteração prática de códigos: Em caso de desligamento de colaborador ou suspeita de compartilhamento, a senha pode ser alterada rapidamente.',
+    'Investimento acessível: Costuma exigir menor custo inicial em comparação a terminais biométricos ou faciais.',
+    'Modelos compactos: Versões estreitas (slim) se adaptam facilmente a perfis de alumínio e montantes próximos a portas de vidro.',
+    'Opção de dupla verificação: Modelos híbridos combinam senha numérica e cartão de proximidade no mesmo equipamento.'
   ],
   limitations: [
-    'Compartilhamento indevido de códigos: Senhas são facilmente transferíveis por voz ou mensagem de texto, impossibilitando garantir que apenas o titular original esteja utilizando o código na portaria.',
-    'Desgaste visual localizado de teclas mecânicas: Em teclados de borracha ou botões pintados com uso prolongado, os números da combinação sofrem desgaste da tinta, fornecendo pistas visuais a observadores.',
-    'Tempo de digitação superior em relação a leitores touchless: Digitar de 4 a 6 dígitos exige parada física completa do usuário, gerando filas pontuais caso haja passagem simultânea de muitas pessoas.',
-    'Sensibilidade a intempéries em modelos sem vedação IP: Teclados instalados em áreas externas abertas exigem grau de proteção adequado (como classificação IP65); caso contrário, a umidade curitibana pode oxidar os contatos internos.'
+    'Compartilhamento entre pessoas: Uma senha pode ser repassada verbalmente ou por mensagem a terceiros, sem assegurar que apenas o titular original a utilizou.',
+    'Desgaste de teclas em modelos simples: Em teclados de borracha ou plástico com código único muito utilizado, teclas mais pressionadas podem marcar com o tempo.',
+    'Fluxo mais lento que leitura sem toque: Digitar o código exige parada em frente à porta, sendo menos ágil para locais com grande circulação simultânea.',
+    'Proteção contra clima em área externa: Locais expostos à chuva requerem modelos com vedação compatível com área externa.'
   ],
   integrations: [
-    'Fechaduras eletromagnéticas eletroímã e fechos elétricos com molas aéreas de retorno suave.',
-    'Botoeiras internas de saída tipo no-touch com acionamento por aproximação de mão sem toque.',
-    'Centrais de alarme e sistemas de segurança perimetral integrados para recebimento de sinal de coação.',
-    'Controladoras de acesso em rede com comunicação via barramento Wiegand ou conexões seriais.',
-    'Fontes de alimentação ininterruptas com nobreak e baterias seladas para suporte durante quedas de luz.'
+    'Fechaduras eletromagnéticas (eletroímã) e fechos elétricos com molas aéreas.',
+    'Botoeiras de saída convencionais ou sem toque (no-touch).',
+    'Centrais de alarme compatíveis para sinalização de eventos, quando aplicável.',
+    'Controladoras de acesso via comunicação Wiegand ou conexões seriais.',
+    'Fontes carregadoras com baterias auxiliares contra quedas de energia.'
   ],
   installationSteps: [
     {
       step: '01',
-      title: 'Vistoria do ambiente e classificação climática',
-      description: 'Avaliação técnica do vão da porta em Curitiba, verificando se o teclado ficará em área interna protegida ou externa, definindo a necessidade de modelos com vedação estanque IP65.'
+      title: 'Vistoria Técnica e Escolha do Modelo',
+      description: 'Avaliamos o local da porta em Curitiba (interno ou exposto ao clima), o tipo de folha — inclusive portas de vidro — e a fiação necessária antes do orçamento.'
     },
     {
       step: '02',
-      title: 'Passagem de fiação em dutos embutidos',
-      description: 'Lançamento de cabeamento de dados e alimentação elétrica dentro dos perfis da porta ou tubulações embutidas na alvenaria, protegendo os condutores contra cortes intencionais e desgastes mecânicos.'
+      title: 'Infraestrutura e Passagem de Cabos',
+      description: 'Lançamos cabos protegidos em tubulação ou canaleta adequada até a fonte e a fechadura.'
     },
     {
       step: '03',
-      title: 'Instalação mecânica na altura ergonômica',
-      description: 'Fixação firme do teclado na parede ou batente a uma altura confortável de operação, instalando a fechadura correspondente e a botoeira interna para saída rápida desobstruída.'
+      title: 'Fixação do Teclado e da Fechadura',
+      description: 'Instalamos o teclado em altura ergonômica, alinhamos a fechadura eletromagnética ou elétrica e posicionamos a botoeira de saída.'
     },
     {
       step: '04',
-      title: 'Programação de códigos e limites de tentativas',
-      description: 'Substituição das senhas de fábrica, registro das senhas individuais dos usuários autorizados, configuração do código de coação e ajuste do tempo de acionamento do relé.'
+      title: 'Programação de Senhas e Temporização',
+      description: 'Alteramos senhas padrão de fábrica, cadastramos os códigos definidos e regulamos o tempo de abertura do relé.'
     },
     {
       step: '05',
-      title: 'Testes de esforço e treinamento de boas práticas',
-      description: 'Realização de testes funcionais com bloqueio simulado por erros contínuos de digitação e instrução dos usuários sobre a importância de manter as senhas pessoais sob sigilo.'
+      title: 'Testes e Orientação de Uso',
+      description: 'Validamos aberturas, fechamento pela mola aérea e orientamos o responsável sobre cadastro, alteração e exclusão de senhas.'
     }
   ],
   maintenanceAndSupport: [
-    'Higienização regular da superfície das teclas para evitar acúmulo de gordura e sujeira que evidenciem os números mais pressionados.',
-    'Verificação dos bips sonoros e retroiluminação dos números para assegurar facilidade de digitação durante o período noturno.',
-    'Revisão da fixação mecânica da fechadura eletromagnética e reaperto de parafusos em suportes sujeitos a vibrações de fechamento.',
-    'Aferição da tensão elétrica de saída da fonte de alimentação de 12V e teste do estado das baterias do nobreak sob carga.'
+    'Limpeza periódica do teclado para evitar marcas de dedos que revelem dígitos mais usados.',
+    'Conferência da retroiluminação e do retorno sonoro ou visual das teclas.',
+    'Reaperto de suportes de fechadura e ajuste de mola aérea em portas de maior circulação.',
+    'Medição da fonte de alimentação e conferência das baterias auxiliares.'
   ],
   faqs: [
     {
-      question: 'Qual a diferença entre usar uma senha única para todos ou senhas individuais?',
-      answer: 'Com uma senha única compartilhada, o condomínio reduz o trabalho de cadastro, mas perde totalmente a capacidade de saber quem abriu a porta em caso de incidentes. Já com senhas individuais vinculadas a cada morador ou colaborador em uma controladora, o sistema registra exatamente o nome do titular e o horário de cada passagem no histórico de eventos.'
+      question: 'É melhor usar uma senha única para todos ou senhas individuais?',
+      answer: 'Quando o equipamento permite e há necessidade de rastrear quem abriu a porta, senhas individuais são mais indicadas porque permitem registrar o usuário e excluir apenas o código de quem sair da empresa ou condomínio.'
     },
     {
-      question: 'O teclado de acesso continua operando se houver corte de energia em Curitiba?',
-      answer: 'Sim, desde que a instalação inclua uma fonte de alimentação com nobreak e bateria selada de 12V, o que é um padrão essencial nos projetos. Por consumirem pouca corrente, teclados e eletroímãs permanecem operando por horas com a carga da bateria durante interrupções na rede elétrica.'
+      question: 'O teclado de acesso continua funcionando se faltar energia?',
+      answer: 'Sim, desde que o projeto utilize fonte carregadora com bateria auxiliar ou nobreak dimensionado para o consumo do teclado e da fechadura. A autonomia depende das baterias instaladas.'
     },
     {
-      question: 'Como funciona na prática o recurso de senha de coação?',
-      answer: 'A senha de coação é um código alternativo cadastrado para situações em que a pessoa é rendida e forçada a destravar o portão. Ao digitar esse código, a porta abre normalmente sem levantar suspeita no agressor, mas a controladora envia de forma oculta um alerta de emergência para a portaria ou equipe de monitoramento.'
+      question: 'Como funciona a senha de coação?',
+      answer: 'Depende do modelo instalado. Quando disponível e interligado a uma central compatível, o código de coação libera a porta normalmente enquanto envia um sinal silencioso de alerta.'
     },
     {
-      question: 'É possível descobrir a combinação de acesso olhando o desgaste dos botões?',
-      answer: 'Em teclados com teclas mecânicas plásticas ou de borracha com uso intenso da mesma senha por longos períodos, as teclas mais digitadas podem sofrer desbotamento da tinta. Para contornar esse risco em locais de maior tráfego, recomendamos teclados com painel capacitivo em vidro touch temperado ou a combinação de senha com crachá.'
+      question: 'É possível descobrir a senha pelas marcas nos botões?',
+      answer: 'Em teclados mecânicos ou de borracha que usam sempre a mesma combinação, o desgaste pode ocorrer com o tempo. Teclados touch de vidro, alteração periódica de códigos ou dupla autenticação com cartão ajudam a reduzir esse problema.'
     },
     {
-      question: 'Teclados numéricos podem ser instalados sob chuva e sol em Curitiba?',
-      answer: 'Sim, desde que seja especificado um equipamento com índice de proteção apropriado, como certificação IP65 ou IP66, dotado de carcaça metálica selada e resina sobre os circuitos eletrônicos. Modelos sem proteção contra água devem ser restritos estritamente a ambientes internos protegidos de umidade.'
+      question: 'Teclados numéricos podem ser instalados em áreas externas com chuva?',
+      answer: 'Sim, desde que seja especificado um modelo próprio para uso externo com grau de vedação adequado às intempéries.'
     }
   ],
-  relatedSolutions: ['fechaduras-eletromagneticas', 'biometria', 'cartao-e-tag-rfid', 'reconhecimento-facial'],
-  relatedSegments: ['empresas-e-escritorios', 'condominios-residenciais', 'clinicas-e-hospitais', 'residencias'],
+  relatedSolutions: ['fechadura-eletronica', 'fechaduras-eletromagneticas', 'biometria', 'cartao-e-tag-rfid'],
+  relatedSegments: ['empresas-e-escritorios', 'condominios-residenciais', 'clinicas-e-hospitais', 'condominios-comerciais'],
   relatedCities: ['curitiba', 'pinhais', 'sao-jose-dos-pinhais', 'colombo'],
-  whatsappContext: 'controle de acesso por senha e teclado'
+  whatsappContext: 'controle de acesso por senha e teclado em Curitiba'
 };

@@ -41,23 +41,23 @@ export interface StaticRouteItem {
  * Manifesto central de todas as rotas estáticas do site
  */
 export function getAllStaticRoutes(): StaticRouteItem[] {
-  const defaultImage = '/images/og-image-default.webp';
+  const defaultImage = '/og-default.jpg';
 
   const routes: StaticRouteItem[] = [
     {
       path: '/',
       title: 'Controle de Acesso em Curitiba | Instalação e Manutenção',
-      description: 'Especialistas em controle de acesso em Curitiba e RMC. Instalação e manutenção de catracas, biometria, facial e cancelas para condomínios. Peça orçamento!',
+      description: 'Instalação e manutenção de controle de acesso em Curitiba: catracas, biometria, facial, cancelas, fechaduras e interfone. Peça orçamento no WhatsApp!',
       element: <HomePage />,
       priority: '1.0',
       changefreq: 'weekly',
-      image: '/images/controle-de-acesso-curitiba-homepage.webp',
+      image: defaultImage,
       ogType: 'website'
     },
     {
       path: '/solucoes/',
       title: 'Soluções de Controle de Acesso em Curitiba e Região',
-      description: 'Conheça as soluções de controle de acesso em Curitiba: biometria, facial, cartão, senha, catracas, cancelas, fechaduras e interfone. Peça orçamento!',
+      description: 'Conheça as soluções de controle de acesso em Curitiba: biometria, facial, fechadura eletrônica, tag veicular, cartão, catracas, cancelas e interfone.',
       element: <SolutionsIndex />,
       priority: '0.9',
       changefreq: 'weekly',
@@ -67,7 +67,7 @@ export function getAllStaticRoutes(): StaticRouteItem[] {
     {
       path: '/segmentos/',
       title: 'Segmentos de Controle de Acesso em Curitiba e Região',
-      description: 'Conheça os segmentos atendidos em controle de acesso em Curitiba e RMC. Soluções para condomínios, empresas, indústrias, escolas, clínicas e academias.',
+      description: 'Conheça os segmentos atendidos em controle de acesso em Curitiba e RMC: condomínios, empresas, indústrias, escolas, clínicas, academias e estacionamentos.',
       element: <SegmentsIndex />,
       priority: '0.9',
       changefreq: 'weekly',
@@ -77,7 +77,7 @@ export function getAllStaticRoutes(): StaticRouteItem[] {
     {
       path: '/servicos/',
       title: 'Serviços de Controle de Acesso em Curitiba | Manutenção',
-      description: 'Conheça nossos serviços de controle de acesso em Curitiba e Região Metropolitana: projetos e instalação, manutenção preventiva e locação de equipamentos.',
+      description: 'Conheça nossos serviços de controle de acesso em Curitiba e RMC: instalação, manutenção de sistemas e manutenção de catracas, além de locação.',
       element: <ServicesIndex />,
       priority: '0.9',
       changefreq: 'weekly',
@@ -96,8 +96,8 @@ export function getAllStaticRoutes(): StaticRouteItem[] {
     },
     {
       path: '/orcamento/',
-      title: 'Orçamento de Controle de Acesso em Curitiba | Cotação',
-      description: 'Solicite orçamento rápido para controle de acesso em Curitiba e RMC. Catracas, biometria, cancelas e fechaduras com envio direto ao WhatsApp técnico.',
+      title: 'Orçamento de Controle de Acesso em Curitiba | WhatsApp',
+      description: 'Peça orçamento de controle de acesso, fechadura eletrônica, interfone, catraca ou cancela em Curitiba. Responda 4 perguntas e fale no WhatsApp.',
       element: <OrcamentoPage />,
       priority: '0.9',
       changefreq: 'monthly',

@@ -8,13 +8,13 @@ export const biometriaOuFacialContent: BlogPostContent = {
   author: 'Equipe Controle de Acesso Curitiba',
   publishedDate: '[[PREENCHER: data de publicação]]',
   readTime: '7 min de leitura',
-  summary: 'A decisão entre leitor de impressão digital e terminal de reconhecimento facial é um dos dilemas mais comuns na atualização tecnológica de portarias de condomínios e empresas em Curitiba. Enquanto a biometria digital oferece excelente relação de custo para ambientes internos e restritos, o reconhecimento facial touchless desponta como o padrão superior para áreas externas de alto fluxo, proporcionando validação em menos de meio segundo e eliminando o desgaste por contato físico.',
+  summary: 'A decisão entre leitor de impressão digital e terminal de reconhecimento facial é um dos dilemas mais comuns na atualização de portarias de condomínios e empresas em Curitiba. Enquanto a biometria digital atende bem ambientes internos e de menor fluxo, o reconhecimento facial touchless destaca-se em áreas externas de maior circulação por dispensar o contato físico.',
   sections: [
     {
       heading: 'O Dilema da Autenticação Biométrica Moderna',
       paragraphs: [
         'A substituição de chaves físicas, senhas manuais e crachás plásticos por identificação biométrica tornou-se um padrão consolidado no mercado imobiliário e corporativo de Curitiba. Contudo, ao iniciar o planejamento de um novo projeto, síndicos, comissões de segurança e gestores prediais deparam-se frequentemente com uma escolha técnica fundamental: investir em leitores ópticos de impressão digital ou optar por terminais modernos de reconhecimento facial?',
-        'Embora ambas as soluções compartilhem o princípio básico de autenticar indivíduos a partir de características corporais intransferíveis e únicas, elas apresentam profundas diferenças práticas em velocidade de leitura, resistência ambiental, higiene de uso e investimento em hardware.',
+        'Embora ambas as soluções compartilhem o princípio básico de autenticar indivíduos a partir de características corporais intransferíveis e únicas, elas apresentam diferenças práticas em fluidez de leitura, resistência ambiental, higiene de uso e investimento em hardware.',
         'Compreender as vantagens, limitações e cenários recomendados para cada tecnologia é a chave para evitar frustrações com filas na portaria ou falhas de leitura recorrentes no dia a dia.'
       ],
       subsections: [
@@ -22,14 +22,14 @@ export const biometriaOuFacialContent: BlogPostContent = {
           heading: 'Como Funciona o Leitor de Impressão Digital',
           paragraphs: [
             'A biometria digital tradicional baseia-se na captura óptica ou capacitiva dos relevos superficiais da pele das pontas dos dedos (arestas e vales de fricção). O equipamento analisa os pontos onde as linhas se bifurcam ou terminam — conhecidos tecnicamente como minúcias — e transforma essas coordenadas em um código numérico criptografado denominado template.',
-            'O tempo médio de validação em um leitor digital de boa qualidade gira em torno de um a dois segundos após o posicionamento correto do dedo sobre o prisma de vidro. Caso a pessoa pressione o dedo torto, com força excessiva ou de forma muito leve, o sensor pode rejeitar a leitura e exigir novas tentativas.'
+            'A leitura exige o posicionamento correto do dedo sobre o prisma do leitor. Caso a pessoa pressione o dedo torto, com força excessiva ou com a mão molhada, o sensor pode solicitar uma nova tentativa.'
           ]
         },
         {
-          heading: 'Como Opera o Reconhecimento Facial com Prova de Vida',
+          heading: 'Como Opera o Reconhecimento Facial com Detecção de Vivacidade',
           paragraphs: [
-            'O reconhecimento facial moderno opera por meio de sensores ópticos de alta definição associados a emissores de luz infravermelha e algoritmos de aprendizado profundo (inteligência artificial). A câmera mapeia dezenas de distâncias geométricas do rosto, como o espaçamento entre as órbitas oculares, a curvatura das maçãs da face e a ponte nasal.',
-            'O grande salto qualitativo dessa tecnologia está na detecção de vivacidade (liveness detection). O sensor analisa a profundidade e a textura da pele para assegurar que a face diante da lente pertence a uma pessoa viva presente no local, impedindo fraudes comuns com fotos impressas em papel ou vídeos exibidos na tela de smartphones. A autenticação ocorre à distância (entre 0,5 e 2 metros) em impressionantes 0,2 a 0,5 segundo, sem exigir que o pedestre pare totalmente a caminhada.'
+            'O reconhecimento facial moderno opera por meio de sensores ópticos associados a emissores de luz infravermelha e algoritmos de identificação facial. A câmera analisa características geométricas do rosto para validar o usuário cadastrado.',
+            'Equipamentos com detecção de vivacidade (liveness detection) analisam profundidade e características da face presente diante da lente para dificultar tentativas de fraude com fotos impressas ou telas de celular, realizando a autenticação à distância de forma ágil e sem contato físico.'
           ]
         }
       ]
@@ -43,19 +43,19 @@ export const biometriaOuFacialContent: BlogPostContent = {
         {
           heading: '1. Velocidade de Passagem e Eliminação de Filas',
           paragraphs: [
-            'Nos horários de pico — como a chegada matinal de colaboradores em edifícios corporativos ou o retorno do trabalho em condomínios verticais —, cada fração de segundo faz diferença. O reconhecimento facial permite que o usuário caminhe em direção à porta e seja autenticado antes mesmo de tocá-la, proporcionando vazão contínua. Já a biometria digital exige parada obrigatória, contato manual e alinhamento do dedo, gerando filas lentas quando centenas de pessoas passam no mesmo intervalo.'
+            'Nos horários de pico — como a chegada matinal de colaboradores em edifícios corporativos ou o retorno em condomínios —, cada segundo faz diferença. O reconhecimento facial permite que o usuário caminhe em direção à porta e seja autenticado rapidamente, proporcionando boa vazão. Já a biometria digital exige parada, contato manual e alinhamento do dedo, o que pode gerar filas quando um grande número de pessoas passa no mesmo intervalo.'
           ]
         },
         {
           heading: '2. Clima de Curitiba: Umidade, Frio e Dedos Ressecados',
           paragraphs: [
-            'As características climáticas da capital paranaense exercem papel decisivo. No inverno curitibano ou em dias de geada, a pele resseca e os poros se contraem, o que dificulta a leitura óptica da digital em pessoas idosas. Além disso, quando pedestres chegam da rua sob chuva forte com as mãos molhadas, a água no sensor de vidro distorce o feixe de luz e provoca falso erro de leitura. O terminal facial, protegido por viseira ou cobertura na clausura, não sofre com essas interferências manuais.'
+            'As características climáticas da capital paranaense exercem papel decisivo. No inverno curitibano ou em dias de geada, a pele resseca e os poros se contraem, o que dificulta a leitura óptica da digital em pessoas idosas. Além disso, quando pedestres chegam da rua sob chuva forte com as mãos molhadas, a água no sensor de vidro distorce o feixe de luz e provoca falhas de leitura. O terminal facial, protegido por viseira ou cobertura na clausura, tende a sofrer menos com essas interferências manuais.'
           ]
         },
         {
           heading: '3. Higiene Sanitária e Operação Touchless',
           paragraphs: [
-            'O leitor de impressão digital requer que centenas de indivíduos encostem o mesmo dedo na mesma superfície de vidro todos os dias, acumulando suor, poeira e oleosidade. Em contrapartida, o reconhecimento facial touchless não demanda qualquer toque físico, sendo a escolha unânime para hospitais, clínicas de saúde e condomínios que prezam por assepsia absoluta.'
+            'O leitor de impressão digital requer que diversos usuários encostem o dedo na mesma superfície de vidro todos os dias, acumulando suor, poeira e oleosidade. Em contrapartida, o reconhecimento facial sem toque dispensa o contato físico com o leitor, sendo frequentemente preferido por hospitais, clínicas de saúde e condomínios que priorizam higiene na recepção.'
           ]
         },
         {
@@ -75,9 +75,10 @@ export const biometriaOuFacialContent: BlogPostContent = {
     {
       heading: 'Qual Tecnologia Escolher para o Seu Caso?',
       paragraphs: [
-        'A experiência prática em centenas de instalações em Curitiba aponta uma recomendação clara para a arquitetura de segurança:',
-        'Recomenda-se o Reconhecimento Facial para: portarias sociais externas, clausuras de pedestres de condomínios residenciais e comerciais, catracas de recepção com alto fluxo e ambientes médicos e hospitalares onde a ausência de toque é mandatória.',
-        'Recomenda-se a Biometria Digital para: portas internas de salas de servidores (CPD), áreas financeiras, arquivos confidenciais, vestiários de funcionários e pequenos escritórios onde o fluxo é baixo e o orçamento para hardware é reduzido.'
+        'A experiência prática em projetos executados em Curitiba aponta uma recomendação clara conforme o perfil de cada ambiente:',
+        'Recomenda-se o Reconhecimento Facial em geral para: portarias sociais, clausuras de pedestres de condomínios, catracas de recepção com alto fluxo em academias ou empresas e ambientes médicos onde se busca reduzir o contato manual.',
+        'Recomenda-se a Biometria Digital em geral para: portas internas de salas técnicas, áreas restritas, estoques e escritórios com fluxo moderado, conforme o caso e o orçamento disponível.',
+        'Vale lembrar que dados biométricos e imagens faciais são dados pessoais sensíveis pela LGPD: recomenda-se transparência no aviso de coleta, uso de templates criptografados e disponibilização de cartão ou senha alternativa para quem optar por não utilizar a biometria.'
       ]
     }
   ],
@@ -94,7 +95,7 @@ export const biometriaOuFacialContent: BlogPostContent = {
     },
     {
       question: 'Fotos em redes sociais ou vídeos no celular conseguem burlar o facial?',
-      answer: 'Não em equipamentos com prova de vida (liveness detection). O sistema analisa a profundidade tridimensional da face e a microtextura da pele humana, rejeitando imediatamente telas e papéis.'
+      answer: 'Em equipamentos com detecção de vivacidade (liveness detection), o leitor analisa profundidade e características reais da face, dificultando tentativas de fraude com fotos ou telas, dependendo do modelo.'
     },
     {
       question: 'Pessoas com dificuldades na biometria digital podem usar cartão?',

@@ -8,14 +8,14 @@ export const lgpdContent: BlogPostContent = {
   author: 'Equipe Controle de Acesso Curitiba',
   publishedDate: '[[PREENCHER: data de publicação]]',
   readTime: '8 min de leitura',
-  summary: 'A implementação de tecnologias de reconhecimento facial e biometria digital em condomínios e empresas deve atender com rigor aos preceitos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018). Como a biometria é classificada como dado pessoal sensível, síndicos e gestores em Curitiba precisam adotar equipamentos com criptografia irreversível por templates, fornecer meios alternativos de acesso e garantir a governança adequada de registros.',
+  summary: 'A implementação de tecnologias de reconhecimento facial e biometria digital em condomínios e empresas deve atender com rigor aos preceitos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018). Como a biometria é classificada como dado pessoal sensível, síndicos e gestores em Curitiba precisam adotar equipamentos com criptografia irreversível por templates, fornecer meios alternativos de acesso e estruturar a governança adequada de registros.',
   sections: [
     {
       heading: 'O Que a LGPD Exige no Controle de Acesso Físico?',
       paragraphs: [
-        'A entrada em vigor da Lei Geral de Proteção de Dados Pessoais (Lei Federal nº 13.709/2018) transformou a gestão de portarias em todo o Brasil. O que antes era tratado de maneira informal — como cadernos de papel com anotações de CPF ou planilhas desprotegidas com fotos de visitantes — passou a exigir estrita conformidade técnica e jurídica.',
-        'Em condomínios residenciais e edifícios corporativos em Curitiba, a busca por maior segurança através de reconhecimento facial e biometria digital gerou dúvidas recorrentes: o condomínio pode exigir a biometria dos moradores? É obrigatório colher termo de consentimento assinado de cada morador? Como devem ser tratados os dados de entregadores e prestadores de serviço?',
-        'Para esclarecer essas questões, apresentamos as diretrizes essenciais de governança, ressaltando desde logo: este texto é informativo e não substitui a orientação de um profissional jurídico.'
+        'A entrada em vigor da Lei Geral de Proteção de Dados Pessoais (Lei Federal nº 13.709/2018) transformou a gestão de portarias em todo o Brasil. O que antes era tratado de maneira informal — como cadernos de papel com anotações de CPF ou planilhas desprotegidas com fotos de visitantes — passou a exigir conformidade técnica e jurídica.',
+        'Em condomínios e edifícios corporativos em Curitiba, a busca por maior controle por meio de reconhecimento facial e biometria digital gerou dúvidas recorrentes: o condomínio pode exigir a biometria dos moradores? É obrigatório colher termo de consentimento? Como devem ser tratados os dados de entregadores e prestadores de serviço?',
+        'Para esclarecer essas questões, apresentamos as diretrizes essenciais de governança aplicáveis a biometria, rosto e registros de veículos.'
       ],
       subsections: [
         {
@@ -39,7 +39,7 @@ export const lgpdContent: BlogPostContent = {
     {
       heading: 'Segurança Técnica: Templates Matemáticos vs Fotos Abertas',
       paragraphs: [
-        'A principal garantia de conformidade técnica está na escolha da arquitetura dos equipamentos instalados. Leitores biométricos e terminais faciais profissionais homologados não armazenam fotografias completas de alta resolução dos moradores.',
+        'Um dos principais cuidados técnicos está na escolha da arquitetura dos equipamentos instalados. Leitores biométricos e terminais faciais profissionais, em geral, armazenam apenas referências matemáticas criptografadas em vez de fotografias abertas para identificação.',
         'Em vez disso, o algoritmo do leitor extrai coordenadas vetoriais específicas e as submete a um algoritmo criptográfico de dispersão (hash) de sentido único, gerando um código alfanumérico denominado template biométrico.',
         'Mesmo na hipótese remota de um invasor obter acesso à memória física da controladora, esse código matemático é irreversível: não é possível recompor o rosto ou a digital da pessoa a partir do arquivo matemático. Esse mecanismo elimina o risco de uso indevido da imagem do titular fora do contexto da portaria.'
       ],
@@ -64,9 +64,9 @@ export const lgpdContent: BlogPostContent = {
       heading: 'Boas Práticas de Governança para Síndicos e Administradoras',
       paragraphs: [
         'Para assegurar tranquilidade jurídica ao empreendimento, recomenda-se a adoção de um protocolo formal de governança de dados:',
-        'Defina prazos de retenção de dados: registros de entrada e saída de moradores e visitantes não devem ser guardados indefinidamente. Estabeleça uma política de descarte automático após o período necessário para fins de segurança (geralmente entre 30 e 90 dias, salvo determinação judicial).',
-        'Controle o acesso administrativo ao sistema: apenas funcionários treinados e autorizados da portaria ou administração devem possuir senhas nominais de acesso ao sistema de cadastro, com registro de log de quem visualizou ou alterou os dados.',
-        'Formalize termos com terceirizadas: ao contratar empresas de portaria remota ou manutenção técnica, exija cláusulas de confidencialidade e responsabilidade solidária com a LGPD nos contratos de prestação de serviços.'
+        'Defina períodos de retenção de dados: registros de entrada e saída de moradores, visitantes e placas de veículos não devem ser guardados indefinidamente. Estabeleça com assessoria jurídica uma política de descarte após o período necessário para a finalidade informada.',
+        'Controle o acesso administrativo ao sistema: apenas funcionários treinados e designados da portaria ou administração devem possuir senhas nominais de acesso ao sistema de cadastro, com registro de log de quem visualizou ou alterou os dados.',
+        'Formalize termos com terceirizadas: ao contratar empresas de portaria remota ou manutenção técnica, preveja cláusulas de confidencialidade e responsabilidade conforme a LGPD nos contratos de prestação de serviços.'
       ]
     }
   ],

@@ -8,13 +8,13 @@ export const comoEscolherCatracaContent: BlogPostContent = {
   author: 'Equipe Controle de Acesso Curitiba',
   publishedDate: '[[PREENCHER: data de publicação]]',
   readTime: '7 min de leitura',
-  summary: 'A escolha do modelo correto de catraca eletrônica para um empreendimento em Curitiba depende do fluxo de passagens por minuto, do espaço físico da recepção e do nível de contenção exigido. Modelos pedestal são compactos e funcionais para espaços reduzidos; modelos balcão e flap oferecem sofisticação visual para torres corporativas; e torniquetes de altura total garantem segurança perimetral inexpugnável em complexos industriais.',
+  summary: 'A escolha do modelo correto de catraca eletrônica para um empreendimento em Curitiba depende do fluxo de passagens, do espaço físico da recepção e do nível de contenção exigido. Modelos pedestal são compactos para espaços reduzidos; modelos balcão e flap oferecem maior presença visual para torres corporativas; e torniquetes de altura total ampliam a contenção perimetral em complexos industriais.',
   sections: [
     {
       heading: 'A Importância do Dimensionamento Correto de Catracas',
       paragraphs: [
-        'A catraca eletrônica de acesso é o coração operacional da portaria de pedestres em edifícios comerciais, instituições de ensino, academias e indústrias. Uma escolha equivocada pode gerar filas intermináveis nos horários de entrada e saída, frustrar condôminos e clientes, ou deixar brechas graves de segurança física por permitir que indivíduos pulem ou passem por baixo do equipamento.',
-        'Em Curitiba e Região Metropolitana, onde coexistem edifícios corporativos no Batel, universidades de grande porte e plantas industriais pesadas na CIC e em São José dos Pinhais, o dimensionamento correto de catracas exige avaliar não apenas o aspecto estético do gabinete, mas também o mecanismo interno de retenção, o material de fabricação e as normas vigentes de acessibilidade e segurança contra incêndio.',
+        'A catraca eletrônica de acesso é o coração operacional da portaria de pedestres em edifícios comerciais, instituições de ensino, academias e indústrias. Uma escolha equivocada pode gerar filas nos horários de entrada e saída, frustrar condôminos e clientes, ou deixar brechas de segurança física por permitir que indivíduos pulem ou passem por baixo do equipamento.',
+        'Em Curitiba e Região Metropolitana, onde coexistem edifícios corporativos, universidades e áreas industriais, o dimensionamento correto de catracas exige avaliar não apenas o aspecto estético do gabinete, mas também o mecanismo interno de retenção, o material de fabricação e as normas vigentes de acessibilidade e segurança contra incêndio.',
         'Apresentamos um guia técnico comparativo detalhado para auxiliar na seleção da melhor solução para o seu estabelecimento.'
       ],
       subsections: [
@@ -22,7 +22,7 @@ export const comoEscolherCatracaContent: BlogPostContent = {
           heading: '1. Catraca Pedestal: Versatilidade e Otimização de Espaço',
           paragraphs: [
             'O modelo pedestal caracteriza-se por um corpo tubular compacto apoiado em coluna central única, ocupando mínima área de piso. É a escolha mais versátil e econômica para portarias que possuem espaço restrito entre o balcão da guarita e a parede lateral, como clínicas médicas, academias de ginástica, escolas e pequenos edifícios comerciais.',
-            'Apesar de sua estrutura esguia, os modelos pedestal profissionais contam com gabinetes em aço inoxidável ou aço carbono com pintura eletrostática, suportando centenas de giros diários. A catraca pedestal pode receber leitores biométricos faciais montados sobre hastes superiores, leitoras de crachá de proximidade RFID embutidas ou teclados de senha.'
+            'Apesar da estrutura esguia, os modelos pedestal profissionais contam com gabinetes em aço inoxidável ou aço carbono com pintura eletrostática, suportando fluxo diário elevado. A catraca pedestal pode receber leitores biométricos faciais montados sobre hastes superiores, leitoras de crachá de proximidade RFID embutidas ou teclados de senha, além de contar com suporte para conserto e manutenção periódica.'
           ]
         },
         {
@@ -43,15 +43,15 @@ export const comoEscolherCatracaContent: BlogPostContent = {
         {
           heading: 'Catracas Flap (Flap Barriers): Alta Velocidade e Sofisticação',
           paragraphs: [
-            'As catracas do tipo flap barrier substituem os braços metálicos rotativos por barreiras de vidro temperado ou acrílico que se recolhem silenciosamente para dentro da estrutura após a validação do usuário. Esse mecanismo motorizado oferece a mais alta velocidade de circulação do mercado (até quarenta passagens por minuto por vão), além de proporcionar acabamento nobre compatível com o design de edifícios corporativos triple A.',
-            'Equipadas com sensores infravermelhos ao longo do túnel de passagem, as flap barriers detectam automaticamente tentativas de carona (duas pessoas passando com uma única autorização) e acionam alarmes visuais e sonoros discretos sem bloquear mecanicamente o pedestre de forma agressiva.'
+            'As catracas do tipo flap barrier substituem os braços metálicos rotativos por barreiras de vidro temperado ou acrílico que se recolhem silenciosamente para dentro da estrutura após a validação do usuário. Esse mecanismo motorizado oferece alta agilidade de circulação, além de proporcionar acabamento compatível com recepções corporativas.',
+            'Equipadas com sensores infravermelhos ao longo do túnel de passagem, as flap barriers detectam tentativas de carona (duas pessoas passando com uma única autorização) e acionam alertas visuais e sonoros discretos.'
           ]
         },
         {
-          heading: 'Torniquetes de Altura Total: Contenção Perimetral Absoluta',
+          heading: 'Torniquetes de Altura Total: Contenção Perimetral Reforçada',
           paragraphs: [
-            'Em ambientes industriais, galpões logísticos, canteiros de grandes obras e acessos perimetrais externos desguarnecidos de vigilante presencial, os torniquetes de altura total são a única solução capaz de impedir fisicamente a invasão. Com altura superior a dois metros e estrutura reforçada de grades giratórias de aço que vão do chão ao teto, é fisicamente impossível pular, agachar ou passar por baixo do equipamento.',
-            'Fabricados em aço galvanizado a fogo com acabamento antiferrugem, os torniquetes resistem à chuva, vento e poeira intensa, sendo ideais para as trocas contínuas de turnos em fábricas e centros de distribuição na RMC.'
+            'Em ambientes industriais, galpões logísticos e acessos perimetrais externos, os torniquetes de altura total são a solução indicada para ampliar a contenção física. Com estrutura reforçada de grades giratórias que vão do piso ao topo, dificultam que pessoas pulem ou passem por baixo do bloqueio.',
+            'Fabricados em aço tratado contra corrosão, os torniquetes suportam uso externo e trocas contínuas de turnos em fábricas e centros de distribuição na RMC.'
           ]
         }
       ]
@@ -59,19 +59,19 @@ export const comoEscolherCatracaContent: BlogPostContent = {
     {
       heading: 'Requisitos Obrigatórios na Contratação',
       paragraphs: [
-        'Ao selecionar fornecedores de catracas em Curitiba, certifique-se de que o projeto contemple os seguintes itens normativos inegociáveis:'
+        'Ao selecionar fornecedores de catracas em Curitiba, certifique-se de que o projeto contemple os seguintes requisitos:'
       ],
       subsections: [
         {
           heading: 'Braço Antipânico para Rotas de Fuga do Corpo de Bombeiros',
           paragraphs: [
-            'Em qualquer edifício com afluência pública, as normas de segurança contra incêndio do Corpo de Bombeiros do Paraná exigem que as rotas de evacuação permaneçam totalmente desimpedidas em situações de sinistro. As catracas tripé devem obrigatoriamente possuir mecanismo de braço antipânico eletromecânico, que faz o braço superior desarmar e cair instantaneamente para a posição vertical em caso de corte de energia ou acionamento da central de alarme de incêndio.'
+            'Em qualquer edifício com circulação pública, as normas de segurança contra incêndio do Corpo de Bombeiros exigem que as rotas de evacuação permaneçam desimpedidas em situações de emergência. As catracas tripé devem possuir mecanismo de braço antipânico eletromecânico, que faz o braço superior desarmar e cair para a posição vertical em caso de corte de energia ou acionamento da central de alarme de incêndio.'
           ]
         },
         {
           heading: 'Acessibilidade Universal e Portinholas Laterais (NBR 9050)',
           paragraphs: [
-            'Catracas convencionais de três braços não permitem a passagem de cadeiras de rodas, carrinhos de bebê ou pedestres com muletas. Em observância à norma ABNT NBR 9050, todo layout de controle de portaria deve incluir uma passagem lateral acessível de no mínimo oitenta centímetros de vão livre, geralmente automatizada por uma portinhola motorizada em aço inox integrada ao mesmo sistema de controle de acesso.'
+            'Catracas convencionais de três braços não permitem a passagem de cadeiras de rodas, carrinhos ou pessoas com mobilidade reduzida. Em observância à norma ABNT NBR 9050, todo layout de portaria deve prever passagem lateral acessível com dimensões livres compatíveis com a norma, geralmente por portinhola dedicada integrada ao sistema.'
           ]
         }
       ]
@@ -85,8 +85,8 @@ export const comoEscolherCatracaContent: BlogPostContent = {
   ],
   faqs: [
     {
-      question: 'Quantas catracas são necessárias para um edifício com 500 pessoas?',
-      answer: 'Como regra geral de engenharia, calcula-se uma passagem para cada 150 a 200 usuários ativos nos horários de pico, de modo que um prédio com 500 pessoas demanda idealmente de 2 a 3 passagens simultâneas.'
+      question: 'Como dimensionar a quantidade ideal de catracas para um edifício?',
+      answer: 'O dimensionamento depende do volume de usuários nos horários de pico, da tecnologia de leitura escolhida e da largura da recepção. A quantidade adequada é definida após o diagnóstico técnico presencial.'
     },
     {
       question: 'O braço antipânico desarma sozinho se faltar energia elétrica?',

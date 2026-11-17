@@ -1,17 +1,20 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { 
-  Building2, 
-  AlertTriangle, 
-  CheckCircle2, 
-  Layers, 
-  HelpCircle, 
-  MessageSquare, 
-  ChevronRight,
-  ArrowRight
+import {
+  AlertTriangle,
+  CheckCircle2,
+  Layers,
+  HelpCircle,
+  ArrowRight,
 } from 'lucide-react';
+import { WhatsAppIcon } from '../components/ui/WhatsAppIcon';
 import { Layout } from '../components/Layout';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
+import { FaqAccordion } from '../components/ui/FaqAccordion';
+import { PhotoCard } from '../components/ui/PhotoCard';
+import { SectionHeader } from '../components/ui/SectionHeader';
+import { getCatalogIcon } from '../components/ui/SolutionIcon';
+import { ComplianceNotices } from '../components/ui/ComplianceNotices';
 import { getSegmentBySlug, segmentosList } from '../content/segmentos';
 import { siteConfig } from '../config/site';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
@@ -29,99 +32,141 @@ export function SegmentDetailPage() {
     trackWhatsAppClick(`pagina segmento ${segmento.slug}`, `/segmentos/${segmento.slug}/`);
   };
 
+  const otherSegments = segmentosList
+    .filter((s) => s.slug !== segmento.slug)
+    .slice(0, 4);
+
   return (
     <Layout whatsappContext={segmento.whatsappContext}>
       <SEOHead
         title={segmento.seoTitle}
         description={segmento.metaDescription}
         canonicalPath={`/segmentos/${segmento.slug}/`}
-        ogImage={segmento.image.src}
+        ogImage={siteConfig.defaultOgImage}
         schemaData={generateFAQSchema(segmento.faqs)}
       />
 
-      <Breadcrumbs
-        items={[
-          { name: 'Segmentos', url: `${siteConfig.domain}/segmentos/` },
-          { name: segmento.title, url: `${siteConfig.domain}/segmentos/${segmento.slug}/` }
-        ]}
-      />
-
-      <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
-        <header className="max-w-4xl space-y-4 mb-10">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider">
-            <span>Segmento Especializado</span>
-            <span aria-hidden="true">·</span>
-            <span>Curitiba e Região</span>
-          </div>
-
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            {segmento.title}
-          </h1>
-
-          <div className="p-5 bg-sky-50/70 border border-sky-100 rounded-lg text-slate-800 text-base leading-relaxed">
-            <p className="font-normal">{segmento.directAnswer}</p>
-          </div>
-
-          <div className="pt-2 flex flex-wrap items-center gap-3">
-            <a
-              href={whatsappLink(segmento.whatsappContext)}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleWhatsAppAction}
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white rounded-md font-semibold text-sm transition-all shadow-sm"
-            >
-              <MessageSquare className="w-4 h-4 fill-white text-transparent" aria-hidden="true" />
-              <span>Pedir Proposta para {segmento.title}</span>
-            </a>
-          </div>
-        </header>
-
-        <div className="mb-12 rounded-lg overflow-hidden border border-slate-200 shadow-sm max-w-4xl">
-          <img
-            src={segmento.image.src}
-            alt={segmento.image.alt}
-            width={segmento.image.width}
-            height={segmento.image.height}
-            loading="lazy"
-            className="w-full h-auto object-cover object-center max-h-[460px]"
+      {/* Hero escuro */}
+      <section className="bg-hero-gradient border-b border-[var(--border)] pt-4 pb-12 sm:pb-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { name: 'Segmentos', url: `${siteConfig.domain}/segmentos/` },
+              { name: segmento.title, url: `${siteConfig.domain}/segmentos/${segmento.slug}/` },
+            ]}
           />
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          
+          <div className="mt-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-5">
+              <span className="inline-block text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+                Segmento Especializado · Curitiba e Região
+              </span>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                {segmento.title}
+              </h1>
+
+              <div className="p-5 bg-[var(--surface)]/90 border border-[var(--border)] rounded-2xl text-base text-[var(--text-muted)] leading-relaxed space-y-3">
+                <p>{segmento.directAnswer}</p>
+                {segmento.slug === 'residencias' && (
+                  <p>
+                    <a
+                      href={siteConfig.parentCompany.site}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--accent)] font-semibold hover:underline"
+                    >
+                      Acessar site principal da Intelsecsul para casas e apartamentos (intelsecsul.com.br) ›
+                    </a>
+                  </p>
+                )}
+                {segmento.slug === 'estacionamentos' && (
+                  <p>
+                    <a
+                      href="https://intelsecsul.com.br/servicos/portao-automatico/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--accent)] font-semibold hover:underline"
+                    >
+                      Portão automático residencial fica no site da Intelsecsul ›
+                    </a>
+                  </p>
+                )}
+              </div>
+
+              <div className="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <a
+                  href={whatsappLink(segmento.whatsappContext)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleWhatsAppAction}
+                  className="inline-flex items-center justify-center gap-2.5 h-[52px] px-6 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white rounded-xl font-semibold text-sm sm:text-base transition-colors shadow-lg"
+                >
+                  <WhatsAppIcon className="w-5 h-5 shrink-0" />
+                  <span>Pedir orçamento no WhatsApp</span>
+                </a>
+
+                <Link
+                  to="/segmentos/"
+                  className="inline-flex items-center justify-center gap-2 h-[52px] px-5 bg-[var(--surface)] hover:bg-[#172231] text-white border border-[var(--border)] hover:border-[var(--accent)]/50 rounded-xl font-semibold text-sm sm:text-base transition-colors"
+                >
+                  <span>Ver todos os locais</span>
+                  <ArrowRight className="w-4 h-4 text-[var(--accent)]" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--bg-deep)] shadow-2xl">
+                <img
+                  src={segmento.image.src}
+                  alt={segmento.image.alt}
+                  width={1200}
+                  height={675}
+                  loading="eager"
+                  fetchPriority="high"
+                  className="w-full h-auto aspect-video object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article className="bg-[var(--bg)] py-12 sm:py-16 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-8 space-y-12">
-            
-            {/* Problemas Típicos do Segmento */}
+            {/* Desafios */}
             <section aria-labelledby="problemas-heading" className="space-y-4">
-              <h2 id="problemas-heading" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                <AlertTriangle className="w-5 h-5 text-amber-600" aria-hidden="true" />
-                <span>Desafios e Vulnerabilidades Típicas</span>
+              <h2 id="problemas-heading" className="text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0" aria-hidden="true" />
+                <span>Desafios e necessidades comuns</span>
               </h2>
               <div className="space-y-3">
                 {segmento.typicalProblems.map((prob, idx) => (
-                  <div key={idx} className="flex items-start gap-3 p-4 bg-white border border-slate-200 rounded-md">
-                    <span className="w-2 h-2 rounded-full bg-amber-500 mt-2.5 shrink-0" aria-hidden="true" />
-                    <p className="text-sm sm:text-base text-slate-700 leading-relaxed">{prob}</p>
+                  <div key={idx} className="flex items-start gap-3 p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl">
+                    <span className="w-2 h-2 rounded-full bg-amber-400 mt-2.5 shrink-0" aria-hidden="true" />
+                    <p className="text-base text-[var(--text-muted)] leading-relaxed">{prob}</p>
                   </div>
                 ))}
               </div>
             </section>
 
-            {/* Soluções Ideais e Razões */}
+            {/* Soluções Recomendadas */}
             <section aria-labelledby="solucoes-ideais-heading" className="space-y-4">
-              <h2 id="solucoes-ideais-heading" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600" aria-hidden="true" />
-                <span>Soluções Recomendadas e Justificativas Técnicas</span>
+              <h2 id="solucoes-ideais-heading" className="text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                <CheckCircle2 className="w-6 h-6 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Soluções recomendadas para o segmento</span>
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {segmento.idealSolutions.map((sol, idx) => (
-                  <div key={idx} className="p-5 bg-white border border-slate-200 rounded-lg space-y-2">
-                    <h3 className="text-base font-bold text-slate-900">
-                      <Link to={`/solucoes/${sol.solutionSlug}/`} className="text-sky-700 hover:underline">
+                  <div key={idx} className="p-5 bg-[var(--surface)] border border-[var(--border)] rounded-2xl space-y-2.5">
+                    <h3 className="text-base font-bold text-white">
+                      <Link to={`/solucoes/${sol.solutionSlug}/`} className="text-[var(--accent)] hover:underline">
                         {sol.title}
                       </Link>
                     </h3>
-                    <p className="text-sm text-slate-600 leading-relaxed">
+                    <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
                       {sol.reason}
                     </p>
                   </div>
@@ -129,59 +174,43 @@ export function SegmentDetailPage() {
               </div>
             </section>
 
-            {/* Exemplo de Projeto Genérico */}
+            {/* Arquitetura Típica */}
             <section aria-labelledby="arquitetura-heading" className="space-y-4">
-              <h2 id="arquitetura-heading" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                <Layers className="w-5 h-5 text-sky-600" aria-hidden="true" />
-                <span>Estrutura de um Projeto Típico de Implantação</span>
+              <h2 id="arquitetura-heading" className="text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                <Layers className="w-6 h-6 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Estrutura típica de implantação</span>
               </h2>
               <div className="space-y-3">
                 {segmento.projectArchitecture.map((arch, idx) => (
-                  <div key={idx} className="p-5 bg-slate-50 border border-slate-200 rounded-md">
-                    <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                      {arch}
-                    </p>
+                  <div key={idx} className="p-5 bg-[var(--surface)] border border-[var(--border)] rounded-2xl">
+                    <p className="text-base text-[var(--text-muted)] leading-relaxed">{arch}</p>
                   </div>
                 ))}
               </div>
             </section>
 
-            {/* FAQ com 5 perguntas */}
-            <section aria-labelledby="faq-segmento-heading" className="space-y-4 pt-6 border-t border-slate-200">
-              <h2 id="faq-segmento-heading" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
-                <HelpCircle className="w-5 h-5 text-sky-600" aria-hidden="true" />
-                <span>Perguntas Frequentes sobre {segmento.title}</span>
+            {/* FAQ */}
+            <section aria-labelledby="faq-segmento-heading" className="space-y-5 pt-6 border-t border-[var(--border)]">
+              <h2 id="faq-segmento-heading" className="text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                <HelpCircle className="w-6 h-6 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Perguntas frequentes sobre {segmento.title}</span>
               </h2>
-              <div className="space-y-3">
-                {segmento.faqs.map((faq, idx) => (
-                  <details
-                    key={idx}
-                    className="group bg-white border border-slate-200 rounded-lg p-5 open:border-slate-300"
-                  >
-                    <summary className="font-semibold text-sm sm:text-base text-slate-900 cursor-pointer list-none flex items-center justify-between gap-3">
-                      <span>{faq.question}</span>
-                      <span className="text-slate-400 group-open:rotate-180 transition-transform text-xs shrink-0">▼</span>
-                    </summary>
-                    <p className="text-sm sm:text-base text-slate-600 mt-3 pt-3 border-t border-slate-100 leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </details>
-                ))}
-              </div>
+              <FaqAccordion items={segmento.faqs} />
             </section>
 
+            <ComplianceNotices text={JSON.stringify(segmento)} />
           </div>
 
           <aside className="lg:col-span-4 space-y-6">
-            <div className="bg-petroleum text-white p-6 rounded-lg space-y-4 border border-slate-800 shadow-md sticky top-24">
-              <span className="text-xs text-sky-400 font-semibold tracking-wider uppercase block">
+            <div className="bg-[var(--surface)] text-white p-6 rounded-2xl space-y-4 border border-[var(--border)] sticky top-24">
+              <span className="text-xs text-[var(--accent)] font-bold tracking-[0.08em] uppercase block">
                 Projeto Sob Medida
               </span>
-              <h3 className="text-lg font-bold text-white leading-snug">
-                Receba um levantamento técnico para seu imóvel
+              <h3 className="text-xl font-bold text-white leading-snug">
+                Solicite um orçamento sem custo
               </h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                Avaliamos o fluxo diário e as melhores opções de clausura e leitores sem compromisso.
+              <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                Avaliamos o fluxo diário e a estrutura do seu imóvel para recomendar o conjunto adequado de equipamentos.
               </p>
 
               <a
@@ -189,45 +218,45 @@ export function SegmentDetailPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="w-full flex items-center justify-center gap-2 py-3 bg-whatsapp hover:bg-whatsapp-dark text-white rounded font-semibold text-sm transition-colors shadow-sm"
+                className="w-full h-[52px] flex items-center justify-center gap-2 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white rounded-xl font-semibold text-sm transition-colors"
               >
-                <MessageSquare className="w-4 h-4 fill-white text-transparent" aria-hidden="true" />
+                <WhatsAppIcon className="w-4 h-4 shrink-0" />
                 <span>Conversar no WhatsApp</span>
               </a>
 
-              {/* Soluções Relacionadas do Conteúdo */}
               {segmento.relatedSolutions && segmento.relatedSolutions.length > 0 && (
-                <div className="pt-4 border-t border-slate-800 space-y-2">
-                  <span className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
+                <div className="pt-4 border-t border-[var(--border)] space-y-2.5">
+                  <span className="text-xs font-bold text-white uppercase tracking-[0.08em] block">
                     Soluções Indicadas
                   </span>
-                  {segmento.relatedSolutions.map(solSlug => (
-                    <Link
-                      key={solSlug}
-                      to={`/solucoes/${solSlug}/`}
-                      className="text-xs text-sky-300 hover:text-white transition-colors block truncate"
-                    >
-                      → {solSlug.replace(/-/g, ' ')}
-                    </Link>
-                  ))}
+                  <div className="flex flex-col gap-2">
+                    {segmento.relatedSolutions.map((solSlug) => (
+                      <Link
+                        key={solSlug}
+                        to={`/solucoes/${solSlug}/`}
+                        className="text-sm text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors block truncate"
+                      >
+                        › {solSlug.replace(/-/g, ' ')}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
 
-            {/* Segmentos Relacionados do Conteúdo */}
             {segmento.relatedSegments && segmento.relatedSegments.length > 0 && (
-              <div className="bg-white border border-slate-200 rounded-lg p-5 space-y-3">
-                <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
+              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 space-y-3">
+                <h3 className="text-xs font-bold text-white uppercase tracking-[0.08em]">
                   Segmentos Relacionados
                 </h3>
-                <ul className="space-y-2 text-sm">
-                  {segmento.relatedSegments.map(relSlug => {
+                <ul className="space-y-2.5 text-sm">
+                  {segmento.relatedSegments.map((relSlug) => {
                     const relSeg = getSegmentBySlug(relSlug);
                     return (
                       <li key={relSlug}>
                         <Link
                           to={`/segmentos/${relSlug}/`}
-                          className="text-slate-600 hover:text-sky-600 font-medium block truncate"
+                          className="text-[var(--text-muted)] hover:text-[var(--accent)] font-medium block truncate transition-colors"
                         >
                           {relSeg ? relSeg.title : relSlug.replace(/-/g, ' ')}
                         </Link>
@@ -238,9 +267,33 @@ export function SegmentDetailPage() {
               </div>
             )}
           </aside>
-
         </div>
       </article>
+
+      <section aria-labelledby="outros-segmentos-heading" className="bg-[var(--bg-deep)] py-14 px-4 border-t border-[var(--border)]">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader
+            headingId="outros-segmentos-heading"
+            kicker="Outros locais atendidos"
+            title="Veja também outros segmentos"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {otherSegments.map((seg) => (
+              <PhotoCard
+                key={seg.slug}
+                to={`/segmentos/${seg.slug}/`}
+                title={seg.title}
+                description={seg.directAnswer}
+                imageSrc={seg.image.src}
+                imageAlt={seg.image.alt}
+                icon={getCatalogIcon(seg.slug)}
+                ctaLabel="Ver projeto do segmento"
+                compact
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

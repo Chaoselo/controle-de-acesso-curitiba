@@ -4,8 +4,11 @@ import { siteConfig } from '../config/site';
 import { Layout } from '../components/Layout';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
+import { SectionHeader } from '../components/ui/SectionHeader';
 import { whatsappLink, trackWhatsAppClick } from '../lib/whatsapp';
-import { ArrowRight, MessageSquare, MapPin, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { WhatsAppIcon } from '../components/ui/WhatsAppIcon';
+import { ComplianceNotices } from '../components/ui/ComplianceNotices';
+import { ArrowRight, MapPin, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export default function CitiesIndex() {
   const getFirstSentence = (text: string) => {
@@ -40,169 +43,180 @@ export default function CitiesIndex() {
         schemaData={[itemListSchema]}
       />
 
-      <Breadcrumbs
-        items={[
-          { name: 'Cidades Atendidas', url: `${siteConfig.domain}/cidades/` }
-        ]}
-      />
+      {/* Hero escuro */}
+      <section className="bg-hero-gradient border-b border-[var(--border)] pt-4 pb-12 sm:pb-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { name: 'Cidades Atendidas', url: `${siteConfig.domain}/cidades/` }
+            ]}
+          />
 
-      <div className="bg-slate-50 min-h-screen py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header Section */}
-          <header className="mb-12 max-w-4xl">
-            <div className="inline-flex items-center gap-2 text-xs font-semibold text-sky-700 uppercase tracking-wider mb-3">
-              <span>Cobertura Técnica Regional</span>
-              <span aria-hidden="true">·</span>
-              <span>Curitiba e Região Metropolitana</span>
-            </div>
+          <div className="mt-4 max-w-4xl space-y-5">
+            <span className="inline-block text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em]">
+              Cobertura Regional · Curitiba e Região Metropolitana
+            </span>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Cidades Atendidas em Controle de Acesso
             </h1>
 
-            <div className="mt-6 text-base sm:text-lg text-slate-700 space-y-4">
+            <div className="text-base text-[var(--text-muted)] space-y-3 leading-relaxed">
               <p>
-                A <strong>Controle de Acesso Curitiba</strong> presta atendimento técnico presencial na capital paranaense e em 10 municípios vizinhos da Região Metropolitana (RMC). Realizamos levantamentos de campo, dimensionamento de caixilharia, passagem de cabeamento estruturado e parametrização de equipamentos de portaria física ou remota.
+                A <strong className="text-white">Controle de Acesso Curitiba</strong> realiza atendimento presencial na capital e em mais 10 municípios da Região Metropolitana para instalação de controle de acesso, fechadura eletrônica e interfone/vídeo porteiro, além de conserto e manutenção de interfone, catraca e cancela.
               </p>
               <p>
-                Com estoque local de sobressalentes e técnicos capacitados, atendemos desde condomínios residenciais verticais e horizontais até centros logísticos na BR-116, indústrias petroquímicas em Araucária, montadoras em São José dos Pinhais e cerâmicas em Campo Largo. Conheça abaixo as particularidades de atendimento em cada município.
+                Atendemos empresas, condomínios, indústrias, clínicas, escolas, academias, estacionamentos e portas de vidro. Casas e apartamentos individuais são atendidos pelo site principal da Intelsecsul (intelsecsul.com.br).
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="pt-2 flex flex-wrap items-center gap-4">
               <a
                 href={whatsappLink('orçamento pelo catálogo de cidades')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold px-6 py-3.5 rounded-lg shadow-sm transition"
+                className="inline-flex items-center justify-center gap-2.5 h-[52px] px-6 bg-[var(--whatsapp)] hover:bg-whatsapp-dark text-white font-semibold rounded-xl transition-colors"
               >
-                <MessageSquare className="w-5 h-5 fill-white text-transparent" />
-                <span>Solicitar Vistoria na Minha Cidade</span>
+                <WhatsAppIcon className="w-5 h-5 shrink-0" />
+                <span>Solicitar vistoria na minha cidade</span>
               </a>
-              <span className="text-xs text-slate-500">
-                Atendimento rápido para Curitiba e todos os 10 municípios da RMC
+              <span className="text-xs sm:text-sm text-[var(--text-soft)]">
+                Atendimento em toda a Região Metropolitana
               </span>
             </div>
-          </header>
+          </div>
+        </div>
+      </section>
 
-          {/* Grid de Cidades */}
-          <section aria-labelledby="cidades-grid-heading" className="mb-16">
-            <h2 id="cidades-grid-heading" className="sr-only">
-              Lista de Municípios Atendidos
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {cidadesList.map((cidade) => (
-                <article
-                  key={cidade.slug}
-                  className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col"
-                >
-                  <div className="aspect-video w-full bg-slate-100 overflow-hidden">
-                    <img
-                      src={cidade.image.src}
-                      alt={cidade.image.alt}
-                      width={cidade.image.width}
-                      height={cidade.image.height}
-                      loading="lazy"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center gap-1.5 text-xs font-semibold text-sky-700 uppercase tracking-wider mb-2">
-                        <MapPin className="w-3.5 h-3.5" />
-                        <span>{cidade.name} (PR)</span>
-                      </div>
-                      <h2 className="text-xl font-bold text-slate-900 hover:text-sky-700 transition">
-                        <Link to={`/cidades/${cidade.slug}/`}>
-                          {cidade.name}
-                        </Link>
-                      </h2>
-                      <p className="mt-3 text-sm text-slate-600 leading-relaxed">
-                        {getFirstSentence(cidade.directAnswer)}
-                      </p>
+      {/* Grid de Cidades */}
+      <section aria-labelledby="cidades-grid-heading" className="bg-[var(--bg)] py-14 sm:py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader
+            headingId="cidades-grid-heading"
+            kicker="11 municípios atendidos"
+            title="Curitiba e Grande Curitiba"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {cidadesList.map((cidade) => (
+              <Link
+                key={cidade.slug}
+                to={`/cidades/${cidade.slug}/`}
+                className="group bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent)]/50 rounded-2xl overflow-hidden transition-all duration-200 hover:-translate-y-0.5 flex flex-col"
+              >
+                <div className="relative aspect-video w-full bg-[var(--bg-deep)] overflow-hidden">
+                  <img
+                    src={cidade.image.src}
+                    alt={cidade.image.alt}
+                    width={cidade.image.width}
+                    height={cidade.image.height}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                  />
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-0 bg-gradient-to-b from-transparent via-[var(--surface)]/30 to-[var(--surface)]"
+                  />
+                </div>
+
+                <div className="p-6 flex-1 flex flex-col justify-between gap-4">
+                  <div>
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-[var(--accent)] uppercase tracking-[0.08em] mb-2">
+                      <MapPin className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
+                      <span>{cidade.name} - PR</span>
                     </div>
-
-                    <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                      <Link
-                        to={`/cidades/${cidade.slug}/`}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-sky-700 hover:text-sky-800 transition"
-                      >
-                        <span>Ver soluções em {cidade.name}</span>
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </div>
+                    <h2 className="text-xl font-bold text-white group-hover:text-[var(--accent)] transition-colors">
+                      {cidade.name}
+                    </h2>
+                    <p className="mt-2.5 text-sm text-[var(--text-muted)] line-clamp-3 leading-relaxed">
+                      {getFirstSentence(cidade.directAnswer)}
+                    </p>
                   </div>
-                </article>
-              ))}
-            </div>
-          </section>
 
-          {/* Seção Informativa de Logística Regional */}
-          <section
-            aria-labelledby="logistica-regional-heading"
-            className="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <MapPin className="w-7 h-7 text-sky-600 shrink-0" />
-              <h2 id="logistica-regional-heading" className="text-2xl sm:text-3xl font-bold text-slate-900">
-                Como Funciona o Atendimento na Região Metropolitana
+                  <div className="pt-4 border-t border-[var(--border)] flex items-center justify-between text-sm font-semibold text-[var(--accent)]">
+                    <span>Ver soluções em {cidade.name}</span>
+                    <ArrowRight className="w-4 h-4 shrink-0 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Logística Regional */}
+      <section
+        aria-labelledby="logistica-regional-heading"
+        className="bg-[var(--bg-deep)] py-14 sm:py-16 px-4 border-t border-[var(--border)]"
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-6 sm:p-10">
+            <div className="flex items-center gap-3 mb-4">
+              <MapPin className="w-7 h-7 text-[var(--accent)] shrink-0" aria-hidden="true" />
+              <h2 id="logistica-regional-heading" className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                Como funciona o atendimento na Região Metropolitana
               </h2>
             </div>
-            <p className="text-slate-700 text-sm sm:text-base mb-8 max-w-3xl">
-              Nossa operação centralizada em Curitiba permite agendamento organizado para visitas diagnósticas de orçamento e intervenções corretivas rápidas em qualquer um dos 10 municípios conurbados da Grande Curitiba.
+            <p className="text-[var(--text-muted)] text-base mb-8 max-w-3xl">
+              Nossa operação centralizada em Curitiba permite agendamento organizado para visitas técnicas de orçamento, instalações e assistência corretiva em toda a Grande Curitiba.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] space-y-2">
+                <div className="flex items-center gap-2 text-[var(--accent)] font-semibold text-sm">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" aria-hidden="true" />
                   <span>Vistoria Técnica Presencial</span>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Avaliamos no local os vãos de passagem, tipo de caixilharia, tubulação subterrânea existente e contingência energética para no-breaks.
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                  Avaliamos no local os vãos de passagem, tipo de portas ou portões, tubulação existente e pontos de energia elétrica.
                 </p>
               </div>
 
-              <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>Peças a Pronta Entrega</span>
+              <div className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] space-y-2">
+                <div className="flex items-center gap-2 text-[var(--accent)] font-semibold text-sm">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" aria-hidden="true" />
+                  <span>Projeto Sob Medida</span>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Estoque de eletroímãs, cancelas, leitores biométricos faciais, fontes 12V e no-breaks senoidais para pronto atendimento na RMC.
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                  Especificação de eletroímãs, cancelas, catracas, leitores biométricos faciais e fontes de alimentação adequadas ao imóvel.
                 </p>
               </div>
 
-              <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2 text-sky-700 font-bold text-sm">
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>Contratos Preventivos e Chamados</span>
+              <div className="p-5 rounded-xl bg-[var(--bg)] border border-[var(--border)] space-y-2">
+                <div className="flex items-center gap-2 text-[var(--accent)] font-semibold text-sm">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" aria-hidden="true" />
+                  <span>Manutenção Preventiva e Chamados</span>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Atendemos tanto por contrato mensal com SLA prioritário de emergência quanto por chamados avulsos para condomínios e indústrias.
+                <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+                  Atendemos por planos de manutenção periódica ou chamados avulsos para condomínios, empresas e indústrias.
                 </p>
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div className="flex items-center gap-2 text-sm text-slate-600">
-                <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
-                <span>Cobrimos Curitiba e 10 municípios da RMC com suporte técnico presencial.</span>
+            <div className="mt-8 pt-6 border-t border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-2 text-sm text-[var(--text-muted)]">
+                <ShieldCheck className="w-5 h-5 text-[var(--accent)] shrink-0" aria-hidden="true" />
+                <span>Cobrimos Curitiba e 10 municípios da RMC com equipe técnica própria.</span>
               </div>
               <a
                 href={whatsappLink('dúvida sobre cobertura técnica na cidade')}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleWhatsAppAction}
-                className="text-sm font-bold text-emerald-700 hover:text-emerald-800 transition"
+                className="text-sm font-bold text-[var(--whatsapp)] hover:underline transition"
               >
-                Consultar disponibilidade para seu endereço →
+                Consultar disponibilidade para seu endereço ›
               </a>
             </div>
-          </section>
+          </div>
+
+          <ComplianceNotices
+            text={JSON.stringify(cidadesList.map((c) => `${c.title} ${c.directAnswer}`))}
+            className="mt-8"
+          />
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }
